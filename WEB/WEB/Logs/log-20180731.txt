@@ -1,0 +1,295 @@
+2018-07-31 13:41:29.338 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-31 13:41:29.838 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-07-31 13:41:29.933 +03:00 [INF] Request finished in 100.8274ms 404 
+2018-07-31 15:23:49.873 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-31 15:23:50.430 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-07-31 15:23:50.529 +03:00 [INF] Request finished in 108.1355ms 404 
+2018-07-31 15:23:52.808 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users  
+2018-07-31 15:23:54.105 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:23:54.563 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:23:54.630 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 1753.5365000000002ms
+2018-07-31 15:23:54.633 +03:00 [INF] Request finished in 1824.6252ms 200 application/json; charset=utf-8
+2018-07-31 15:23:54.828 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/favicon.ico  
+2018-07-31 15:23:54.828 +03:00 [INF] Request finished in 0.3178ms 404 
+2018-07-31 15:24:08.477 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users  
+2018-07-31 15:24:08.526 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:24:08.530 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:24:08.531 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 52.1496ms
+2018-07-31 15:24:08.531 +03:00 [INF] Request finished in 53.8586ms 200 application/json; charset=utf-8
+2018-07-31 15:24:22.496 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users  
+2018-07-31 15:24:22.500 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:24:22.505 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:24:22.505 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 8.2314ms
+2018-07-31 15:24:22.505 +03:00 [INF] Request finished in 8.5856ms 200 application/json; charset=utf-8
+2018-07-31 15:24:23.415 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users  
+2018-07-31 15:24:23.420 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:24:23.424 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:24:23.424 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 9.0054ms
+2018-07-31 15:24:23.424 +03:00 [INF] Request finished in 9.4219ms 200 application/json; charset=utf-8
+2018-07-31 15:24:24.312 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users  
+2018-07-31 15:24:24.316 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:24:24.320 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:24:24.320 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.7447000000000008ms
+2018-07-31 15:24:24.320 +03:00 [INF] Request finished in 8.1625ms 200 application/json; charset=utf-8
+2018-07-31 15:24:28.984 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1  
+2018-07-31 15:24:29.032 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 15:24:29.057 +03:00 [INF] UsersRepository get {"Id":1,"Name":"newName","$type":"Users"}
+2018-07-31 15:24:29.060 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:24:29.060 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 49.3402ms
+2018-07-31 15:24:29.060 +03:00 [INF] Request finished in 76.3798ms 200 application/json; charset=utf-8
+2018-07-31 15:24:32.595 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1  
+2018-07-31 15:24:32.600 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 15:24:32.604 +03:00 [INF] UsersRepository get {"Id":1,"Name":"newName","$type":"Users"}
+2018-07-31 15:24:32.605 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:24:32.605 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 9.344100000000001ms
+2018-07-31 15:24:32.605 +03:00 [INF] Request finished in 9.7934ms 200 application/json; charset=utf-8
+2018-07-31 15:24:33.438 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1  
+2018-07-31 15:24:33.444 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 15:24:33.450 +03:00 [INF] UsersRepository get {"Id":1,"Name":"newName","$type":"Users"}
+2018-07-31 15:24:33.450 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:24:33.450 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 12.1622ms
+2018-07-31 15:24:33.451 +03:00 [INF] Request finished in 12.5581ms 200 application/json; charset=utf-8
+2018-07-31 15:24:34.106 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1  
+2018-07-31 15:24:34.114 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 15:24:34.122 +03:00 [INF] UsersRepository get {"Id":1,"Name":"newName","$type":"Users"}
+2018-07-31 15:24:34.122 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:24:34.122 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 15.5815ms
+2018-07-31 15:24:34.122 +03:00 [INF] Request finished in 16.4045ms 200 application/json; charset=utf-8
+2018-07-31 15:24:34.811 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1  
+2018-07-31 15:24:34.820 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 15:24:34.825 +03:00 [INF] UsersRepository get {"Id":1,"Name":"newName","$type":"Users"}
+2018-07-31 15:24:34.825 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:24:34.826 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 14.6058ms
+2018-07-31 15:24:34.826 +03:00 [INF] Request finished in 15.3719ms 200 application/json; charset=utf-8
+2018-07-31 15:25:59.676 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:25:59.689 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:25:59.703 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:25:59.703 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 27.5805ms
+2018-07-31 15:25:59.703 +03:00 [INF] Request finished in 27.9573ms 200 application/json; charset=utf-8
+2018-07-31 15:26:02.395 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:26:02.398 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:26:02.402 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:26:02.402 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.8369ms
+2018-07-31 15:26:02.402 +03:00 [INF] Request finished in 7.2961ms 200 application/json; charset=utf-8
+2018-07-31 15:26:03.313 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:26:03.316 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:26:03.319 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:26:03.319 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.3370000000000006ms
+2018-07-31 15:26:03.319 +03:00 [INF] Request finished in 6.8362ms 200 application/json; charset=utf-8
+2018-07-31 15:26:04.167 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:26:04.170 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:26:04.173 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:26:04.173 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.2522ms
+2018-07-31 15:26:04.173 +03:00 [INF] Request finished in 6.5989ms 200 application/json; charset=utf-8
+2018-07-31 15:26:05.013 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:26:05.016 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:26:05.019 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:26:05.019 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.2738000000000005ms
+2018-07-31 15:26:05.020 +03:00 [INF] Request finished in 6.6316ms 200 application/json; charset=utf-8
+2018-07-31 15:26:38.050 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1 application/json 
+2018-07-31 15:26:38.063 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 15:26:38.067 +03:00 [INF] UsersRepository get {"Id":1,"Name":"newName","$type":"Users"}
+2018-07-31 15:26:38.067 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:26:38.067 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 16.9942ms
+2018-07-31 15:26:38.067 +03:00 [INF] Request finished in 17.5563ms 200 application/json; charset=utf-8
+2018-07-31 15:26:40.366 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1 application/json 
+2018-07-31 15:26:40.374 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 15:26:40.384 +03:00 [INF] UsersRepository get {"Id":1,"Name":"newName","$type":"Users"}
+2018-07-31 15:26:40.384 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:26:40.384 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 17.314700000000002ms
+2018-07-31 15:26:40.384 +03:00 [INF] Request finished in 17.7288ms 200 application/json; charset=utf-8
+2018-07-31 15:26:41.067 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1 application/json 
+2018-07-31 15:26:41.071 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 15:26:41.074 +03:00 [INF] UsersRepository get {"Id":1,"Name":"newName","$type":"Users"}
+2018-07-31 15:26:41.074 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:26:41.074 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.3022ms
+2018-07-31 15:26:41.074 +03:00 [INF] Request finished in 6.6651ms 200 application/json; charset=utf-8
+2018-07-31 15:27:23.239 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54708/api/users application/json 20
+2018-07-31 15:27:23.281 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["DAL.Models.Users"]) - ModelState is "Valid"
+2018-07-31 15:27:23.415 +03:00 [INF] Inserted
+2018-07-31 15:27:23.418 +03:00 [INF] Cache cleared
+2018-07-31 15:27:23.419 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 175.1466ms
+2018-07-31 15:27:23.420 +03:00 [INF] Request finished in 181.1407ms 200 
+2018-07-31 15:27:42.812 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:27:42.826 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:27:42.836 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:27:42.836 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 23.375600000000002ms
+2018-07-31 15:27:42.836 +03:00 [INF] Request finished in 23.8166ms 200 application/json; charset=utf-8
+2018-07-31 15:27:45.060 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:27:45.064 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:27:45.067 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:27:45.067 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.2246000000000006ms
+2018-07-31 15:27:45.068 +03:00 [INF] Request finished in 7.7328ms 200 application/json; charset=utf-8
+2018-07-31 15:27:52.465 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54708/api/users application/json 20
+2018-07-31 15:27:52.471 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["DAL.Models.Users"]) - ModelState is "Valid"
+2018-07-31 15:27:52.473 +03:00 [INF] Inserted
+2018-07-31 15:27:52.473 +03:00 [INF] Cache cleared
+2018-07-31 15:27:52.473 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 7.6113ms
+2018-07-31 15:27:52.473 +03:00 [INF] Request finished in 8.0943ms 200 
+2018-07-31 15:28:04.908 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:54708/api/users/2 application/json 21
+2018-07-31 15:28:04.916 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Put (WEB) with arguments (["2","DAL.Models.Users"]) - ModelState is "Valid"
+2018-07-31 15:28:04.920 +03:00 [INF] Params {"Id":0,"Name":"newName","$type":"Users"}
+2018-07-31 15:28:05.134 +03:00 [INF] Updated
+2018-07-31 15:28:05.134 +03:00 [INF] Cache cleared
+2018-07-31 15:28:05.134 +03:00 [INF] Executed action WEB.Controllers.UsersController.Put (WEB) in 221.1626ms
+2018-07-31 15:28:05.135 +03:00 [INF] Request finished in 227.1622ms 200 
+2018-07-31 15:28:11.230 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:28:11.234 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:28:11.237 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:28:11.238 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.2693ms
+2018-07-31 15:28:11.238 +03:00 [INF] Request finished in 7.7636ms 200 application/json; charset=utf-8
+2018-07-31 15:28:13.339 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:28:13.342 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:28:13.346 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:28:13.346 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.631ms
+2018-07-31 15:28:13.346 +03:00 [INF] Request finished in 7.0061ms 200 application/json; charset=utf-8
+2018-07-31 15:29:13.017 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-31 15:29:13.488 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54708/api/users application/json 20
+2018-07-31 15:29:14.726 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["DAL.Models.Users"]) - ModelState is "Valid"
+2018-07-31 15:29:14.876 +03:00 [INF] Inserted
+2018-07-31 15:29:14.879 +03:00 [INF] Cache cleared
+2018-07-31 15:29:15.193 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 1590.6643000000001ms
+2018-07-31 15:29:15.198 +03:00 [INF] Request finished in 1715.1203ms 200 
+2018-07-31 15:29:22.794 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:29:22.814 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:29:23.184 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:29:23.195 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 395.4004ms
+2018-07-31 15:29:23.196 +03:00 [INF] Request finished in 402.1305ms 200 application/json; charset=utf-8
+2018-07-31 15:29:30.034 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/2 application/json 
+2018-07-31 15:29:30.051 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - ModelState is "Valid"
+2018-07-31 15:29:30.069 +03:00 [INF] UsersRepository get {"Id":2,"Name":"test1","$type":"Users"}
+2018-07-31 15:29:30.072 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:29:30.072 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 32.3969ms
+2018-07-31 15:29:30.072 +03:00 [INF] Request finished in 37.953ms 200 application/json; charset=utf-8
+2018-07-31 15:29:52.937 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:54708/api/users/2 application/json 108
+2018-07-31 15:29:52.959 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Delete (WEB) with arguments (["2"]) - ModelState is "Valid"
+2018-07-31 15:29:53.127 +03:00 [INF] Deleted
+2018-07-31 15:29:53.129 +03:00 [INF] Cache cleared
+2018-07-31 15:29:53.129 +03:00 [INF] Executed action WEB.Controllers.UsersController.Delete (WEB) in 185.51180000000002ms
+2018-07-31 15:29:53.129 +03:00 [INF] Request finished in 192.5014ms 200 
+2018-07-31 15:29:56.344 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:29:56.348 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:29:56.356 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:29:56.356 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 11.403ms
+2018-07-31 15:29:56.356 +03:00 [INF] Request finished in 11.8566ms 200 application/json; charset=utf-8
+2018-07-31 15:30:00.329 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54708/api/users application/json 20
+2018-07-31 15:30:00.334 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["DAL.Models.Users"]) - ModelState is "Valid"
+2018-07-31 15:30:00.336 +03:00 [INF] Inserted
+2018-07-31 15:30:00.336 +03:00 [INF] Cache cleared
+2018-07-31 15:30:00.340 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 11.5053ms
+2018-07-31 15:30:00.341 +03:00 [INF] Request finished in 12.0549ms 200 
+2018-07-31 15:30:07.536 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:30:07.539 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:30:07.543 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:30:07.543 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.3802ms
+2018-07-31 15:30:07.543 +03:00 [INF] Request finished in 7.792ms 200 application/json; charset=utf-8
+2018-07-31 15:30:31.876 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:30:31.879 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:30:31.884 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:30:31.884 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.9576ms
+2018-07-31 15:30:31.884 +03:00 [INF] Request finished in 8.3482ms 200 application/json; charset=utf-8
+2018-07-31 15:30:32.596 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:30:32.599 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:30:32.602 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:30:32.602 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.3453ms
+2018-07-31 15:30:32.602 +03:00 [INF] Request finished in 6.7796ms 200 application/json; charset=utf-8
+2018-07-31 15:31:47.733 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-31 15:31:48.028 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:31:49.159 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:31:49.741 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:31:49.799 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 1673.2799ms
+2018-07-31 15:31:49.802 +03:00 [INF] Request finished in 1778.8479ms 200 application/json; charset=utf-8
+2018-07-31 15:31:51.589 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:31:51.611 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:31:51.644 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:31:51.645 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 54.564800000000005ms
+2018-07-31 15:31:51.645 +03:00 [INF] Request finished in 55.9977ms 200 application/json; charset=utf-8
+2018-07-31 15:31:52.511 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:31:52.515 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:31:52.516 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:31:52.516 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 4.5763ms
+2018-07-31 15:31:52.516 +03:00 [INF] Request finished in 5.0395ms 200 application/json; charset=utf-8
+2018-07-31 15:31:53.368 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:31:53.371 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:31:53.373 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:31:53.373 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 4.9008ms
+2018-07-31 15:31:53.373 +03:00 [INF] Request finished in 5.412ms 200 application/json; charset=utf-8
+2018-07-31 15:32:01.003 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:32:01.007 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:32:01.008 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:32:01.009 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 4.8025ms
+2018-07-31 15:32:01.009 +03:00 [INF] Request finished in 5.5477ms 200 application/json; charset=utf-8
+2018-07-31 15:45:06.397 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-31 15:45:06.718 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:45:07.857 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:45:08.275 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:08.324 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 1492.938ms
+2018-07-31 15:45:08.326 +03:00 [INF] Request finished in 1613.1149ms 200 application/json; charset=utf-8
+2018-07-31 15:45:09.675 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:45:09.705 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:45:09.709 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:09.709 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 33.3875ms
+2018-07-31 15:45:09.709 +03:00 [INF] Request finished in 34.4089ms 200 application/json; charset=utf-8
+2018-07-31 15:45:14.658 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/2 application/json 
+2018-07-31 15:45:14.718 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - ModelState is "Valid"
+2018-07-31 15:45:14.729 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:14.729 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 49.6299ms
+2018-07-31 15:45:14.730 +03:00 [INF] Request finished in 72.0606ms 204 
+2018-07-31 15:45:17.315 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/3 application/json 
+2018-07-31 15:45:17.319 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["3"]) - ModelState is "Valid"
+2018-07-31 15:45:17.323 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:17.323 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.6897ms
+2018-07-31 15:45:17.323 +03:00 [INF] Request finished in 8.1579ms 200 application/json; charset=utf-8
+2018-07-31 15:45:23.370 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/3 application/json 
+2018-07-31 15:45:23.375 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["3"]) - ModelState is "Valid"
+2018-07-31 15:45:23.378 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:23.378 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.7997000000000005ms
+2018-07-31 15:45:23.378 +03:00 [INF] Request finished in 8.3287ms 200 application/json; charset=utf-8
+2018-07-31 15:45:27.351 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:45:27.354 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:45:27.357 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:27.358 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.8071ms
+2018-07-31 15:45:27.358 +03:00 [INF] Request finished in 7.207ms 200 application/json; charset=utf-8
+2018-07-31 15:45:28.429 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:45:28.432 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:45:28.435 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:28.436 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.2466ms
+2018-07-31 15:45:28.436 +03:00 [INF] Request finished in 6.7359ms 200 application/json; charset=utf-8
+2018-07-31 15:45:38.589 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:54708/api/users/3 application/json 18
+2018-07-31 15:45:38.620 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Put (WEB) with arguments (["3","DAL.Models.Users"]) - ModelState is "Valid"
+2018-07-31 15:45:38.634 +03:00 [INF] Params {"Id":0,"Name":"asdf","$type":"Users"}
+2018-07-31 15:45:38.832 +03:00 [INF] Updated
+2018-07-31 15:45:38.835 +03:00 [INF] Cache cleared
+2018-07-31 15:45:38.835 +03:00 [INF] Executed action WEB.Controllers.UsersController.Put (WEB) in 241.1116ms
+2018-07-31 15:45:38.837 +03:00 [INF] Request finished in 247.5585ms 200 
+2018-07-31 15:45:42.221 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/3 application/json 
+2018-07-31 15:45:42.226 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["3"]) - ModelState is "Valid"
+2018-07-31 15:45:42.235 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:42.235 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 13.7239ms
+2018-07-31 15:45:42.235 +03:00 [INF] Request finished in 14.1013ms 200 application/json; charset=utf-8
+2018-07-31 15:45:45.444 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:45:45.448 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:45:45.451 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:45.451 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.3694000000000006ms
+2018-07-31 15:45:45.451 +03:00 [INF] Request finished in 6.7422ms 200 application/json; charset=utf-8
+2018-07-31 15:45:49.963 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:45:49.966 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:45:49.969 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:49.970 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.7723ms
+2018-07-31 15:45:49.970 +03:00 [INF] Request finished in 7.1511ms 200 application/json; charset=utf-8
+2018-07-31 15:45:50.875 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 15:45:50.879 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 15:45:50.882 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 15:45:50.882 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.189ms
+2018-07-31 15:45:50.882 +03:00 [INF] Request finished in 6.8144ms 200 application/json; charset=utf-8
+2018-07-31 16:07:33.500 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-31 16:07:33.806 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-07-31 16:07:34.946 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 16:07:35.349 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 16:07:35.398 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 1477.8067ms
+2018-07-31 16:07:35.400 +03:00 [INF] Request finished in 1599.4559ms 200 application/json; charset=utf-8
+2018-07-31 16:09:25.196 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1  
+2018-07-31 16:09:25.264 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 16:09:25.278 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 16:09:25.284 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 65.9586ms
+2018-07-31 16:09:25.285 +03:00 [INF] Request finished in 88.9936ms 200 application/json; charset=utf-8
