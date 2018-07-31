@@ -1,25 +1,51 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using DAL.Repositories;
-using Serilog;
 
 namespace DAL
 {
-    public class RepoWorker
+    public class RepoWorker : IDisposable
     {
         private readonly ApplicationContext _db;
-        private UsersRepository _usersRepository;
-
+        private bool _disposed;
+        
         public RepoWorker()
         {
             _db = new ApplicationContext();
         }
+        
+        private CompaniesRepository _companiesRepository;
+        
+        private UsersRepository _usersRepository;
+
+        public CompaniesRepository CompaniesRepository => _companiesRepository ?? (_companiesRepository = new CompaniesRepository(_db));
 
         public UsersRepository UsersRepository => _usersRepository ?? (_usersRepository = new UsersRepository(_db));
 
+        
 
         public async Task SaveChangesAsync()
         {
             await _db.SaveChangesAsync();
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+                if (disposing)
+                    _db.Dispose();
+            _disposed = true;
+        }
+
+        ~RepoWorker()
+        {
+            Dispose(false);
         }
     }
 }

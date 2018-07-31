@@ -293,3 +293,69 @@
 2018-07-31 16:09:25.278 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
 2018-07-31 16:09:25.284 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 65.9586ms
 2018-07-31 16:09:25.285 +03:00 [INF] Request finished in 88.9936ms 200 application/json; charset=utf-8
+2018-07-31 16:21:08.522 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-31 16:21:08.874 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-07-31 16:21:09.000 +03:00 [INF] Request finished in 130.848ms 404 
+2018-07-31 16:21:12.303 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users  
+2018-07-31 16:21:13.395 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 16:21:13.819 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 16:21:13.873 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 1527.6876ms
+2018-07-31 16:21:13.875 +03:00 [INF] Request finished in 1572.518ms 200 application/json; charset=utf-8
+2018-07-31 17:51:01.233 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-31 17:51:01.678 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-07-31 17:51:01.752 +03:00 [INF] Request finished in 79.8676ms 404 
+2018-07-31 17:51:53.600 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users  
+2018-07-31 17:51:54.740 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 17:51:55.167 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 17:51:55.218 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 1569.7251ms
+2018-07-31 17:51:55.220 +03:00 [INF] Request finished in 1620.7902ms 200 application/json; charset=utf-8
+2018-07-31 17:51:59.575 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies  
+2018-07-31 17:51:59.582 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1.3464ms
+2018-07-31 17:51:59.585 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Unable to resolve service for type 'BLL.Interfaces.ICompaniesService' while attempting to activate 'WEB.Controllers.CompaniesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-07-31 17:51:59.687 +03:00 [INF] Request finished in 112.3523ms 500 text/html; charset=utf-8
+2018-07-31 17:52:34.049 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-31 17:52:34.368 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies  
+2018-07-31 17:52:35.510 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (null) - ModelState is "Valid"
+2018-07-31 17:52:35.974 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 17:52:36.024 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1552.1521ms
+2018-07-31 17:52:36.027 +03:00 [INF] Request finished in 1664.5409ms 200 application/json; charset=utf-8
+2018-07-31 17:52:36.202 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/favicon.ico  
+2018-07-31 17:52:36.204 +03:00 [INF] Request finished in 1.7033ms 404 
+2018-07-31 17:52:43.701 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies/2  
+2018-07-31 17:52:43.773 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["2"]) - ModelState is "Valid"
+2018-07-31 17:52:44.028 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 17:52:44.028 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 297.9211ms
+2018-07-31 17:52:44.029 +03:00 [INF] Request finished in 327.847ms 200 application/json; charset=utf-8
+2018-07-31 17:52:54.631 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies/2  
+2018-07-31 17:52:54.638 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["2"]) - ModelState is "Valid"
+2018-07-31 17:52:54.651 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 17:52:54.651 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 19.3835ms
+2018-07-31 17:52:54.651 +03:00 [INF] Request finished in 20.3685ms 200 application/json; charset=utf-8

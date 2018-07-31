@@ -6,6 +6,7 @@ namespace DAL
     public class ApplicationContext : DbContext
     {
         public DbSet<Users> Users { get; set; }
+        public DbSet<Companies> Companies { get; set; }
 
         public ApplicationContext()
         {

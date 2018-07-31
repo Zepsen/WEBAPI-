@@ -7,40 +7,40 @@ using Microsoft.AspNetCore.Mvc;
 namespace WEB.Controllers
 {
     [Route("api/[controller]")]
-    public class UsersController : Controller
+    public class CompaniesController : Controller
     {
-        private readonly IUsersService _service;
+        private readonly ICompaniesService _service;
 
-        public UsersController(
-            IUsersService service)
+        public CompaniesController(
+            ICompaniesService service)
         {
             _service = service;
         }
 
         // GET api/[controller]
         [HttpGet]
-        public async Task<IEnumerable<Users>> Get()
+        public async Task<IEnumerable<Companies>> Get()
         {
             return await _service.GetAsync();
         }
 
         // GET api/[controller]/{id}
         [HttpGet("{id}")]
-        public async Task<Users> Get([FromRoute]int id)
+        public async Task<Companies> Get([FromRoute]int id)
         {
             return await _service.GetByIdAsync(id);
         }
 
         // POST api/[controller]
         [HttpPost]
-        public async Task Post([FromBody]Users user)
+        public async Task Post([FromBody]Companies user)
         {
             await _service.InsertAsync(user);
         }
 
         // PUT api/[controller]/{id}
         [HttpPut("{id}")]
-        public async Task Put(int id, [FromBody]Users user)
+        public async Task Put(int id, [FromBody]Companies user)
         {
             await _service.UpdateAsync(id, user);
         }

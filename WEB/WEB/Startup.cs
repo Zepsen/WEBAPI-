@@ -1,10 +1,10 @@
 ﻿using BLL;
 using BLL.Interfaces;
+using BLL.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Serilog;
 
 namespace WEB
 {
@@ -21,6 +21,7 @@ namespace WEB
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IUsersService, UsersService>();
+            services.AddScoped<ICompaniesService, CompaniesService>();
 
             services.AddMvc();
         }
