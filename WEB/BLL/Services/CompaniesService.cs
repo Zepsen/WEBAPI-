@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using BLL.DTOs;
+using BLL.Infrastructure;
 using BLL.Infrastructure.Extensions;
 using BLL.Infrastructure.Extensions.EntitiesExts;
 using BLL.Infrastructure.Filters;
@@ -19,13 +21,14 @@ namespace BLL.Services
             _mapper = mapper;
         }
         
-        public async Task<List<CompaniesDto>> GetAsync(FilterBase filter)
+
+        public async Task<Result<CompaniesDto>> GetAsync(FilterBase filter)
         {
             return await Repo.CompaniesRepository.GetQueryable()
                 .Searching(filter.Query)
                 .SkipAndTake(filter)
                 .MapTo<Companies, CompaniesDto>(filter.Fields, _mapper.ConfigurationProvider)
-                .ToListAsync();
+                .ToResultAsync();
         }
 
         public async Task<CompaniesDto> GetByIdAsync(int id)

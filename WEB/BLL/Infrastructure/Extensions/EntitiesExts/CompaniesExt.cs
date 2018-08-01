@@ -9,5 +9,7 @@ namespace BLL.Infrastructure.Extensions.EntitiesExts
         {
             return search.IsNullOrEmpty() ? query : query.Where(i => i.Name.Contains(search));
         }
+
+        
     }
 }

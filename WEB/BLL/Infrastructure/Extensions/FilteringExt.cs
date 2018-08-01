@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using BLL.Infrastructure.Filters;
 using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BLL.Infrastructure.Extensions
 {
@@ -19,6 +21,16 @@ namespace BLL.Infrastructure.Extensions
 
             return query;
         }
+
+        public static async Task<Result<T>> ToResultAsync<T>(this IQueryable<T> query)
+        {
+            return new Result<T>
+            {
+                Total = await query.CountAsync(),
+                Data = await query.ToListAsync()
+            };
+        }
+        
 
         public static IQueryable<TModel> Specific<T, TModel>(this IQueryable<T> query, string fields)
         {

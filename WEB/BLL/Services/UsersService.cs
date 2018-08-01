@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using BLL.DTOs;
+using BLL.Infrastructure;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
 using DAL.Models;
@@ -17,10 +18,13 @@ namespace BLL.Services
             _mapper = mapper;
         }
         
-        public async Task<List<UsersDto>> GetAsync(FilterBase filter)
+        public async Task<Result<UsersDto>> GetAsync(FilterBase filter)
         {
             var entity = (await Repo.UsersRepository.GetFromCache()).ToList();
-            return _mapper.Map<List<UsersDto>>(entity);
+            return new Result<UsersDto>()
+            {
+                Data = _mapper.Map<List<UsersDto>>(entity)
+            };
         }
 
         public async Task<UsersDto> GetByIdAsync(int id)
