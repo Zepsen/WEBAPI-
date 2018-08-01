@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using AutoMapper;
 using BLL.DTOs;
 using BLL.Infrastructure;
@@ -9,7 +7,6 @@ using BLL.Infrastructure.Extensions.EntitiesExts;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
 using DAL.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace BLL.Services
 {
@@ -28,7 +25,7 @@ namespace BLL.Services
                 .Searching(filter.Query)
                 .SkipAndTake(filter)
                 .MapTo<Companies, CompaniesDto>(filter.Fields, _mapper.ConfigurationProvider)
-                .ToResultAsync();
+                .ToResultAsync(filter);
         }
 
         public async Task<CompaniesDto> GetByIdAsync(int id)
