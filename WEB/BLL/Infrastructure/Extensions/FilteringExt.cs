@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using BLL.Infrastructure.Filters;
-using Microsoft.EntityFrameworkCore;
+using Z.EntityFramework.Plus;
 
 namespace BLL.Infrastructure.Extensions
 {
@@ -25,9 +25,9 @@ namespace BLL.Infrastructure.Extensions
         {
             return new Result<T>
             {
-                Total = (filter.Skip.HasValue || filter.Take.HasValue) ? await query.CountAsync() : -1,
+                Total = (filter.Skip.HasValue || filter.Take.HasValue) ? query.DeferredCount().FutureValue() : -1,
                 Pagination = filter.Skip.HasValue || filter.Take.HasValue,
-                Data = await query.ToListAsync()
+                Data = await query.Future().ToListAsync()
             };
         }
         

@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using BLL.DTOs;
-using BLL.Infrastructure;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -22,9 +20,9 @@ namespace WEB.Controllers
 
         // GET api/[controller]
         [HttpGet]
-        public async Task<Result<CompaniesDto>> Get(FilterBase filterBase)
+        public async Task<IActionResult> Get(FilterBase filterBase)
         {
-            return await _service.GetAsync(filterBase);
+            return Ok(await _service.GetAsync(filterBase));
         }
 
         // GET api/[controller]/{id}

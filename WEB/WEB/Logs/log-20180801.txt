@@ -1280,3 +1280,240 @@ System.InvalidOperationException: Mapper not initialized. Call Initialize with a
 2018-08-01 18:13:00.491 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
 2018-08-01 18:13:00.491 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 7.8169ms
 2018-08-01 18:13:00.491 +03:00 [INF] Request finished in 8.435ms 200 application/json; charset=utf-8
+2018-08-01 18:14:12.604 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:14:13.133 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=10 application/json 
+2018-08-01 18:14:14.359 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:14:15.030 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:14:15.075 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1823.039ms
+2018-08-01 18:14:15.077 +03:00 [INF] Request finished in 1949.4993ms 200 application/json; charset=utf-8
+2018-08-01 18:14:30.642 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=test123 application/json 
+2018-08-01 18:14:30.655 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:14:30.735 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:14:30.736 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 92.7681ms
+2018-08-01 18:14:30.736 +03:00 [INF] Request finished in 93.7272ms 200 application/json; charset=utf-8
+2018-08-01 18:14:39.277 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=tes application/json 
+2018-08-01 18:14:39.281 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:14:39.308 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:14:39.311 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 34.2612ms
+2018-08-01 18:14:39.312 +03:00 [INF] Request finished in 35.1041ms 200 application/json; charset=utf-8
+2018-08-01 18:15:10.037 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=tes application/json 
+2018-08-01 18:15:10.051 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:15:10.054 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:15:10.054 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 16.7379ms
+2018-08-01 18:15:10.054 +03:00 [INF] Request finished in 17.2971ms 200 application/json; charset=utf-8
+2018-08-01 18:15:15.023 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=tessadf application/json 
+2018-08-01 18:15:15.026 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:15:15.028 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:15:15.028 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.9637ms
+2018-08-01 18:15:15.028 +03:00 [INF] Request finished in 5.3424ms 200 application/json; charset=utf-8
+2018-08-01 18:18:16.800 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:18:17.331 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=tessadf application/json 
+2018-08-01 18:18:18.580 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:18:19.210 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:18:19.256 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1800.2951ms
+2018-08-01 18:18:19.258 +03:00 [INF] Request finished in 1931.5933ms 200 application/json; charset=utf-8
+2018-08-01 18:18:25.363 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=tessadf application/json 
+2018-08-01 18:18:25.378 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:18:25.391 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:18:25.392 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 28.2036ms
+2018-08-01 18:18:25.393 +03:00 [INF] Request finished in 30.1026ms 200 application/json; charset=utf-8
+2018-08-01 18:18:43.645 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:18:44.174 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=tessadf application/json 
+2018-08-01 18:18:45.391 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:18:46.016 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:18:46.062 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1768.3993ms
+2018-08-01 18:18:46.064 +03:00 [INF] Request finished in 1895.1285ms 200 application/json; charset=utf-8
+2018-08-01 18:18:55.007 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=te application/json 
+2018-08-01 18:18:55.016 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:18:55.061 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:18:55.065 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 56.378800000000005ms
+2018-08-01 18:18:55.065 +03:00 [INF] Request finished in 57.5054ms 200 application/json; charset=utf-8
+2018-08-01 18:19:07.096 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 18:19:07.113 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:19:07.119 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:19:07.120 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 23.614900000000002ms
+2018-08-01 18:19:07.120 +03:00 [INF] Request finished in 24.2251ms 200 application/json; charset=utf-8
+2018-08-01 18:20:13.408 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:20:13.935 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=asdf application/json 
+2018-08-01 18:20:15.939 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:20:16.582 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:20:16.630 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 2575.2583ms
+2018-08-01 18:20:16.632 +03:00 [INF] Request finished in 2702.0655ms 200 application/json; charset=utf-8
+2018-08-01 18:20:18.273 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=asdf132 application/json 
+2018-08-01 18:20:18.295 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:20:18.310 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:20:18.311 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 37.9523ms
+2018-08-01 18:20:18.311 +03:00 [INF] Request finished in 38.8727ms 200 application/json; charset=utf-8
+2018-08-01 18:22:25.717 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:22:26.433 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=asdf132 application/json 
+2018-08-01 18:22:26.433 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-08-01 18:22:26.433 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:54708/  0
+2018-08-01 18:22:26.447 +03:00 [INF] Request finished in 23.1865ms 200 
+2018-08-01 18:22:26.541 +03:00 [INF] Request finished in 117.0774ms 404 
+2018-08-01 18:22:28.264 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:22:29.022 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:22:29.085 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 2420.8443ms
+2018-08-01 18:22:29.086 +03:00 [INF] Request finished in 2662.8174ms 200 application/json; charset=utf-8
+2018-08-01 18:27:19.471 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:27:19.968 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=asdf132 application/json 
+2018-08-01 18:27:21.201 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:27:21.831 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2018-08-01 18:27:21.835 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1748.1646ms
+2018-08-01 18:27:21.840 +03:00 [INF] Request finished in 1877.2013ms 204 
+2018-08-01 18:27:26.096 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=as application/json 
+2018-08-01 18:27:26.108 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:27:26.150 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:27:26.203 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 106.004ms
+2018-08-01 18:27:26.204 +03:00 [INF] Request finished in 107.8014ms 200 application/json; charset=utf-8
+2018-08-01 18:27:29.628 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=asfdasdf application/json 
+2018-08-01 18:27:29.633 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:27:29.634 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2018-08-01 18:27:29.635 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 6.3396ms
+2018-08-01 18:27:29.635 +03:00 [INF] Request finished in 6.8876ms 204 
+2018-08-01 18:29:45.478 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:29:45.975 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=asfdasdf application/json 
+2018-08-01 18:29:47.204 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:29:47.828 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:29:47.875 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1779.9547ms
+2018-08-01 18:29:47.877 +03:00 [INF] Request finished in 1907.3407ms 200 application/json; charset=utf-8
+2018-08-01 18:32:31.101 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:32:31.604 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3 application/json 
+2018-08-01 18:32:32.830 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:32:33.445 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:32:33.490 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1767.3922ms
+2018-08-01 18:32:33.492 +03:00 [INF] Request finished in 1893.5089ms 200 application/json; charset=utf-8
+2018-08-01 18:32:39.058 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=5 application/json 
+2018-08-01 18:32:39.070 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:32:39.080 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:32:39.081 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 22.0404ms
+2018-08-01 18:32:39.081 +03:00 [INF] Request finished in 23.0435ms 200 application/json; charset=utf-8
+2018-08-01 18:32:41.660 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=5 application/json 
+2018-08-01 18:32:41.664 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:32:41.666 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:32:41.666 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.5374ms
+2018-08-01 18:32:41.666 +03:00 [INF] Request finished in 6.1215ms 200 application/json; charset=utf-8
+2018-08-01 18:32:42.485 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=5 application/json 
+2018-08-01 18:32:42.489 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:32:42.490 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:32:42.490 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.9548000000000005ms
+2018-08-01 18:32:42.490 +03:00 [INF] Request finished in 5.3127ms 200 application/json; charset=utf-8
+2018-08-01 18:32:50.745 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 18:32:50.749 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:32:50.755 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:32:50.755 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 10.350900000000001ms
+2018-08-01 18:32:50.756 +03:00 [INF] Request finished in 10.9415ms 200 application/json; charset=utf-8
+2018-08-01 18:32:52.841 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 18:32:52.845 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:32:52.846 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:32:52.846 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.6445ms
+2018-08-01 18:32:52.846 +03:00 [INF] Request finished in 5.0975ms 200 application/json; charset=utf-8
+2018-08-01 18:32:53.530 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 18:32:53.534 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:32:53.535 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:32:53.535 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.0647ms
+2018-08-01 18:32:53.536 +03:00 [INF] Request finished in 5.4577ms 200 application/json; charset=utf-8
+2018-08-01 18:37:28.914 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:37:29.337 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3 application/json 
+2018-08-01 18:37:30.665 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:37:31.345 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:37:31.396 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1927.3281000000002ms
+2018-08-01 18:37:31.398 +03:00 [INF] Request finished in 2067.267ms 200 application/json; charset=utf-8
+2018-08-01 18:37:33.371 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=2 application/json 
+2018-08-01 18:37:33.378 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:37:33.393 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:37:33.394 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 21.901300000000003ms
+2018-08-01 18:37:33.394 +03:00 [INF] Request finished in 23.1852ms 200 application/json; charset=utf-8
+2018-08-01 18:37:35.507 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=1 application/json 
+2018-08-01 18:37:35.510 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:37:35.511 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:37:35.512 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.8879ms
+2018-08-01 18:37:35.512 +03:00 [INF] Request finished in 5.2891ms 200 application/json; charset=utf-8
+2018-08-01 18:37:37.440 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=2 application/json 
+2018-08-01 18:37:37.444 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:37:37.445 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:37:37.446 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.109ms
+2018-08-01 18:37:37.446 +03:00 [INF] Request finished in 5.505ms 200 application/json; charset=utf-8
+2018-08-01 18:37:38.461 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3 application/json 
+2018-08-01 18:37:38.464 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:37:38.465 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:37:38.465 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.4701ms
+2018-08-01 18:37:38.465 +03:00 [INF] Request finished in 4.8631ms 200 application/json; charset=utf-8
+2018-08-01 18:37:42.060 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=0&take=3 application/json 
+2018-08-01 18:37:42.065 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:37:42.066 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:37:42.066 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 6.2224ms
+2018-08-01 18:37:42.067 +03:00 [INF] Request finished in 6.8164ms 200 application/json; charset=utf-8
+2018-08-01 18:40:10.628 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 18:40:10.643 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:40:10.653 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:40:10.653 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 25.2289ms
+2018-08-01 18:40:10.653 +03:00 [INF] Request finished in 25.6467ms 200 application/json; charset=utf-8
+2018-08-01 18:40:22.453 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name application/json 
+2018-08-01 18:40:22.457 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:40:22.464 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:40:22.464 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 10.7531ms
+2018-08-01 18:40:22.465 +03:00 [INF] Request finished in 11.3103ms 200 application/json; charset=utf-8
+2018-08-01 18:40:27.450 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name,Id application/json 
+2018-08-01 18:40:27.455 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:40:27.463 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:40:27.463 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 12.7978ms
+2018-08-01 18:40:27.463 +03:00 [INF] Request finished in 13.2696ms 200 application/json; charset=utf-8
+2018-08-01 18:40:38.837 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name,Id&query=a application/json 
+2018-08-01 18:40:38.841 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:40:38.904 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:40:38.904 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 66.9297ms
+2018-08-01 18:40:38.904 +03:00 [INF] Request finished in 67.4014ms 200 application/json; charset=utf-8
+2018-08-01 18:40:47.624 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name,Id&query=a&skip=1 application/json 
+2018-08-01 18:40:47.628 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:40:47.641 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:40:47.641 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 16.329700000000003ms
+2018-08-01 18:40:47.641 +03:00 [INF] Request finished in 16.7032ms 200 application/json; charset=utf-8
+2018-08-01 18:40:50.740 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name,Id&query=a&skip=2 application/json 
+2018-08-01 18:40:50.744 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:40:50.751 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:40:50.752 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 10.9366ms
+2018-08-01 18:40:50.752 +03:00 [INF] Request finished in 11.3521ms 200 application/json; charset=utf-8
+2018-08-01 18:40:53.522 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name,Id&query=a&skip=1 application/json 
+2018-08-01 18:40:53.526 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:40:53.528 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:40:53.528 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.1378ms
+2018-08-01 18:40:53.528 +03:00 [INF] Request finished in 5.5232ms 200 application/json; charset=utf-8
+2018-08-01 18:49:25.121 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:49:25.531 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54708/api/companies application/json 20
+2018-08-01 18:49:26.957 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-01 18:49:27.144 +03:00 [INF] Inserted
+2018-08-01 18:49:27.486 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 1835.1195ms
+2018-08-01 18:49:27.492 +03:00 [INF] Request finished in 1966.5435ms 200 
+2018-08-01 18:49:29.873 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54708/api/companies application/json 20
+2018-08-01 18:49:29.929 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-01 18:49:29.931 +03:00 [INF] Inserted
+2018-08-01 18:49:29.986 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 111.80170000000001ms
+2018-08-01 18:49:29.986 +03:00 [INF] Request finished in 113.0893ms 200 
+2018-08-01 18:49:30.763 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54708/api/companies application/json 20
+2018-08-01 18:49:30.767 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-01 18:49:30.767 +03:00 [INF] Inserted
+2018-08-01 18:49:30.768 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 4.8968ms
+2018-08-01 18:49:30.768 +03:00 [INF] Request finished in 5.4418ms 200 
+2018-08-01 18:49:31.465 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54708/api/companies application/json 20
+2018-08-01 18:49:31.470 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-01 18:49:31.470 +03:00 [INF] Inserted
+2018-08-01 18:49:31.473 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 7.6328000000000005ms
+2018-08-01 18:49:31.474 +03:00 [INF] Request finished in 8.3456ms 200 
+2018-08-01 18:54:54.814 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 18:54:55.211 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name,Id&query=a&skip=1 application/json 
+2018-08-01 18:54:56.577 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:54:57.290 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:54:57.345 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1995.0210000000002ms
+2018-08-01 18:54:57.347 +03:00 [INF] Request finished in 2141.5485ms 200 application/json; charset=utf-8
+2018-08-01 18:54:59.944 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 18:54:59.967 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:55:00.035 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:55:00.035 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 90.868400000000008ms
+2018-08-01 18:55:00.036 +03:00 [INF] Request finished in 92.151ms 200 application/json; charset=utf-8
+2018-08-01 18:55:09.144 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies,K;H7=1 application/json 
+2018-08-01 18:55:09.146 +03:00 [INF] Request finished in 1.3272ms 404 
+2018-08-01 18:55:15.700 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=5 application/json 
+2018-08-01 18:55:15.706 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 18:55:15.722 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 18:55:15.722 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 20.7694ms
+2018-08-01 18:55:15.722 +03:00 [INF] Request finished in 21.6252ms 200 application/json; charset=utf-8

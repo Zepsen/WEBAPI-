@@ -5,6 +5,7 @@ using BLL.Infrastructure;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace WEB.Controllers
 {
@@ -21,9 +22,9 @@ namespace WEB.Controllers
 
         // GET api/[controller]
         [HttpGet]
-        public async Task<Result<UsersDto>> Get(FilterBase filter)
+        public async Task<IActionResult> Get(FilterBase filter)
         {
-            return await _service.GetAsync(filter);
+            return Ok(await _service.GetAsync(filter));
         }
 
         // GET api/[controller]/{id}
