@@ -1,8 +1,8 @@
-﻿using DAL.Models;
+﻿using BLL.DTOs;
 
 namespace BLL.Interfaces
 {
-    public interface IUsersService : ICrudService<Users>
+    public interface IUsersService : ICrudService<UsersDto>
     {
 
     }

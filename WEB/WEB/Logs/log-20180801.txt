@@ -1,0 +1,1152 @@
+2018-08-01 13:09:57.310 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 13:09:58.146 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:54708/  0
+2018-08-01 13:09:58.146 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-08-01 13:09:58.190 +03:00 [INF] Request finished in 51.7477ms 200 
+2018-08-01 13:09:58.470 +03:00 [INF] Request finished in 331.5487ms 404 
+2018-08-01 13:10:40.692 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3 application/json 
+2018-08-01 13:10:42.517 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["","3"]) - ModelState is "Valid"
+2018-08-01 13:10:48.349 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:10:48.439 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 7619.9327ms
+2018-08-01 13:10:48.441 +03:00 [INF] Request finished in 7749.4654ms 200 application/json; charset=utf-8
+2018-08-01 13:11:10.698 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3 application/json 
+2018-08-01 13:11:10.756 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["","3"]) - ModelState is "Valid"
+2018-08-01 13:11:31.513 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:11:31.514 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 20815.333000000002ms
+2018-08-01 13:11:31.514 +03:00 [INF] Request finished in 20816.3447ms 200 application/json; charset=utf-8
+2018-08-01 13:11:35.910 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&skip=12 application/json 
+2018-08-01 13:11:35.973 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["","3"]) - ModelState is "Valid"
+2018-08-01 13:11:48.469 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:11:48.470 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 12559.895900000001ms
+2018-08-01 13:11:48.471 +03:00 [INF] Request finished in 12560.9914ms 200 application/json; charset=utf-8
+2018-08-01 13:14:45.552 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 13:14:45.866 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&skip=12 application/json 
+2018-08-01 13:14:47.098 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["WEB.Infrastructure.Filter"]) - ModelState is "Valid"
+2018-08-01 13:14:47.550 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:14:47.599 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1605.8512ms
+2018-08-01 13:14:47.601 +03:00 [INF] Request finished in 1740.29ms 200 application/json; charset=utf-8
+2018-08-01 13:15:01.503 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 13:15:02.135 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:54708/  0
+2018-08-01 13:15:02.135 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-08-01 13:15:02.164 +03:00 [INF] Request finished in 36.436ms 200 
+2018-08-01 13:15:02.269 +03:00 [INF] Request finished in 142.0481ms 404 
+2018-08-01 13:15:07.261 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&skip=12 application/json 
+2018-08-01 13:15:08.745 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["WEB.Infrastructure.Filter"]) - ModelState is "Valid"
+2018-08-01 13:15:17.324 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:15:17.399 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 10031.9122ms
+2018-08-01 13:15:17.400 +03:00 [INF] Request finished in 10139.1499ms 200 application/json; charset=utf-8
+2018-08-01 13:15:42.131 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&skip=12&fields=test,st1 application/json 
+2018-08-01 13:15:42.185 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["WEB.Infrastructure.Filter"]) - ModelState is "Valid"
+2018-08-01 13:31:24.079 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 13:31:24.563 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&skip=12&fields=test,st1 application/json 
+2018-08-01 13:31:25.790 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:31:26.295 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:31:26.335 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1647.5967ms
+2018-08-01 13:31:26.337 +03:00 [INF] Request finished in 1779.4015ms 200 application/json; charset=utf-8
+2018-08-01 13:31:38.762 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=test,st1 application/json 
+2018-08-01 13:31:38.775 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:31:38.784 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:31:38.785 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 22.015900000000002ms
+2018-08-01 13:31:38.786 +03:00 [INF] Request finished in 23.2683ms 200 application/json; charset=utf-8
+2018-08-01 13:31:48.179 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=0&take=1&fields=test,st1 application/json 
+2018-08-01 13:31:48.184 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:31:48.267 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:31:48.276 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 96.4794ms
+2018-08-01 13:31:48.276 +03:00 [INF] Request finished in 97.0754ms 200 application/json; charset=utf-8
+2018-08-01 13:31:54.667 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 13:31:54.671 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:31:54.679 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:31:54.679 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 11.4772ms
+2018-08-01 13:31:54.679 +03:00 [INF] Request finished in 11.8672ms 200 application/json; charset=utf-8
+2018-08-01 13:32:03.317 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=0&take=3&fields=test,st1 application/json 
+2018-08-01 13:32:03.324 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:32:03.325 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:32:03.325 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 7.0683000000000007ms
+2018-08-01 13:32:03.325 +03:00 [INF] Request finished in 7.8268ms 200 application/json; charset=utf-8
+2018-08-01 13:32:28.881 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 13:32:29.207 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=0&take=3&fields=test,st1 application/json 
+2018-08-01 13:32:30.441 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:32:31.012 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:32:31.062 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1731.0392000000002ms
+2018-08-01 13:32:31.064 +03:00 [INF] Request finished in 1861.9028ms 200 application/json; charset=utf-8
+2018-08-01 13:32:35.458 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=test,st1 application/json 
+2018-08-01 13:32:35.471 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:32:35.486 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:32:35.488 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 29.9589ms
+2018-08-01 13:32:35.489 +03:00 [INF] Request finished in 31.1677ms 200 application/json; charset=utf-8
+2018-08-01 13:47:15.149 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 13:47:15.459 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=name application/json 
+2018-08-01 13:47:16.704 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:47:16.734 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1149.4194ms
+2018-08-01 13:47:16.737 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.ArgumentNullException: Value cannot be null.
+Parameter name: property
+   at System.Linq.Expressions.Expression.Property(Expression expression, PropertyInfo property)
+   at BLL.Infrastructure.Extensions.FilteringExt.<>c__DisplayClass1_0`2.<Specific>b__1(String paramName) in C:\Projects\REST\WEB\BLL\Infrastructure\Extensions\FilteringExt.cs:line 27
+   at System.Linq.Utilities.<>c__DisplayClass2_0`3.<CombineSelectors>b__0(TSource x)
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at System.Dynamic.Utils.CollectionExtensions.ToReadOnly[T](IEnumerable`1 enumerable)
+   at System.Linq.Expressions.Expression.MemberInit(NewExpression newExpression, IEnumerable`1 bindings)
+   at BLL.Infrastructure.Extensions.FilteringExt.Specific[T,TModel](IQueryable`1 query, String fields) in C:\Projects\REST\WEB\BLL\Infrastructure\Extensions\FilteringExt.cs:line 31
+   at BLL.CompaniesService.<GetAsync2>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 13:47:16.864 +03:00 [INF] Request finished in 1410.9509ms 500 text/html; charset=utf-8
+2018-08-01 13:48:01.130 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Name application/json 
+2018-08-01 13:48:01.167 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:48:01.758 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:48:01.801 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 669.5037ms
+2018-08-01 13:48:01.801 +03:00 [INF] Request finished in 670.6095ms 200 application/json; charset=utf-8
+2018-08-01 13:48:12.818 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Name,Id application/json 
+2018-08-01 13:48:12.822 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:48:12.843 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:48:12.843 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 24.6853ms
+2018-08-01 13:48:12.844 +03:00 [INF] Request finished in 25.1524ms 200 application/json; charset=utf-8
+2018-08-01 13:48:17.191 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Name application/json 
+2018-08-01 13:48:17.196 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:48:17.205 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:48:17.206 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 14.282ms
+2018-08-01 13:48:17.206 +03:00 [INF] Request finished in 14.6856ms 200 application/json; charset=utf-8
+2018-08-01 13:59:32.953 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 13:59:33.255 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Name application/json 
+2018-08-01 13:59:34.502 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:59:35.084 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:59:35.134 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1751.9318ms
+2018-08-01 13:59:35.136 +03:00 [INF] Request finished in 1886.0204ms 200 application/json; charset=utf-8
+2018-08-01 13:59:46.872 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Name application/json 
+2018-08-01 13:59:46.898 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:59:46.916 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:59:46.917 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 43.737500000000004ms
+2018-08-01 13:59:46.918 +03:00 [INF] Request finished in 46.0212ms 200 application/json; charset=utf-8
+2018-08-01 13:59:48.246 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Name application/json 
+2018-08-01 13:59:48.260 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:59:48.262 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:59:48.262 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 16.4277ms
+2018-08-01 13:59:48.263 +03:00 [INF] Request finished in 16.927ms 200 application/json; charset=utf-8
+2018-08-01 13:59:49.555 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Name application/json 
+2018-08-01 13:59:49.569 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:59:49.572 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:59:49.572 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 15.756300000000001ms
+2018-08-01 13:59:49.572 +03:00 [INF] Request finished in 16.6267ms 200 application/json; charset=utf-8
+2018-08-01 13:59:50.617 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Name application/json 
+2018-08-01 13:59:50.620 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:59:50.622 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:59:50.622 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.7846ms
+2018-08-01 13:59:50.622 +03:00 [INF] Request finished in 5.214ms 200 application/json; charset=utf-8
+2018-08-01 13:59:51.481 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Name application/json 
+2018-08-01 13:59:51.485 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 13:59:51.485 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 13:59:51.486 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.429ms
+2018-08-01 13:59:51.486 +03:00 [INF] Request finished in 4.8458ms 200 application/json; charset=utf-8
+2018-08-01 14:15:45.732 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 14:15:46.304 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54708/api/users application/json 20
+2018-08-01 14:15:47.671 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["DAL.Models.Users"]) - ModelState is "Valid"
+2018-08-01 14:15:47.824 +03:00 [INF] Inserted
+2018-08-01 14:15:47.827 +03:00 [INF] Cache cleared
+2018-08-01 14:15:48.150 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 1728.1808ms
+2018-08-01 14:15:48.156 +03:00 [INF] Request finished in 1857.2923ms 200 
+2018-08-01 14:15:50.047 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Name application/json 
+2018-08-01 14:15:50.080 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:15:50.570 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:15:50.580 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 522.2011ms
+2018-08-01 14:15:50.581 +03:00 [INF] Request finished in 534.3561ms 200 application/json; charset=utf-8
+2018-08-01 14:16:01.566 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Id application/json 
+2018-08-01 14:16:01.570 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:16:01.585 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:16:01.585 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 18.9422ms
+2018-08-01 14:16:01.585 +03:00 [INF] Request finished in 19.4908ms 200 application/json; charset=utf-8
+2018-08-01 14:16:10.292 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Id application/json 
+2018-08-01 14:16:10.297 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:16:10.308 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:16:10.308 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 15.130600000000001ms
+2018-08-01 14:16:10.308 +03:00 [INF] Request finished in 15.7288ms 200 application/json; charset=utf-8
+2018-08-01 14:16:10.716 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Id application/json 
+2018-08-01 14:16:10.719 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:16:10.720 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:16:10.720 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.1413ms
+2018-08-01 14:16:10.720 +03:00 [INF] Request finished in 4.5373ms 200 application/json; charset=utf-8
+2018-08-01 14:16:11.415 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Id application/json 
+2018-08-01 14:16:11.419 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:16:11.420 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:16:11.420 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.3900000000000006ms
+2018-08-01 14:16:11.420 +03:00 [INF] Request finished in 4.7932ms 200 application/json; charset=utf-8
+2018-08-01 14:16:12.031 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=3&fields=Id application/json 
+2018-08-01 14:16:12.036 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:16:12.037 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:16:12.037 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.4676ms
+2018-08-01 14:16:12.037 +03:00 [INF] Request finished in 5.9357ms 200 application/json; charset=utf-8
+2018-08-01 14:47:09.586 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 14:47:10.033 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 14:47:11.278 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:47:11.781 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:47:11.826 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1673.6924000000001ms
+2018-08-01 14:47:11.828 +03:00 [INF] Request finished in 1800.3821ms 200 application/json; charset=utf-8
+2018-08-01 14:47:17.338 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 14:47:17.355 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:47:17.365 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:47:17.366 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 27.526200000000003ms
+2018-08-01 14:47:17.367 +03:00 [INF] Request finished in 28.7975ms 200 application/json; charset=utf-8
+2018-08-01 14:47:29.576 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name application/json 
+2018-08-01 14:47:29.582 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:47:29.583 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:47:29.583 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 7.3832ms
+2018-08-01 14:47:29.583 +03:00 [INF] Request finished in 7.8129ms 200 application/json; charset=utf-8
+2018-08-01 14:47:39.988 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1 application/json 
+2018-08-01 14:47:39.993 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:47:40.112 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:47:40.112 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 123.99780000000001ms
+2018-08-01 14:47:40.112 +03:00 [INF] Request finished in 124.3712ms 200 application/json; charset=utf-8
+2018-08-01 14:57:34.623 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 14:57:35.081 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1 application/json 
+2018-08-01 14:57:36.311 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:57:36.920 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:57:36.966 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1762.7198ms
+2018-08-01 14:57:36.968 +03:00 [INF] Request finished in 1892.2101ms 200 application/json; charset=utf-8
+2018-08-01 14:57:52.607 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54708/api/companies application/json 20
+2018-08-01 14:57:52.637 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-01 14:57:52.750 +03:00 [INF] Inserted
+2018-08-01 14:57:52.937 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 323.8861ms
+2018-08-01 14:57:52.939 +03:00 [INF] Request finished in 332.0304ms 200 
+2018-08-01 14:57:58.650 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 14:57:58.655 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:57:58.664 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:57:58.664 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 13.7507ms
+2018-08-01 14:57:58.665 +03:00 [INF] Request finished in 15.1259ms 200 application/json; charset=utf-8
+2018-08-01 14:58:11.361 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:54708/api/users/4 application/json 18
+2018-08-01 14:58:11.385 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Put (WEB) with arguments (["4","DAL.Models.Users"]) - ModelState is "Valid"
+2018-08-01 14:58:11.532 +03:00 [INF] Updated
+2018-08-01 14:58:11.535 +03:00 [INF] Cache cleared
+2018-08-01 14:58:11.535 +03:00 [INF] Executed action WEB.Controllers.UsersController.Put (WEB) in 168.113ms
+2018-08-01 14:58:11.535 +03:00 [INF] Request finished in 174.5613ms 200 
+2018-08-01 14:58:15.294 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 14:58:15.299 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:58:15.303 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:58:15.303 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 8.3337ms
+2018-08-01 14:58:15.303 +03:00 [INF] Request finished in 8.8376ms 200 application/json; charset=utf-8
+2018-08-01 14:58:19.609 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:54708/api/users/3 application/json 18
+2018-08-01 14:58:19.613 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Put (WEB) with arguments (["3","DAL.Models.Users"]) - ModelState is "Valid"
+2018-08-01 14:58:19.621 +03:00 [INF] Updated
+2018-08-01 14:58:19.621 +03:00 [INF] Cache cleared
+2018-08-01 14:58:19.621 +03:00 [INF] Executed action WEB.Controllers.UsersController.Put (WEB) in 12.1417ms
+2018-08-01 14:58:19.622 +03:00 [INF] Request finished in 13.0438ms 200 
+2018-08-01 14:58:22.264 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 14:58:22.268 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:58:22.269 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:58:22.269 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.4923ms
+2018-08-01 14:58:22.269 +03:00 [INF] Request finished in 5.4226ms 200 application/json; charset=utf-8
+2018-08-01 14:58:23.486 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 14:58:23.489 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 14:58:23.491 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 14:58:23.492 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.6861000000000006ms
+2018-08-01 14:58:23.492 +03:00 [INF] Request finished in 6.2267ms 200 application/json; charset=utf-8
+2018-08-01 14:58:34.679 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:54708/api/companies/3 application/json 18
+2018-08-01 14:58:34.688 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-01 14:58:34.699 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 14.455200000000001ms
+2018-08-01 14:58:34.703 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Invalid Cast. The update expression must be of type MemberInitExpression.
+   at Z.EntityFramework.Extensions.BatchUpdate.ResolveUpdateFromQueryDictValues[T](Expression`1 updateFactory)
+   at Z.EntityFramework.Extensions.BatchUpdate.GetInnerValues[T](IQueryable`1 query, Expression`1 updateFactory, IEntityType entity)
+   at Z.EntityFramework.Extensions.BatchUpdate.Execute[T](IQueryable`1 query, Expression`1 updateFactory)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DAL.Repositories.CompaniesRepository.<UpdateAsync>d__5.MoveNext() in C:\Projects\REST\WEB\DAL\Repositories\CompaniesRepository.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<UpdateAsync>d__4.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 40
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__5.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 49
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 14:58:34.827 +03:00 [INF] Request finished in 148.7437ms 500 text/html; charset=utf-8
+2018-08-01 14:59:11.139 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 14:59:11.603 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:54708/api/companies/3 application/json 18
+2018-08-01 14:59:12.866 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-01 14:59:12.931 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1218.6934ms
+2018-08-01 14:59:12.934 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Invalid Cast. The update expression must be of type MemberInitExpression.
+   at Z.EntityFramework.Extensions.BatchUpdate.ResolveUpdateFromQueryDictValues[T](Expression`1 updateFactory)
+   at Z.EntityFramework.Extensions.BatchUpdate.GetInnerValues[T](IQueryable`1 query, Expression`1 updateFactory, IEntityType entity)
+   at Z.EntityFramework.Extensions.BatchUpdate.Execute[T](IQueryable`1 query, Expression`1 updateFactory)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DAL.Repositories.CompaniesRepository.<UpdateAsync>d__5.MoveNext() in C:\Projects\REST\WEB\DAL\Repositories\CompaniesRepository.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<UpdateAsync>d__4.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 40
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__5.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 49
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 14:59:13.056 +03:00 [INF] Request finished in 1457.8335ms 500 text/html; charset=utf-8
+2018-08-01 15:00:40.463 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:00:40.970 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:54708/api/companies/3 application/json 18
+2018-08-01 15:00:42.264 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-01 15:00:42.329 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1238.7123000000001ms
+2018-08-01 15:00:42.332 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Invalid Cast. The update expression must be of type MemberInitExpression.
+   at Z.EntityFramework.Extensions.BatchUpdate.ResolveUpdateFromQueryDictValues[T](Expression`1 updateFactory)
+   at Z.EntityFramework.Extensions.BatchUpdate.GetInnerValues[T](IQueryable`1 query, Expression`1 updateFactory, IEntityType entity)
+   at Z.EntityFramework.Extensions.BatchUpdate.Execute[T](IQueryable`1 query, Expression`1 updateFactory)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DAL.Repositories.CompaniesRepository.<UpdateAsync>d__5.MoveNext() in C:\Projects\REST\WEB\DAL\Repositories\CompaniesRepository.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<UpdateAsync>d__4.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 41
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__5.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 49
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 15:00:42.456 +03:00 [INF] Request finished in 1490.6815ms 500 text/html; charset=utf-8
+2018-08-01 15:00:53.033 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:00:53.602 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:54708/  0
+2018-08-01 15:00:53.602 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-08-01 15:00:53.602 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:54708/api/companies/3 application/json 18
+2018-08-01 15:00:53.617 +03:00 [INF] Request finished in 21.8642ms 200 
+2018-08-01 15:00:53.707 +03:00 [INF] Request finished in 112.1702ms 404 
+2018-08-01 15:00:55.386 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-01 15:01:39.733 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:01:40.110 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:54708/api/companies/3 application/json 18
+2018-08-01 15:01:41.407 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-01 15:01:41.900 +03:00 [INF] Updated
+2018-08-01 15:01:41.906 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1687.3537000000001ms
+2018-08-01 15:01:41.911 +03:00 [INF] Request finished in 1805.8604ms 200 
+2018-08-01 15:01:43.688 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:01:43.717 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:01:44.005 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:01:44.013 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 314.8091ms
+2018-08-01 15:01:44.014 +03:00 [INF] Request finished in 326.2496ms 200 application/json; charset=utf-8
+2018-08-01 15:03:06.668 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:03:07.102 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name application/json 
+2018-08-01 15:03:08.333 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:03:08.816 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:03:08.859 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1630.0271ms
+2018-08-01 15:03:08.861 +03:00 [INF] Request finished in 1764.9575ms 200 application/json; charset=utf-8
+2018-08-01 15:03:13.050 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name application/json 
+2018-08-01 15:03:13.059 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:03:13.087 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:03:13.088 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 37.6878ms
+2018-08-01 15:03:13.089 +03:00 [INF] Request finished in 38.676ms 200 application/json; charset=utf-8
+2018-08-01 15:03:14.147 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name application/json 
+2018-08-01 15:03:14.150 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:03:14.151 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:03:14.152 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.4499ms
+2018-08-01 15:03:14.152 +03:00 [INF] Request finished in 4.8674ms 200 application/json; charset=utf-8
+2018-08-01 15:03:18.224 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:03:18.229 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:03:18.360 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:03:18.361 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 136.85760000000002ms
+2018-08-01 15:03:18.361 +03:00 [INF] Request finished in 137.2856ms 200 application/json; charset=utf-8
+2018-08-01 15:13:08.725 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:13:09.229 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-08-01 15:13:10.458 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:13:10.905 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:13:10.950 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 1602.3555000000001ms
+2018-08-01 15:13:10.951 +03:00 [INF] Request finished in 1727.808ms 200 application/json; charset=utf-8
+2018-08-01 15:13:15.036 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-08-01 15:13:15.049 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:13:15.053 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:13:15.054 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 17.3339ms
+2018-08-01 15:13:15.054 +03:00 [INF] Request finished in 18.3393ms 200 application/json; charset=utf-8
+2018-08-01 15:13:16.055 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-08-01 15:13:16.059 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:13:16.062 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:13:16.062 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.6164000000000005ms
+2018-08-01 15:13:16.062 +03:00 [INF] Request finished in 6.9971ms 200 application/json; charset=utf-8
+2018-08-01 15:13:16.932 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users application/json 
+2018-08-01 15:13:16.935 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:13:16.938 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:13:16.939 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.4049000000000005ms
+2018-08-01 15:13:16.939 +03:00 [INF] Request finished in 6.7925ms 200 application/json; charset=utf-8
+2018-08-01 15:13:25.107 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:13:25.117 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:13:25.270 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:13:25.273 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 159.94320000000002ms
+2018-08-01 15:13:25.273 +03:00 [INF] Request finished in 166.2534ms 200 application/json; charset=utf-8
+2018-08-01 15:13:38.494 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-08-01 15:13:38.496 +03:00 [INF] Request finished in 1.9864ms 404 
+2018-08-01 15:16:22.998 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:16:23.016 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:16:23.020 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:16:23.020 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 22.4098ms
+2018-08-01 15:16:23.020 +03:00 [INF] Request finished in 22.8055ms 200 application/json; charset=utf-8
+2018-08-01 15:16:25.224 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:16:25.228 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:16:25.229 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:16:25.229 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.3191000000000006ms
+2018-08-01 15:16:25.229 +03:00 [INF] Request finished in 4.8687ms 200 application/json; charset=utf-8
+2018-08-01 15:16:26.346 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:16:26.349 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:16:26.350 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:16:26.350 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 3.938ms
+2018-08-01 15:16:26.350 +03:00 [INF] Request finished in 4.3406ms 200 application/json; charset=utf-8
+2018-08-01 15:16:27.447 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:16:27.453 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:16:27.454 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:16:27.455 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 7.1306ms
+2018-08-01 15:16:27.455 +03:00 [INF] Request finished in 7.7788ms 200 application/json; charset=utf-8
+2018-08-01 15:23:20.691 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:23:21.206 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name application/json 
+2018-08-01 15:23:22.578 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:23:23.069 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:23:23.113 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1787.3889000000001ms
+2018-08-01 15:23:23.115 +03:00 [INF] Request finished in 1913.9423ms 200 application/json; charset=utf-8
+2018-08-01 15:23:25.703 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:23:25.732 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:23:25.735 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 31.110400000000002ms
+2018-08-01 15:23:25.738 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Mapper not initialized. Call Initialize with appropriate configuration. If you are trying to use mapper instances through a container or otherwise, make sure you do not have any calls to the static Mapper.Map methods, and if you're using ProjectTo or UseAsDataSource extension methods, make sure you pass in the appropriate IConfigurationProvider instance.
+   at AutoMapper.Mapper.get_Configuration() in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 23
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand) in C:\projects\automapper\src\AutoMapper\QueryableExtensions\Extensions.cs:line 90
+   at BLL.Infrastructure.Extensions.FilteringExt.MapTo[T,TModel](IQueryable`1 query, String fields) in C:\Projects\REST\WEB\BLL\Infrastructure\Extensions\FilteringExt.cs:line 43
+   at BLL.Services.CompaniesService.<GetAsync>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 15:23:25.859 +03:00 [INF] Request finished in 155.2552ms 500 text/html; charset=utf-8
+2018-08-01 15:25:34.654 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:25:35.119 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:25:36.371 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:25:36.392 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1155.2247ms
+2018-08-01 15:25:36.395 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Mapper not initialized. Call Initialize with appropriate configuration. If you are trying to use mapper instances through a container or otherwise, make sure you do not have any calls to the static Mapper.Map methods, and if you're using ProjectTo or UseAsDataSource extension methods, make sure you pass in the appropriate IConfigurationProvider instance.
+   at AutoMapper.Mapper.get_Configuration() in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 23
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand) in C:\projects\automapper\src\AutoMapper\QueryableExtensions\Extensions.cs:line 90
+   at BLL.Infrastructure.Extensions.FilteringExt.MapTo[T,TModel](IQueryable`1 query, String fields) in C:\Projects\REST\WEB\BLL\Infrastructure\Extensions\FilteringExt.cs:line 41
+   at BLL.Services.CompaniesService.<GetAsync>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 15:25:36.511 +03:00 [INF] Request finished in 1396.9863ms 500 text/html; charset=utf-8
+2018-08-01 15:33:09.723 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:33:10.106 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:33:11.509 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:33:11.529 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1304.2191ms
+2018-08-01 15:33:11.533 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Mapper not initialized. Call Initialize with appropriate configuration. If you are trying to use mapper instances through a container or otherwise, make sure you do not have any calls to the static Mapper.Map methods, and if you're using ProjectTo or UseAsDataSource extension methods, make sure you pass in the appropriate IConfigurationProvider instance.
+   at AutoMapper.Mapper.get_Configuration() in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 23
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand) in C:\projects\automapper\src\AutoMapper\QueryableExtensions\Extensions.cs:line 90
+   at BLL.Services.CompaniesService.<GetAsync>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 15:33:11.648 +03:00 [INF] Request finished in 1547.1208ms 500 text/html; charset=utf-8
+2018-08-01 15:33:47.846 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:33:48.372 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:33:49.593 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:33:49.613 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1122.1388ms
+2018-08-01 15:33:49.616 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Mapper not initialized. Call Initialize with appropriate configuration. If you are trying to use mapper instances through a container or otherwise, make sure you do not have any calls to the static Mapper.Map methods, and if you're using ProjectTo or UseAsDataSource extension methods, make sure you pass in the appropriate IConfigurationProvider instance.
+   at AutoMapper.Mapper.get_Configuration() in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 23
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand) in C:\projects\automapper\src\AutoMapper\QueryableExtensions\Extensions.cs:line 90
+   at BLL.Services.CompaniesService.<GetAsync>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 15:33:49.731 +03:00 [INF] Request finished in 1363.4636ms 500 text/html; charset=utf-8
+2018-08-01 15:35:11.594 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:35:12.105 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:35:13.331 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:35:13.351 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1127.5091ms
+2018-08-01 15:35:13.354 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Mapper not initialized. Call Initialize with appropriate configuration. If you are trying to use mapper instances through a container or otherwise, make sure you do not have any calls to the static Mapper.Map methods, and if you're using ProjectTo or UseAsDataSource extension methods, make sure you pass in the appropriate IConfigurationProvider instance.
+   at AutoMapper.Mapper.get_Configuration() in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 23
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand) in C:\projects\automapper\src\AutoMapper\QueryableExtensions\Extensions.cs:line 90
+   at BLL.Services.CompaniesService.<GetAsync>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 30
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 15:35:13.470 +03:00 [INF] Request finished in 1370.7562ms 500 text/html; charset=utf-8
+2018-08-01 15:35:43.593 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name application/json 
+2018-08-01 15:35:43.637 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:35:44.139 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:35:44.180 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 586.8345ms
+2018-08-01 15:35:44.181 +03:00 [INF] Request finished in 588.0704ms 200 application/json; charset=utf-8
+2018-08-01 15:35:50.862 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:35:50.866 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:35:50.867 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.5528ms
+2018-08-01 15:35:50.868 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Mapper not initialized. Call Initialize with appropriate configuration. If you are trying to use mapper instances through a container or otherwise, make sure you do not have any calls to the static Mapper.Map methods, and if you're using ProjectTo or UseAsDataSource extension methods, make sure you pass in the appropriate IConfigurationProvider instance.
+   at AutoMapper.Mapper.get_Configuration() in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 23
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand) in C:\projects\automapper\src\AutoMapper\QueryableExtensions\Extensions.cs:line 90
+   at BLL.Services.CompaniesService.<GetAsync>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 30
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 15:35:50.914 +03:00 [INF] Request finished in 52.0387ms 500 text/html; charset=utf-8
+2018-08-01 15:36:49.956 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/favicon.ico  
+2018-08-01 15:36:49.958 +03:00 [INF] Request finished in 1.6063ms 404 
+2018-08-01 15:39:10.339 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:39:10.681 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:39:11.925 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:39:12.429 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:39:12.474 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1663.8261ms
+2018-08-01 15:39:12.476 +03:00 [INF] Request finished in 1800.3242ms 200 application/json; charset=utf-8
+2018-08-01 15:47:57.199 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:47:57.701 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:47:58.929 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:47:58.950 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1129.9388000000001ms
+2018-08-01 15:47:58.953 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Mapper not initialized. Call Initialize with appropriate configuration. If you are trying to use mapper instances through a container or otherwise, make sure you do not have any calls to the static Mapper.Map methods, and if you're using ProjectTo or UseAsDataSource extension methods, make sure you pass in the appropriate IConfigurationProvider instance.
+   at AutoMapper.Mapper.get_Configuration() in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 23
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand) in C:\projects\automapper\src\AutoMapper\QueryableExtensions\Extensions.cs:line 90
+   at BLL.Services.CompaniesService.<GetAsync>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 15:47:59.069 +03:00 [INF] Request finished in 1372.4526ms 500 text/html; charset=utf-8
+2018-08-01 15:53:42.938 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:53:43.480 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:53:44.717 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:53:44.739 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1139.0006ms
+2018-08-01 15:53:44.742 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Mapper not initialized. Call Initialize with appropriate configuration. If you are trying to use mapper instances through a container or otherwise, make sure you do not have any calls to the static Mapper.Map methods, and if you're using ProjectTo or UseAsDataSource extension methods, make sure you pass in the appropriate IConfigurationProvider instance.
+   at AutoMapper.Mapper.get_Configuration() in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 23
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand) in C:\projects\automapper\src\AutoMapper\QueryableExtensions\Extensions.cs:line 90
+   at BLL.Services.CompaniesService.<GetAsync>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 15:53:44.861 +03:00 [INF] Request finished in 1385.8563ms 500 text/html; charset=utf-8
+2018-08-01 15:54:14.450 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 15:54:14.875 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name application/json 
+2018-08-01 15:54:16.111 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:54:16.596 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:54:16.641 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1647.3494ms
+2018-08-01 15:54:16.643 +03:00 [INF] Request finished in 1772.8397ms 200 application/json; charset=utf-8
+2018-08-01 15:54:21.999 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name,Id application/json 
+2018-08-01 15:54:22.012 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 15:54:22.046 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 15:54:22.046 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 46.6899ms
+2018-08-01 15:54:22.047 +03:00 [INF] Request finished in 47.7494ms 200 application/json; charset=utf-8
+2018-08-01 15:57:24.434 +03:00 [FTL] Application startup exception
+System.MissingMethodException: No parameterless constructor defined for this object.
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at AutoMapper.Configuration.MapperConfigurationExpression.AddProfile(Type profileType) in C:\projects\automapper\src\AutoMapper\Configuration\MapperConfigurationExpression.cs:line 44
+   at AutoMapper.Configuration.MapperConfigurationExpression.AddProfilesCore(IEnumerable`1 assembliesToScan) in C:\projects\automapper\src\AutoMapper\Configuration\MapperConfigurationExpression.cs:line 74
+   at WEB.Startup.<>c.<ConfigureServices>b__4_0(IMapperConfigurationExpression i) in C:\Projects\REST\WEB\WEB\Startup.cs:line 28
+   at AutoMapper.ServiceCollectionExtensions.<>c__DisplayClass10_0.<AddAutoMapperClasses>g__ConfigAction|4(IMapperConfigurationExpression cfg) in C:\projects\automapper-extensions-microsoft-dependencyinjectio\src\AutoMapper.Extensions.Microsoft.DependencyInjection\ServiceCollectionExtensions.cs:line 83
+   at AutoMapper.MapperConfiguration.Build(Action`1 configure) in C:\projects\automapper\src\AutoMapper\MapperConfiguration.cs:line 307
+   at AutoMapper.ServiceCollectionExtensions.AddAutoMapperClasses(IServiceCollection services, Action`1 additionalInitAction, IEnumerable`1 assembliesToScan) in C:\projects\automapper-extensions-microsoft-dependencyinjectio\src\AutoMapper.Extensions.Microsoft.DependencyInjection\ServiceCollectionExtensions.cs:line 89
+   at WEB.Startup.ConfigureServices(IServiceCollection services) in C:\Projects\REST\WEB\WEB\Startup.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.ConfigureServices(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2018-08-01 15:57:24.857 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 15:57:24.890 +03:00 [INF] Request finished in 35.4689ms 500 text/html; charset=utf-8
+2018-08-01 16:00:42.066 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 16:00:42.590 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 16:00:44.656 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 16:00:44.677 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1965.7096000000001ms
+2018-08-01 16:00:44.680 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Mapper not initialized. Call Initialize with appropriate configuration. If you are trying to use mapper instances through a container or otherwise, make sure you do not have any calls to the static Mapper.Map methods, and if you're using ProjectTo or UseAsDataSource extension methods, make sure you pass in the appropriate IConfigurationProvider instance.
+   at AutoMapper.Mapper.get_Configuration() in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 23
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand) in C:\projects\automapper\src\AutoMapper\QueryableExtensions\Extensions.cs:line 90
+   at BLL.Services.CompaniesService.<GetAsync>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 16:00:44.794 +03:00 [INF] Request finished in 2208.5365ms 500 text/html; charset=utf-8
+2018-08-01 16:01:15.573 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 16:01:16.096 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 16:01:17.350 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 16:01:17.371 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1150.7228ms
+2018-08-01 16:01:17.374 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: Mapper not initialized. Call Initialize with appropriate configuration. If you are trying to use mapper instances through a container or otherwise, make sure you do not have any calls to the static Mapper.Map methods, and if you're using ProjectTo or UseAsDataSource extension methods, make sure you pass in the appropriate IConfigurationProvider instance.
+   at AutoMapper.Mapper.get_Configuration() in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 23
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand) in C:\projects\automapper\src\AutoMapper\QueryableExtensions\Extensions.cs:line 90
+   at BLL.Services.CompaniesService.<GetAsync>d__2.MoveNext() in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WEB.Controllers.CompaniesController.<Get>d__2.MoveNext() in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-01 16:01:17.490 +03:00 [INF] Request finished in 1399.0336ms 500 text/html; charset=utf-8
+2018-08-01 16:02:20.269 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 16:02:20.782 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 16:02:22.023 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 16:02:22.532 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 16:02:22.578 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1677.4262ms
+2018-08-01 16:02:22.580 +03:00 [INF] Request finished in 1803.6333ms 200 application/json; charset=utf-8
+2018-08-01 16:04:38.217 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 16:04:38.720 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 16:04:40.001 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 16:04:40.520 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 16:04:40.566 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1726.5916ms
+2018-08-01 16:04:40.568 +03:00 [INF] Request finished in 1853.6999ms 200 application/json; charset=utf-8
+2018-08-01 16:04:47.375 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?fields=Name application/json 
+2018-08-01 16:04:47.392 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 16:04:47.411 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 16:04:47.412 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 36.2394ms
+2018-08-01 16:04:47.412 +03:00 [INF] Request finished in 37.5928ms 200 application/json; charset=utf-8
+2018-08-01 16:04:52.448 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 16:04:52.454 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 16:04:52.459 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 16:04:52.459 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 10.679ms
+2018-08-01 16:04:52.459 +03:00 [INF] Request finished in 11.263ms 200 application/json; charset=utf-8
+2018-08-01 16:07:03.874 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 16:07:04.182 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 16:07:05.406 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 16:07:05.920 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 16:07:05.965 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1663.7619ms
+2018-08-01 16:07:05.967 +03:00 [INF] Request finished in 1789.725ms 200 application/json; charset=utf-8
+2018-08-01 16:07:22.630 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 16:07:23.110 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies application/json 
+2018-08-01 16:07:24.342 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 16:07:24.860 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 16:07:24.905 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1675.6417000000001ms
+2018-08-01 16:07:24.907 +03:00 [INF] Request finished in 1802.1007ms 200 application/json; charset=utf-8
+2018-08-01 16:17:18.249 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-01 16:17:18.742 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=test application/json 
+2018-08-01 16:17:19.970 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 16:17:20.607 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 16:17:20.652 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1790.3652000000002ms
+2018-08-01 16:17:20.654 +03:00 [INF] Request finished in 1917.9678ms 200 application/json; charset=utf-8
+2018-08-01 16:17:26.669 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?query=asdf application/json 
+2018-08-01 16:17:26.679 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-01 16:17:26.696 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-01 16:17:26.698 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 28.774700000000003ms
+2018-08-01 16:17:26.699 +03:00 [INF] Request finished in 30.1202ms 200 application/json; charset=utf-8

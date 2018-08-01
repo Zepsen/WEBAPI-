@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using BLL.DTOs;
+using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
-using DAL.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WEB.Controllers
@@ -19,28 +20,28 @@ namespace WEB.Controllers
 
         // GET api/[controller]
         [HttpGet]
-        public async Task<IEnumerable<Users>> Get()
+        public async Task<IEnumerable<UsersDto>> Get(FilterBase filter)
         {
-            return await _service.GetAsync();
+            return await _service.GetAsync(filter);
         }
 
         // GET api/[controller]/{id}
         [HttpGet("{id}")]
-        public async Task<Users> Get([FromRoute]int id)
+        public async Task<UsersDto> Get([FromRoute]int id)
         {
             return await _service.GetByIdAsync(id);
         }
 
         // POST api/[controller]
         [HttpPost]
-        public async Task Post([FromBody]Users user)
+        public async Task Post([FromBody]UsersDto user)
         {
             await _service.InsertAsync(user);
         }
 
         // PUT api/[controller]/{id}
         [HttpPut("{id}")]
-        public async Task Put(int id, [FromBody]Users user)
+        public async Task Put(int id, [FromBody]UsersDto user)
         {
             await _service.UpdateAsync(id, user);
         }

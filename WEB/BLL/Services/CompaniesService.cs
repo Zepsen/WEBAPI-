@@ -1,40 +1,48 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using AutoMapper;
+using BLL.DTOs;
+using BLL.Infrastructure.Extensions;
+using BLL.Infrastructure.Extensions.EntitiesExts;
+using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
-using BLL.Services;
 using DAL.Models;
 using Microsoft.EntityFrameworkCore;
-using Serilog;
 
-namespace BLL
+namespace BLL.Services
 {
     public class CompaniesService : AppService, ICompaniesService
-    {        
-        
-        public CompaniesService() : base()
+    {
+        private readonly IMapper _mapper;
+        public CompaniesService(IMapper mapper) : base()
         {
-            
+            _mapper = mapper;
         }
         
-        public async Task<List<Companies>> GetAsync()
+        public async Task<List<CompaniesDto>> GetAsync(FilterBase filter)
         {
-            return await Repo.CompaniesRepository.GetQueryable().ToListAsync();
+            return await Repo.CompaniesRepository.GetQueryable()
+                .Searching(filter.Query)
+                .SkipAndTake(filter)
+                .MapTo<Companies, CompaniesDto>(filter.Fields, _mapper.ConfigurationProvider)
+                .ToListAsync();
         }
 
-        public async Task<Companies> GetByIdAsync(int id)
+        public async Task<CompaniesDto> GetByIdAsync(int id)
         {
-            return (await Repo.CompaniesRepository.FindAsync(id));
+            return _mapper.Map<CompaniesDto>(await Repo.CompaniesRepository.FindAsync(id));
         }
 
-        public async Task UpdateAsync(int id, Companies user)
+        public async Task UpdateAsync(int id, CompaniesDto dto)
         {
-            Log.Information("Params {@user}", user);
-            await Repo.CompaniesRepository.UpdateAsync(id, user);
+            var entity = _mapper.Map<Companies>(dto);
+            await Repo.CompaniesRepository.UpdateAsync(id, entity);
         }
 
-        public async Task InsertAsync(Companies user)
+        public async Task InsertAsync(CompaniesDto dto)
         {
-            await Repo.CompaniesRepository.InsertAsync(user);
+            var entity = _mapper.Map<Companies>(dto);
+            await Repo.CompaniesRepository.InsertAsync(entity);
             await Repo.SaveChangesAsync();
         }
 
@@ -43,4 +51,6 @@ namespace BLL
             await Repo.CompaniesRepository.DeleteAsync(id);
         }
     }
+
+    
 }

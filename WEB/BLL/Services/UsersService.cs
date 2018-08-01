@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using BLL.DTOs;
+using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
 using DAL.Models;
 
@@ -8,28 +11,33 @@ namespace BLL.Services
 {
     public class UsersService : AppService, IUsersService
     {
-        public UsersService() : base()
+        private readonly IMapper _mapper;
+        public UsersService(IMapper mapper) : base()
         {
-            
+            _mapper = mapper;
         }
         
-        public async Task<List<Users>> GetAsync()
+        public async Task<List<UsersDto>> GetAsync(FilterBase filter)
         {
-            return (await Repo.UsersRepository.GetFromCache()).ToList();
+            var entity = (await Repo.UsersRepository.GetFromCache()).ToList();
+            return _mapper.Map<List<UsersDto>>(entity);
         }
 
-        public async Task<Users> GetByIdAsync(int id)
+        public async Task<UsersDto> GetByIdAsync(int id)
         {
-            return (await Repo.UsersRepository.GetFromCache()).FirstOrDefault(i => i.Id == id);
+            var entity = (await Repo.UsersRepository.GetFromCache()).FirstOrDefault(i => i.Id == id);
+            return _mapper.Map<UsersDto>(entity);
         }
 
-        public async Task UpdateAsync(int id, Users entity)
+        public async Task UpdateAsync(int id, UsersDto dto)
         {
+            var entity = _mapper.Map<Users>(dto);
             await Repo.UsersRepository.UpdateAsync(id, entity);
         }
 
-        public async Task InsertAsync(Users entity)
+        public async Task InsertAsync(UsersDto dto)
         {
+            var entity = _mapper.Map<Users>(dto);
             await Repo.UsersRepository.InsertAsync(entity);
             await Repo.SaveChangesAsync();
         }

@@ -1,8 +1,8 @@
-﻿using DAL.Models;
+﻿using BLL.DTOs;
 
 namespace BLL.Interfaces
 {
-    public interface ICompaniesService : ICrudService<Companies>
+    public interface ICompaniesService : ICrudService<CompaniesDto>
     {
     }
 

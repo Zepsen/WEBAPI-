@@ -1,10 +1,15 @@
-﻿using BLL;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
+using AutoMapper;
+using BLL;
 using BLL.Interfaces;
 using BLL.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WEB.Infrastructure.Automapper;
 
 namespace WEB
 {
@@ -23,7 +28,9 @@ namespace WEB
             services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<ICompaniesService, CompaniesService>();
 
+            services.AddAutoMapper();
             services.AddMvc();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,6 +41,7 @@ namespace WEB
             {
                 app.UseDeveloperExceptionPage();
             }
+            
             
             app.UseMvc();
         }

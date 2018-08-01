@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using BLL.DTOs;
+using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
-using DAL.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WEB.Controllers
@@ -10,6 +11,7 @@ namespace WEB.Controllers
     public class CompaniesController : Controller
     {
         private readonly ICompaniesService _service;
+        
 
         public CompaniesController(
             ICompaniesService service)
@@ -19,30 +21,30 @@ namespace WEB.Controllers
 
         // GET api/[controller]
         [HttpGet]
-        public async Task<IEnumerable<Companies>> Get()
+        public async Task<List<CompaniesDto>> Get(FilterBase filterBase)
         {
-            return await _service.GetAsync();
+            return await _service.GetAsync(filterBase);
         }
 
         // GET api/[controller]/{id}
         [HttpGet("{id}")]
-        public async Task<Companies> Get([FromRoute]int id)
+        public async Task<CompaniesDto> Get([FromRoute]int id)
         {
             return await _service.GetByIdAsync(id);
         }
 
         // POST api/[controller]
         [HttpPost]
-        public async Task Post([FromBody]Companies user)
+        public async Task Post([FromBody]CompaniesDto dto)
         {
-            await _service.InsertAsync(user);
+            await _service.InsertAsync(dto);
         }
 
         // PUT api/[controller]/{id}
         [HttpPut("{id}")]
-        public async Task Put(int id, [FromBody]Companies user)
+        public async Task Put(int id, [FromBody]CompaniesDto dto)
         {
-            await _service.UpdateAsync(id, user);
+            await _service.UpdateAsync(id, dto);
         }
 
         // DELETE api/[controller]/{id}
