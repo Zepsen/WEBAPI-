@@ -359,3 +359,64 @@ System.InvalidOperationException: Unable to resolve service for type 'BLL.Interf
 2018-07-31 17:52:54.651 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
 2018-07-31 17:52:54.651 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 19.3835ms
 2018-07-31 17:52:54.651 +03:00 [INF] Request finished in 20.3685ms 200 application/json; charset=utf-8
+2018-07-31 17:57:43.884 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-31 17:57:44.257 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1  
+2018-07-31 17:57:45.478 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 17:57:45.933 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 17:57:45.986 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 1607.0610000000001ms
+2018-07-31 17:57:45.990 +03:00 [INF] Request finished in 1738.0705ms 200 application/json; charset=utf-8
+2018-07-31 17:57:58.765 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1  
+2018-07-31 17:57:58.786 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 17:57:58.791 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 17:57:58.791 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 24.8217ms
+2018-07-31 17:57:58.791 +03:00 [INF] Request finished in 26.2307ms 200 application/json; charset=utf-8
+2018-07-31 17:57:59.597 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1  
+2018-07-31 17:57:59.601 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 17:57:59.604 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 17:57:59.604 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.2587ms
+2018-07-31 17:57:59.605 +03:00 [INF] Request finished in 7.8308ms 200 application/json; charset=utf-8
+2018-07-31 17:58:00.281 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users/1  
+2018-07-31 17:58:00.288 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 17:58:00.298 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 17:58:00.298 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 16.966ms
+2018-07-31 17:58:00.298 +03:00 [INF] Request finished in 17.6593ms 200 application/json; charset=utf-8
+2018-07-31 18:04:26.777 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies/1  
+2018-07-31 18:04:26.810 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 18:04:27.148 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 18:04:27.149 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 366.6264ms
+2018-07-31 18:04:27.150 +03:00 [INF] Request finished in 372.7019ms 200 application/json; charset=utf-8
+2018-07-31 18:04:31.740 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies/12  
+2018-07-31 18:04:31.744 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["12"]) - ModelState is "Valid"
+2018-07-31 18:04:31.752 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 18:04:31.752 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 11.4269ms
+2018-07-31 18:04:31.753 +03:00 [INF] Request finished in 13.0021ms 204 
+2018-07-31 18:04:34.691 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies/123  
+2018-07-31 18:04:34.695 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["123"]) - ModelState is "Valid"
+2018-07-31 18:04:34.697 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 18:04:34.697 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.6692ms
+2018-07-31 18:04:34.697 +03:00 [INF] Request finished in 6.1493ms 204 
+2018-07-31 18:04:44.152 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies/1234  
+2018-07-31 18:04:44.168 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["1234"]) - ModelState is "Valid"
+2018-07-31 18:04:44.170 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 18:04:44.171 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 18.5121ms
+2018-07-31 18:04:44.171 +03:00 [INF] Request finished in 19.071ms 204 
+2018-07-31 18:04:48.969 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies/1  
+2018-07-31 18:04:48.985 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["1"]) - ModelState is "Valid"
+2018-07-31 18:04:48.988 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 18:04:48.988 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 18.9846ms
+2018-07-31 18:04:48.989 +03:00 [INF] Request finished in 19.4914ms 200 application/json; charset=utf-8
+2018-07-31 18:04:54.038 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies/123  
+2018-07-31 18:04:54.051 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["123"]) - ModelState is "Valid"
+2018-07-31 18:04:54.053 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 18:04:54.054 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 15.723500000000001ms
+2018-07-31 18:04:54.054 +03:00 [INF] Request finished in 16.2393ms 204 
+2018-07-31 18:04:58.804 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies/4  
+2018-07-31 18:04:58.818 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["4"]) - ModelState is "Valid"
+2018-07-31 18:04:58.820 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 18:04:58.820 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 15.7245ms
+2018-07-31 18:04:58.820 +03:00 [INF] Request finished in 16.386ms 204 
+2018-07-31 18:05:05.220 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies/4  
+2018-07-31 18:05:05.224 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["4"]) - ModelState is "Valid"
+2018-07-31 18:05:05.226 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-31 18:05:05.226 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.2137ms
+2018-07-31 18:05:05.226 +03:00 [INF] Request finished in 5.7841ms 204 

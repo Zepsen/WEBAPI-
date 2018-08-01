@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Threading.Tasks;
+using DAL.Models;
 
 namespace DAL.Interfaces
 {
-    public interface IWritableRepository<T> 
-        where T : class
+    public interface IWritableRepository<in T> 
+        where T : IEntityBase
     {
         Task InsertAsync(T entityToInsert);
         Task UpdateAsync(int id, T entityToUpdate);
@@ -15,7 +14,7 @@ namespace DAL.Interfaces
     }
 
     public interface IQueryableRepository<T>
-        where T : class
+        where T : IEntityBase
     {
         IQueryable<T> GetQueryable();
         
@@ -23,7 +22,7 @@ namespace DAL.Interfaces
     }
 
     public interface ICachedRepository<T>
-        where T : class
+        where T : IEntityBase
     {
         Task<IEnumerable<T>> GetFromCache();
         Task<int> GetDeferredCountAsync();

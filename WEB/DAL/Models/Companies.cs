@@ -1,8 +1,7 @@
 ﻿namespace DAL.Models
 {
-    public class Companies
+    public class Companies : EntityBase<int>
     {
-        public int Id { get; set; }
         public string Name { get; set; }
     }
 }
