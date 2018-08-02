@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DAL.Infrastructure.Helpers;
 using DAL.Interfaces;
 using DAL.Models;
 using Serilog;
@@ -61,6 +62,17 @@ namespace DAL.Repositories
             Log.Information("Cache cleared");
         }
 
+        public async Task UpdateSpecificAsync(int id, Dictionary<string, object> dictionary)
+        {
+            await _db.Users
+                .Where(i => i.Id == id)
+                .UpdateFromQueryAsync(ReposHelper.UpdateSpecificFields<Users>(dictionary));
+
+            Log.Information("Updated");
+            QueryCacheManager.ExpireTag(nameof(Users));
+            Log.Information("Cache cleared");
+        }
+
         public async Task DeleteAsync(int id)
         {
             await _db.Users
@@ -74,5 +86,7 @@ namespace DAL.Repositories
         
 
         #endregion IRepository
+
+        
     }
 }

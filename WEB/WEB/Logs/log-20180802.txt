@@ -1,0 +1,1235 @@
+2018-08-02 13:52:46.075 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 13:52:46.943 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 13:52:47.110 +03:00 [INF] Request finished in 166.1141ms 404 
+2018-08-02 13:53:15.540 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 13:53:16.730 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 13:53:16.730 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 13:53:16.745 +03:00 [INF] Request finished in 22.7428ms 200 
+2018-08-02 13:53:16.878 +03:00 [INF] Request finished in 155.8685ms 404 
+2018-08-02 13:53:42.386 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:10523/api/users application/json 20
+2018-08-02 13:54:11.738 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 29157.5125ms
+2018-08-02 13:54:11.748 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreated()
+   at DAL.ApplicationContext..ctor() in C:\Projects\WEBAPI\WEB\DAL\DbContext.cs:line 13
+   at DAL.RepoWorker..ctor() in C:\Projects\WEBAPI\WEB\DAL\RepoWorker.cs:line 14
+   at BLL.Services.AppService..ctor() in C:\Projects\WEBAPI\WEB\BLL\Services\AppService.cs:line 11
+   at BLL.Services.UsersService..ctor(IMapper mapper) in C:\Projects\WEBAPI\WEB\BLL\Services\UsersService.cs:line 16
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-08-02 13:54:11.991 +03:00 [INF] Request finished in 29605.4954ms 500 text/html; charset=utf-8
+2018-08-02 13:55:11.978 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 13:55:12.869 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 13:55:12.869 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 13:55:12.883 +03:00 [INF] Request finished in 21.4426ms 200 
+2018-08-02 13:55:13.003 +03:00 [INF] Request finished in 141.786ms 404 
+2018-08-02 13:55:17.551 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:10523/api/companies application/json 20
+2018-08-02 13:55:30.079 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 13:55:30.288 +03:00 [INF] Inserted
+2018-08-02 13:55:30.803 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 13135.8801ms
+2018-08-02 13:55:30.808 +03:00 [INF] Request finished in 13256.4728ms 200 
+2018-08-02 13:56:17.212 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:10523/api/companies application/json 20
+2018-08-02 13:56:17.479 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 13:56:17.483 +03:00 [INF] Inserted
+2018-08-02 13:56:17.571 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 358.0888ms
+2018-08-02 13:56:17.572 +03:00 [INF] Request finished in 359.7353ms 200 
+2018-08-02 13:56:58.012 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:10523/api/comapnies/1 application/json 21
+2018-08-02 13:56:58.013 +03:00 [INF] Request finished in 1.444ms 404 
+2018-08-02 14:00:17.607 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/comapnies/1 application/json 21
+2018-08-02 14:00:17.607 +03:00 [INF] Request finished in 0.521ms 404 
+2018-08-02 14:00:27.703 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/1 application/json 21
+2018-08-02 14:00:27.779 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["1","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:01:03.430 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 35718.6589ms
+2018-08-02 14:01:03.430 +03:00 [INF] Request finished in 35727.4448ms 200 
+2018-08-02 14:01:29.909 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/1 application/json 21
+2018-08-02 14:01:29.968 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["1","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:01:31.385 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1475.7749000000001ms
+2018-08-02 14:01:31.385 +03:00 [INF] Request finished in 1476.4776ms 200 
+2018-08-02 14:01:56.505 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/companies application/json 20
+2018-08-02 14:01:56.560 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:01:56.561 +03:00 [INF] Inserted
+2018-08-02 14:01:56.593 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 88.1773ms
+2018-08-02 14:01:56.593 +03:00 [INF] Request finished in 88.907ms 200 
+2018-08-02 14:02:05.584 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/users application/json 
+2018-08-02 14:02:05.651 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 14:02:06.160 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 14:02:06.186 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 590.5064ms
+2018-08-02 14:02:06.187 +03:00 [INF] Request finished in 602.9397ms 200 application/json; charset=utf-8
+2018-08-02 14:02:17.954 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 14:02:18.017 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 14:02:18.262 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 14:02:18.267 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 307.61740000000003ms
+2018-08-02 14:02:18.267 +03:00 [INF] Request finished in 313.7738ms 200 application/json; charset=utf-8
+2018-08-02 14:02:54.070 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/1 application/json 21
+2018-08-02 14:02:54.141 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["1","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:04:12.121 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 78050.622ms
+2018-08-02 14:04:12.122 +03:00 [INF] Request finished in 78051.4664ms 200 
+2018-08-02 14:11:07.883 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 14:11:08.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 14:11:08.496 +03:00 [INF] Request finished in 78.0687ms 404 
+2018-08-02 14:11:26.616 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/1 application/json 21
+2018-08-02 14:11:28.014 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["1","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:11:28.096 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1409.2095000000002ms
+2018-08-02 14:11:28.101 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Invalid Cast. The update expression must be of type MemberInitExpression.
+   at Z.EntityFramework.Extensions.BatchUpdate.ResolveUpdateFromQueryDictValues[T](Expression`1 updateFactory)
+   at Z.EntityFramework.Extensions.BatchUpdate.GetInnerValues[T](IQueryable`1 query, Expression`1 updateFactory, IEntityType entity)
+   at Z.EntityFramework.Extensions.BatchUpdate.Execute[T](IQueryable`1 query, Expression`1 updateFactory)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DAL.Repositories.CompaniesRepository.<UpdateAsync>d__5.MoveNext() in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<Update>d__7.MoveNext() in C:\Projects\WEBAPI\WEB\BLL\Services\CompaniesService.cs:line 58
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\WEB\Controllers\CompaniesController.cs:line 62
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 14:11:28.257 +03:00 [INF] Request finished in 1640.3113ms 500 text/html; charset=utf-8
+2018-08-02 14:12:40.958 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 14:12:41.466 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/1 application/json 21
+2018-08-02 14:12:42.936 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["1","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:12:43.001 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1410.2841ms
+2018-08-02 14:12:43.005 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Invalid Cast. The update expression must be of type MemberInitExpression.
+   at Z.EntityFramework.Extensions.BatchUpdate.ResolveUpdateFromQueryDictValues[T](Expression`1 updateFactory)
+   at Z.EntityFramework.Extensions.BatchUpdate.GetInnerValues[T](IQueryable`1 query, Expression`1 updateFactory, IEntityType entity)
+   at Z.EntityFramework.Extensions.BatchUpdate.Execute[T](IQueryable`1 query, Expression`1 updateFactory)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DAL.Repositories.CompaniesRepository.<UpdateAsync>d__5.MoveNext() in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<Update>d__7.MoveNext() in C:\Projects\WEBAPI\WEB\BLL\Services\CompaniesService.cs:line 58
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\WEB\Controllers\CompaniesController.cs:line 62
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 14:12:43.173 +03:00 [INF] Request finished in 1713.7135ms 500 text/html; charset=utf-8
+2018-08-02 14:17:16.870 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 14:17:17.318 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/1 application/json 21
+2018-08-02 14:17:18.882 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["1","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:17:18.949 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1500.5208ms
+2018-08-02 14:17:18.953 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Invalid Cast. The update expression must be of type MemberInitExpression.
+   at Z.EntityFramework.Extensions.BatchUpdate.ResolveUpdateFromQueryDictValues[T](Expression`1 updateFactory)
+   at Z.EntityFramework.Extensions.BatchUpdate.GetInnerValues[T](IQueryable`1 query, Expression`1 updateFactory, IEntityType entity)
+   at Z.EntityFramework.Extensions.BatchUpdate.Execute[T](IQueryable`1 query, Expression`1 updateFactory)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DAL.Repositories.CompaniesRepository.<UpdateAsync>d__5.MoveNext() in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 46
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<Update>d__7.MoveNext() in C:\Projects\WEBAPI\WEB\BLL\Services\CompaniesService.cs:line 58
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\WEB\Controllers\CompaniesController.cs:line 62
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 14:17:19.122 +03:00 [INF] Request finished in 1809.4531ms 500 text/html; charset=utf-8
+2018-08-02 14:17:51.722 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 14:17:51.795 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 14:17:52.341 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 14:17:52.364 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 631.7781ms
+2018-08-02 14:17:52.364 +03:00 [INF] Request finished in 642.4171ms 200 application/json; charset=utf-8
+2018-08-02 14:23:00.252 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 14:23:00.663 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/1 application/json 21
+2018-08-02 14:23:02.142 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["1","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:23:02.717 +03:00 [INF] Updated
+2018-08-02 14:23:02.723 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1930.5723ms
+2018-08-02 14:23:02.730 +03:00 [INF] Request finished in 2073.1573ms 200 
+2018-08-02 14:23:05.805 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/companies application/json 20
+2018-08-02 14:23:05.820 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:23:06.043 +03:00 [INF] Inserted
+2018-08-02 14:23:06.320 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 508.3487ms
+2018-08-02 14:23:06.320 +03:00 [INF] Request finished in 514.6229ms 200 
+2018-08-02 14:23:09.052 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 14:23:09.070 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 14:23:09.283 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 14:23:09.295 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 232.9256ms
+2018-08-02 14:23:09.295 +03:00 [INF] Request finished in 243.7778ms 200 application/json; charset=utf-8
+2018-08-02 14:26:58.264 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 14:26:58.762 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/1 application/json 21
+2018-08-02 14:27:00.264 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["1","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:27:00.821 +03:00 [INF] Updated
+2018-08-02 14:27:00.827 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1935.68ms
+2018-08-02 14:27:00.834 +03:00 [INF] Request finished in 2077.2989ms 200 
+2018-08-02 14:27:04.534 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 14:27:04.568 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 14:27:04.824 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 14:27:04.837 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 291.4553ms
+2018-08-02 14:27:04.839 +03:00 [INF] Request finished in 304.3118ms 200 application/json; charset=utf-8
+2018-08-02 14:52:37.654 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 14:52:38.244 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 25
+2018-08-02 14:52:39.805 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:52:39.856 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1479.5612ms
+2018-08-02 14:52:39.859 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DAL.Repositories.CompaniesRepository.<>c__DisplayClass7_0.<UpdateSpecific>b__0(KeyValuePair`2 p) in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 78
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at System.Dynamic.Utils.CollectionExtensions.ToReadOnly[T](IEnumerable`1 enumerable)
+   at System.Linq.Expressions.Expression.MemberInit(NewExpression newExpression, IEnumerable`1 bindings)
+   at DAL.Repositories.CompaniesRepository.UpdateSpecific(Dictionary`2 dictionary) in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 85
+   at DAL.Repositories.CompaniesRepository.<UpdateSpecAsync>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 61
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<Update>d__7.MoveNext() in C:\Projects\WEBAPI\WEB\BLL\Services\CompaniesService.cs:line 57
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\WEB\Controllers\CompaniesController.cs:line 62
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 14:52:40.073 +03:00 [INF] Request finished in 1834.8787ms 500 text/html; charset=utf-8
+2018-08-02 14:53:14.468 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 25
+2018-08-02 14:53:14.503 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:53:14.507 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 38.1311ms
+2018-08-02 14:53:14.508 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.ArgumentException: Incorrect number of parameters supplied for lambda declaration
+   at System.Linq.Expressions.Expression.ValidateLambdaArgs(Type delegateType, Expression& body, ReadOnlyCollection`1 parameters, String paramName)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, String name, Boolean tailCall, IEnumerable`1 parameters)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, Boolean tailCall, IEnumerable`1 parameters)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, ParameterExpression[] parameters)
+   at DAL.Repositories.CompaniesRepository.UpdateSpecific(Dictionary`2 dictionary) in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 86
+   at DAL.Repositories.CompaniesRepository.<UpdateSpecAsync>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 61
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<Update>d__7.MoveNext() in C:\Projects\WEBAPI\WEB\BLL\Services\CompaniesService.cs:line 57
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\WEB\Controllers\CompaniesController.cs:line 62
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 14:53:14.599 +03:00 [INF] Request finished in 130.5489ms 500 text/html; charset=utf-8
+2018-08-02 14:55:06.981 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 14:55:07.984 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 25
+2018-08-02 14:55:07.984 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 14:55:07.984 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 14:55:07.999 +03:00 [INF] Request finished in 23.1036ms 200 
+2018-08-02 14:55:08.161 +03:00 [INF] Request finished in 185.0839ms 404 
+2018-08-02 14:55:10.406 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 14:56:53.730 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 105389.93250000001ms
+2018-08-02 14:56:53.734 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.ArgumentException: Incorrect number of parameters supplied for lambda declaration
+   at System.Linq.Expressions.Expression.ValidateLambdaArgs(Type delegateType, Expression& body, ReadOnlyCollection`1 parameters, String paramName)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, String name, Boolean tailCall, IEnumerable`1 parameters)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, Boolean tailCall, IEnumerable`1 parameters)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, ParameterExpression[] parameters)
+   at DAL.Repositories.CompaniesRepository.UpdateSpecific(Dictionary`2 dictionary) in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 86
+   at DAL.Repositories.CompaniesRepository.<UpdateSpecAsync>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 61
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<Update>d__7.MoveNext() in C:\Projects\WEBAPI\WEB\BLL\Services\CompaniesService.cs:line 57
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\WEB\Controllers\CompaniesController.cs:line 62
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 14:56:53.939 +03:00 [INF] Request finished in 105963.127ms 500 text/html; charset=utf-8
+2018-08-02 15:04:15.520 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:04:16.146 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 15:04:16.227 +03:00 [INF] Request finished in 88.2469ms 404 
+2018-08-02 15:04:30.933 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:04:32.202 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 15:04:32.202 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 15:04:32.202 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 25
+2018-08-02 15:04:32.219 +03:00 [INF] Request finished in 25.1051ms 200 
+2018-08-02 15:04:32.446 +03:00 [INF] Request finished in 252.7989ms 404 
+2018-08-02 15:04:34.660 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 15:06:13.213 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 100585.5133ms
+2018-08-02 15:06:13.222 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.ArgumentException: Incorrect number of parameters supplied for lambda declaration
+   at System.Linq.Expressions.Expression.ValidateLambdaArgs(Type delegateType, Expression& body, ReadOnlyCollection`1 parameters, String paramName)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, String name, Boolean tailCall, IEnumerable`1 parameters)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, Boolean tailCall, IEnumerable`1 parameters)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, ParameterExpression[] parameters)
+   at DAL.Repositories.CompaniesRepository.UpdateSpecific(Dictionary`2 dictionary) in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 80
+   at DAL.Repositories.CompaniesRepository.<UpdateSpecAsync>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 61
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<Update>d__7.MoveNext() in C:\Projects\WEBAPI\WEB\BLL\Services\CompaniesService.cs:line 57
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\WEB\Controllers\CompaniesController.cs:line 62
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 15:06:13.408 +03:00 [INF] Request finished in 101213.8781ms 500 text/html; charset=utf-8
+2018-08-02 15:20:28.602 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:20:29.661 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 25
+2018-08-02 15:20:29.661 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 15:20:29.662 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 15:20:29.680 +03:00 [INF] Request finished in 25.6927ms 200 
+2018-08-02 15:20:29.799 +03:00 [INF] Request finished in 144.941ms 404 
+2018-08-02 15:20:31.648 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 15:20:40.025 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 10064.225ms
+2018-08-02 15:20:40.028 +03:00 [ERR] An unhandled exception has occurred while executing the request
+System.ArgumentException: Incorrect number of parameters supplied for lambda declaration
+   at System.Linq.Expressions.Expression.ValidateLambdaArgs(Type delegateType, Expression& body, ReadOnlyCollection`1 parameters, String paramName)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, String name, Boolean tailCall, IEnumerable`1 parameters)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, Boolean tailCall, IEnumerable`1 parameters)
+   at System.Linq.Expressions.Expression.Lambda[TDelegate](Expression body, ParameterExpression[] parameters)
+   at DAL.Repositories.CompaniesRepository.UpdateSpecific(Dictionary`2 dictionary) in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 80
+   at DAL.Repositories.CompaniesRepository.<UpdateSpecAsync>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 61
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at BLL.Services.CompaniesService.<Update>d__7.MoveNext() in C:\Projects\WEBAPI\WEB\BLL\Services\CompaniesService.cs:line 57
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at WEB.Controllers.CompaniesController.<Put>d__6.MoveNext() in C:\Projects\WEBAPI\WEB\WEB\Controllers\CompaniesController.cs:line 62
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 15:20:40.250 +03:00 [INF] Request finished in 10596.3427ms 500 text/html; charset=utf-8
+2018-08-02 15:25:45.097 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:25:45.667 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 15:25:45.735 +03:00 [INF] Request finished in 72.9434ms 404 
+2018-08-02 15:25:51.075 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 25
+2018-08-02 15:25:52.318 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 15:25:52.899 +03:00 [INF] Updated
+2018-08-02 15:25:52.904 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1764.961ms
+2018-08-02 15:25:52.908 +03:00 [INF] Request finished in 1832.5447ms 200 
+2018-08-02 15:26:07.103 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 15:26:07.130 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 15:26:07.354 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 15:26:07.365 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 253.0558ms
+2018-08-02 15:26:07.366 +03:00 [INF] Request finished in 262.8861ms 200 application/json; charset=utf-8
+2018-08-02 15:26:18.689 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 15:26:18.702 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 15:26:18.707 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 15:26:18.708 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 18.3608ms
+2018-08-02 15:26:18.708 +03:00 [INF] Request finished in 19.1697ms 200 application/json; charset=utf-8
+2018-08-02 15:45:34.677 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:45:35.079 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 15:45:35.147 +03:00 [INF] Request finished in 72.4745ms 404 
+2018-08-02 15:46:50.131 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:46:50.456 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 25
+2018-08-02 15:46:50.539 +03:00 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Put (WEB)
+2018-08-02 15:46:50.542 +03:00 [ERR] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Put (WEB)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 15:46:50.634 +03:00 [INF] Request finished in 183.0411ms 500 text/html; charset=utf-8
+2018-08-02 15:48:11.846 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:48:12.341 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/update/2 application/json 25
+2018-08-02 15:48:12.409 +03:00 [INF] Request finished in 75.4781ms 404 
+2018-08-02 15:51:27.053 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:51:27.609 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 25
+2018-08-02 15:51:27.653 +03:00 [ERR] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Routing.RouteCreationException: The following errors occurred with attribute routing information:
+
+For action: 'WEB.Controllers.CompaniesController.Update (WEB)'
+Error: The attribute route 'api/Companies/api/{controller}/update/{id}' cannot contain a parameter named '{controller}'. Use '[controller]' in the route template to insert the value 'Companies'.
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.GetRouteInfos(IReadOnlyList`1 actions)
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.AddEntries(TreeRouteBuilder builder, ActionDescriptorCollection actions)
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.GetTreeRouter()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 15:51:27.751 +03:00 [INF] Request finished in 147.6105ms 500 text/html; charset=utf-8
+2018-08-02 15:52:47.105 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:52:47.654 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 25
+2018-08-02 15:52:47.730 +03:00 [INF] Request finished in 80.3976ms 404 
+2018-08-02 15:52:59.878 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 25
+2018-08-02 15:52:59.883 +03:00 [INF] Request finished in 4.2542ms 404 
+2018-08-02 15:54:06.125 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:54:06.435 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 25
+2018-08-02 15:54:06.508 +03:00 [INF] Request finished in 79.7579ms 404 
+2018-08-02 15:56:04.518 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:56:04.827 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 25
+2018-08-02 15:56:04.897 +03:00 [INF] Request finished in 74.2373ms 404 
+2018-08-02 15:56:21.728 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update application/json 25
+2018-08-02 15:56:22.983 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["0","BLL.DTOs.CompaniesDto"]) - ModelState is "Invalid"
+2018-08-02 15:56:23.465 +03:00 [INF] Updated
+2018-08-02 15:56:23.470 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1688.2156ms
+2018-08-02 15:56:23.473 +03:00 [INF] Request finished in 1745.3055ms 200 
+2018-08-02 15:56:30.875 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 15:56:30.962 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 15:56:31.166 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 15:56:31.177 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 284.0301ms
+2018-08-02 15:56:31.177 +03:00 [INF] Request finished in 302.2355ms 200 application/json; charset=utf-8
+2018-08-02 15:56:36.533 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update application/json 30
+2018-08-02 15:56:36.547 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["0","BLL.DTOs.CompaniesDto"]) - ModelState is "Invalid"
+2018-08-02 15:56:36.563 +03:00 [INF] Updated
+2018-08-02 15:56:36.563 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 29.410600000000002ms
+2018-08-02 15:56:36.563 +03:00 [INF] Request finished in 30.518ms 200 
+2018-08-02 15:56:39.146 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 15:56:39.150 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 15:56:39.155 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 15:56:39.155 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 8.8699000000000012ms
+2018-08-02 15:56:39.155 +03:00 [INF] Request finished in 9.658ms 200 application/json; charset=utf-8
+2018-08-02 15:56:58.619 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:56:59.473 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 15:56:59.473 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update application/json 30
+2018-08-02 15:56:59.473 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 15:56:59.490 +03:00 [INF] Request finished in 23.5424ms 200 
+2018-08-02 15:56:59.602 +03:00 [INF] Request finished in 136.7457ms 404 
+2018-08-02 15:57:01.576 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["0","BLL.DTOs.CompaniesDto"]) - ModelState is "Invalid"
+2018-08-02 15:57:52.551 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 15:57:53.058 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update application/json 30
+2018-08-02 15:57:53.058 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 15:57:53.144 +03:00 [INF] Request finished in 92.4138ms 404 
+2018-08-02 15:57:53.168 +03:00 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Update (WEB)
+2018-08-02 15:57:53.170 +03:00 [ERR] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Update (WEB)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 15:57:53.409 +03:00 [INF] Request finished in 357.0675ms 500 text/html; charset=utf-8
+2018-08-02 15:58:00.445 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update application/json 30
+2018-08-02 15:58:00.446 +03:00 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Update (WEB)
+2018-08-02 15:58:00.447 +03:00 [ERR] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Update (WEB)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 15:58:00.508 +03:00 [INF] Request finished in 63.0869ms 500 text/html; charset=utf-8
+2018-08-02 16:00:34.605 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:00:35.065 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2/up application/json 30
+2018-08-02 16:00:35.133 +03:00 [INF] Request finished in 73.5389ms 404 
+2018-08-02 16:00:39.440 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2/up application/json 30
+2018-08-02 16:00:39.448 +03:00 [INF] Request finished in 7.8634ms 404 
+2018-08-02 16:03:29.247 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:03:29.598 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/2 application/json 30
+2018-08-02 16:03:30.812 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Update (WEB) with arguments (["2"]) - ModelState is "Valid"
+2018-08-02 16:03:30.831 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Update (WEB) in 1105.6506ms
+2018-08-02 16:03:30.838 +03:00 [INF] Request finished in 1245.876ms 200 
+2018-08-02 16:03:34.966 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 16:03:34.999 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 16:03:35.467 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 16:03:35.511 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 524.9125ms
+2018-08-02 16:03:35.512 +03:00 [INF] Request finished in 546.4714ms 200 application/json; charset=utf-8
+2018-08-02 16:03:50.466 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:03:51.304 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:03:51.304 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:03:51.320 +03:00 [INF] Request finished in 22.7039ms 200 
+2018-08-02 16:03:51.526 +03:00 [INF] Request finished in 229.3746ms 404 
+2018-08-02 16:03:54.801 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/2 application/json 31
+2018-08-02 16:03:56.380 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Update (WEB) with arguments (["2"]) - ModelState is "Valid"
+2018-08-02 16:04:13.313 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Update (WEB) in 18411.658ms
+2018-08-02 16:04:13.319 +03:00 [INF] Request finished in 18517.5072ms 200 
+2018-08-02 16:04:39.789 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:04:40.316 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:04:40.384 +03:00 [INF] Request finished in 73.2398ms 404 
+2018-08-02 16:04:49.493 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/2 application/json 31
+2018-08-02 16:04:50.683 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Update (WEB) with arguments (["2"]) - ModelState is "Valid"
+2018-08-02 16:04:50.703 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Update (WEB) in 1140.4169ms
+2018-08-02 16:04:50.709 +03:00 [INF] Request finished in 1215.3469ms 200 
+2018-08-02 16:05:28.846 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/2 application/json 31
+2018-08-02 16:05:28.891 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Update (WEB) with arguments (["2"]) - ModelState is "Valid"
+2018-08-02 16:05:28.891 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Update (WEB) in 44.3939ms
+2018-08-02 16:05:28.891 +03:00 [INF] Request finished in 45.9521ms 200 
+2018-08-02 16:06:29.688 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:06:30.411 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:06:30.411 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:06:30.411 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/2 application/json 31
+2018-08-02 16:06:30.426 +03:00 [INF] Request finished in 22.4756ms 200 
+2018-08-02 16:06:30.550 +03:00 [INF] Request finished in 146.9112ms 404 
+2018-08-02 16:06:33.026 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Update (WEB) with arguments (["2"]) - ModelState is "Valid"
+2018-08-02 16:06:37.202 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Update (WEB) in 6475.6060000000007ms
+2018-08-02 16:06:37.208 +03:00 [INF] Request finished in 6805.238ms 200 
+2018-08-02 16:06:41.440 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 31
+2018-08-02 16:06:41.593 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 16:06:51.143 +03:00 [INF] Updated
+2018-08-02 16:06:51.144 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 9696.8904ms
+2018-08-02 16:06:51.145 +03:00 [INF] Request finished in 9705.4338ms 200 
+2018-08-02 16:06:58.824 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 16:06:58.886 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 16:06:59.146 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 16:06:59.168 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 335.97450000000003ms
+2018-08-02 16:06:59.169 +03:00 [INF] Request finished in 345.4501ms 200 application/json; charset=utf-8
+2018-08-02 16:13:41.790 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:13:42.499 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:13:42.499 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:13:42.499 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/update/2 application/json 31
+2018-08-02 16:13:42.514 +03:00 [INF] Request finished in 22.6353ms 200 
+2018-08-02 16:13:42.632 +03:00 [INF] Request finished in 141.0861ms 404 
+2018-08-02 16:13:42.640 +03:00 [INF] Request finished in 148.4149ms 404 
+2018-08-02 16:13:53.606 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 31
+2018-08-02 16:13:53.627 +03:00 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Update (WEB)
+2018-08-02 16:13:53.631 +03:00 [ERR] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Update (WEB)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 16:13:53.752 +03:00 [INF] Request finished in 145.8857ms 500 text/html; charset=utf-8
+2018-08-02 16:19:48.180 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:19:48.936 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:19:48.936 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:19:48.936 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/udpate/2 application/json 31
+2018-08-02 16:19:48.954 +03:00 [INF] Request finished in 25.4924ms 200 
+2018-08-02 16:19:49.079 +03:00 [INF] Request finished in 151.2625ms 404 
+2018-08-02 16:19:49.093 +03:00 [INF] Request finished in 164.9682ms 404 
+2018-08-02 16:19:54.073 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/udpate/2 application/json 31
+2018-08-02 16:19:54.092 +03:00 [INF] Request finished in 18.3792ms 404 
+2018-08-02 16:19:56.888 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 31
+2018-08-02 16:19:58.661 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 16:20:08.831 +03:00 [INF] Updated
+2018-08-02 16:20:08.837 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 11843.1234ms
+2018-08-02 16:20:08.840 +03:00 [INF] Request finished in 11952.5345ms 200 
+2018-08-02 16:20:13.303 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/update/2 application/json 31
+2018-08-02 16:20:13.306 +03:00 [INF] Request finished in 2.6216ms 404 
+2018-08-02 16:20:22.098 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/udpate/2 application/json 31
+2018-08-02 16:20:22.100 +03:00 [INF] Request finished in 1.9623ms 404 
+2018-08-02 16:21:19.766 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:21:40.036 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:21:47.727 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:21:47.970 +03:00 [FTL] Application startup exception
+System.ArgumentException: An item with the same key has already been added. Key: api
+   at System.ThrowHelper.ThrowAddingDuplicateWithKeyArgumentException(Object key)
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Microsoft.AspNetCore.Routing.RouteCollection.Add(IRouter router)
+   at Microsoft.AspNetCore.Routing.RouteBuilder.Build()
+   at Microsoft.AspNetCore.Builder.MvcApplicationBuilderExtensions.UseMvc(IApplicationBuilder app, Action`1 configureRoutes)
+   at WEB.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in C:\Projects\WEBAPI\WEB\WEB\Startup.cs:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.ApplicationInsights.HostingStartup.ApplicationInsightsLoggerStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.ApplicationInsights.AspNetCore.ApplicationInsightsStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass3_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2018-08-02 16:21:48.329 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:21:48.329 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:21:48.329 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:21:48.343 +03:00 [ERR] Connection id "0HLFOFBJAL6DJ", Request id "0HLFOFBJAL6DJ:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Writing to the response body is invalid for responses with status code 500.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame.HandleNonBodyResponseWrite()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame.<WriteAsyncAwaited>d__201.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.FrameResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.<ExecuteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Extensions.RazorViews.BaseView.<ExecuteAsync>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+2018-08-02 16:21:48.362 +03:00 [INF] Request finished in 36.8352ms 500 
+2018-08-02 16:21:48.376 +03:00 [INF] Request finished in 52.906ms 500 text/html; charset=utf-8
+2018-08-02 16:21:48.379 +03:00 [ERR] Connection id "0HLFOFBJAL6DI", Request id "0HLFOFBJAL6DI:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'FrameResponseStream'.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.FrameResponseStream.ValidateState(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.FrameResponseStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.FrameResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.<ExecuteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Extensions.RazorViews.BaseView.<ExecuteAsync>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+2018-08-02 16:21:48.388 +03:00 [INF] Request finished in 64.584ms 500 
+2018-08-02 16:22:05.922 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:22:06.752 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:22:06.752 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:22:06.776 +03:00 [INF] Request finished in 30.4511ms 200 
+2018-08-02 16:22:06.872 +03:00 [INF] Request finished in 127.0093ms 404 
+2018-08-02 16:22:13.736 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:22:13.747 +03:00 [INF] Request finished in 10.5293ms 404 
+2018-08-02 16:22:16.501 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:22:16.502 +03:00 [INF] Request finished in 1.301ms 404 
+2018-08-02 16:22:23.351 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 31
+2018-08-02 16:22:24.982 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 16:22:56.015 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:22:56.782 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:22:56.782 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:22:56.782 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:22:56.782 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:22:56.799 +03:00 [INF] Request finished in 25.7782ms 200 
+2018-08-02 16:22:56.934 +03:00 [INF] Request finished in 160.5959ms 404 
+2018-08-02 16:22:56.977 +03:00 [INF] Request finished in 203.565ms 404 
+2018-08-02 16:22:56.977 +03:00 [INF] Request finished in 203.5719ms 404 
+2018-08-02 16:22:59.339 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:22:59.341 +03:00 [INF] Request finished in 1.6235ms 404 
+2018-08-02 16:23:08.294 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/put/up/2 application/json 31
+2018-08-02 16:23:08.294 +03:00 [INF] Request finished in 0.58ms 404 
+2018-08-02 16:23:12.429 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:23:12.430 +03:00 [INF] Request finished in 1.1224ms 404 
+2018-08-02 16:23:13.367 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:23:13.368 +03:00 [INF] Request finished in 1.1564ms 404 
+2018-08-02 16:23:14.126 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:23:14.126 +03:00 [INF] Request finished in 0.6658ms 404 
+2018-08-02 16:23:14.835 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:23:14.835 +03:00 [INF] Request finished in 0.564ms 404 
+2018-08-02 16:23:15.586 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:23:15.593 +03:00 [INF] Request finished in 6.7042ms 404 
+2018-08-02 16:23:16.337 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:23:16.338 +03:00 [INF] Request finished in 1.0266ms 404 
+2018-08-02 16:24:06.631 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/up/2 application/json 31
+2018-08-02 16:24:06.632 +03:00 [INF] Request finished in 0.7992ms 404 
+2018-08-02 16:30:02.879 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:30:03.794 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:30:03.808 +03:00 [INF] Request finished in 21.739ms 200 
+2018-08-02 16:30:03.823 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:30:03.938 +03:00 [INF] Request finished in 115.793ms 404 
+2018-08-02 16:30:04.128 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:30:04.145 +03:00 [INF] Request finished in 16.5909ms 404 
+2018-08-02 16:30:08.204 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:30:08.205 +03:00 [INF] Request finished in 0.9968ms 404 
+2018-08-02 16:30:12.123 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 31
+2018-08-02 16:30:14.454 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 16:30:18.806 +03:00 [INF] Updated
+2018-08-02 16:30:18.812 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 6596.8923ms
+2018-08-02 16:30:18.816 +03:00 [INF] Request finished in 6692.7741ms 200 
+2018-08-02 16:31:35.037 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:31:35.879 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:31:35.879 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:31:35.879 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:31:35.893 +03:00 [INF] Request finished in 22.3699ms 200 
+2018-08-02 16:31:36.008 +03:00 [INF] Request finished in 137.1456ms 404 
+2018-08-02 16:31:36.043 +03:00 [INF] Request finished in 172.9045ms 404 
+2018-08-02 16:31:37.757 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:31:37.758 +03:00 [INF] Request finished in 1.3868ms 404 
+2018-08-02 16:32:00.799 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:32:01.616 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:32:01.614 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:32:01.614 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/up/2 application/json 31
+2018-08-02 16:32:01.630 +03:00 [INF] Request finished in 24.4224ms 200 
+2018-08-02 16:32:01.750 +03:00 [INF] Request finished in 144.2218ms 404 
+2018-08-02 16:32:01.762 +03:00 [INF] Request finished in 156.4208ms 404 
+2018-08-02 16:32:07.047 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/2 application/json 31
+2018-08-02 16:32:07.059 +03:00 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Put (WEB)
+2018-08-02 16:32:07.062 +03:00 [ERR] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Put (WEB)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 16:32:07.190 +03:00 [INF] Request finished in 143.0358ms 500 text/html; charset=utf-8
+2018-08-02 16:37:16.787 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:37:36.272 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:37:36.493 +03:00 [FTL] Application startup exception
+Microsoft.AspNetCore.Routing.RouteCreationException: An error occurred while creating the route with name 'DefaultApiWithAction' and template 'api/{controller=Users}/{action=Get}{id?}'. ---> System.ArgumentException: In the segment '{action}{id?}', the optional parameter 'id' is preceded by an invalid segment '{action}'. Only a period (.) can precede an optional parameter.
+Parameter name: routeTemplate
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Routing.RouteBase..ctor(String template, String name, IInlineConstraintResolver constraintResolver, RouteValueDictionary defaults, IDictionary`2 constraints, RouteValueDictionary dataTokens)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.RouteBase..ctor(String template, String name, IInlineConstraintResolver constraintResolver, RouteValueDictionary defaults, IDictionary`2 constraints, RouteValueDictionary dataTokens)
+   at Microsoft.AspNetCore.Builder.MapRouteRouteBuilderExtensions.MapRoute(IRouteBuilder routeBuilder, String name, String template, Object defaults, Object constraints, Object dataTokens)
+   at Microsoft.AspNetCore.Builder.MapRouteRouteBuilderExtensions.MapRoute(IRouteBuilder routeBuilder, String name, String template)
+   at WEB.Startup.<>c.<Configure>b__5_0(IRouteBuilder routes) in C:\Projects\WEBAPI\WEB\WEB\Startup.cs:line 54
+   at Microsoft.AspNetCore.Builder.MvcApplicationBuilderExtensions.UseMvc(IApplicationBuilder app, Action`1 configureRoutes)
+   at WEB.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in C:\Projects\WEBAPI\WEB\WEB\Startup.cs:line 52
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.ApplicationInsights.HostingStartup.ApplicationInsightsLoggerStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.ApplicationInsights.AspNetCore.ApplicationInsightsStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass3_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2018-08-02 16:37:36.897 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:37:36.897 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 31
+2018-08-02 16:37:36.938 +03:00 [INF] Request finished in 46.1813ms 500 text/html; charset=utf-8
+2018-08-02 16:37:36.941 +03:00 [INF] Request finished in 49.1002ms 500 
+2018-08-02 16:38:07.260 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:38:08.013 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:38:08.013 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:38:08.029 +03:00 [INF] Request finished in 21.8727ms 200 
+2018-08-02 16:38:08.125 +03:00 [INF] Request finished in 118.3797ms 404 
+2018-08-02 16:38:45.578 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 31
+2018-08-02 16:38:45.587 +03:00 [INF] Request finished in 9.3545ms 404 
+2018-08-02 16:38:50.734 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 31
+2018-08-02 16:38:50.735 +03:00 [INF] Request finished in 1.3937ms 404 
+2018-08-02 16:44:22.538 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:44:22.872 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:44:22.944 +03:00 [INF] Request finished in 76.4725ms 404 
+2018-08-02 16:45:52.044 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:45:52.433 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:45:52.501 +03:00 [INF] Request finished in 73.3295ms 404 
+2018-08-02 16:45:58.217 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update application/json 31
+2018-08-02 16:45:59.929 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Update (WEB) with arguments (["0"]) - ModelState is "Valid"
+2018-08-02 16:45:59.947 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Update (WEB) in 1673.669ms
+2018-08-02 16:45:59.952 +03:00 [INF] Request finished in 1734.9625ms 200 
+2018-08-02 16:46:13.679 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:46:14.319 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:46:14.319 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:46:14.333 +03:00 [INF] Request finished in 20.759ms 200 
+2018-08-02 16:46:14.433 +03:00 [INF] Request finished in 121.1083ms 404 
+2018-08-02 16:46:17.071 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update application/json 31
+2018-08-02 16:46:18.559 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Update (WEB) with arguments (["0"]) - ModelState is "Valid"
+2018-08-02 16:46:44.674 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Update (WEB) in 27515.824500000002ms
+2018-08-02 16:46:44.679 +03:00 [INF] Request finished in 27608.223ms 200 
+2018-08-02 16:46:50.362 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 31
+2018-08-02 16:46:50.364 +03:00 [INF] Request finished in 2.5903ms 404 
+2018-08-02 16:47:13.755 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:47:14.419 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:47:14.419 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:47:14.432 +03:00 [INF] Request finished in 19.9483ms 200 
+2018-08-02 16:47:14.526 +03:00 [INF] Request finished in 113.8487ms 404 
+2018-08-02 16:47:15.516 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 31
+2018-08-02 16:47:15.521 +03:00 [INF] Request finished in 5.1198ms 404 
+2018-08-02 16:47:18.903 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 31
+2018-08-02 16:47:18.910 +03:00 [INF] Request finished in 7.486ms 404 
+2018-08-02 16:47:19.805 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 31
+2018-08-02 16:47:19.811 +03:00 [INF] Request finished in 5.6326ms 404 
+2018-08-02 16:47:26.669 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 31
+2018-08-02 16:47:26.670 +03:00 [INF] Request finished in 1.007ms 404 
+2018-08-02 16:47:28.890 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update application/json 31
+2018-08-02 16:47:30.362 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Update (WEB) with arguments (["0"]) - ModelState is "Valid"
+2018-08-02 16:47:39.717 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Update (WEB) in 10742.1908ms
+2018-08-02 16:47:39.721 +03:00 [INF] Request finished in 10831.222ms 200 
+2018-08-02 16:47:42.913 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/1 application/json 31
+2018-08-02 16:47:42.920 +03:00 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Update (WEB)
+2018-08-02 16:47:42.925 +03:00 [ERR] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+WEB.Controllers.CompaniesController.Put (WEB)
+WEB.Controllers.CompaniesController.Update (WEB)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.<RouteAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-08-02 16:47:43.074 +03:00 [INF] Request finished in 160.4558ms 500 text/html; charset=utf-8
+2018-08-02 16:49:22.923 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:49:23.709 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:49:23.709 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:49:23.723 +03:00 [INF] Request finished in 20.4813ms 200 
+2018-08-02 16:49:23.830 +03:00 [INF] Request finished in 127.3255ms 404 
+2018-08-02 16:49:23.886 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/udpate/2 application/json 31
+2018-08-02 16:49:23.890 +03:00 [INF] Request finished in 3.6841ms 404 
+2018-08-02 16:49:27.445 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/udpate application/json 31
+2018-08-02 16:49:29.069 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["0","BLL.DTOs.CompaniesDto"]) - ModelState is "Invalid"
+2018-08-02 16:49:32.955 +03:00 [INF] Updated
+2018-08-02 16:49:32.962 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 5397.0021000000006ms
+2018-08-02 16:49:32.965 +03:00 [INF] Request finished in 5520.0135ms 200 
+2018-08-02 16:49:37.223 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/upd2ate/ application/json 31
+2018-08-02 16:49:37.325 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["0","BLL.DTOs.CompaniesDto"]) - ModelState is "Invalid"
+2018-08-02 16:49:38.567 +03:00 [INF] Updated
+2018-08-02 16:49:38.568 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1344.0512ms
+2018-08-02 16:49:38.568 +03:00 [INF] Request finished in 1345.4877ms 200 
+2018-08-02 16:49:41.689 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 31
+2018-08-02 16:49:41.689 +03:00 [INF] Request finished in 0.6432ms 404 
+2018-08-02 16:49:44.309 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update/2 application/json 31
+2018-08-02 16:49:44.310 +03:00 [INF] Request finished in 0.8667ms 404 
+2018-08-02 16:49:46.400 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/upte/2 application/json 31
+2018-08-02 16:49:46.401 +03:00 [INF] Request finished in 0.9565ms 404 
+2018-08-02 16:49:58.326 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/update application/json 31
+2018-08-02 16:49:58.379 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["0","BLL.DTOs.CompaniesDto"]) - ModelState is "Invalid"
+2018-08-02 16:52:55.368 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:52:56.231 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:52:56.231 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:52:56.244 +03:00 [INF] Request finished in 19.6959ms 200 
+2018-08-02 16:52:56.340 +03:00 [INF] Request finished in 115.6794ms 404 
+2018-08-02 16:52:58.098 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/3 application/json 31
+2018-08-02 16:52:59.616 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3"]) - ModelState is "Valid"
+2018-08-02 16:53:20.816 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 22622.2354ms
+2018-08-02 16:53:20.821 +03:00 [INF] Request finished in 22722.99ms 200 
+2018-08-02 16:53:27.998 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/3 application/json 17
+2018-08-02 16:53:28.072 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3"]) - ModelState is "Valid"
+2018-08-02 16:54:18.419 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:54:18.973 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:54:19.044 +03:00 [INF] Request finished in 76.8231ms 404 
+2018-08-02 16:54:25.551 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/3 application/json 17
+2018-08-02 16:54:26.700 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3"]) - ModelState is "Valid"
+2018-08-02 16:54:26.718 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 1106.4927ms
+2018-08-02 16:54:26.723 +03:00 [INF] Request finished in 1171.9025ms 200 
+2018-08-02 16:54:31.972 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 16:54:32.011 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 16:54:32.486 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 16:54:32.529 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 536.5348ms
+2018-08-02 16:54:32.530 +03:00 [INF] Request finished in 558.3431ms 200 application/json; charset=utf-8
+2018-08-02 16:54:47.359 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:54:48.260 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:54:48.260 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:54:48.274 +03:00 [INF] Request finished in 21.7339ms 200 
+2018-08-02 16:54:48.377 +03:00 [INF] Request finished in 124.4967ms 404 
+2018-08-02 16:55:28.439 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/3 application/json 17
+2018-08-02 16:55:29.920 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3"]) - ModelState is "Valid"
+2018-08-02 16:55:38.736 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 10200.9298ms
+2018-08-02 16:55:38.743 +03:00 [INF] Request finished in 10303.5061ms 200 
+2018-08-02 16:55:43.866 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/3 application/json 17
+2018-08-02 16:55:43.868 +03:00 [INF] Request finished in 1.9042ms 404 
+2018-08-02 16:56:01.007 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/3 application/json 17
+2018-08-02 16:56:01.008 +03:00 [INF] Request finished in 1.0363ms 404 
+2018-08-02 16:57:17.292 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:57:18.039 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:57:18.039 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:57:18.039 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/3 application/json 17
+2018-08-02 16:57:18.055 +03:00 [INF] Request finished in 23.2683ms 200 
+2018-08-02 16:57:18.161 +03:00 [INF] Request finished in 129.396ms 404 
+2018-08-02 16:57:19.993 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 16:57:20.561 +03:00 [INF] Updated
+2018-08-02 16:57:20.568 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 2259.5658000000003ms
+2018-08-02 16:57:20.572 +03:00 [INF] Request finished in 2541.0899ms 200 
+2018-08-02 16:57:26.724 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/3 application/json 17
+2018-08-02 16:57:26.791 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 16:58:49.155 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:58:50.272 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:58:50.272 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:10523/  0
+2018-08-02 16:58:50.272 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/3 application/json 17
+2018-08-02 16:58:50.286 +03:00 [INF] Request finished in 22.2546ms 200 
+2018-08-02 16:58:50.417 +03:00 [INF] Request finished in 153.6715ms 404 
+2018-08-02 16:58:52.325 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 16:59:00.518 +03:00 [INF] Updated
+2018-08-02 16:59:00.524 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 9917.8631ms
+2018-08-02 16:59:00.528 +03:00 [INF] Request finished in 10263.9785ms 200 
+2018-08-02 16:59:13.313 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-02 16:59:13.697 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:59:13.764 +03:00 [INF] Request finished in 71.6927ms 404 
+2018-08-02 16:59:17.267 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:10523/  
+2018-08-02 16:59:17.268 +03:00 [INF] Request finished in 0.7658ms 404 
+2018-08-02 16:59:37.231 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 16:59:38.393 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 16:59:38.851 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 16:59:38.898 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 1588.4467ms
+2018-08-02 16:59:38.899 +03:00 [INF] Request finished in 1668.8335ms 200 application/json; charset=utf-8
+2018-08-02 16:59:49.985 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/3 application/json 22
+2018-08-02 16:59:50.030 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-02 16:59:50.261 +03:00 [INF] Updated
+2018-08-02 16:59:50.262 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 270.1701ms
+2018-08-02 16:59:50.263 +03:00 [INF] Request finished in 278.2037ms 200 
+2018-08-02 16:59:53.885 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies application/json 
+2018-08-02 16:59:53.889 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-02 16:59:53.897 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-02 16:59:53.898 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 12.299900000000001ms
+2018-08-02 16:59:53.898 +03:00 [INF] Request finished in 13.1413ms 200 application/json; charset=utf-8

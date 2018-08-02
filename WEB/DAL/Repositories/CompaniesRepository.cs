@@ -1,17 +1,21 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
+using DAL.Infrastructure.Helpers;
 using DAL.Interfaces;
 using DAL.Models;
 using Serilog;
 
 namespace DAL.Repositories
 {
-    public class CompaniesRepository : 
-        IWritableRepository<Companies>, 
+    public class CompaniesRepository :
+        IWritableRepository<Companies>,
         IQueryableRepository<Companies>
     {
         private readonly ApplicationContext _db;
-        
+
         public CompaniesRepository(ApplicationContext dbContext)
         {
             _db = dbContext;
@@ -42,15 +46,27 @@ namespace DAL.Repositories
 
         public async Task UpdateAsync(int id, Companies entityToUpdate)
         {
+
             await _db.Companies
-               .Where(i => i.Id == id)
-               .UpdateFromQueryAsync(_ => new Companies
+                .Where(i => i.Id == id)
+                .UpdateFromQueryAsync(_ => new Companies
                 {
                     Name = entityToUpdate.Name
                 });
 
             Log.Information("Updated");
         }
+
+        public async Task UpdateSpecificAsync(int id, Dictionary<string, object> dictionary)
+        {
+            await _db.Companies
+                .Where(i => i.Id == id)
+                .UpdateFromQueryAsync(ReposHelper.UpdateSpecificFields<Companies>(dictionary));
+
+            Log.Information("Updated");
+        }
+
+        
 
         public async Task DeleteAsync(int id)
         {
@@ -60,10 +76,10 @@ namespace DAL.Repositories
 
             Log.Information("Deleted");
         }
-        
+
 
         #endregion IRepository
 
-        
+
     }
 }

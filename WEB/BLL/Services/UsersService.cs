@@ -39,6 +39,11 @@ namespace BLL.Services
             await Repo.UsersRepository.UpdateAsync(id, entity);
         }
 
+        public async Task UpdateSpecificAsync(int id, Dictionary<string, object> dictionary)
+        {
+            await Repo.UsersRepository.UpdateSpecificAsync(id, dictionary);
+        }
+
         public async Task InsertAsync(UsersDto dto)
         {
             var entity = _mapper.Map<Users>(dto);

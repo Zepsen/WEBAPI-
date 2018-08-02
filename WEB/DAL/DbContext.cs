@@ -15,7 +15,8 @@ namespace DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-9K6B7B5\\SQLEXPRESS;Database=helloappdb;Trusted_Connection=True;");
+            //optionsBuilder.UseSqlServer("Server=DESKTOP-9K6B7B5\\SQLEXPRESS;Database=helloappdb;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=ZEPSENHOME\\SQLEXPRESS;Database=helloappdb;Trusted_Connection=True;");
         }
 
         /// <summary>

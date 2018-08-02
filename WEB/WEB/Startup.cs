@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
-using AutoMapper;
-using BLL;
+﻿using AutoMapper;
 using BLL.Interfaces;
 using BLL.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using WEB.Infrastructure.Automapper;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace WEB
 {
@@ -25,6 +22,8 @@ namespace WEB
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<ICompaniesService, CompaniesService>();
 
@@ -41,8 +40,7 @@ namespace WEB
             {
                 app.UseDeveloperExceptionPage();
             }
-            
-            
+
             app.UseMvc();
         }
     }

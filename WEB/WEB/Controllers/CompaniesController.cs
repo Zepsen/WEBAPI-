@@ -1,8 +1,12 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 using BLL.DTOs;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 
 namespace WEB.Controllers
 {
@@ -10,12 +14,16 @@ namespace WEB.Controllers
     public class CompaniesController : Controller
     {
         private readonly ICompaniesService _service;
+        private readonly IHttpContextAccessor _accessor;
         
 
         public CompaniesController(
-            ICompaniesService service)
+            ICompaniesService service,
+            IHttpContextAccessor accessor
+            )
         {
             _service = service;
+            _accessor = accessor;
         }
 
         // GET api/[controller]
@@ -43,9 +51,22 @@ namespace WEB.Controllers
         [HttpPut("{id}")]
         public async Task Put(int id, [FromBody]CompaniesDto dto)
         {
-            await _service.UpdateAsync(id, dto);
+            if (_accessor.HttpContext.Request.Body.CanSeek)
+            {
+                _accessor.HttpContext.Request.Body.Seek(0, SeekOrigin.Begin);
+                var data = await new StreamReader(_accessor.HttpContext.Request.Body).ReadToEndAsync();
+                var json = JObject.Parse(data).ToObject<Dictionary<string, object>>();
+
+                await _service.UpdateSpecificAsync(id, json);
+            }
         }
 
+        [HttpPatch("{id}")]
+        public async Task Patch(int id, [FromBody]CompaniesDto dto)
+        {
+             await _service.UpdateAsync(id, dto);
+        }
+        
         // DELETE api/[controller]/{id}
         [HttpDelete("{id}")]
         public async Task Delete([FromRoute]int id)

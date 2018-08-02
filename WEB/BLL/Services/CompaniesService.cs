@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using BLL.DTOs;
 using BLL.Infrastructure;
@@ -39,6 +40,11 @@ namespace BLL.Services
             await Repo.CompaniesRepository.UpdateAsync(id, entity);
         }
 
+        public async Task UpdateSpecificAsync(int id, Dictionary<string, object> data)
+        {
+            await Repo.CompaniesRepository.UpdateSpecificAsync(id, data);
+        }
+
         public async Task InsertAsync(CompaniesDto dto)
         {
             var entity = _mapper.Map<Companies>(dto);
@@ -50,6 +56,8 @@ namespace BLL.Services
         {
             await Repo.CompaniesRepository.DeleteAsync(id);
         }
+
+       
     }
 
     

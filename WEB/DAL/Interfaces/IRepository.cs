@@ -10,6 +10,7 @@ namespace DAL.Interfaces
     {
         Task InsertAsync(T entityToInsert);
         Task UpdateAsync(int id, T entityToUpdate);
+        Task UpdateSpecificAsync(int id, Dictionary<string, object> dictionary);
         Task DeleteAsync(int id);
     }
 

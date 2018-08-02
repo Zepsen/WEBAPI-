@@ -12,6 +12,8 @@ namespace BLL.Interfaces
         Task<T> GetByIdAsync(int id);
 
         Task UpdateAsync(int id, T entity);
+        Task UpdateSpecificAsync(int id, Dictionary<string, object> dictionary);
+
         Task InsertAsync(T entity);
         Task DeleteAsync(int id);
     }
