@@ -17,3 +17,49 @@
 2018-08-03 16:32:19.630 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
 2018-08-03 16:32:19.641 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 348.385ms
 2018-08-03 16:32:19.641 +03:00 [INF] Request finished in 358.8975ms 200 application/json; charset=utf-8
+2018-08-03 16:36:16.293 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-08-03 16:36:16.804 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/2 application/json 21
+2018-08-03 16:36:18.134 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-03 16:36:18.597 +03:00 [INF] Updated
+2018-08-03 16:36:18.603 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 1686.8488ms
+2018-08-03 16:36:18.608 +03:00 [INF] Request finished in 1808.8735ms 200 
+2018-08-03 16:36:20.307 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/2 application/json 21
+2018-08-03 16:36:20.340 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-03 16:36:20.350 +03:00 [INF] Updated
+2018-08-03 16:36:20.350 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 42.3009ms
+2018-08-03 16:36:20.351 +03:00 [INF] Request finished in 43.3438ms 200 
+2018-08-03 16:36:21.605 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/2 application/json 21
+2018-08-03 16:36:21.624 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-03 16:36:21.631 +03:00 [INF] Updated
+2018-08-03 16:36:21.632 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 26.2268ms
+2018-08-03 16:36:21.632 +03:00 [INF] Request finished in 26.9058ms 200 
+2018-08-03 16:36:22.829 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/2 application/json 21
+2018-08-03 16:36:22.845 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-03 16:36:22.852 +03:00 [INF] Updated
+2018-08-03 16:36:22.852 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 22.858800000000002ms
+2018-08-03 16:36:22.853 +03:00 [INF] Request finished in 23.4875ms 200 
+2018-08-03 16:36:32.847 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/3 application/json 18
+2018-08-03 16:36:32.865 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-03 16:36:32.892 +03:00 [INF] Updated
+2018-08-03 16:36:32.892 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 39.4656ms
+2018-08-03 16:36:32.892 +03:00 [INF] Request finished in 44.932ms 200 
+2018-08-03 16:36:34.542 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/3 application/json 18
+2018-08-03 16:36:34.558 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-03 16:36:34.567 +03:00 [INF] Updated
+2018-08-03 16:36:34.567 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 24.8492ms
+2018-08-03 16:36:34.567 +03:00 [INF] Request finished in 25.6153ms 200 
+2018-08-03 16:36:35.771 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/companies/3 application/json 18
+2018-08-03 16:36:35.787 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Put (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-03 16:36:35.794 +03:00 [INF] Updated
+2018-08-03 16:36:35.795 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Put (WEB) in 23.450400000000002ms
+2018-08-03 16:36:35.795 +03:00 [INF] Request finished in 23.8907ms 200 
+2018-08-03 16:36:39.172 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost/api/companies/2 application/json 21
+2018-08-03 16:36:39.188 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["2","BLL.DTOs.CompaniesDto"]) - ModelState is "Valid"
+2018-08-03 16:36:39.196 +03:00 [INF] Updated
+2018-08-03 16:36:39.196 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 23.6888ms
+2018-08-03 16:36:39.196 +03:00 [INF] Request finished in 24.1427ms 200 
+2018-08-03 16:36:42.758 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies?skip=1&take=5 application/json 
+2018-08-03 16:36:42.777 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-08-03 16:36:43.072 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-08-03 16:36:43.083 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 315.2812ms
+2018-08-03 16:36:43.083 +03:00 [INF] Request finished in 325.1193ms 200 application/json; charset=utf-8
