@@ -1,3 +1,51 @@
 ﻿
+#0 
+	C.R.U.D -> Create, Retrieve, Update, Delete;
 
-Logger - Serilog
+
+#1 Packages 
+	- Logger -> Serilog
+	- ORM    -> EFCore, EFCorePlus, EFCoreExtensions
+
+
+
+#1 SERVER AS A REST
+	#1.1 WEB API CTRL 
+
+		#1.1.1 AVAILABEL ACTIONS
+			- GET api/[controller]        -> retrieve collection of items 
+			- GET api/[controller]/{id}   -> retrieve item by id
+			- POST api/[controller]       -> insert item
+			- PUT api/[controller]/{id}   -> full update item
+			- PATCH api/[controller]{id}  -> update only specific fields of item
+			- DELETE api/[controller]{id} -> delete item
+
+		#1.1.2 One SERVICE per CTRL
+
+	#1.2 BLL (SERVICE LAYER)
+
+	#1.3 DAL (REPO LAYER)
+		
+		#1.3.1 Each repos must implement one of the interfaces
+			- ICachedRepository
+				Using with cache strategy from EFCorePlus
+				Cached all in R. methods
+				Must clear Cache in C.U.D. methods
+					
+				Use If table:
+					- Not many rows in table
+					- Rarely table changing (C.U.D.)
+					- Can't be IWritableRepository
+			
+			- IQueryableRepository
+				R. methods return IQuaryable<T>
+				Use If table :
+					- Too big;
+					- Too often updated 
+
+			- IWritableRepository
+				Additional interface for repos
+				If table allow C.U.D. 
+
+		#1.3.2 Avoid any additional methods, especially for ICachedRepository
+

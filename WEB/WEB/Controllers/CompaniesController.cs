@@ -54,6 +54,7 @@ namespace WEB.Controllers
             await _service.UpdateAsync(id, dto);
         }
 
+        // PATCHED api/[controller]/{id}
         [HttpPatch("{id}")]
         public async Task Patch(int id, [FromBody]CompaniesDto dto)
         {
