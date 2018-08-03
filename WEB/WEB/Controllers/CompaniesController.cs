@@ -51,6 +51,12 @@ namespace WEB.Controllers
         [HttpPut("{id}")]
         public async Task Put(int id, [FromBody]CompaniesDto dto)
         {
+            await _service.UpdateAsync(id, dto);
+        }
+
+        [HttpPatch("{id}")]
+        public async Task Patch(int id, [FromBody]CompaniesDto dto)
+        {
             if (_accessor.HttpContext.Request.Body.CanSeek)
             {
                 _accessor.HttpContext.Request.Body.Seek(0, SeekOrigin.Begin);
@@ -59,12 +65,6 @@ namespace WEB.Controllers
 
                 await _service.UpdateSpecificAsync(id, json);
             }
-        }
-
-        [HttpPatch("{id}")]
-        public async Task Patch(int id, [FromBody]CompaniesDto dto)
-        {
-             await _service.UpdateAsync(id, dto);
         }
         
         // DELETE api/[controller]/{id}
