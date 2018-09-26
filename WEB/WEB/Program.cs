@@ -35,6 +35,5 @@ namespace WEB
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .UseSerilog();
-                //.Build();
     }
 }
