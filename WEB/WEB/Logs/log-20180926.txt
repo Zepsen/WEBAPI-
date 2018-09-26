@@ -404,3 +404,229 @@
 2018-09-26 17:27:16.658 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UsersDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2018-09-26 17:27:16.707 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 558.1349ms
 2018-09-26 17:27:16.729 +03:00 [INF] Request finished in 625.9202ms 200 application/json; charset=utf-8
+2018-09-26 17:42:49.460 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-26 17:42:49.739 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.758 +03:00 [INF] Request finished in 20.3106ms 307 
+2018-09-26 17:42:49.767 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.768 +03:00 [INF] Request finished in 0.4575ms 307 
+2018-09-26 17:42:49.772 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.772 +03:00 [INF] Request finished in 0.3813ms 307 
+2018-09-26 17:42:49.775 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.775 +03:00 [INF] Request finished in 0.4621ms 307 
+2018-09-26 17:42:49.778 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.778 +03:00 [INF] Request finished in 0.2996ms 307 
+2018-09-26 17:42:49.781 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.781 +03:00 [INF] Request finished in 0.2784ms 307 
+2018-09-26 17:42:49.784 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.785 +03:00 [INF] Request finished in 0.6671ms 307 
+2018-09-26 17:42:49.787 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.788 +03:00 [INF] Request finished in 0.3148ms 307 
+2018-09-26 17:42:49.790 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.790 +03:00 [INF] Request finished in 0.2552ms 307 
+2018-09-26 17:42:49.793 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.793 +03:00 [INF] Request finished in 0.2833ms 307 
+2018-09-26 17:42:49.796 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:49.797 +03:00 [INF] Request finished in 0.231ms 307 
+2018-09-26 17:42:53.509 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.509 +03:00 [INF] Request finished in 0.238ms 307 
+2018-09-26 17:42:53.512 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.513 +03:00 [INF] Request finished in 0.23ms 307 
+2018-09-26 17:42:53.516 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.516 +03:00 [INF] Request finished in 0.3956ms 307 
+2018-09-26 17:42:53.519 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.520 +03:00 [INF] Request finished in 0.2824ms 307 
+2018-09-26 17:42:53.524 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.524 +03:00 [INF] Request finished in 0.233ms 307 
+2018-09-26 17:42:53.526 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.527 +03:00 [INF] Request finished in 0.2165ms 307 
+2018-09-26 17:42:53.529 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.530 +03:00 [INF] Request finished in 0.2218ms 307 
+2018-09-26 17:42:53.532 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.532 +03:00 [INF] Request finished in 0.2089ms 307 
+2018-09-26 17:42:53.535 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.535 +03:00 [INF] Request finished in 0.2075ms 307 
+2018-09-26 17:42:53.538 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.538 +03:00 [INF] Request finished in 0.4234ms 307 
+2018-09-26 17:42:53.543 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:42:53.543 +03:00 [INF] Request finished in 0.2353ms 307 
+2018-09-26 17:43:54.351 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:43:54.351 +03:00 [INF] Request finished in 0.24ms 307 
+2018-09-26 17:44:24.295 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:44:24.295 +03:00 [INF] Request finished in 0.2771ms 307 
+2018-09-26 17:45:01.650 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.650 +03:00 [INF] Request finished in 0.242ms 307 
+2018-09-26 17:45:01.656 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.657 +03:00 [INF] Request finished in 0.3194ms 307 
+2018-09-26 17:45:01.660 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.660 +03:00 [INF] Request finished in 0.2238ms 307 
+2018-09-26 17:45:01.663 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.664 +03:00 [INF] Request finished in 0.4479ms 307 
+2018-09-26 17:45:01.666 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.667 +03:00 [INF] Request finished in 0.2744ms 307 
+2018-09-26 17:45:01.670 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.670 +03:00 [INF] Request finished in 0.3168ms 307 
+2018-09-26 17:45:01.674 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.674 +03:00 [INF] Request finished in 0.2492ms 307 
+2018-09-26 17:45:01.677 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.677 +03:00 [INF] Request finished in 0.232ms 307 
+2018-09-26 17:45:01.679 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.679 +03:00 [INF] Request finished in 0.2029ms 307 
+2018-09-26 17:45:01.682 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.682 +03:00 [INF] Request finished in 0.3602ms 307 
+2018-09-26 17:45:01.685 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:01.686 +03:00 [INF] Request finished in 1.2693ms 307 
+2018-09-26 17:45:03.282 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.284 +03:00 [INF] Request finished in 1.6047ms 307 
+2018-09-26 17:45:03.307 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.307 +03:00 [INF] Request finished in 0.286ms 307 
+2018-09-26 17:45:03.322 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.322 +03:00 [INF] Request finished in 0.4744ms 307 
+2018-09-26 17:45:03.344 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.345 +03:00 [INF] Request finished in 0.5115ms 307 
+2018-09-26 17:45:03.362 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.362 +03:00 [INF] Request finished in 0.5078ms 307 
+2018-09-26 17:45:03.375 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.375 +03:00 [INF] Request finished in 0.2065ms 307 
+2018-09-26 17:45:03.379 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.379 +03:00 [INF] Request finished in 0.6128ms 307 
+2018-09-26 17:45:03.382 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.382 +03:00 [INF] Request finished in 0.2863ms 307 
+2018-09-26 17:45:03.385 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.385 +03:00 [INF] Request finished in 0.328ms 307 
+2018-09-26 17:45:03.388 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.388 +03:00 [INF] Request finished in 0.3363ms 307 
+2018-09-26 17:45:03.391 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:03.391 +03:00 [INF] Request finished in 0.2042ms 307 
+2018-09-26 17:45:12.724 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:12.724 +03:00 [INF] Request finished in 0.2314ms 307 
+2018-09-26 17:45:20.351 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.351 +03:00 [INF] Request finished in 0.2436ms 307 
+2018-09-26 17:45:20.354 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.355 +03:00 [INF] Request finished in 0.3098ms 307 
+2018-09-26 17:45:20.358 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.358 +03:00 [INF] Request finished in 0.2708ms 307 
+2018-09-26 17:45:20.361 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.362 +03:00 [INF] Request finished in 0.2562ms 307 
+2018-09-26 17:45:20.365 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.365 +03:00 [INF] Request finished in 0.2204ms 307 
+2018-09-26 17:45:20.370 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.370 +03:00 [INF] Request finished in 0.2466ms 307 
+2018-09-26 17:45:20.372 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.373 +03:00 [INF] Request finished in 0.1771ms 307 
+2018-09-26 17:45:20.375 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.375 +03:00 [INF] Request finished in 0.2095ms 307 
+2018-09-26 17:45:20.378 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.378 +03:00 [INF] Request finished in 0.4966ms 307 
+2018-09-26 17:45:20.380 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.381 +03:00 [INF] Request finished in 0.2549ms 307 
+2018-09-26 17:45:20.383 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:45:20.383 +03:00 [INF] Request finished in 0.2469ms 307 
+2018-09-26 17:47:23.172 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-26 17:47:23.435 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:47:23.451 +03:00 [INF] Request finished in 17.6213ms 307 
+2018-09-26 17:47:35.439 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:47:35.440 +03:00 [INF] Request finished in 1.0538ms 307 
+2018-09-26 17:47:35.476 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:47:35.598 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-09-26 17:47:35.879 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 17:47:36.084 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 190.02380000000002ms.
+2018-09-26 17:47:36.090 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 17:47:36.134 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 531.6534ms
+2018-09-26 17:47:36.137 +03:00 [INF] Request finished in 661.7685ms 200 application/json; charset=utf-8
+2018-09-26 17:48:24.993 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=5 application/json 
+2018-09-26 17:48:24.993 +03:00 [INF] Request finished in 0.5611ms 307 
+2018-09-26 17:48:25.025 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=5 application/json 
+2018-09-26 17:48:25.037 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 17:48:25.050 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 17:48:25.167 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 116.741ms.
+2018-09-26 17:48:25.174 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UsersDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 17:48:25.180 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 142.72230000000002ms
+2018-09-26 17:48:25.183 +03:00 [INF] Request finished in 158.0295ms 200 application/json; charset=utf-8
+2018-09-26 17:48:53.177 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/users/3 application/json 21
+2018-09-26 17:48:53.178 +03:00 [INF] Request finished in 1.3471ms 307 
+2018-09-26 17:48:53.192 +03:00 [INF] Connection id "0HLH3NRS2INC7", Request id "0HLH3NRS2INC7:00000006": the application completed without reading the entire request body.
+2018-09-26 17:48:53.194 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44326/api/users/3 application/json 21
+2018-09-26 17:48:53.195 +03:00 [INF] Request finished in 0.6634ms 404 
+2018-09-26 17:48:53.195 +03:00 [INF] Connection id "0HLH3NRS2INC7", Request id "0HLH3NRS2INC7:00000007": the application completed without reading the entire request body.
+2018-09-26 17:48:57.389 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=5 application/json 
+2018-09-26 17:48:57.389 +03:00 [INF] Request finished in 0.3989ms 307 
+2018-09-26 17:48:57.401 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=5 application/json 
+2018-09-26 17:48:57.402 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 17:48:57.407 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 17:48:57.411 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.4415ms.
+2018-09-26 17:48:57.411 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UsersDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 17:48:57.411 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 8.8505ms
+2018-09-26 17:48:57.411 +03:00 [INF] Request finished in 10.0563ms 200 application/json; charset=utf-8
+2018-09-26 17:48:59.854 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=5 application/json 
+2018-09-26 17:48:59.855 +03:00 [INF] Request finished in 0.2641ms 307 
+2018-09-26 17:48:59.869 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=5 application/json 
+2018-09-26 17:48:59.869 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 17:48:59.873 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 17:48:59.876 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.8515ms.
+2018-09-26 17:48:59.876 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UsersDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 17:48:59.876 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.0015ms
+2018-09-26 17:48:59.876 +03:00 [INF] Request finished in 7.6752ms 200 application/json; charset=utf-8
+2018-09-26 17:49:44.441 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/users/3 application/json 21
+2018-09-26 17:49:44.443 +03:00 [INF] Request finished in 1.8765ms 307 
+2018-09-26 17:49:44.443 +03:00 [INF] Connection id "0HLH3NRS2INC7", Request id "0HLH3NRS2INC7:0000000C": the application completed without reading the entire request body.
+2018-09-26 17:49:44.488 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44326/api/users/3 application/json 21
+2018-09-26 17:49:44.488 +03:00 [INF] Request finished in 0.383ms 404 
+2018-09-26 17:49:44.488 +03:00 [INF] Connection id "0HLH3NRS2INC7", Request id "0HLH3NRS2INC7:0000000D": the application completed without reading the entire request body.
+2018-09-26 17:57:54.443 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-26 17:57:54.966 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/users/3 application/json 21
+2018-09-26 17:57:54.982 +03:00 [INF] Request finished in 17.4194ms 307 
+2018-09-26 17:57:54.991 +03:00 [INF] Connection id "0HLH3O1O96927", Request id "0HLH3O1O96927:00000001": the application completed without reading the entire request body.
+2018-09-26 17:57:54.997 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44326/api/users/3 application/json 21
+2018-09-26 17:57:55.152 +03:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing action WEB.Controllers.UsersController.Patch (WEB)
+2018-09-26 17:57:55.461 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Patch (WEB) with arguments (["3","BLL.DTOs.CompaniesDto"]) - Validation state: "Valid"
+2018-09-26 17:57:55.597 +03:00 [INF] Updated
+2018-09-26 17:57:55.599 +03:00 [INF] Cache cleared
+2018-09-26 17:57:55.604 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Patch (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 129.51680000000002ms.
+2018-09-26 17:57:55.618 +03:00 [INF] Executed action WEB.Controllers.UsersController.Patch (WEB) in 462.35510000000005ms
+2018-09-26 17:57:55.624 +03:00 [INF] Request finished in 626.4109ms 200 
+2018-09-26 17:58:07.598 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=5 application/json 
+2018-09-26 17:58:07.600 +03:00 [INF] Request finished in 1.5921ms 307 
+2018-09-26 17:58:07.618 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=5 application/json 
+2018-09-26 17:58:07.626 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 17:58:07.649 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 17:58:07.757 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 107.9388ms.
+2018-09-26 17:58:07.760 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UsersDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 17:58:07.772 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 145.949ms
+2018-09-26 17:58:07.773 +03:00 [INF] Request finished in 155.4534ms 200 application/json; charset=utf-8
+2018-09-26 17:58:11.278 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=5 application/json 
+2018-09-26 17:58:11.279 +03:00 [INF] Request finished in 0.8088ms 307 
+2018-09-26 17:58:11.292 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=5 application/json 
+2018-09-26 17:58:11.292 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 17:58:11.298 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 17:58:11.302 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.7345ms.
+2018-09-26 17:58:11.303 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UsersDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 17:58:11.303 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 10.7592ms
+2018-09-26 17:58:11.303 +03:00 [INF] Request finished in 11.4332ms 200 application/json; charset=utf-8
+2018-09-26 17:59:16.197 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:59:16.198 +03:00 [INF] Request finished in 1.1206ms 307 
+2018-09-26 17:59:16.235 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:59:16.240 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-09-26 17:59:16.251 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 17:59:16.362 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 111.36210000000001ms.
+2018-09-26 17:59:16.363 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 17:59:16.365 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 125.1496ms
+2018-09-26 17:59:16.366 +03:00 [INF] Request finished in 130.1598ms 200 application/json; charset=utf-8
+2018-09-26 17:59:27.082 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/companies/4 application/json 21
+2018-09-26 17:59:27.082 +03:00 [INF] Request finished in 0.2443ms 307 
+2018-09-26 17:59:27.082 +03:00 [INF] Connection id "0HLH3O1O96928", Request id "0HLH3O1O96928:00000003": the application completed without reading the entire request body.
+2018-09-26 17:59:27.085 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44326/api/companies/4 application/json 21
+2018-09-26 17:59:27.090 +03:00 [INF] Route matched with {action = "Patch", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Patch (WEB)
+2018-09-26 17:59:27.104 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["4","BLL.DTOs.CompaniesDto"]) - Validation state: "Valid"
+2018-09-26 17:59:27.116 +03:00 [INF] Updated
+2018-09-26 17:59:27.116 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Patch (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 12.352300000000001ms.
+2018-09-26 17:59:27.116 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 26.555ms
+2018-09-26 17:59:27.116 +03:00 [INF] Request finished in 31.0285ms 200 
+2018-09-26 17:59:31.036 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:59:31.052 +03:00 [INF] Request finished in 15.5217ms 307 
+2018-09-26 17:59:31.068 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 17:59:31.068 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-09-26 17:59:31.072 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 17:59:31.079 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.7489ms.
+2018-09-26 17:59:31.079 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 17:59:31.079 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 10.7254ms
+2018-09-26 17:59:31.079 +03:00 [INF] Request finished in 11.323ms 200 application/json; charset=utf-8

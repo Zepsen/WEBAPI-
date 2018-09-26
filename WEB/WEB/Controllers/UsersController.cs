@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using BLL.DTOs;
 using BLL.Infrastructure;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Internal;
+using Newtonsoft.Json.Linq;
 
 namespace WEB.Controllers
 {
@@ -13,11 +16,14 @@ namespace WEB.Controllers
     public class UsersController : Controller
     {
         private readonly IUsersService _service;
+        private readonly IHttpContextAccessor _accessor;
 
         public UsersController(
-            IUsersService service)
+            IUsersService service,
+            IHttpContextAccessor accessor)
         {
             _service = service;
+            _accessor = accessor;
         }
 
         // GET api/[controller]
@@ -46,6 +52,20 @@ namespace WEB.Controllers
         public async Task Put(int id, [FromBody]UsersDto user)
         {
             await _service.UpdateAsync(id, user);
+        }
+
+        // PATCHED api/[controller]/{id}
+        [HttpPatch("{id}")]
+        public async Task Patch(int id, [FromBody]CompaniesDto dto)
+        {
+            if (_accessor.HttpContext.Request.Body.CanSeek)
+            {
+                _accessor.HttpContext.Request.Body.Seek(0, SeekOrigin.Begin);
+                var data = await new StreamReader(_accessor.HttpContext.Request.Body).ReadToEndAsync();
+                var json = JObject.Parse(data).ToObject<Dictionary<string, object>>();
+
+                await _service.UpdateSpecificAsync(id, json);
+            }
         }
 
         // DELETE api/[controller]/{id}
