@@ -17,7 +17,7 @@ namespace WEB
 
             try
             {
-                BuildWebHost(args).Run();
+                CreateWebHostBuilder(args).Build().Run();
                 return;
             }
             catch (Exception ex)
@@ -31,10 +31,10 @@ namespace WEB
             }
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseSerilog()
-                .Build();
+                .UseSerilog();
+                //.Build();
     }
 }

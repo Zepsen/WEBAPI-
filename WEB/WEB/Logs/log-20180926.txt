@@ -1,0 +1,35 @@
+2018-09-26 12:25:57.552 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-26 12:25:57.719 +03:00 [INF] Creating key "1ceb0e57-d76a-4af3-b486-6b5877a88616" with creation date "2018-09-26T09:25:57.7099378+00:00", activation date "2018-09-26T09:25:57.6416420+00:00", and expiration date "2018-12-25T09:25:57.6416420+00:00".
+2018-09-26 12:25:57.770 +03:00 [INF] Writing data to file 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys\key-1ceb0e57-d76a-4af3-b486-6b5877a88616.xml'.
+2018-09-26 12:25:58.663 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-09-26 12:25:58.765 +03:00 [INF] Request finished in 107.1594ms 404 
+2018-09-26 12:27:25.420 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users?skip=1&take=5 application/json 
+2018-09-26 12:27:26.674 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-09-26 12:27:27.120 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-09-26 12:27:27.176 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 1666.2648000000002ms
+2018-09-26 12:27:27.177 +03:00 [INF] Request finished in 1756.8852ms 200 application/json; charset=utf-8
+2018-09-26 12:27:39.083 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies?skip=1&take=5 application/json 
+2018-09-26 12:27:39.106 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-09-26 12:27:39.447 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-09-26 12:27:39.451 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 361.9809ms
+2018-09-26 12:27:39.451 +03:00 [INF] Request finished in 367.9873ms 200 application/json; charset=utf-8
+2018-09-26 12:49:37.818 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-26 12:49:38.840 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/values  
+2018-09-26 12:49:39.186 +03:00 [INF] Request finished in 359.4214ms 404 
+2018-09-26 12:49:42.780 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/companies  
+2018-09-26 12:49:44.250 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-09-26 12:49:44.782 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-09-26 12:49:45.003 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 2037.7807ms
+2018-09-26 12:49:45.044 +03:00 [INF] Request finished in 2263.7826ms 200 application/json; charset=utf-8
+2018-09-26 12:49:45.268 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/favicon.ico  
+2018-09-26 12:49:45.268 +03:00 [INF] Request finished in 0.7124ms 404 
+2018-09-26 12:50:43.900 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users  
+2018-09-26 12:50:43.949 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-09-26 12:50:44.161 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-09-26 12:50:44.168 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 263.1417ms
+2018-09-26 12:50:44.175 +03:00 [INF] Request finished in 275.0103ms 200 application/json; charset=utf-8
+2018-09-26 12:50:53.073 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54708/api/users?skip=1  
+2018-09-26 12:50:53.102 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - ModelState is "Valid"
+2018-09-26 12:50:53.106 +03:00 [INF] Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-09-26 12:50:53.107 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 29.532700000000002ms
+2018-09-26 12:50:53.107 +03:00 [INF] Request finished in 33.8416ms 200 application/json; charset=utf-8
