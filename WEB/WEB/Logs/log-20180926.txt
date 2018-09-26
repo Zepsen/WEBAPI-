@@ -630,3 +630,160 @@
 2018-09-26 17:59:31.079 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2018-09-26 17:59:31.079 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 10.7254ms
 2018-09-26 17:59:31.079 +03:00 [INF] Request finished in 11.323ms 200 application/json; charset=utf-8
+2018-09-26 18:26:47.449 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-26 18:26:47.953 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=5 application/json 
+2018-09-26 18:26:47.969 +03:00 [INF] Request finished in 16.9698ms 307 
+2018-09-26 18:26:47.985 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 18:26:48.108 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-09-26 18:26:48.450 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 18:26:48.649 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 185.3192ms.
+2018-09-26 18:26:48.655 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 18:26:48.694 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 583.21210000000008ms
+2018-09-26 18:26:48.697 +03:00 [INF] Request finished in 712.7028ms 200 application/json; charset=utf-8
+2018-09-26 18:26:52.720 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=5 application/json 
+2018-09-26 18:26:52.720 +03:00 [INF] Request finished in 0.4704ms 307 
+2018-09-26 18:26:52.726 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=5 application/json 
+2018-09-26 18:26:52.731 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:26:52.741 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 18:26:52.848 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 106.8297ms.
+2018-09-26 18:26:52.853 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UsersDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 18:26:52.859 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 126.46400000000001ms
+2018-09-26 18:26:52.862 +03:00 [INF] Request finished in 135.846ms 200 application/json; charset=utf-8
+2018-09-26 18:27:20.663 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/2 application/json 
+2018-09-26 18:27:20.664 +03:00 [INF] Request finished in 1.165ms 307 
+2018-09-26 18:27:20.680 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/2 application/json 
+2018-09-26 18:27:20.684 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:27:20.688 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-09-26 18:27:20.698 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 9.5623ms.
+2018-09-26 18:27:20.698 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UsersDto'.
+2018-09-26 18:27:20.698 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 14.2096ms
+2018-09-26 18:27:20.699 +03:00 [INF] Request finished in 18.8168ms 200 application/json; charset=utf-8
+2018-09-26 18:27:24.789 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/4n application/json 
+2018-09-26 18:27:24.790 +03:00 [INF] Request finished in 0.2373ms 307 
+2018-09-26 18:27:24.793 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/4n application/json 
+2018-09-26 18:27:24.794 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:27:24.801 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["0"]) - Validation state: "Invalid"
+2018-09-26 18:27:24.804 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.355ms.
+2018-09-26 18:27:24.804 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2018-09-26 18:27:24.805 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 10.8747ms
+2018-09-26 18:27:24.805 +03:00 [INF] Request finished in 11.5183ms 204 
+2018-09-26 18:27:27.673 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/4n application/json 
+2018-09-26 18:27:27.673 +03:00 [INF] Request finished in 0.4419ms 307 
+2018-09-26 18:27:27.693 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/4n application/json 
+2018-09-26 18:27:27.693 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:27:27.697 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["0"]) - Validation state: "Invalid"
+2018-09-26 18:27:27.700 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.7343ms.
+2018-09-26 18:27:27.700 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2018-09-26 18:27:27.700 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.5204ms
+2018-09-26 18:27:27.700 +03:00 [INF] Request finished in 7.0816ms 204 
+2018-09-26 18:27:32.101 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/1 application/json 
+2018-09-26 18:27:32.101 +03:00 [INF] Request finished in 0.2254ms 307 
+2018-09-26 18:27:32.104 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/1 application/json 
+2018-09-26 18:27:32.105 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:27:32.109 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - Validation state: "Valid"
+2018-09-26 18:27:32.113 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.2859000000000003ms.
+2018-09-26 18:27:32.113 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UsersDto'.
+2018-09-26 18:27:32.113 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.4498000000000006ms
+2018-09-26 18:27:32.113 +03:00 [INF] Request finished in 8.7853ms 200 application/json; charset=utf-8
+2018-09-26 18:47:57.892 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-26 18:47:58.369 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=5 application/json 
+2018-09-26 18:47:58.386 +03:00 [INF] Request finished in 18.647ms 307 
+2018-09-26 18:47:58.401 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=5 application/json 
+2018-09-26 18:47:58.520 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:47:58.877 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 18:47:59.038 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 147.6308ms.
+2018-09-26 18:47:59.054 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UsersDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 18:47:59.094 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 570.5621ms
+2018-09-26 18:47:59.101 +03:00 [INF] Request finished in 698.9772ms 200 application/json; charset=utf-8
+2018-09-26 18:48:09.310 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/4n application/json 
+2018-09-26 18:48:09.310 +03:00 [INF] Request finished in 0.4985ms 307 
+2018-09-26 18:48:09.354 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/4n application/json 
+2018-09-26 18:48:09.359 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:48:09.367 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["4n"]) - Validation state: "Valid"
+2018-09-26 18:48:09.391 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 23.8594ms.
+2018-09-26 18:48:09.392 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UsersDto'.
+2018-09-26 18:48:09.392 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 33.1255ms
+2018-09-26 18:48:09.392 +03:00 [INF] Request finished in 37.9403ms 200 application/json; charset=utf-8
+2018-09-26 18:48:12.898 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/1 application/json 
+2018-09-26 18:48:12.899 +03:00 [INF] Request finished in 0.3026ms 307 
+2018-09-26 18:48:12.906 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/1 application/json 
+2018-09-26 18:48:12.907 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:48:12.912 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["1"]) - Validation state: "Valid"
+2018-09-26 18:48:12.918 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 10.3ms
+2018-09-26 18:48:12.918 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at HashidsNet.Hashids.GetNumbersFrom(String hash)
+   at HashidsNet.Hashids.Decode(String hash)
+   at WEB.Controllers.UsersController.Get(String id) in C:\Projects\REST\WEB\WEB\Controllers\UsersController.cs:line 44
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-09-26 18:48:13.054 +03:00 [INF] Request finished in 147.1634ms 500 text/html; charset=utf-8
+2018-09-26 18:48:16.462 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/4n application/json 
+2018-09-26 18:48:16.462 +03:00 [INF] Request finished in 0.2641ms 307 
+2018-09-26 18:48:16.467 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/4n application/json 
+2018-09-26 18:48:16.467 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:48:16.472 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["4n"]) - Validation state: "Valid"
+2018-09-26 18:48:16.476 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.1847ms.
+2018-09-26 18:48:16.476 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UsersDto'.
+2018-09-26 18:48:16.477 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 8.8459ms
+2018-09-26 18:48:16.477 +03:00 [INF] Request finished in 10.1103ms 200 application/json; charset=utf-8
+2018-09-26 18:48:27.853 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/Qv application/json 
+2018-09-26 18:48:27.853 +03:00 [INF] Request finished in 0.2545ms 307 
+2018-09-26 18:48:27.858 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/Qv application/json 
+2018-09-26 18:48:27.858 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:48:27.862 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["Qv"]) - Validation state: "Valid"
+2018-09-26 18:48:27.865 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.9025000000000003ms.
+2018-09-26 18:48:27.865 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UsersDto'.
+2018-09-26 18:48:27.866 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.1286000000000005ms
+2018-09-26 18:48:27.866 +03:00 [INF] Request finished in 7.7153ms 200 application/json; charset=utf-8
+2018-09-26 18:48:48.535 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/Qvdf application/json 
+2018-09-26 18:48:48.536 +03:00 [INF] Request finished in 1.7692ms 307 
+2018-09-26 18:48:48.544 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/Qvdf application/json 
+2018-09-26 18:48:48.544 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:48:48.562 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["Qvdf"]) - Validation state: "Valid"
+2018-09-26 18:48:48.566 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.5911ms.
+2018-09-26 18:48:48.566 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2018-09-26 18:48:48.566 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 21.780900000000003ms
+2018-09-26 18:48:48.566 +03:00 [INF] Request finished in 22.5934ms 204 
+2018-09-26 18:48:57.867 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/Qv application/json 
+2018-09-26 18:48:57.867 +03:00 [INF] Request finished in 0.5886ms 307 
+2018-09-26 18:48:57.900 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/Qv application/json 
+2018-09-26 18:48:57.901 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:48:57.904 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["Qv"]) - Validation state: "Valid"
+2018-09-26 18:48:57.907 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.6836ms.
+2018-09-26 18:48:57.907 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UsersDto'.
+2018-09-26 18:48:57.908 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 6.6188ms
+2018-09-26 18:48:57.908 +03:00 [INF] Request finished in 7.9371ms 200 application/json; charset=utf-8
+2018-09-26 18:51:17.223 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-26 18:51:17.641 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=5 application/json 
+2018-09-26 18:51:17.664 +03:00 [INF] Request finished in 24.2259ms 307 
+2018-09-26 18:51:17.681 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=5 application/json 
+2018-09-26 18:51:17.799 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-09-26 18:51:18.146 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 18:51:18.332 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 163.74020000000002ms.
+2018-09-26 18:51:18.345 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UsersDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 18:51:18.389 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 587.03500000000008ms
+2018-09-26 18:51:18.395 +03:00 [INF] Request finished in 713.6811ms 200 application/json; charset=utf-8
+2018-09-26 18:51:22.113 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=5 application/json 
+2018-09-26 18:51:22.114 +03:00 [INF] Request finished in 1.405ms 307 
+2018-09-26 18:51:22.120 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=5 application/json 
+2018-09-26 18:51:22.135 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-09-26 18:51:22.188 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-26 18:51:22.341 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 153.3101ms.
+2018-09-26 18:51:22.342 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-26 18:51:22.346 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 210.6348ms
+2018-09-26 18:51:22.346 +03:00 [INF] Request finished in 226.0727ms 200 application/json; charset=utf-8

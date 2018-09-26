@@ -5,10 +5,12 @@ using BLL.DTOs;
 using BLL.Infrastructure;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
+using HashidsNet;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Internal;
 using Newtonsoft.Json.Linq;
+using WEB.Infrastructure.Automapper;
 
 namespace WEB.Controllers
 {
@@ -17,6 +19,7 @@ namespace WEB.Controllers
     {
         private readonly IUsersService _service;
         private readonly IHttpContextAccessor _accessor;
+        private readonly Hashids _hash;
 
         public UsersController(
             IUsersService service,
@@ -24,6 +27,7 @@ namespace WEB.Controllers
         {
             _service = service;
             _accessor = accessor;
+            _hash = new Hashids(nameof(UsersMapper));
         }
 
         // GET api/[controller]
@@ -35,9 +39,9 @@ namespace WEB.Controllers
 
         // GET api/[controller]/{id}
         [HttpGet("{id}")]
-        public async Task<UsersDto> Get([FromRoute]int id)
+        public async Task<UsersDto> Get([FromRoute]string id)
         {
-            return await _service.GetByIdAsync(id);
+            return await _service.GetByIdAsync(_hash.Decode(id).FirstOr(0));
         }
 
         // POST api/[controller]
