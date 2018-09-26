@@ -27,7 +27,7 @@ namespace WEB.Controllers
         {
             _service = service;
             _accessor = accessor;
-            _hash = new Hashids(nameof(UsersMapper));
+            _hash = new Hashids(nameof(UsersDto));
         }
 
         // GET api/[controller]
@@ -53,14 +53,14 @@ namespace WEB.Controllers
 
         // PUT api/[controller]/{id}
         [HttpPut("{id}")]
-        public async Task Put(int id, [FromBody]UsersDto user)
+        public async Task Put(string id, [FromBody]UsersDto user)
         {
-            await _service.UpdateAsync(id, user);
+            await _service.UpdateAsync(_hash.Decode(id).FirstOr(0), user);
         }
 
         // PATCHED api/[controller]/{id}
         [HttpPatch("{id}")]
-        public async Task Patch(int id, [FromBody]CompaniesDto dto)
+        public async Task Patch(string id, [FromBody]CompaniesDto dto)
         {
             if (_accessor.HttpContext.Request.Body.CanSeek)
             {
@@ -68,7 +68,7 @@ namespace WEB.Controllers
                 var data = await new StreamReader(_accessor.HttpContext.Request.Body).ReadToEndAsync();
                 var json = JObject.Parse(data).ToObject<Dictionary<string, object>>();
 
-                await _service.UpdateSpecificAsync(id, json);
+                await _service.UpdateSpecificAsync(_hash.Decode(id).FirstOr(0), json);
             }
         }
 

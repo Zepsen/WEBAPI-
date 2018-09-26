@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Internal;
 using Newtonsoft.Json.Linq;
-using WEB.Infrastructure.Automapper;
 
 namespace WEB.Controllers
 {
@@ -53,14 +52,14 @@ namespace WEB.Controllers
 
         // PUT api/[controller]/{id}
         [HttpPut("{id}")]
-        public async Task Put(int id, [FromBody]CompaniesDto dto)
+        public async Task Put(string id, [FromBody]CompaniesDto dto)
         {
-            await _service.UpdateAsync(id, dto);
+            await _service.UpdateAsync(_hash.Decode(id).FirstOr(0), dto);
         }
 
         // PATCHED api/[controller]/{id}
         [HttpPatch("{id}")]
-        public async Task Patch(int id, [FromBody]CompaniesDto dto)
+        public async Task Patch(string id, [FromBody]CompaniesDto dto)
         {
             if (_accessor.HttpContext.Request.Body.CanSeek)
             {
@@ -68,7 +67,7 @@ namespace WEB.Controllers
                 var data = await new StreamReader(_accessor.HttpContext.Request.Body).ReadToEndAsync();
                 var json = JObject.Parse(data).ToObject<Dictionary<string, object>>();
 
-                await _service.UpdateSpecificAsync(id, json);
+                await _service.UpdateSpecificAsync(_hash.Decode(id).FirstOr(0), json);
             }
         }
         
