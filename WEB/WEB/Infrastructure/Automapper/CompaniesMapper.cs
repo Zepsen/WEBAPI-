@@ -2,12 +2,13 @@
 using BLL.DTOs;
 using DAL.Models;
 using HashidsNet;
+using WEB.Infrastructure.Hashers;
 
 namespace WEB.Infrastructure.Automapper
 {
     public class CompaniesMapper : Profile
     {
-        private readonly Hashids _hash = new Hashids(nameof(CompaniesDto));
+        private readonly Hashids _hash = HasherHelper.GetInstance;
 
         public CompaniesMapper()
         {

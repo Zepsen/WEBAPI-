@@ -1,9 +1,11 @@
-﻿using AutoMapper;
+﻿using System.Linq;
+using AutoMapper;
 using BLL.Interfaces;
 using BLL.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -27,6 +29,7 @@ namespace WEB
             services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<ICompaniesService, CompaniesService>();
 
+            services.AddResponseCompression();
             services.AddAutoMapper();
             services.AddMvc();
             
@@ -45,7 +48,8 @@ namespace WEB
                 //app.UseExceptionHandler("/Error");
                 app.UseHsts();   
             }
-            
+
+            app.UseResponseCompression();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

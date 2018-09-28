@@ -1,13 +1,15 @@
 ﻿using AutoMapper;
 using BLL.DTOs;
+using BLL.Infrastructure;
 using DAL.Models;
 using HashidsNet;
+using WEB.Infrastructure.Hashers;
 
 namespace WEB.Infrastructure.Automapper
 {
     public class UsersMapper : Profile
     {
-        private readonly Hashids _hash = new Hashids(nameof(UsersDto));
+        private readonly Hashids _hash = HasherHelper.GetInstance;
 
         public UsersMapper()
         {
