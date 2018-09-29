@@ -20,8 +20,6 @@ namespace WEB
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
             services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<ICompaniesService, CompaniesService>();
 
@@ -41,7 +39,7 @@ namespace WEB
             }
             else
             {
-                //app.UseExceptionHandler("/Error");
+                app.UseExceptionHandler("/Error");
                 app.UseHsts();   
             }
 
