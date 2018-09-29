@@ -149,3 +149,157 @@
 2018-09-29 13:05:09.459 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2018-09-29 13:05:09.459 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.6439ms
 2018-09-29 13:05:09.459 +03:00 [INF] Request finished in 5.2115ms 200 application/json; charset=utf-8
+2018-09-29 18:28:21.468 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-29 18:28:21.976 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies application/json 
+2018-09-29 18:28:22.003 +03:00 [INF] Request finished in 29.5707ms 307 
+2018-09-29 18:28:22.079 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44390/api/companies application/json 
+2018-09-29 18:28:22.233 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-09-29 18:28:22.775 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-29 18:28:22.986 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 195.1713ms.
+2018-09-29 18:28:22.994 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-29 18:28:23.044 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 808.1461ms
+2018-09-29 18:28:23.048 +03:00 [INF] Request finished in 969.0071ms 200 application/json; charset=utf-8
+2018-09-29 18:28:40.590 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/companies/Ve0nN application/json 21
+2018-09-29 18:28:40.591 +03:00 [INF] Request finished in 0.9768ms 307 
+2018-09-29 18:28:40.609 +03:00 [INF] Connection id "0HLH640OCLMGA", Request id "0HLH640OCLMGA:00000003": the application completed without reading the entire request body.
+2018-09-29 18:28:40.610 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44390/api/companies/Ve0nN application/json 21
+2018-09-29 18:28:40.617 +03:00 [INF] Route matched with {action = "Patch", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Patch (WEB)
+2018-09-29 18:28:40.687 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["1","System.Collections.Generic.Dictionary`2[System.String,System.Object]"]) - Validation state: "Invalid"
+2018-09-29 18:28:40.761 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 143.2345ms
+2018-09-29 18:28:40.766 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid update expression. Atleast one column must be updated
+   at Z.EntityFramework.Extensions.BatchUpdate.ResolveUpdateFromQueryDictValues[T](Expression`1 updateFactory)
+   at Z.EntityFramework.Extensions.BatchUpdate.GetInnerValues[T](IQueryable`1 query, Expression`1 updateFactory, IEntityType entity)
+   at Z.EntityFramework.Extensions.BatchUpdate.Execute[T](IQueryable`1 query, Expression`1 updateFactory)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at DAL.Repositories.CompaniesRepository.UpdateSpecificAsync(Int32 id, Dictionary`2 dictionary) in C:\Projects\WEBAPI\WEB\DAL\Repositories\CompaniesRepository.cs:line 62
+   at BLL.Services.CompaniesService.UpdateSpecificAsync(Int32 id, Dictionary`2 data) in C:\Projects\WEBAPI\WEB\BLL\Services\CompaniesService.cs:line 45
+   at WEB.Controllers.CompaniesController.Patch(Int32 id, Dictionary`2 json) in C:\Projects\WEBAPI\WEB\WEB\Controllers\CompaniesController.cs:line 75
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-09-29 18:28:40.880 +03:00 [INF] Request finished in 269.693ms 500 text/html; charset=utf-8
+2018-09-29 18:28:40.880 +03:00 [INF] Connection id "0HLH640OCLMGA", Request id "0HLH640OCLMGA:00000004": the application completed without reading the entire request body.
+2018-09-29 18:29:27.144 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-29 18:29:27.947 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-09-29 18:29:27.973 +03:00 [INF] Request finished in 25.8127ms 200 
+2018-09-29 18:29:32.115 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/companies/Ve0nN application/json 22
+2018-09-29 18:29:32.158 +03:00 [INF] Request finished in 43.3885ms 307 
+2018-09-29 18:29:32.182 +03:00 [INF] Connection id "0HLH641C1I750", Request id "0HLH641C1I750:00000002": the application completed without reading the entire request body.
+2018-09-29 18:29:32.182 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44390/api/companies/Ve0nN application/json 22
+2018-09-29 18:29:32.402 +03:00 [INF] Route matched with {action = "Patch", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Patch (WEB)
+2018-09-29 18:32:30.154 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-29 18:32:30.760 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/companies/Ve0nN application/json 22
+2018-09-29 18:32:30.760 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-09-29 18:32:30.790 +03:00 [INF] Request finished in 32.1076ms 200 
+2018-09-29 18:32:30.815 +03:00 [INF] Request finished in 58.147ms 307 
+2018-09-29 18:32:30.831 +03:00 [INF] Connection id "0HLH6432GUDRL", Request id "0HLH6432GUDRL:00000001": the application completed without reading the entire request body.
+2018-09-29 18:32:30.834 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44390/api/companies/Ve0nN application/json 22
+2018-09-29 18:32:31.055 +03:00 [INF] Route matched with {action = "Patch", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Patch (WEB)
+2018-09-29 18:32:53.346 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 22287.9574ms
+2018-09-29 18:32:53.360 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Specified method is not supported.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.Seek(Int64 offset, SeekOrigin origin)
+   at WEB.Infrastructure.Attributes.DecodeFieldsAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-09-29 18:32:53.474 +03:00 [INF] Request finished in 22640.6839ms 500 text/html; charset=utf-8
+2018-09-29 18:32:53.475 +03:00 [INF] Connection id "0HLH6432GUDRM", Request id "0HLH6432GUDRM:00000002": the application completed without reading the entire request body.
+2018-09-29 18:33:41.439 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-29 18:33:41.999 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-09-29 18:33:42.025 +03:00 [INF] Request finished in 25.7708ms 200 
+2018-09-29 18:33:48.539 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/companies/Ve0nN application/json 22
+2018-09-29 18:33:48.584 +03:00 [INF] Request finished in 44.3587ms 307 
+2018-09-29 18:33:48.596 +03:00 [INF] Connection id "0HLH643NOF183", Request id "0HLH643NOF183:00000002": the application completed without reading the entire request body.
+2018-09-29 18:33:48.610 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44390/api/companies/Ve0nN application/json 22
+2018-09-29 18:33:48.812 +03:00 [INF] Route matched with {action = "Patch", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Patch (WEB)
+2018-09-29 18:34:07.320 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["1","System.Collections.Generic.Dictionary`2[System.String,System.Object]"]) - Validation state: "Invalid"
+2018-09-29 18:34:07.575 +03:00 [INF] Updated
+2018-09-29 18:34:07.581 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Patch (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 243.5387ms.
+2018-09-29 18:34:07.597 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 18781.799300000002ms
+2018-09-29 18:34:07.605 +03:00 [INF] Request finished in 18994.3261ms 200 
+2018-09-29 18:34:16.054 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies application/json 
+2018-09-29 18:34:16.055 +03:00 [INF] Request finished in 1.2268ms 307 
+2018-09-29 18:34:16.100 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44390/api/companies application/json 
+2018-09-29 18:34:16.109 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-09-29 18:34:16.239 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-29 18:34:16.480 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 240.1885ms.
+2018-09-29 18:34:16.485 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-29 18:34:16.501 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 391.82390000000004ms
+2018-09-29 18:34:16.502 +03:00 [INF] Request finished in 402.8205ms 200 application/json; charset=utf-8
+2018-09-29 18:42:43.718 +03:00 [INF] User profile is available. Using 'C:\Users\zepse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-09-29 18:42:44.287 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies application/json 
+2018-09-29 18:42:44.309 +03:00 [INF] Request finished in 23.6441ms 307 
+2018-09-29 18:42:44.327 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44390/api/companies application/json 
+2018-09-29 18:42:44.453 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-09-29 18:42:44.824 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-29 18:42:45.018 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 179.0456ms.
+2018-09-29 18:42:45.027 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-29 18:42:45.073 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 616.8374ms
+2018-09-29 18:42:45.077 +03:00 [INF] Request finished in 750.5783ms 200 application/json; charset=utf-8
+2018-09-29 18:42:51.945 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies application/json 
+2018-09-29 18:42:51.946 +03:00 [INF] Request finished in 1.0955ms 307 
+2018-09-29 18:42:51.954 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44390/api/companies application/json 
+2018-09-29 18:42:51.954 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-09-29 18:42:51.969 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-29 18:42:51.990 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.3052ms.
+2018-09-29 18:42:51.991 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-29 18:42:51.991 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 36.9884ms
+2018-09-29 18:42:51.992 +03:00 [INF] Request finished in 38.1082ms 200 application/json; charset=utf-8
+2018-09-29 18:42:55.839 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/companies/Ve0nN application/json 22
+2018-09-29 18:42:55.839 +03:00 [INF] Request finished in 0.2875ms 307 
+2018-09-29 18:42:55.852 +03:00 [INF] Connection id "0HLH648PCCJ3J", Request id "0HLH648PCCJ3J:00000005": the application completed without reading the entire request body.
+2018-09-29 18:42:55.853 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44390/api/companies/Ve0nN application/json 22
+2018-09-29 18:42:55.859 +03:00 [INF] Route matched with {action = "Patch", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Patch (WEB)
+2018-09-29 18:42:55.898 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["1","System.Collections.Generic.Dictionary`2[System.String,System.Object]"]) - Validation state: "Invalid"
+2018-09-29 18:42:56.018 +03:00 [INF] Updated
+2018-09-29 18:42:56.021 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Patch (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 122.26570000000001ms.
+2018-09-29 18:42:56.028 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 168.967ms
+2018-09-29 18:42:56.032 +03:00 [INF] Request finished in 179.4183ms 200 
+2018-09-29 18:42:58.782 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/companies/Ve0nN application/json 23
+2018-09-29 18:42:58.784 +03:00 [INF] Request finished in 2.2094ms 307 
+2018-09-29 18:42:58.784 +03:00 [INF] Connection id "0HLH648PCCJ3J", Request id "0HLH648PCCJ3J:00000007": the application completed without reading the entire request body.
+2018-09-29 18:42:58.803 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44390/api/companies/Ve0nN application/json 23
+2018-09-29 18:42:58.803 +03:00 [INF] Route matched with {action = "Patch", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Patch (WEB)
+2018-09-29 18:42:58.808 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Patch (WEB) with arguments (["1","System.Collections.Generic.Dictionary`2[System.String,System.Object]"]) - Validation state: "Invalid"
+2018-09-29 18:42:58.819 +03:00 [INF] Updated
+2018-09-29 18:42:58.819 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Patch (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 11.1699ms.
+2018-09-29 18:42:58.819 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Patch (WEB) in 16.089100000000002ms
+2018-09-29 18:42:58.820 +03:00 [INF] Request finished in 16.9313ms 200 
+2018-09-29 18:43:01.166 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies application/json 
+2018-09-29 18:43:01.167 +03:00 [INF] Request finished in 0.3106ms 307 
+2018-09-29 18:43:01.176 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44390/api/companies application/json 
+2018-09-29 18:43:01.177 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-09-29 18:43:01.181 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-09-29 18:43:01.182 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.5093ms.
+2018-09-29 18:43:01.183 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-09-29 18:43:01.183 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.9032ms
+2018-09-29 18:43:01.183 +03:00 [INF] Request finished in 6.6006ms 200 application/json; charset=utf-8

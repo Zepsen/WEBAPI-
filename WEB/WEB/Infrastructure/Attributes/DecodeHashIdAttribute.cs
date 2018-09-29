@@ -10,17 +10,17 @@ namespace WEB.Infrastructure.Attributes
     [AttributeUsage(AttributeTargets.Method)]
     public class DecodeHashIdAttribute : Attribute, IAsyncActionFilter
     {
-        private readonly string _routeKey;
+        private readonly string _key;
         
-        public DecodeHashIdAttribute(string key)
+        public DecodeHashIdAttribute(string key = "id")
         {
-            _routeKey = key;
+            _key = key;
         }
         
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            var id = (context.HttpContext.GetRouteValue(_routeKey) as string);
-            context.ActionArguments[_routeKey] = HasherHelper.GetInstance.Decode(id).FirstOr(0);
+            var id = (context.HttpContext.GetRouteValue(_key) as string);
+            context.ActionArguments[_key] = HasherHelper.GetInstance.Decode(id).FirstOr(0);
             await next();
         }
     }
