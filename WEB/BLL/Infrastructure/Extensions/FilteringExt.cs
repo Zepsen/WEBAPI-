@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using BLL.Infrastructure.Filters;
+using Microsoft.EntityFrameworkCore;
 using Z.EntityFramework.Plus;
 
 namespace BLL.Infrastructure.Extensions
@@ -49,6 +50,7 @@ namespace BLL.Infrastructure.Extensions
 
         /// <summary>
         /// Specify concrete fields from db, using DTOmodel as a retrieve model
+        /// !!!Can be problem if dto fields different than entity
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="TModel"></typeparam>
@@ -74,7 +76,7 @@ namespace BLL.Infrastructure.Extensions
 
             return query.Select(lambda);
         }
-
+        
         /// <summary>
         /// Specify concrete fields from db, using EntityModel as a retrieve model
         /// </summary>
@@ -82,8 +84,10 @@ namespace BLL.Infrastructure.Extensions
         /// <param name="query"></param>
         /// <param name="fields"></param>
         /// <returns></returns>
-        public static IQueryable<T> Specific<T>(this IQueryable<T> query, string fields)
+        public static IQueryable<T> OnlySpecific<T>(this IQueryable<T> query, string fields)
         {
+            if (fields.IsNullOrEmpty()) return query;
+
             var xParameter = Expression.Parameter(typeof(T), "o");
             var xNew = Expression.New(typeof(T));
 
@@ -95,30 +99,14 @@ namespace BLL.Infrastructure.Extensions
                         return Expression.Bind(typeof(T).GetProperty(paramName), xOriginal);
                     }
                 );
-            var xInit = Expression.MemberInit(xNew, bindings);
 
+            var xInit = Expression.MemberInit(xNew, bindings);
             var lambda = Expression.Lambda<Func<T, T>>(xInit, xParameter);
 
             return query.Select(lambda);
         }
 
-        /// <summary>
-        /// Map to concrete dto model 
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="TModel"></typeparam>
-        /// <param name="query"></param>
-        /// <param name="fields"></param>
-        /// <param name="mapperConfigurationProvider"></param>
-        /// <returns></returns>
-        public static IQueryable<TModel> MapTo<T, TModel>(this IQueryable<T> query, string fields,
-            IConfigurationProvider mapperConfigurationProvider)
-        {
-            return fields.IsNotNullOrEmpty() 
-                //? query.Specific<T, TModel>(fields)
-                ? query.Specific(fields).ProjectTo<TModel>(mapperConfigurationProvider)
-                : query.ProjectTo<TModel>(mapperConfigurationProvider);
-        }
+       
 
     }
 }

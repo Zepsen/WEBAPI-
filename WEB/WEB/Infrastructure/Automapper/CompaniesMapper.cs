@@ -13,6 +13,7 @@ namespace WEB.Infrastructure.Automapper
         {
             CreateMap<Companies, CompaniesDto>()
                 .ForMember(d => d.Id, m => m.MapFrom(e => _hash.Encode(e.Id))); 
+
             CreateMap<CompaniesDto, Companies>()
                 .ForMember(e => e.Id, m => m.MapFrom(d => _hash.Decode(d.Id)));
         }

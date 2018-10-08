@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using BLL.DTOs;
 using BLL.Infrastructure;
 using BLL.Infrastructure.Extensions;
@@ -25,7 +26,8 @@ namespace BLL.Services
             return await Repo.CompaniesRepository.GetQueryable()
                 .Searching(filter.Query)
                 .SkipAndTake(filter)
-                .MapTo<Companies, CompaniesDto>(filter.Fields, _mapper.ConfigurationProvider)
+                .OnlySpecific(filter.Fields)
+                .ProjectTo<CompaniesDto>(_mapper.ConfigurationProvider)
                 .ToResultAsync(filter);
         }
 
