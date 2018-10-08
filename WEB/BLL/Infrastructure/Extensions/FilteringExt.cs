@@ -2,10 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using AutoMapper;
-using AutoMapper.QueryableExtensions;
 using BLL.Infrastructure.Filters;
-using Microsoft.EntityFrameworkCore;
 using Z.EntityFramework.Plus;
 
 namespace BLL.Infrastructure.Extensions
