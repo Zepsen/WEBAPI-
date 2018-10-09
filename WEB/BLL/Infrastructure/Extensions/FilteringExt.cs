@@ -132,5 +132,18 @@ namespace BLL.Infrastructure.Extensions
             return select.IsNullOrEmpty() ? query : query.Select(select);
         }
 
+        /// <summary>
+        /// Select wrapper for Linq.Dynamic.Core;
+        /// Filterind data, if exist
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="query"></param>
+        /// <param name="where"></param>
+        /// <returns></returns>
+        public static IQueryable<T> MaybeWhere<T>(this IQueryable<T> query, string where)
+        {
+            return where.IsNullOrEmpty() ? query : query.Where(where);
+        }
+
     }
 }

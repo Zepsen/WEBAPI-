@@ -26,7 +26,7 @@ namespace BLL.Services
         public async Task<Result<CompaniesDto>> GetAsync(FilterBase filter)
         {
             return await Repo.CompaniesRepository.GetQueryable()
-                .Where(filter.Where)
+                .MaybeWhere(filter.Where)
                 .Searching(filter.Search) //mb delete, using dynamic linq where logic
                 .MaybeOrderBy(filter.OrderBy)
                 .SkipAndTake(filter)

@@ -1651,3 +1651,149 @@ No property or field 'asdf' exists in type 'Companies' (at index 0)
 2018-10-09 17:00:37.023 +03:00 [ERR] An unhandled exception has occurred while executing the request.
 No property or field 'asdf' exists in type 'Companies' (at index 0)
 2018-10-09 17:00:37.088 +03:00 [INF] Request finished in 664.5355ms 500 text/html; charset=utf-8
+2018-10-09 17:18:52.330 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:18:52.330 +03:00 [INF] Request finished in 0.4338ms 307 
+2018-10-09 17:18:52.354 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:18:52.355 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:18:52.381 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:18:52.382 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 27.1183ms
+2018-10-09 17:18:52.383 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+No property or field 'asdf' exists in type 'Companies' (at index 0)
+2018-10-09 17:18:52.392 +03:00 [INF] Request finished in 37.5787ms 500 text/html; charset=utf-8
+2018-10-09 17:31:39.405 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:31:39.405 +03:00 [INF] Request finished in 0.4261ms 307 
+2018-10-09 17:31:39.430 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:31:39.430 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:31:39.458 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:31:39.670 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 209.3197ms.
+2018-10-09 17:31:39.677 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 17:31:39.715 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 284.63640000000004ms
+2018-10-09 17:31:39.715 +03:00 [INF] Request finished in 285.231ms 200 application/json; charset=utf-8
+2018-10-09 17:31:55.465 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companiesASC&select=new Companies(id,name,test)&where=name.contains("test") and Id > 3 application/json 
+2018-10-09 17:31:55.465 +03:00 [INF] Request finished in 0.3857ms 307 
+2018-10-09 17:31:55.472 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companiesASC&select=new Companies(id,name,test)&where=name.contains("test") and Id > 3 application/json 
+2018-10-09 17:31:55.472 +03:00 [INF] Request finished in 0.9642ms 404 
+2018-10-09 17:31:59.074 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies application/json 
+2018-10-09 17:31:59.076 +03:00 [INF] Request finished in 1.3625ms 307 
+2018-10-09 17:31:59.094 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies application/json 
+2018-10-09 17:31:59.094 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:31:59.099 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:31:59.099 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.2873ms
+2018-10-09 17:31:59.100 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: predicate
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.Where[TSource](IQueryable`1 source, ParsingConfig config, String predicate, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.Where[TSource](IQueryable`1 source, String predicate, Object[] args)
+   at BLL.Services.CompaniesService.GetAsync(FilterBase filter) in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 28
+   at WEB.Controllers.CompaniesController.Get(FilterBase filterBase) in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-10-09 17:31:59.110 +03:00 [INF] Request finished in 15.9722ms 500 text/html; charset=utf-8
+2018-10-09 17:32:39.698 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29 application/json 
+2018-10-09 17:32:39.698 +03:00 [INF] Request finished in 0.6585ms 307 
+2018-10-09 17:32:39.734 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29 application/json 
+2018-10-09 17:32:39.735 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:32:39.750 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:32:39.751 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 15.8588ms
+2018-10-09 17:32:39.751 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: predicate
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.Where[TSource](IQueryable`1 source, ParsingConfig config, String predicate, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.Where[TSource](IQueryable`1 source, String predicate, Object[] args)
+   at BLL.Services.CompaniesService.GetAsync(FilterBase filter) in C:\Projects\REST\WEB\BLL\Services\CompaniesService.cs:line 28
+   at WEB.Controllers.CompaniesController.Get(FilterBase filterBase) in C:\Projects\REST\WEB\WEB\Controllers\CompaniesController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-10-09 17:32:39.760 +03:00 [INF] Request finished in 26.2337ms 500 text/html; charset=utf-8
+2018-10-09 17:35:10.922 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-09 17:35:11.319 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29 application/json 
+2018-10-09 17:35:11.338 +03:00 [INF] Request finished in 20.2339ms 307 
+2018-10-09 17:35:11.356 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29 application/json 
+2018-10-09 17:35:11.470 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:35:11.766 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:35:12.051 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 270.6748ms.
+2018-10-09 17:35:12.058 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 17:35:12.102 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 628.0819ms
+2018-10-09 17:35:12.106 +03:00 [INF] Request finished in 748.9698ms 200 application/json; charset=utf-8
+2018-10-09 17:35:21.743 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:35:21.744 +03:00 [INF] Request finished in 0.5487ms 307 
+2018-10-09 17:35:21.748 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:35:21.748 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:35:21.765 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:35:21.827 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 61.2796ms.
+2018-10-09 17:35:21.827 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 17:35:21.828 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 79.1902ms
+2018-10-09 17:35:21.828 +03:00 [INF] Request finished in 80.2269ms 200 application/json; charset=utf-8
+2018-10-09 17:35:29.761 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies application/json 
+2018-10-09 17:35:29.761 +03:00 [INF] Request finished in 0.2569ms 307 
+2018-10-09 17:35:29.778 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies application/json 
+2018-10-09 17:35:29.779 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:35:29.783 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:35:29.790 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.7843ms.
+2018-10-09 17:35:29.791 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 17:35:29.791 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 12.1391ms
+2018-10-09 17:35:29.791 +03:00 [INF] Request finished in 12.8768ms 200 application/json; charset=utf-8
+2018-10-09 17:35:38.397 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:35:38.397 +03:00 [INF] Request finished in 0.2683ms 307 
+2018-10-09 17:35:38.402 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:35:38.402 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:35:38.415 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:35:38.420 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.8102ms.
+2018-10-09 17:35:38.420 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 17:35:38.420 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 17.9987ms
+2018-10-09 17:35:38.420 +03:00 [INF] Request finished in 18.6318ms 200 application/json; charset=utf-8
+2018-10-09 17:35:46.626 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:35:46.628 +03:00 [INF] Request finished in 1.7943ms 307 
+2018-10-09 17:35:46.674 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:35:46.674 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:35:46.687 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:35:46.694 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.9049000000000005ms.
+2018-10-09 17:35:46.695 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 17:35:46.695 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 20.3667ms
+2018-10-09 17:35:46.695 +03:00 [INF] Request finished in 20.8525ms 200 application/json; charset=utf-8
+2018-10-09 17:35:54.687 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:35:54.687 +03:00 [INF] Request finished in 0.4004ms 307 
+2018-10-09 17:35:54.691 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:35:54.692 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:35:54.696 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:35:54.701 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.0134ms.
+2018-10-09 17:35:54.701 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 17:35:54.701 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 9.529300000000001ms
+2018-10-09 17:35:54.701 +03:00 [INF] Request finished in 10.0893ms 200 application/json; charset=utf-8
+2018-10-09 17:35:56.998 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:35:57.000 +03:00 [INF] Request finished in 1.842ms 307 
+2018-10-09 17:35:57.014 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=Id,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:35:57.014 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:35:57.017 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:35:57.019 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.8039ms.
+2018-10-09 17:35:57.019 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 17:35:57.020 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 5.6246ms
+2018-10-09 17:35:57.020 +03:00 [INF] Request finished in 6.1254ms 200 application/json; charset=utf-8
