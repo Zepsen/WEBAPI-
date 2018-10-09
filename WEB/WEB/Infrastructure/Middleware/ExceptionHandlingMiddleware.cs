@@ -3,19 +3,20 @@ using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
+using Serilog;
 
 namespace WEB.Infrastructure.Middleware
 {
-    public class ErrorHandlingMiddleware
+    public class ExceptionHandlingMiddleware
     {
         private readonly RequestDelegate _next;
 
-        public ErrorHandlingMiddleware(RequestDelegate next)
+        public ExceptionHandlingMiddleware(RequestDelegate next)
         {
             this._next = next;
         }
 
-        public async Task Invoke(HttpContext context /* other dependencies */)
+        public async Task Invoke(HttpContext context)
         {
             try
             {
@@ -23,6 +24,7 @@ namespace WEB.Infrastructure.Middleware
             }
             catch (Exception ex)
             {
+                Log.Error(ex.Message);
                 await HandleExceptionAsync(context, ex);
             }
         }

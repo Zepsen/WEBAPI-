@@ -38,10 +38,9 @@ namespace WEB
             {
                 app.UseDeveloperExceptionPage();
             }
-            else //Production
+            else
             {
-                app.UseMiddleware(typeof(ErrorHandlingMiddleware));
-                //app.UseExceptionHandler("/Error");
+                app.UseMiddleware(typeof(ExceptionHandlingMiddleware));
                 app.UseHsts();   
             }
 

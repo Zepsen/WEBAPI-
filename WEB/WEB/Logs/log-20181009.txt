@@ -1567,3 +1567,87 @@ No property or field 'gas' exists in type 'Companies' (at index 27)
 2018-10-09 16:43:09.064 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
 2018-10-09 16:43:09.180 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 431.459ms
 2018-10-09 16:43:09.217 +03:00 [INF] Request finished in 596.2746ms 500 application/json
+2018-10-09 16:44:59.685 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-09 16:45:00.024 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=14&take=15&orderby=Name%20ASC&select=new%20Companies%28id,name,test,gas%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:45:00.047 +03:00 [INF] Request finished in 25.7081ms 307 
+2018-10-09 16:45:00.058 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=14&take=15&orderby=Name%20ASC&select=new%20Companies%28id,name,test,gas%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:45:00.198 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 16:45:00.563 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 16:45:00.690 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 488.3313ms
+2018-10-09 16:45:00.691 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+No property or field 'gas' exists in type 'Companies' (at index 27)
+2018-10-09 16:45:00.762 +03:00 [INF] Request finished in 704.3176ms 500 text/html; charset=utf-8
+2018-10-09 16:45:15.309 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=14&take=15&orderby=Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:45:15.310 +03:00 [INF] Request finished in 1.2144ms 307 
+2018-10-09 16:45:15.318 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=14&take=15&orderby=Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:45:15.319 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 16:45:15.363 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 16:45:15.593 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 226.5242ms.
+2018-10-09 16:45:15.600 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 16:45:15.639 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 320.38960000000003ms
+2018-10-09 16:45:15.640 +03:00 [INF] Request finished in 321.9717ms 200 application/json; charset=utf-8
+2018-10-09 16:45:20.877 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:45:20.877 +03:00 [INF] Request finished in 0.5396ms 307 
+2018-10-09 16:45:20.883 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:45:20.883 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 16:45:20.891 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 16:45:20.908 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.319300000000002ms.
+2018-10-09 16:45:20.908 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 16:45:20.912 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 29.132ms
+2018-10-09 16:45:20.913 +03:00 [INF] Request finished in 30.016ms 200 application/json; charset=utf-8
+2018-10-09 16:49:06.050 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-09 16:49:06.512 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:49:06.531 +03:00 [INF] Request finished in 19.9179ms 307 
+2018-10-09 16:49:06.550 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:49:06.663 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 16:49:06.947 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 16:49:07.267 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 304.04920000000004ms.
+2018-10-09 16:49:07.275 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompaniesDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-09 16:49:07.318 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 651.613ms
+2018-10-09 16:49:07.326 +03:00 [INF] Request finished in 775.5031ms 200 application/json; charset=utf-8
+2018-10-09 16:49:10.148 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:49:10.149 +03:00 [INF] Request finished in 1.414ms 307 
+2018-10-09 16:49:10.164 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:49:10.164 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 16:49:10.174 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 16:49:10.177 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 12.771500000000001ms
+2018-10-09 16:49:10.178 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+No property or field 'asdf' exists in type 'Companies' (at index 0)
+2018-10-09 16:49:10.251 +03:00 [INF] Request finished in 87.3399ms 500 text/html; charset=utf-8
+2018-10-09 16:57:35.639 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-09 16:57:36.018 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:57:36.035 +03:00 [INF] Request finished in 19.1398ms 307 
+2018-10-09 16:57:36.054 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:57:36.162 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 16:57:36.448 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 16:57:36.548 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 382.9506ms
+2018-10-09 16:57:36.549 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+No property or field 'asdf' exists in type 'Companies' (at index 0)
+2018-10-09 16:57:36.609 +03:00 [INF] Request finished in 555.1751ms 500 text/html; charset=utf-8
+2018-10-09 16:58:10.172 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-09 16:58:10.600 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:58:10.618 +03:00 [INF] Request finished in 19.5347ms 307 
+2018-10-09 16:58:10.627 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:58:10.735 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 16:58:11.028 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 16:58:11.131 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 392.75780000000003ms
+2018-10-09 16:58:11.134 +03:00 [ERR] No property or field 'asdf' exists in type 'Companies'
+2018-10-09 16:58:11.169 +03:00 [INF] Request finished in 541.7384ms 500 application/json
+2018-10-09 16:58:21.060 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:58:21.062 +03:00 [INF] Request finished in 2.0738ms 307 
+2018-10-09 16:58:21.075 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 16:58:21.075 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 16:58:21.100 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 16:58:21.102 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 26.0392ms
+2018-10-09 16:58:21.102 +03:00 [ERR] No property or field 'asdf' exists in type 'Companies'
+2018-10-09 16:58:21.102 +03:00 [INF] Request finished in 27.3861ms 500 application/json
+2018-10-09 17:00:35.814 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-09 17:00:36.376 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:00:36.404 +03:00 [INF] Request finished in 29.2982ms 307 
+2018-10-09 17:00:36.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=15&orderby=asdf,Name%20ASC&select=new%20Companies%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203 application/json 
+2018-10-09 17:00:36.545 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-09 17:00:36.898 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-09 17:00:37.021 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 473.3883ms
+2018-10-09 17:00:37.023 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+No property or field 'asdf' exists in type 'Companies' (at index 0)
+2018-10-09 17:00:37.088 +03:00 [INF] Request finished in 664.5355ms 500 text/html; charset=utf-8
