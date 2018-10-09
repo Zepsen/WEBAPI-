@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20180929160835_add.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.3">
       <PrivateAssets>all</PrivateAssets>

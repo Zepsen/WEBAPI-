@@ -1,16 +1,10 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using System.Threading.Tasks;
 using BLL.DTOs;
-using BLL.Infrastructure;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
-using HashidsNet;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Internal;
-using Newtonsoft.Json.Linq;
-using WEB.Infrastructure.Automapper;
+using WEB.Infrastructure.Attributes;
 
 namespace WEB.Controllers
 {
@@ -18,16 +12,13 @@ namespace WEB.Controllers
     public class UsersController : Controller
     {
         private readonly IUsersService _service;
-        private readonly IHttpContextAccessor _accessor;
-        private readonly Hashids _hash;
+        
 
         public UsersController(
-            IUsersService service,
-            IHttpContextAccessor accessor)
+            IUsersService service
+            )
         {
             _service = service;
-            _accessor = accessor;
-            _hash = new Hashids(nameof(UsersDto));
         }
 
         // GET api/[controller]
@@ -39,9 +30,10 @@ namespace WEB.Controllers
 
         // GET api/[controller]/{id}
         [HttpGet("{id}")]
-        public async Task<UsersDto> Get([FromRoute]string id)
+        [DecodeHashId]
+        public async Task<UsersDto> Get(int id)
         {
-            return await _service.GetByIdAsync(_hash.Decode(id).FirstOr(0));
+            return await _service.GetByIdAsync(id);
         }
 
         // POST api/[controller]
@@ -53,28 +45,25 @@ namespace WEB.Controllers
 
         // PUT api/[controller]/{id}
         [HttpPut("{id}")]
-        public async Task Put(string id, [FromBody]UsersDto user)
+        [DecodeHashId]
+        public async Task Put(int id, [FromBody]UsersDto user)
         {
-            await _service.UpdateAsync(_hash.Decode(id).FirstOr(0), user);
+            await _service.UpdateAsync(id, user);
         }
 
         // PATCHED api/[controller]/{id}
         [HttpPatch("{id}")]
-        public async Task Patch(string id, [FromBody]CompaniesDto dto)
+        [DecodeHashId]
+        [DecodeJson]
+        public async Task Patch(int id, Dictionary<string, object> json)
         {
-            if (_accessor.HttpContext.Request.Body.CanSeek)
-            {
-                _accessor.HttpContext.Request.Body.Seek(0, SeekOrigin.Begin);
-                var data = await new StreamReader(_accessor.HttpContext.Request.Body).ReadToEndAsync();
-                var json = JObject.Parse(data).ToObject<Dictionary<string, object>>();
-
-                await _service.UpdateSpecificAsync(_hash.Decode(id).FirstOr(0), json);
-            }
+            await _service.UpdateSpecificAsync(id, json);
         }
 
         // DELETE api/[controller]/{id}
         [HttpDelete("{id}")]
-        public async Task Delete([FromRoute]int id)
+        [DecodeHashId]
+        public async Task Delete(int id)
         {
             await _service.DeleteAsync(id);
         }

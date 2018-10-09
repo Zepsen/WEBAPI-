@@ -3,10 +3,8 @@ using BLL.Interfaces;
 using BLL.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace WEB
 {
@@ -22,11 +20,10 @@ namespace WEB
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
             services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<ICompaniesService, CompaniesService>();
 
+            services.AddResponseCompression();
             services.AddAutoMapper();
             services.AddMvc();
             
@@ -42,10 +39,11 @@ namespace WEB
             }
             else
             {
-                //app.UseExceptionHandler("/Error");
+                app.UseExceptionHandler("/Error");
                 app.UseHsts();   
             }
-            
+
+            app.UseResponseCompression();
             app.UseHttpsRedirection();
             app.UseMvc();
         }
