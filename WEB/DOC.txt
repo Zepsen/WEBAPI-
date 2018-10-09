@@ -8,6 +8,8 @@
 	- Logger -> Serilog
 	- ORM    -> EFCore, EFCorePlus, EFCoreExtensions
 
+	-Linq    -> Linq.Dynamic.Core,
+
 
 
 #1 SERVER AS A REST

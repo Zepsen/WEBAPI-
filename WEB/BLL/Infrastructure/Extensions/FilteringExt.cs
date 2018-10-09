@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using BLL.Infrastructure.Filters;
 using Z.EntityFramework.Plus;
+using System.Linq.Dynamic.Core;
 
 namespace BLL.Infrastructure.Extensions
 {
@@ -103,7 +104,20 @@ namespace BLL.Infrastructure.Extensions
             return query.Select(lambda);
         }
 
-       
+        /// <summary>
+        /// OrderBy wrapper from Linq.Dynamic.Core;
+        /// Ordering if existing 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="query"></param>
+        /// <param name="orderby"></param>
+        /// <returns></returns>
+        public static IQueryable<T> MaybeOrderBy<T>(this IQueryable<T> query, string orderby)
+        {
+            return orderby.IsNullOrEmpty() ? query : query.OrderBy(orderby);
+        }
+
+
 
     }
 }

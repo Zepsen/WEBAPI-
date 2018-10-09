@@ -10,6 +10,7 @@ using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
 using DAL.Models;
 
+
 namespace BLL.Services
 {
     public class CompaniesService : AppService, ICompaniesService
@@ -25,6 +26,7 @@ namespace BLL.Services
         {
             return await Repo.CompaniesRepository.GetQueryable()
                 .Searching(filter.Query)
+                .MaybeOrderBy(filter.OrderBy)
                 .SkipAndTake(filter)
                 .OnlySpecific(filter.Fields)
                 .ProjectTo<CompaniesDto>(_mapper.ConfigurationProvider)
