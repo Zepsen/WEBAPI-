@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -25,10 +26,11 @@ namespace BLL.Services
         public async Task<Result<CompaniesDto>> GetAsync(FilterBase filter)
         {
             return await Repo.CompaniesRepository.GetQueryable()
-                .Searching(filter.Query)
+                .Where(filter.Where)
+                .Searching(filter.Search) //mb delete, using dynamic linq where logic
                 .MaybeOrderBy(filter.OrderBy)
                 .SkipAndTake(filter)
-                .OnlySpecific(filter.Fields)
+                .MaybeSelect(filter.Select)
                 .ProjectTo<CompaniesDto>(_mapper.ConfigurationProvider)
                 .ToResultAsync(filter);
         }

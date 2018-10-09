@@ -55,6 +55,7 @@ namespace BLL.Infrastructure.Extensions
         /// <param name="query"></param>
         /// <param name="fields"></param>
         /// <returns></returns>
+        [Obsolete("use Linq.Dynamic")]
         public static IQueryable<TModel> Specific<T, TModel>(this IQueryable<T> query, string fields)
         {
             var xParameter = Expression.Parameter(typeof(T), "o");
@@ -82,6 +83,7 @@ namespace BLL.Infrastructure.Extensions
         /// <param name="query"></param>
         /// <param name="fields"></param>
         /// <returns></returns>
+        [Obsolete("use Linq.Dynamic")]
         public static IQueryable<T> OnlySpecific<T>(this IQueryable<T> query, string fields)
         {
             if (fields.IsNullOrEmpty()) return query;
@@ -105,7 +107,7 @@ namespace BLL.Infrastructure.Extensions
         }
 
         /// <summary>
-        /// OrderBy wrapper from Linq.Dynamic.Core;
+        /// OrderBy wrapper for Linq.Dynamic.Core;
         /// Ordering if existing 
         /// </summary>
         /// <typeparam name="T"></typeparam>
@@ -117,7 +119,18 @@ namespace BLL.Infrastructure.Extensions
             return orderby.IsNullOrEmpty() ? query : query.OrderBy(orderby);
         }
 
-
+        /// <summary>
+        /// Select wrapper for Linq.Dynamic.Core;
+        /// Selecting specific fields, if exist
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="query"></param>
+        /// <param name="select"></param>
+        /// <returns></returns>
+        public static IQueryable MaybeSelect<T>(this IQueryable<T> query, string select)
+        {
+            return select.IsNullOrEmpty() ? query : query.Select(select);
+        }
 
     }
 }
