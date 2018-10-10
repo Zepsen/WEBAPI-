@@ -6,11 +6,12 @@ using BLL.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using WEB.Models;
 
 namespace WEB.Controllers
 {
-    [Route("api/[controller]")]
     [Authorize]
+    [ApiController]
     public class RoleController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -21,6 +22,7 @@ namespace WEB.Controllers
         }
 
         [HttpGet]
+        [Route("api/[controller]/all")]
         public async Task<IActionResult> Get()
         {
             var roles = await _roleManager.Roles.Select(i => i.Name).ToListAsync();
@@ -29,13 +31,14 @@ namespace WEB.Controllers
         
         [HttpPost]
         [Authorize(Roles = RoleHelper.Admin)]
-        public async Task<IActionResult> Post([FromQuery]string role)
+        [Route("api/[controller]/add")]
+        public async Task<IActionResult> Post([FromBody]RoleModel model)
         {
-            if (role.IsNotNullOrEmpty())
+            if (ModelState.IsValid)
             {
-                if (!await _roleManager.RoleExistsAsync(role))
+                if (!await _roleManager.RoleExistsAsync(model.Role))
                 {
-                    await _roleManager.CreateAsync(new IdentityRole(role));
+                    await _roleManager.CreateAsync(new IdentityRole(model.Role));
                     return Ok();
                 }
                 else ModelState.AddModelError("role", "This role is already exist");
@@ -47,34 +50,36 @@ namespace WEB.Controllers
 
         [HttpPut]
         [Authorize(Roles = RoleHelper.Admin)]
-        public async Task<IActionResult> Put([FromQuery]string oldRole, [FromQuery]string newRole)
+        [Route("api/[controller]/update")]
+        public async Task<IActionResult> Put([FromBody]EditRoleModel model)
         {
-            if (newRole.IsNotNullOrEmpty() || oldRole.IsNotNullOrEmpty())
+            if (ModelState.IsValid)
             {
-                if (await _roleManager.RoleExistsAsync(oldRole))
+                if (await _roleManager.RoleExistsAsync(model.OldRole))
                 {
-                    var identityRole = await _roleManager.Roles.FirstAsync(i => i.Name == oldRole);
-                    identityRole.Name = newRole;
+                    var identityRole = await _roleManager.Roles.FirstAsync(i => i.Name == model.OldRole);
+                    identityRole.Name = model.NewRole;
                     await _roleManager.UpdateAsync(identityRole);
                     return Ok();
                 }
 
                 ModelState.AddModelError("role", "Role is not exist");
 
-            } else ModelState.AddModelError("role", "role is empty");
+            } else ModelState.AddModelError("model", "Model is not valid");
 
             return ValidationProblem(ModelState);
         }
 
         [HttpDelete]
         [Authorize(Roles = RoleHelper.Admin)]
-        public async Task<IActionResult> Delete([FromQuery]string role)
+        [Route("api/[controller]/delete")]
+        public async Task<IActionResult> Delete([FromBody]RoleModel model)
         {
-            if (role.IsNotNullOrEmpty())
+            if (ModelState.IsValid)
             {
-                if (await _roleManager.RoleExistsAsync(role))
+                if (await _roleManager.RoleExistsAsync(model.Role))
                 {
-                    var identityRole = await _roleManager.Roles.FirstAsync(i => i.Name == role);
+                    var identityRole = await _roleManager.Roles.FirstAsync(i => i.Name == model.Role);
                     await _roleManager.DeleteAsync(identityRole);
                     return Ok();
                 }
