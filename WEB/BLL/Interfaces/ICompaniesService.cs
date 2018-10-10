@@ -2,7 +2,7 @@
 
 namespace BLL.Interfaces
 {
-    public interface ICompaniesService : ICrudService<CompanyDto>
+    public interface ICompaniesService : ICrudService<CompanyDto, int>
     {
         
     }
