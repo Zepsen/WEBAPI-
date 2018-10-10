@@ -10,7 +10,7 @@ using Z.EntityFramework.Plus;
 namespace DAL.Repositories
 {
     public class UsersRepository : 
-        IWritableRepository<User>, 
+        IWritableRepository<User, int>, 
         ICachedRepository<User>
     {
         private readonly ApplicationContext _db;
