@@ -1,13 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
+using BLL.Infrastructure;
 using BLL.Infrastructure.Extensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace WEB.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     public class RoleController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -25,6 +28,7 @@ namespace WEB.Controllers
         }
         
         [HttpPost]
+        [Authorize(Roles = RoleHelper.Admin)]
         public async Task<IActionResult> Post([FromQuery]string role)
         {
             if (role.IsNotNullOrEmpty())
@@ -42,6 +46,7 @@ namespace WEB.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = RoleHelper.Admin)]
         public async Task<IActionResult> Put([FromQuery]string oldRole, [FromQuery]string newRole)
         {
             if (newRole.IsNotNullOrEmpty() || oldRole.IsNotNullOrEmpty())
@@ -62,6 +67,7 @@ namespace WEB.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = RoleHelper.Admin)]
         public async Task<IActionResult> Delete([FromQuery]string role)
         {
             if (role.IsNotNullOrEmpty())

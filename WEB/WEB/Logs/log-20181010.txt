@@ -754,3 +754,46 @@ FROM [AspNetRoles] AS [i]
 2018-10-10 17:28:43.296 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
 2018-10-10 17:28:43.296 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 8.7275000000000009ms
 2018-10-10 17:28:43.296 +03:00 [INF] Request finished in 9.9189ms 200 application/json; charset=utf-8
+2018-10-10 17:33:52.754 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:33:53.280 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/role  
+2018-10-10 17:33:53.332 +03:00 [INF] Request finished in 54.0382ms 307 
+2018-10-10 17:33:53.349 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/role  
+2018-10-10 17:33:53.561 +03:00 [INF] Route matched with {action = "Get", controller = "Role"}. Executing action WEB.Controllers.RoleController.Get (WEB)
+2018-10-10 17:33:53.573 +03:00 [INF] Authorization failed.
+2018-10-10 17:33:53.578 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-10 17:33:53.585 +03:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2018-10-10 17:33:53.593 +03:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2018-10-10 17:33:53.596 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 31.489600000000003ms
+2018-10-10 17:33:53.601 +03:00 [INF] Request finished in 252.1035ms 302 
+2018-10-10 17:33:53.606 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/AccessDenied?ReturnUrl=%2Fapi%2Frole  
+2018-10-10 17:33:53.607 +03:00 [INF] Request finished in 1.4532ms 404 
+2018-10-10 17:34:29.505 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:34:29.970 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/role  
+2018-10-10 17:34:30.008 +03:00 [INF] Request finished in 39.2825ms 307 
+2018-10-10 17:34:30.015 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/role  
+2018-10-10 17:34:30.196 +03:00 [INF] Route matched with {action = "Get", controller = "Role"}. Executing action WEB.Controllers.RoleController.Get (WEB)
+2018-10-10 17:34:30.206 +03:00 [INF] Authorization was successful.
+2018-10-10 17:34:30.217 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Get (WEB) - Validation state: "Valid"
+2018-10-10 17:34:30.413 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:34:30.594 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Name]
+FROM [AspNetRoles] AS [i]
+2018-10-10 17:34:30.618 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 390.7491ms.
+2018-10-10 17:34:30.631 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 17:34:30.668 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 469.1009ms
+2018-10-10 17:34:30.674 +03:00 [INF] Request finished in 659.6122ms 200 application/json; charset=utf-8
+2018-10-10 17:34:33.496 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role?role=User2 application/json 18
+2018-10-10 17:34:33.498 +03:00 [INF] Request finished in 1.963ms 307 
+2018-10-10 17:34:33.518 +03:00 [INF] Connection id "0HLHENLUEHNEF", Request id "0HLHENLUEHNEF:00000003": the application completed without reading the entire request body.
+2018-10-10 17:34:33.519 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role?role=User2 application/json 18
+2018-10-10 17:34:33.546 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 17:34:33.546 +03:00 [INF] Authorization was successful.
+2018-10-10 17:34:33.547 +03:00 [INF] Authorization failed.
+2018-10-10 17:34:33.551 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-10 17:34:33.560 +03:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2018-10-10 17:34:33.569 +03:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2018-10-10 17:34:33.569 +03:00 [INF] Executed action WEB.Controllers.RoleController.Post (WEB) in 23.0534ms
+2018-10-10 17:34:33.569 +03:00 [INF] Request finished in 50.9249ms 302 
+2018-10-10 17:34:33.570 +03:00 [INF] Connection id "0HLHENLUEHNEF", Request id "0HLHENLUEHNEF:00000004": the application completed without reading the entire request body.
+2018-10-10 17:34:33.580 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/AccessDenied?ReturnUrl=%2Fapi%2Frole%3Frole%3DUser2  
+2018-10-10 17:34:33.582 +03:00 [INF] Request finished in 2.2184ms 404 
