@@ -10,8 +10,8 @@ using Z.EntityFramework.Plus;
 namespace DAL.Repositories
 {
     public class UsersRepository : 
-        IWritableRepository<Users>, 
-        ICachedRepository<Users>
+        IWritableRepository<User>, 
+        ICachedRepository<User>
     {
         private readonly ApplicationContext _db;
         
@@ -22,15 +22,15 @@ namespace DAL.Repositories
         
         #region ICachedRepository
 
-        public async Task<IEnumerable<Users>> GetFromCache()
+        public async Task<IEnumerable<User>> GetFromCache()
         {
-            return await _db.Users.FromCacheAsync(nameof(Users));
+            return await _db.Users.FromCacheAsync(nameof(User));
         }
         
 
         public async Task<int> GetDeferredCountAsync()
         {
-            return await _db.Users.DeferredCount().FromCacheAsync(nameof(Users));
+            return await _db.Users.DeferredCount().FromCacheAsync(nameof(User));
         }
 
 
@@ -38,27 +38,27 @@ namespace DAL.Repositories
 
         #region IRepository
 
-        public async Task InsertAsync(Users entityToInsert)
+        public async Task InsertAsync(User entityToInsert)
         {
             await _db.Users.AddAsync(entityToInsert);
                 
 
             Log.Information("Inserted");
-            QueryCacheManager.ExpireTag(nameof(Users));
+            QueryCacheManager.ExpireTag(nameof(User));
             Log.Information("Cache cleared");
         }
 
-        public async Task UpdateAsync(int id, Users entityToUpdate)
+        public async Task UpdateAsync(int id, User entityToUpdate)
         {
             await _db.Users
                .Where(i => i.Id == id)
-               .UpdateFromQueryAsync(_ => new Users
+               .UpdateFromQueryAsync(_ => new User
                 {
                     Name = entityToUpdate.Name
                 });
 
             Log.Information("Updated");
-            QueryCacheManager.ExpireTag(nameof(Users));
+            QueryCacheManager.ExpireTag(nameof(User));
             Log.Information("Cache cleared");
         }
 
@@ -66,10 +66,10 @@ namespace DAL.Repositories
         {
             await _db.Users
                 .Where(i => i.Id == id)
-                .UpdateFromQueryAsync(ReposHelper.UpdateSpecificFields<Users>(dictionary));
+                .UpdateFromQueryAsync(ReposHelper.UpdateSpecificFields<User>(dictionary));
 
             Log.Information("Updated");
-            QueryCacheManager.ExpireTag(nameof(Users));
+            QueryCacheManager.ExpireTag(nameof(User));
             Log.Information("Cache cleared");
         }
 
@@ -80,7 +80,7 @@ namespace DAL.Repositories
                 .DeleteFromQueryAsync();
 
             Log.Information("Deleted");
-            QueryCacheManager.ExpireTag(nameof(Users));
+            QueryCacheManager.ExpireTag(nameof(User));
             Log.Information("Cache cleared");
         }
         

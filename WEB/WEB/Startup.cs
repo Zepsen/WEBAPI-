@@ -22,7 +22,7 @@ namespace WEB
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IUsersService, UsersService>();
-            services.AddScoped<ICompaniesService, CompaniesService>();
+            services.AddScoped<ICompaniesService, CompaniesesService>();
 
             services.AddResponseCompression();
             services.AddAutoMapper();

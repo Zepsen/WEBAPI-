@@ -13,11 +13,11 @@ namespace WEB.Infrastructure.Automapper
 
         public CompaniesMapper()
         {
-            CreateMap<Companies, CompaniesDto>()
+            CreateMap<Company, CompanyDto>()
                 .ForMember(d => d.Id, m => m.MapFrom(e => _hash.Encode(e.Id)));
                 //.ForMember(d => d.Test, m => m.MapFrom(e => RoleHelper.Role != "Admin" ? e.Test : null)); 
 
-            CreateMap<CompaniesDto, Companies>()
+            CreateMap<CompanyDto, Company>()
                 .ForMember(e => e.Id, m => m.MapFrom(d => _hash.Decode(d.Id)));
         }
     }

@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Threading.Tasks;
 using DAL.Infrastructure.Helpers;
 using DAL.Interfaces;
@@ -11,8 +9,8 @@ using Serilog;
 namespace DAL.Repositories
 {
     public class CompaniesRepository :
-        IWritableRepository<Companies>,
-        IQueryableRepository<Companies>
+        IWritableRepository<Company>,
+        IQueryableRepository<Company>
     {
         private readonly ApplicationContext _db;
 
@@ -23,12 +21,12 @@ namespace DAL.Repositories
 
         #region IQueryableRepository
 
-        public IQueryable<Companies> GetQueryable()
+        public IQueryable<Company> GetQueryable()
         {
             return _db.Companies.AsQueryable();
         }
 
-        public async Task<Companies> FindAsync(int id)
+        public async Task<Company> FindAsync(int id)
         {
             return await _db.Companies.FindAsync(id);
         }
@@ -38,18 +36,18 @@ namespace DAL.Repositories
 
         #region IRepository
 
-        public async Task InsertAsync(Companies entityToInsert)
+        public async Task InsertAsync(Company entityToInsert)
         {
             await _db.Companies.AddAsync(entityToInsert);
             Log.Information("Inserted");
         }
 
-        public async Task UpdateAsync(int id, Companies entityToUpdate)
+        public async Task UpdateAsync(int id, Company entityToUpdate)
         {
 
             await _db.Companies
                 .Where(i => i.Id == id)
-                .UpdateFromQueryAsync(_ => new Companies
+                .UpdateFromQueryAsync(_ => new Company
                 {
                     Name = entityToUpdate.Name
                 });
@@ -61,7 +59,7 @@ namespace DAL.Repositories
         {
             await _db.Companies
                 .Where(i => i.Id == id)
-                .UpdateFromQueryAsync(ReposHelper.UpdateSpecificFields<Companies>(dictionary));
+                .UpdateFromQueryAsync(ReposHelper.UpdateSpecificFields<Company>(dictionary));
 
             Log.Information("Updated");
         }

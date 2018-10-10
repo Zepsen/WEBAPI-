@@ -31,14 +31,14 @@ namespace WEB.Controllers
         // GET api/[controller]/{id}
         [HttpGet("{id}")]
         [DecodeHashId]
-        public async Task<CompaniesDto> Get(int id)
+        public async Task<CompanyDto> Get(int id)
         {
             return await _service.GetByIdAsync(id);
         }
 
         // POST api/[controller]
         [HttpPost]
-        public async Task Post([FromBody]CompaniesDto dto)
+        public async Task Post([FromBody]CompanyDto dto)
         {
             await _service.InsertAsync(dto);
         }
@@ -46,7 +46,7 @@ namespace WEB.Controllers
         // PUT api/[controller]/{id}
         [HttpPut("{id}")]
         [DecodeHashId]
-        public async Task Put(int id, [FromBody]CompaniesDto dto)
+        public async Task Put(int id, [FromBody]CompanyDto dto)
         {
             await _service.UpdateAsync(id, dto);
         }

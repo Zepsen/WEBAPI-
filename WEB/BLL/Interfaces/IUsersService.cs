@@ -2,7 +2,7 @@
 
 namespace BLL.Interfaces
 {
-    public interface IUsersService : ICrudService<UsersDto>
+    public interface IUsersService : ICrudService<UserDto>
     {
 
     }

@@ -2,7 +2,7 @@
 
 namespace BLL.DTOs
 {
-    public class UsersDto : IDto
+    public class UserDto : IDto
     {
         public string Id { get; set; }
         public string Name { get; set; }
