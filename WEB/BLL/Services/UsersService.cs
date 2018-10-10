@@ -6,6 +6,7 @@ using BLL.DTOs;
 using BLL.Infrastructure;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
+using DAL;
 using DAL.Models;
 
 namespace BLL.Services
@@ -13,7 +14,7 @@ namespace BLL.Services
     public class UsersService : AppService, IUsersService
     {
         private readonly IMapper _mapper;
-        public UsersService(IMapper mapper) : base()
+        public UsersService(ApplicationContext context, IMapper mapper) : base(context)
         {
             _mapper = mapper;
         }

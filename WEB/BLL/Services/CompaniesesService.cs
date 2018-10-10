@@ -8,6 +8,7 @@ using BLL.Infrastructure.Extensions;
 using BLL.Infrastructure.Extensions.EntitiesExts;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
+using DAL;
 using DAL.Models;
 
 
@@ -16,7 +17,7 @@ namespace BLL.Services
     public class CompaniesesService : AppService, ICompaniesService
     {
         private readonly IMapper _mapper;
-        public CompaniesesService(IMapper mapper) : base()
+        public CompaniesesService(ApplicationContext context, IMapper mapper) : base(context)
         {
             _mapper = mapper;
         }

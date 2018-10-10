@@ -45,3 +45,151 @@ Type 'Companies' not Found (at index 13)
 2018-10-10 13:56:46.961 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2018-10-10 13:56:47.001 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 737.5179ms
 2018-10-10 13:56:47.005 +03:00 [INF] Request finished in 855.5445ms 200 application/json; charset=utf-8
+2018-10-10 15:52:07.652 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: AddEntityFrameworkStores can only be called with a user that derives from IdentityUser<TKey>.
+   at Microsoft.Extensions.DependencyInjection.IdentityEntityFrameworkBuilderExtensions.AddStores(IServiceCollection services, Type userType, Type roleType, Type contextType)
+   at Microsoft.Extensions.DependencyInjection.IdentityEntityFrameworkBuilderExtensions.AddEntityFrameworkStores[TContext](IdentityBuilder builder)
+   at WEB.Startup.ConfigureServices(IServiceCollection services) in C:\Projects\REST\WEB\WEB\Startup.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.ConfigureServices(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Initialize()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2018-10-10 15:52:08.007 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203%20and%20Id%20%3C%2010 application/json 
+2018-10-10 15:52:08.028 +03:00 [INF] Request finished in 21.4788ms 500 text/html; charset=utf-8
+2018-10-10 15:53:28.347 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: AddEntityFrameworkStores can only be called with a user that derives from IdentityUser<TKey>.
+   at Microsoft.Extensions.DependencyInjection.IdentityEntityFrameworkBuilderExtensions.AddStores(IServiceCollection services, Type userType, Type roleType, Type contextType)
+   at Microsoft.Extensions.DependencyInjection.IdentityEntityFrameworkBuilderExtensions.AddEntityFrameworkStores[TContext](IdentityBuilder builder)
+   at WEB.Startup.ConfigureServices(IServiceCollection services) in C:\Projects\REST\WEB\WEB\Startup.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.ConfigureServices(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Initialize()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2018-10-10 15:53:28.669 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203%20and%20Id%20%3C%2010 application/json 
+2018-10-10 15:53:28.690 +03:00 [INF] Request finished in 21.9673ms 500 text/html; charset=utf-8
+2018-10-10 15:53:56.098 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 15:53:56.641 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203%20and%20Id%20%3C%2010 application/json 
+2018-10-10 15:53:56.680 +03:00 [INF] Request finished in 39.9687ms 307 
+2018-10-10 15:53:56.704 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203%20and%20Id%20%3C%2010 application/json 
+2018-10-10 15:53:56.819 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-10 15:53:56.915 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-10 15:53:57.105 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 15:53:57.418 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT [c].[Id], [c].[Name], [c].[Test]
+    FROM [Companies] AS [c]
+    WHERE ((CHARINDEX(N'test', [c].[Name]) > 0) AND ([c].[Id] > 3)) AND ([c].[Id] < 10)
+    ORDER BY [c].[Id], [c].[Name]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+2018-10-10 15:53:57.453 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[Test]
+FROM [Companies] AS [c]
+WHERE ((CHARINDEX(N'test', [c].[Name]) > 0) AND ([c].[Id] > 3)) AND ([c].[Id] < 10)
+ORDER BY [c].[Id], [c].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-10-10 15:53:57.459 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 529.0238ms.
+2018-10-10 15:53:57.466 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-10 15:53:57.508 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 686.43090000000007ms
+2018-10-10 15:53:57.509 +03:00 [INF] Request finished in 805.0451ms 200 application/json; charset=utf-8
+2018-10-10 15:54:32.461 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203%20and%20Id%20%3C%2010 application/json 
+2018-10-10 15:54:32.462 +03:00 [INF] Request finished in 0.6577ms 307 
+2018-10-10 15:54:32.489 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3E%203%20and%20Id%20%3C%2010 application/json 
+2018-10-10 15:54:32.490 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-10 15:54:32.491 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-10 15:54:32.499 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 15:54:32.516 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT [c].[Id], [c].[Name], [c].[Test]
+    FROM [Companies] AS [c]
+    WHERE ((CHARINDEX(N'test', [c].[Name]) > 0) AND ([c].[Id] > 3)) AND ([c].[Id] < 10)
+    ORDER BY [c].[Id], [c].[Name]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+2018-10-10 15:54:32.520 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[Test]
+FROM [Companies] AS [c]
+WHERE ((CHARINDEX(N'test', [c].[Name]) > 0) AND ([c].[Id] > 3)) AND ([c].[Id] < 10)
+ORDER BY [c].[Id], [c].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-10-10 15:54:32.520 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22.584ms.
+2018-10-10 15:54:32.520 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-10 15:54:32.521 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 31.0223ms
+2018-10-10 15:54:32.521 +03:00 [INF] Request finished in 32.2657ms 200 application/json; charset=utf-8
+2018-10-10 15:54:49.803 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3C%2010 application/json 
+2018-10-10 15:54:49.805 +03:00 [INF] Request finished in 1.1976ms 307 
+2018-10-10 15:54:49.813 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29&where=name.contains%28%22test%22%29%20and%20Id%20%3C%2010 application/json 
+2018-10-10 15:54:49.814 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-10 15:54:49.815 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-10 15:54:49.815 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 15:54:49.827 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT [c].[Id], [c].[Name], [c].[Test]
+    FROM [Companies] AS [c]
+    WHERE (CHARINDEX(N'test', [c].[Name]) > 0) AND ([c].[Id] < 10)
+    ORDER BY [c].[Id], [c].[Name]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+2018-10-10 15:54:49.836 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[Test]
+FROM [Companies] AS [c]
+WHERE (CHARINDEX(N'test', [c].[Name]) > 0) AND ([c].[Id] < 10)
+ORDER BY [c].[Id], [c].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-10-10 15:54:49.836 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.139300000000002ms.
+2018-10-10 15:54:49.836 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-10 15:54:49.837 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 22.0864ms
+2018-10-10 15:54:49.837 +03:00 [INF] Request finished in 23.2331ms 200 application/json; charset=utf-8
+2018-10-10 15:54:57.550 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29 application/json 
+2018-10-10 15:54:57.552 +03:00 [INF] Request finished in 1.5438ms 307 
+2018-10-10 15:54:57.577 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29 application/json 
+2018-10-10 15:54:57.577 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-10 15:54:57.578 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-10 15:54:57.578 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 15:54:57.586 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT [c].[Id], [c].[Name], [c].[Test]
+    FROM [Companies] AS [c]
+    ORDER BY [c].[Id], [c].[Name]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+2018-10-10 15:54:57.594 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[Test]
+FROM [Companies] AS [c]
+ORDER BY [c].[Id], [c].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-10-10 15:54:57.594 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.0115ms.
+2018-10-10 15:54:57.594 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-10 15:54:57.594 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 16.887800000000002ms
+2018-10-10 15:54:57.594 +03:00 [INF] Request finished in 17.7209ms 200 application/json; charset=utf-8
+2018-10-10 15:55:10.172 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=0&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29 application/json 
+2018-10-10 15:55:10.172 +03:00 [INF] Request finished in 0.4666ms 307 
+2018-10-10 15:55:10.203 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=0&take=6&orderby=Id,Name%20ASC&select=new%20Company%28id,name,test%29 application/json 
+2018-10-10 15:55:10.203 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-10 15:55:10.204 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-10 15:55:10.205 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 15:55:10.206 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT [c].[Id], [c].[Name], [c].[Test]
+    FROM [Companies] AS [c]
+    ORDER BY [c].[Id], [c].[Name]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+2018-10-10 15:55:10.207 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[Test]
+FROM [Companies] AS [c]
+ORDER BY [c].[Id], [c].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-10-10 15:55:10.216 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.7888ms.
+2018-10-10 15:55:10.216 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-10 15:55:10.218 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 14.6216ms
+2018-10-10 15:55:10.218 +03:00 [INF] Request finished in 15.8891ms 200 application/json; charset=utf-8
