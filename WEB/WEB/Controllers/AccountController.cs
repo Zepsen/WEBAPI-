@@ -9,45 +9,41 @@ using WEB.Models;
 
 namespace WEB.Controllers
 {
-    [Route("api/[controller]")]
-    //[ApiController]
+    [ApiController]
     public class AccountController : Controller
     {
         private readonly IUsersService _service;
-        private readonly UserManager<UserIdentity> _userManager;
-        private readonly SignInManager<UserIdentity> _signInManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
         public AccountController(
             IUsersService service,
-            UserManager<UserIdentity> userManager,
-            RoleManager<IdentityRole> roleManager,
-            SignInManager<UserIdentity> signInManager)
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager)
         {
             _service = service;
             _userManager = userManager;
-            _roleManager = roleManager;
             _signInManager = signInManager;
         }
 
-        // POST api/[controller]
+
         /// <summary>
         /// Registration
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost]
-//        [Route("api/register")]
-        public async Task<IActionResult> Post([FromBody]RegisterModel model)
+        [Route("api/[controller]/register")]
+        public async Task<IActionResult> Register([FromBody]RegisterModel model)
         {
             if (!ModelState.IsValid) return ValidationProblem(ModelState);
 
-            var user = new UserIdentity { Email = model.Email, UserName = model.Email };
+            var user = new ApplicationUser { Email = model.Email, UserName = model.Email };
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(user, RoleHelper.DefaultRole);
-                await _service.InsertAsync(new UserDto(model.UserName));
+                await _service.InsertAsync(new UserDto(user.Id, model.UserName));
                 await _signInManager.SignInAsync(user, false);
                 return Ok();
             }
@@ -60,6 +56,54 @@ namespace WEB.Controllers
             }
 
             return ValidationProblem(ModelState);
+        }
+
+        /// <summary>
+        /// Login
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("api/[controller]/login")]
+        public async Task<IActionResult> Login([FromBody]LoginModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager
+                    .PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+
+                if (result.Succeeded)
+                {
+                    return Ok(new { returnUrl = model.ReturnUrl });
+                    //if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
+                    //{
+                    //    return Ok(model.ReturnUrl);
+                    //}
+                    //else
+                    //{
+                    //    return Forbid();
+                    //}
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Wrong login or password");
+                }
+            }
+
+            return ValidationProblem(ModelState);
+        }
+
+        /// <summary>
+        /// Logout
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("api/[controller]/logout")]
+        public async Task<IActionResult> Logout([FromBody] LogoutModel model)
+        {
+            await _signInManager.SignOutAsync();
+            return Ok(new { returnUrl = model.ReturnUrl });
         }
     }
 }

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Design;
 
 namespace DAL
 {
-    public class ApplicationContext : IdentityDbContext<UserIdentity>, IDesignTimeDbContextFactory<ApplicationContext>
+    public class ApplicationContext : IdentityDbContext<ApplicationUser>, IDesignTimeDbContextFactory<ApplicationContext>
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Company> Companies { get; set; }
@@ -32,7 +32,7 @@ namespace DAL
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
-                .HasOne(i => i.UserIdentity)
+                .HasOne(i => i.ApplicationUser)
                 .WithOne(i => i.User)
                 .HasForeignKey<User>(i => i.UserIdentityId);
 

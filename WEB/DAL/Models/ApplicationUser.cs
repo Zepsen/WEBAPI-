@@ -2,7 +2,7 @@
 
 namespace DAL.Models
 {
-    public class UserIdentity : IdentityUser
+    public class ApplicationUser : IdentityUser
     {
         public User User { get; set; }
     }

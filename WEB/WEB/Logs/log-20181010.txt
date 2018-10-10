@@ -797,3 +797,859 @@ FROM [AspNetRoles] AS [i]
 2018-10-10 17:34:33.570 +03:00 [INF] Connection id "0HLHENLUEHNEF", Request id "0HLHENLUEHNEF:00000004": the application completed without reading the entire request body.
 2018-10-10 17:34:33.580 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/AccessDenied?ReturnUrl=%2Fapi%2Frole%3Frole%3DUser2  
 2018-10-10 17:34:33.582 +03:00 [INF] Request finished in 2.2184ms 404 
+2018-10-10 17:36:15.235 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:36:15.649 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role?role=User2 application/json 18
+2018-10-10 17:36:15.687 +03:00 [INF] Request finished in 39.3209ms 307 
+2018-10-10 17:36:15.699 +03:00 [INF] Connection id "0HLHENMTUICFR", Request id "0HLHENMTUICFR:00000001": the application completed without reading the entire request body.
+2018-10-10 17:36:15.700 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role?role=User2 application/json 18
+2018-10-10 17:36:15.890 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 17:36:15.902 +03:00 [INF] Authorization was successful.
+2018-10-10 17:36:15.903 +03:00 [INF] Authorization failed.
+2018-10-10 17:36:15.907 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-10 17:36:15.913 +03:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2018-10-10 17:36:15.921 +03:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2018-10-10 17:36:15.924 +03:00 [INF] Executed action WEB.Controllers.RoleController.Post (WEB) in 30.602600000000002ms
+2018-10-10 17:36:15.930 +03:00 [INF] Request finished in 229.9431ms 302 
+2018-10-10 17:36:15.930 +03:00 [INF] Connection id "0HLHENMTUICFR", Request id "0HLHENMTUICFR:00000002": the application completed without reading the entire request body.
+2018-10-10 17:36:15.933 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/AccessDenied?ReturnUrl=%2Fapi%2Frole%3Frole%3DUser2  
+2018-10-10 17:36:15.935 +03:00 [INF] Request finished in 1.6709ms 404 
+2018-10-10 17:36:25.402 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/role  
+2018-10-10 17:36:25.405 +03:00 [INF] Request finished in 0.4987ms 307 
+2018-10-10 17:36:25.419 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/role  
+2018-10-10 17:36:25.430 +03:00 [INF] Route matched with {action = "Get", controller = "Role"}. Executing action WEB.Controllers.RoleController.Get (WEB)
+2018-10-10 17:36:25.430 +03:00 [INF] Authorization was successful.
+2018-10-10 17:36:25.442 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Get (WEB) - Validation state: "Valid"
+2018-10-10 17:36:25.657 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:36:25.851 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Name]
+FROM [AspNetRoles] AS [i]
+2018-10-10 17:36:25.874 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 426.185ms.
+2018-10-10 17:36:25.887 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 17:36:25.923 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 493.32250000000005ms
+2018-10-10 17:36:25.931 +03:00 [INF] Request finished in 512.458ms 200 application/json; charset=utf-8
+2018-10-10 17:37:29.794 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:37:30.183 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/ application/json 102
+2018-10-10 17:37:30.223 +03:00 [INF] Request finished in 41.4371ms 307 
+2018-10-10 17:37:30.235 +03:00 [INF] Connection id "0HLHENNK56U8C", Request id "0HLHENNK56U8C:00000001": the application completed without reading the entire request body.
+2018-10-10 17:37:30.236 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/ application/json 102
+2018-10-10 17:37:30.436 +03:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing action WEB.Controllers.AccountController.Post (WEB)
+2018-10-10 17:37:30.513 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Post (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:37:30.745 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:37:30.945 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:37:31.016 +03:00 [WRN] User 5a7ffae2-7ec6-4990-89ef-712dacc08bc9 validation failed: DuplicateUserName.
+2018-10-10 17:37:31.025 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 494.814ms.
+2018-10-10 17:37:31.038 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:37:31.058 +03:00 [INF] Executed action WEB.Controllers.AccountController.Post (WEB) in 619.27060000000006ms
+2018-10-10 17:37:31.065 +03:00 [INF] Request finished in 829.5132ms 400 application/json; charset=utf-8
+2018-10-10 17:38:06.050 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role?role=User2 application/json 18
+2018-10-10 17:38:06.051 +03:00 [INF] Request finished in 1.1604ms 307 
+2018-10-10 17:38:06.051 +03:00 [INF] Connection id "0HLHENNK56U8C", Request id "0HLHENNK56U8C:00000003": the application completed without reading the entire request body.
+2018-10-10 17:38:06.065 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role?role=User2 application/json 18
+2018-10-10 17:38:06.081 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 17:38:06.097 +03:00 [INF] Authorization was successful.
+2018-10-10 17:38:06.098 +03:00 [INF] Authorization failed.
+2018-10-10 17:38:06.102 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-10 17:38:06.105 +03:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2018-10-10 17:38:06.113 +03:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2018-10-10 17:38:06.113 +03:00 [INF] Executed action WEB.Controllers.RoleController.Post (WEB) in 31.388ms
+2018-10-10 17:38:06.114 +03:00 [INF] Request finished in 48.3929ms 302 
+2018-10-10 17:38:06.114 +03:00 [INF] Connection id "0HLHENNK56U8C", Request id "0HLHENNK56U8C:00000004": the application completed without reading the entire request body.
+2018-10-10 17:38:06.119 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/AccessDenied?ReturnUrl=%2Fapi%2Frole%3Frole%3DUser2  
+2018-10-10 17:38:06.137 +03:00 [INF] Request finished in 18.1329ms 404 
+2018-10-10 17:48:59.116 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:48:59.450 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/ application/json 104
+2018-10-10 17:48:59.487 +03:00 [INF] Request finished in 38.889ms 307 
+2018-10-10 17:48:59.500 +03:00 [INF] Connection id "0HLHENU1III8B", Request id "0HLHENU1III8B:00000001": the application completed without reading the entire request body.
+2018-10-10 17:48:59.504 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/ application/json 104
+2018-10-10 17:48:59.677 +03:00 [INF] Request finished in 173.5152ms 404 
+2018-10-10 17:48:59.678 +03:00 [INF] Connection id "0HLHENU1III8B", Request id "0HLHENU1III8B:00000002": the application completed without reading the entire request body.
+2018-10-10 17:49:09.104 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/create application/json 104
+2018-10-10 17:49:09.105 +03:00 [INF] Request finished in 4.0972ms 307 
+2018-10-10 17:49:09.107 +03:00 [INF] Connection id "0HLHENU1III8B", Request id "0HLHENU1III8B:00000003": the application completed without reading the entire request body.
+2018-10-10 17:49:09.121 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/create application/json 104
+2018-10-10 17:49:09.124 +03:00 [INF] Request finished in 2.5346ms 404 
+2018-10-10 17:49:09.124 +03:00 [INF] Connection id "0HLHENU1III8B", Request id "0HLHENU1III8B:00000004": the application completed without reading the entire request body.
+2018-10-10 17:49:56.282 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:49:56.573 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register application/json 104
+2018-10-10 17:49:56.609 +03:00 [INF] Request finished in 37.6099ms 307 
+2018-10-10 17:49:56.618 +03:00 [INF] Connection id "0HLHENUIJGIHL", Request id "0HLHENUIJGIHL:00000001": the application completed without reading the entire request body.
+2018-10-10 17:49:56.619 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register application/json 104
+2018-10-10 17:49:56.779 +03:00 [INF] Request finished in 159.6857ms 404 
+2018-10-10 17:49:56.780 +03:00 [INF] Connection id "0HLHENUIJGIHL", Request id "0HLHENUIJGIHL:00000002": the application completed without reading the entire request body.
+2018-10-10 17:50:19.328 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:50:19.628 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/register application/json 104
+2018-10-10 17:50:19.668 +03:00 [INF] Request finished in 41.2741ms 307 
+2018-10-10 17:50:19.679 +03:00 [INF] Connection id "0HLHENUPF940E", Request id "0HLHENUPF940E:00000001": the application completed without reading the entire request body.
+2018-10-10 17:50:19.680 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/register application/json 104
+2018-10-10 17:50:19.835 +03:00 [INF] Request finished in 155.4438ms 404 
+2018-10-10 17:50:19.835 +03:00 [INF] Connection id "0HLHENUPF940E", Request id "0HLHENUPF940E:00000002": the application completed without reading the entire request body.
+2018-10-10 17:50:22.541 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/register application/json 104
+2018-10-10 17:50:22.542 +03:00 [INF] Request finished in 0.8003ms 307 
+2018-10-10 17:50:22.542 +03:00 [INF] Connection id "0HLHENUPF940E", Request id "0HLHENUPF940E:00000003": the application completed without reading the entire request body.
+2018-10-10 17:50:22.556 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/register application/json 104
+2018-10-10 17:50:22.559 +03:00 [INF] Request finished in 2.2766ms 404 
+2018-10-10 17:50:22.560 +03:00 [INF] Connection id "0HLHENUPF940E", Request id "0HLHENUPF940E:00000004": the application completed without reading the entire request body.
+2018-10-10 17:50:41.006 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:50:41.526 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/register application/json 104
+2018-10-10 17:50:41.563 +03:00 [INF] Request finished in 38.9158ms 307 
+2018-10-10 17:50:41.575 +03:00 [INF] Connection id "0HLHENV0054K6", Request id "0HLHENV0054K6:00000001": the application completed without reading the entire request body.
+2018-10-10 17:50:41.576 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/register application/json 104
+2018-10-10 17:50:41.761 +03:00 [INF] Route matched with {action = "Create", controller = "Account"}. Executing action WEB.Controllers.AccountController.Create (WEB)
+2018-10-10 17:50:41.834 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Create (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:50:42.049 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:50:42.244 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:50:42.367 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2018-10-10 17:50:42.401 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2018-10-10 17:50:42.429 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2018-10-10 17:50:42.435 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2018-10-10 17:50:42.445 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:50:42.459 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+2018-10-10 17:50:42.464 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+2018-10-10 17:50:42.538 +03:00 [INF] Inserted
+2018-10-10 17:50:42.540 +03:00 [INF] Cache cleared
+2018-10-10 17:50:42.545 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name], [UserIdentityId])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-10-10 17:50:42.582 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 17:50:42.628 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 17:50:42.640 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:50:42.655 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 17:50:42.668 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 17:50:42.673 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Create (WEB), returned result Microsoft.AspNetCore.Mvc.OkResult in 823.3319ms.
+2018-10-10 17:50:42.685 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-10-10 17:50:42.690 +03:00 [INF] Executed action WEB.Controllers.AccountController.Create (WEB) in 925.7259ms
+2018-10-10 17:50:42.695 +03:00 [INF] Request finished in 1119.3601ms 200 
+2018-10-10 17:53:35.214 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:53:35.752 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/register application/json 104
+2018-10-10 17:53:35.789 +03:00 [INF] Request finished in 38.5373ms 307 
+2018-10-10 17:53:35.799 +03:00 [INF] Connection id "0HLHEO0JTHJPE", Request id "0HLHEO0JTHJPE:00000001": the application completed without reading the entire request body.
+2018-10-10 17:53:35.806 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/register application/json 104
+2018-10-10 17:53:35.962 +03:00 [INF] Request finished in 156.7499ms 404 
+2018-10-10 17:53:35.963 +03:00 [INF] Connection id "0HLHEO0JTHJPE", Request id "0HLHEO0JTHJPE:00000002": the application completed without reading the entire request body.
+2018-10-10 17:53:44.467 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register application/json 104
+2018-10-10 17:53:44.467 +03:00 [INF] Request finished in 0.7617ms 307 
+2018-10-10 17:53:44.468 +03:00 [INF] Connection id "0HLHEO0JTHJPE", Request id "0HLHEO0JTHJPE:00000003": the application completed without reading the entire request body.
+2018-10-10 17:53:44.478 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register application/json 104
+2018-10-10 17:53:44.522 +03:00 [INF] Route matched with {action = "Create", controller = "Account"}. Executing action WEB.Controllers.AccountController.Create (WEB)
+2018-10-10 17:53:44.595 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Create (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:53:44.816 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:53:45.005 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:53:45.074 +03:00 [WRN] User 6e76b163-45cf-4628-8891-2c708ef09096 validation failed: DuplicateUserName.
+2018-10-10 17:53:45.082 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Create (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 471.942ms.
+2018-10-10 17:53:45.095 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:53:45.113 +03:00 [INF] Executed action WEB.Controllers.AccountController.Create (WEB) in 588.2761ms
+2018-10-10 17:53:45.119 +03:00 [INF] Request finished in 641.0558ms 400 application/json; charset=utf-8
+2018-10-10 17:53:53.188 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register application/json 104
+2018-10-10 17:53:53.189 +03:00 [INF] Request finished in 0.7986ms 307 
+2018-10-10 17:53:53.190 +03:00 [INF] Connection id "0HLHEO0JTHJPE", Request id "0HLHEO0JTHJPE:00000005": the application completed without reading the entire request body.
+2018-10-10 17:53:53.208 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register application/json 104
+2018-10-10 17:53:53.210 +03:00 [INF] Route matched with {action = "Create", controller = "Account"}. Executing action WEB.Controllers.AccountController.Create (WEB)
+2018-10-10 17:53:53.253 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Create (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:53:53.264 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:53:53.271 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:53:53.336 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2018-10-10 17:53:53.365 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2018-10-10 17:53:53.396 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2018-10-10 17:53:53.403 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2018-10-10 17:53:53.413 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:53:53.425 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+2018-10-10 17:53:53.429 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+2018-10-10 17:53:53.505 +03:00 [INF] Inserted
+2018-10-10 17:53:53.507 +03:00 [INF] Cache cleared
+2018-10-10 17:53:53.513 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name], [UserIdentityId])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-10-10 17:53:53.548 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 17:53:53.585 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 17:53:53.597 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:53:53.611 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 17:53:53.623 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 17:53:53.623 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Create (WEB), returned result Microsoft.AspNetCore.Mvc.OkResult in 369.6934ms.
+2018-10-10 17:53:53.626 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-10-10 17:53:53.626 +03:00 [INF] Executed action WEB.Controllers.AccountController.Create (WEB) in 416.2814ms
+2018-10-10 17:53:53.626 +03:00 [INF] Request finished in 417.7572ms 200 
+2018-10-10 17:54:22.735 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:54:23.247 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register application/json 104
+2018-10-10 17:54:23.284 +03:00 [INF] Request finished in 38.7388ms 307 
+2018-10-10 17:54:23.296 +03:00 [INF] Connection id "0HLHEO122M2S1", Request id "0HLHEO122M2S1:00000001": the application completed without reading the entire request body.
+2018-10-10 17:54:23.297 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register application/json 104
+2018-10-10 17:54:23.483 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing action WEB.Controllers.AccountController.Register (WEB)
+2018-10-10 17:54:23.553 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Register (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:54:23.764 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:54:23.958 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:54:24.022 +03:00 [WRN] User 2e04b316-8068-4a2e-8472-6fc873761a37 validation failed: DuplicateUserName.
+2018-10-10 17:54:24.031 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Register (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 462.94800000000004ms.
+2018-10-10 17:54:24.043 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:54:24.061 +03:00 [INF] Executed action WEB.Controllers.AccountController.Register (WEB) in 574.7857ms
+2018-10-10 17:54:24.068 +03:00 [INF] Request finished in 771.3474ms 400 application/json; charset=utf-8
+2018-10-10 17:54:27.226 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register application/json 104
+2018-10-10 17:54:27.228 +03:00 [INF] Request finished in 1.5836ms 307 
+2018-10-10 17:54:27.228 +03:00 [INF] Connection id "0HLHEO122M2S1", Request id "0HLHEO122M2S1:00000003": the application completed without reading the entire request body.
+2018-10-10 17:54:27.234 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register application/json 104
+2018-10-10 17:54:27.236 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing action WEB.Controllers.AccountController.Register (WEB)
+2018-10-10 17:54:27.237 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Register (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:54:27.248 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:54:27.277 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:54:27.279 +03:00 [WRN] User 29cce6a5-4a1b-4d26-98e4-f4720c09ef3a validation failed: DuplicateUserName.
+2018-10-10 17:54:27.280 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Register (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 42.545700000000004ms.
+2018-10-10 17:54:27.281 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:54:27.281 +03:00 [INF] Executed action WEB.Controllers.AccountController.Register (WEB) in 45.5171ms
+2018-10-10 17:54:27.282 +03:00 [INF] Request finished in 47.4882ms 400 application/json; charset=utf-8
+2018-10-10 17:54:35.470 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register application/json 104
+2018-10-10 17:54:35.471 +03:00 [INF] Request finished in 0.712ms 307 
+2018-10-10 17:54:35.471 +03:00 [INF] Connection id "0HLHEO122M2S1", Request id "0HLHEO122M2S1:00000005": the application completed without reading the entire request body.
+2018-10-10 17:54:35.484 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register application/json 104
+2018-10-10 17:54:35.485 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing action WEB.Controllers.AccountController.Register (WEB)
+2018-10-10 17:54:35.505 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Register (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:54:35.516 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:54:35.517 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:54:35.580 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2018-10-10 17:54:35.610 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2018-10-10 17:54:35.634 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2018-10-10 17:54:35.640 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2018-10-10 17:54:35.650 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:54:35.661 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+2018-10-10 17:54:35.662 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+2018-10-10 17:54:35.750 +03:00 [INF] Inserted
+2018-10-10 17:54:35.753 +03:00 [INF] Cache cleared
+2018-10-10 17:54:35.756 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name], [UserIdentityId])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-10-10 17:54:35.801 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 17:54:35.835 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 17:54:35.846 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:54:35.858 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 17:54:35.871 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 17:54:35.871 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Register (WEB), returned result Microsoft.AspNetCore.Mvc.OkResult in 365.34290000000004ms.
+2018-10-10 17:54:35.873 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-10-10 17:54:35.873 +03:00 [INF] Executed action WEB.Controllers.AccountController.Register (WEB) in 387.6682ms
+2018-10-10 17:54:35.873 +03:00 [INF] Request finished in 388.7861ms 200 
+2018-10-10 17:55:00.973 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:55:01.419 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register application/json 104
+2018-10-10 17:55:01.457 +03:00 [INF] Request finished in 39.738ms 307 
+2018-10-10 17:55:01.469 +03:00 [INF] Connection id "0HLHEO1DENI0G", Request id "0HLHEO1DENI0G:00000001": the application completed without reading the entire request body.
+2018-10-10 17:55:01.470 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register application/json 104
+2018-10-10 17:55:01.651 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing action WEB.Controllers.AccountController.Register (WEB)
+2018-10-10 17:55:01.724 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Register (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:55:01.933 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:55:02.121 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:55:02.188 +03:00 [WRN] User 832db4cd-58e8-4a6e-9b82-c000ba445259 validation failed: DuplicateUserName.
+2018-10-10 17:55:02.196 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Register (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 457.8548ms.
+2018-10-10 17:55:02.208 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:55:02.225 +03:00 [INF] Executed action WEB.Controllers.AccountController.Register (WEB) in 571.0419ms
+2018-10-10 17:55:02.232 +03:00 [INF] Request finished in 761.2935ms 400 application/json; charset=utf-8
+2018-10-10 17:56:08.806 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/register application/json 25
+2018-10-10 17:56:08.807 +03:00 [INF] Request finished in 0.8869ms 307 
+2018-10-10 17:56:08.807 +03:00 [INF] Connection id "0HLHEO1DENI0H", Request id "0HLHEO1DENI0H:00000001": the application completed without reading the entire request body.
+2018-10-10 17:56:08.818 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/register application/json 25
+2018-10-10 17:56:08.820 +03:00 [INF] Request finished in 1.6729ms 404 
+2018-10-10 17:56:08.821 +03:00 [INF] Connection id "0HLHEO1DENI0H", Request id "0HLHEO1DENI0H:00000002": the application completed without reading the entire request body.
+2018-10-10 17:56:20.045 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/logout application/json 25
+2018-10-10 17:56:20.046 +03:00 [INF] Request finished in 0.5479ms 307 
+2018-10-10 17:56:20.046 +03:00 [INF] Connection id "0HLHEO1DENI0H", Request id "0HLHEO1DENI0H:00000003": the application completed without reading the entire request body.
+2018-10-10 17:56:20.060 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/logout application/json 25
+2018-10-10 17:56:20.074 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action WEB.Controllers.AccountController.Logout (WEB)
+2018-10-10 17:56:20.081 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.PjmLsLnOpCo" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.PjmLsLnOpCo" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2018-10-10 17:56:20.109 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+2018-10-10 17:56:20.113 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400
+2018-10-10 17:56:20.113 +03:00 [INF] Executed action WEB.Controllers.AccountController.Logout (WEB) in 38.3954ms
+2018-10-10 17:56:20.113 +03:00 [INF] Request finished in 52.6718ms 400 
+2018-10-10 17:56:20.113 +03:00 [INF] Connection id "0HLHEO1DENI0H", Request id "0HLHEO1DENI0H:00000004": the application completed without reading the entire request body.
+2018-10-10 17:56:27.062 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register application/json 104
+2018-10-10 17:56:27.062 +03:00 [INF] Request finished in 0.4905ms 307 
+2018-10-10 17:56:27.062 +03:00 [INF] Connection id "0HLHEO1DENI0H", Request id "0HLHEO1DENI0H:00000005": the application completed without reading the entire request body.
+2018-10-10 17:56:27.081 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register application/json 104
+2018-10-10 17:56:27.081 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing action WEB.Controllers.AccountController.Register (WEB)
+2018-10-10 17:56:27.124 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Register (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:56:27.136 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:56:27.143 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:56:27.144 +03:00 [WRN] User 1871ea30-06e3-42c7-814a-e411d3d7a971 validation failed: DuplicateUserName.
+2018-10-10 17:56:27.144 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Register (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 19.8142ms.
+2018-10-10 17:56:27.145 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:56:27.145 +03:00 [INF] Executed action WEB.Controllers.AccountController.Register (WEB) in 63.6685ms
+2018-10-10 17:56:27.145 +03:00 [INF] Request finished in 64.8401ms 400 application/json; charset=utf-8
+2018-10-10 17:56:38.592 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/logout application/json 25
+2018-10-10 17:56:38.593 +03:00 [INF] Request finished in 1.285ms 307 
+2018-10-10 17:56:38.593 +03:00 [INF] Connection id "0HLHEO1DENI0H", Request id "0HLHEO1DENI0H:00000007": the application completed without reading the entire request body.
+2018-10-10 17:56:38.609 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/logout application/json 25
+2018-10-10 17:56:38.610 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action WEB.Controllers.AccountController.Logout (WEB)
+2018-10-10 17:56:38.610 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.PjmLsLnOpCo" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.PjmLsLnOpCo" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2018-10-10 17:56:38.611 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+2018-10-10 17:56:38.611 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400
+2018-10-10 17:56:38.611 +03:00 [INF] Executed action WEB.Controllers.AccountController.Logout (WEB) in 1.1036000000000001ms
+2018-10-10 17:56:38.611 +03:00 [INF] Request finished in 1.9505ms 400 
+2018-10-10 17:56:38.611 +03:00 [INF] Connection id "0HLHEO1DENI0H", Request id "0HLHEO1DENI0H:00000008": the application completed without reading the entire request body.
+2018-10-10 17:57:00.027 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:57:00.563 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/logout application/json 25
+2018-10-10 17:57:00.623 +03:00 [INF] Request finished in 61.3173ms 307 
+2018-10-10 17:57:00.636 +03:00 [INF] Connection id "0HLHEO2GUHL76", Request id "0HLHEO2GUHL76:00000001": the application completed without reading the entire request body.
+2018-10-10 17:57:00.641 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/logout application/json 25
+2018-10-10 17:57:00.856 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action WEB.Controllers.AccountController.Logout (WEB)
+2018-10-10 17:57:00.862 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.PjmLsLnOpCo" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.PjmLsLnOpCo" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2018-10-10 17:57:00.888 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+2018-10-10 17:57:00.892 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400
+2018-10-10 17:57:00.901 +03:00 [INF] Executed action WEB.Controllers.AccountController.Logout (WEB) in 42.4084ms
+2018-10-10 17:57:00.903 +03:00 [INF] Request finished in 261.5666ms 400 
+2018-10-10 17:57:00.903 +03:00 [INF] Connection id "0HLHEO2GUHL76", Request id "0HLHEO2GUHL76:00000002": the application completed without reading the entire request body.
+2018-10-10 17:57:06.247 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:57:06.620 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/logout application/json 25
+2018-10-10 17:57:06.662 +03:00 [INF] Request finished in 42.7246ms 307 
+2018-10-10 17:57:06.672 +03:00 [INF] Connection id "0HLHEO2IOLICF", Request id "0HLHEO2IOLICF:00000001": the application completed without reading the entire request body.
+2018-10-10 17:57:06.673 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/logout application/json 25
+2018-10-10 17:57:06.856 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action WEB.Controllers.AccountController.Logout (WEB)
+2018-10-10 17:57:06.862 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.PjmLsLnOpCo" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.PjmLsLnOpCo" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2018-10-10 17:57:06.887 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+2018-10-10 17:57:06.891 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400
+2018-10-10 17:57:06.899 +03:00 [INF] Executed action WEB.Controllers.AccountController.Logout (WEB) in 39.609300000000005ms
+2018-10-10 17:57:06.900 +03:00 [INF] Request finished in 226.5969ms 400 
+2018-10-10 17:57:06.900 +03:00 [INF] Connection id "0HLHEO2IOLICF", Request id "0HLHEO2IOLICF:00000002": the application completed without reading the entire request body.
+2018-10-10 17:57:12.581 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register application/json 104
+2018-10-10 17:57:12.583 +03:00 [INF] Request finished in 1.6832ms 307 
+2018-10-10 17:57:12.587 +03:00 [INF] Connection id "0HLHEO2IOLICF", Request id "0HLHEO2IOLICF:00000003": the application completed without reading the entire request body.
+2018-10-10 17:57:12.610 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register application/json 104
+2018-10-10 17:57:12.616 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing action WEB.Controllers.AccountController.Register (WEB)
+2018-10-10 17:57:12.703 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Register (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:57:12.931 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:57:13.129 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:57:13.197 +03:00 [WRN] User 1d9e0b0c-b2c9-4507-9c00-475c09cc7bb6 validation failed: DuplicateUserName.
+2018-10-10 17:57:13.206 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Register (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 492.8509ms.
+2018-10-10 17:57:13.219 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:57:13.235 +03:00 [INF] Executed action WEB.Controllers.AccountController.Register (WEB) in 618.70990000000006ms
+2018-10-10 17:57:13.242 +03:00 [INF] Request finished in 631.8984ms 400 application/json; charset=utf-8
+2018-10-10 17:57:16.636 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/logout application/json 25
+2018-10-10 17:57:16.639 +03:00 [INF] Request finished in 3.0689ms 307 
+2018-10-10 17:57:16.640 +03:00 [INF] Connection id "0HLHEO2IOLICF", Request id "0HLHEO2IOLICF:00000005": the application completed without reading the entire request body.
+2018-10-10 17:57:16.646 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/logout application/json 25
+2018-10-10 17:57:16.648 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action WEB.Controllers.AccountController.Logout (WEB)
+2018-10-10 17:57:16.649 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.PjmLsLnOpCo" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.PjmLsLnOpCo" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2018-10-10 17:57:16.650 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+2018-10-10 17:57:16.650 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400
+2018-10-10 17:57:16.650 +03:00 [INF] Executed action WEB.Controllers.AccountController.Logout (WEB) in 1.5844ms
+2018-10-10 17:57:16.650 +03:00 [INF] Request finished in 4.7723ms 400 
+2018-10-10 17:57:16.651 +03:00 [INF] Connection id "0HLHEO2IOLICF", Request id "0HLHEO2IOLICF:00000006": the application completed without reading the entire request body.
+2018-10-10 17:57:52.755 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:57:53.048 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/register application/json 52
+2018-10-10 17:57:53.087 +03:00 [INF] Request finished in 40.7245ms 307 
+2018-10-10 17:57:53.097 +03:00 [INF] Connection id "0HLHEO30JFU78", Request id "0HLHEO30JFU78:00000001": the application completed without reading the entire request body.
+2018-10-10 17:57:53.098 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/register application/json 52
+2018-10-10 17:57:53.247 +03:00 [INF] Request finished in 149.4752ms 404 
+2018-10-10 17:57:53.248 +03:00 [INF] Connection id "0HLHEO30JFU78", Request id "0HLHEO30JFU78:00000002": the application completed without reading the entire request body.
+2018-10-10 17:57:56.260 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/logout application/json 25
+2018-10-10 17:57:56.260 +03:00 [INF] Request finished in 0.6356ms 307 
+2018-10-10 17:57:56.260 +03:00 [INF] Connection id "0HLHEO30JFU78", Request id "0HLHEO30JFU78:00000003": the application completed without reading the entire request body.
+2018-10-10 17:57:56.274 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/logout application/json 25
+2018-10-10 17:57:56.314 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action WEB.Controllers.AccountController.Logout (WEB)
+2018-10-10 17:57:56.394 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Logout (WEB) with arguments (["WEB.Models.LogoutModel"]) - Validation state: "Valid"
+2018-10-10 17:57:56.414 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-10 17:57:56.415 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-10 17:57:56.416 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-10 17:57:56.419 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Logout (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.0056000000000012ms.
+2018-10-10 17:57:56.426 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-10-10 17:57:56.432 +03:00 [INF] Executed action WEB.Controllers.AccountController.Logout (WEB) in 113.52080000000001ms
+2018-10-10 17:57:56.434 +03:00 [INF] Request finished in 159.4292ms 200 text/plain; charset=utf-8
+2018-10-10 17:58:12.575 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:58:12.850 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/logout application/json 25
+2018-10-10 17:58:12.886 +03:00 [INF] Request finished in 37.344ms 307 
+2018-10-10 17:58:12.896 +03:00 [INF] Connection id "0HLHEO36GCNKC", Request id "0HLHEO36GCNKC:00000001": the application completed without reading the entire request body.
+2018-10-10 17:58:12.897 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/logout application/json 25
+2018-10-10 17:58:13.010 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action WEB.Controllers.AccountController.Logout (WEB)
+2018-10-10 17:58:13.138 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Logout (WEB) with arguments (["WEB.Models.LogoutModel"]) - Validation state: "Valid"
+2018-10-10 17:58:13.158 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-10 17:58:13.158 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-10 17:58:13.159 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-10 17:58:13.161 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Logout (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.8503ms.
+2018-10-10 17:58:13.168 +03:00 [INF] Executing ObjectResult, writing value of type 'WEB.Models.LogoutModel'.
+2018-10-10 17:58:13.178 +03:00 [INF] Executed action WEB.Controllers.AccountController.Logout (WEB) in 165.6617ms
+2018-10-10 17:58:13.180 +03:00 [INF] Request finished in 283.3043ms 200 application/json; charset=utf-8
+2018-10-10 17:58:17.697 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/register application/json 52
+2018-10-10 17:58:17.698 +03:00 [INF] Request finished in 1.6998ms 307 
+2018-10-10 17:58:17.699 +03:00 [INF] Connection id "0HLHEO36GCNKC", Request id "0HLHEO36GCNKC:00000003": the application completed without reading the entire request body.
+2018-10-10 17:58:17.715 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/register application/json 52
+2018-10-10 17:58:17.716 +03:00 [INF] Request finished in 0.9514ms 404 
+2018-10-10 17:58:17.716 +03:00 [INF] Connection id "0HLHEO36GCNKC", Request id "0HLHEO36GCNKC:00000004": the application completed without reading the entire request body.
+2018-10-10 17:58:30.172 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/login application/json 52
+2018-10-10 17:58:30.173 +03:00 [INF] Request finished in 0.6982ms 307 
+2018-10-10 17:58:30.173 +03:00 [INF] Connection id "0HLHEO36GCNKC", Request id "0HLHEO36GCNKC:00000005": the application completed without reading the entire request body.
+2018-10-10 17:58:30.210 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json 52
+2018-10-10 17:58:30.216 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-10 17:58:30.224 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-10 17:58:30.439 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:58:30.632 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:58:30.757 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 17:58:30.795 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 17:58:30.811 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:58:30.833 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 17:58:30.845 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 17:58:30.850 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.ForbidResult in 626.2699ms.
+2018-10-10 17:58:30.857 +03:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2018-10-10 17:58:30.861 +03:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2018-10-10 17:58:30.863 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 646.5956ms
+2018-10-10 17:58:30.868 +03:00 [INF] Request finished in 658.4613ms 302 
+2018-10-10 17:58:30.873 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/AccessDenied?ReturnUrl=%2Fapi%2Faccount%2Flogin  
+2018-10-10 17:58:30.881 +03:00 [INF] Request finished in 8.1174ms 404 
+2018-10-10 17:59:21.476 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:59:22.003 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/logout application/json 25
+2018-10-10 17:59:22.040 +03:00 [INF] Request finished in 38.1065ms 307 
+2018-10-10 17:59:22.050 +03:00 [INF] Connection id "0HLHEO3R3MAK0", Request id "0HLHEO3R3MAK0:00000001": the application completed without reading the entire request body.
+2018-10-10 17:59:22.050 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/logout application/json 25
+2018-10-10 17:59:22.228 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action WEB.Controllers.AccountController.Logout (WEB)
+2018-10-10 17:59:22.293 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Logout (WEB) with arguments (["WEB.Models.LogoutModel"]) - Validation state: "Valid"
+2018-10-10 17:59:22.312 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-10 17:59:22.313 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-10 17:59:22.313 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-10 17:59:22.316 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Logout (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.3327ms.
+2018-10-10 17:59:22.322 +03:00 [INF] Executing ObjectResult, writing value of type 'WEB.Models.LogoutModel'.
+2018-10-10 17:59:22.333 +03:00 [INF] Executed action WEB.Controllers.AccountController.Logout (WEB) in 102.0471ms
+2018-10-10 17:59:22.335 +03:00 [INF] Request finished in 284.6029ms 200 application/json; charset=utf-8
+2018-10-10 17:59:24.544 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/login application/json 52
+2018-10-10 17:59:24.545 +03:00 [INF] Request finished in 1.0819ms 307 
+2018-10-10 17:59:24.545 +03:00 [INF] Connection id "0HLHEO3R3MAK0", Request id "0HLHEO3R3MAK0:00000003": the application completed without reading the entire request body.
+2018-10-10 17:59:24.555 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json 52
+2018-10-10 17:59:24.564 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-10 17:59:24.574 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-10 17:59:24.778 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:59:24.967 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:59:25.091 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 17:59:25.128 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 17:59:25.143 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:59:25.164 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 17:59:25.174 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 17:59:25.179 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.ForbidResult in 604.825ms.
+2018-10-10 17:59:25.185 +03:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2018-10-10 17:59:25.189 +03:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2018-10-10 17:59:25.191 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 626.7603ms
+2018-10-10 17:59:25.196 +03:00 [INF] Request finished in 641.6736ms 302 
+2018-10-10 17:59:25.201 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/AccessDenied?ReturnUrl=%2Fapi%2Faccount%2Flogin  
+2018-10-10 17:59:25.202 +03:00 [INF] Request finished in 1.1529ms 404 
+2018-10-10 17:59:52.606 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register application/json 104
+2018-10-10 17:59:52.606 +03:00 [INF] Request finished in 0.472ms 307 
+2018-10-10 17:59:52.606 +03:00 [INF] Connection id "0HLHEO3R3MAK0", Request id "0HLHEO3R3MAK0:00000006": the application completed without reading the entire request body.
+2018-10-10 17:59:52.627 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register application/json 104
+2018-10-10 17:59:52.633 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing action WEB.Controllers.AccountController.Register (WEB)
+2018-10-10 17:59:52.641 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Register (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 17:59:52.674 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:59:52.677 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 17:59:52.685 +03:00 [WRN] User d79dacde-6205-4a6e-9b15-abc02fa1b36b validation failed: DuplicateUserName.
+2018-10-10 17:59:52.689 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Register (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 48.012ms.
+2018-10-10 17:59:52.690 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:59:52.698 +03:00 [INF] Executed action WEB.Controllers.AccountController.Register (WEB) in 62.771600000000007ms
+2018-10-10 17:59:52.698 +03:00 [INF] Request finished in 71.4781ms 400 application/json; charset=utf-8
+2018-10-10 18:00:05.102 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/login application/json 52
+2018-10-10 18:00:05.102 +03:00 [INF] Request finished in 0.4823ms 307 
+2018-10-10 18:00:05.103 +03:00 [INF] Connection id "0HLHEO3R3MAK0", Request id "0HLHEO3R3MAK0:00000008": the application completed without reading the entire request body.
+2018-10-10 18:00:05.114 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json 52
+2018-10-10 18:00:05.116 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-10 18:00:05.134 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-10 18:00:05.135 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 18:00:05.136 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 18:00:05.147 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 18:00:05.148 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 18:00:05.149 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 18:00:05.150 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 18:00:05.151 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 18:00:05.151 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.ForbidResult in 16.5759ms.
+2018-10-10 18:00:05.151 +03:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2018-10-10 18:00:05.151 +03:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2018-10-10 18:00:05.151 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 34.8446ms
+2018-10-10 18:00:05.151 +03:00 [INF] Request finished in 37.2374ms 302 
+2018-10-10 18:00:05.157 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/AccessDenied?ReturnUrl=%2Fapi%2Faccount%2Flogin  
+2018-10-10 18:00:05.158 +03:00 [INF] Request finished in 0.9442ms 404 
+2018-10-10 18:00:17.699 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 18:00:18.359 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/login application/json 52
+2018-10-10 18:00:18.359 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-10 18:00:18.385 +03:00 [INF] Request finished in 25.5994ms 200 
+2018-10-10 18:00:18.435 +03:00 [INF] Request finished in 78.024ms 307 
+2018-10-10 18:00:18.448 +03:00 [INF] Connection id "0HLHEO4BT0T1H", Request id "0HLHEO4BT0T1H:00000001": the application completed without reading the entire request body.
+2018-10-10 18:00:18.455 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json 52
+2018-10-10 18:00:18.718 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-10 18:00:18.886 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-10 18:00:22.498 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 18:00:22.833 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 18:00:23.053 +03:00 [INF] Executed DbCommand (73ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 18:00:23.132 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 18:00:23.186 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 18:00:23.276 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 18:00:23.291 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 18:00:43.439 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.ForbidResult in 24537.38ms.
+2018-10-10 18:00:43.451 +03:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2018-10-10 18:00:43.456 +03:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2018-10-10 18:00:43.461 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 24740.8309ms
+2018-10-10 18:00:43.468 +03:00 [INF] Request finished in 25013.3677ms 302 
+2018-10-10 18:00:43.472 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/AccessDenied?ReturnUrl=%2Fapi%2Faccount%2Flogin  
+2018-10-10 18:00:43.474 +03:00 [INF] Request finished in 1.7035ms 404 
+2018-10-10 18:01:32.328 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 18:01:32.605 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/login application/json 52
+2018-10-10 18:01:32.641 +03:00 [INF] Request finished in 37.1133ms 307 
+2018-10-10 18:01:32.652 +03:00 [INF] Connection id "0HLHEO521D682", Request id "0HLHEO521D682:00000001": the application completed without reading the entire request body.
+2018-10-10 18:01:32.658 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json 52
+2018-10-10 18:01:32.862 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-10 18:01:32.930 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-10 18:01:33.112 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 18:01:33.293 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 18:01:33.417 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 18:01:33.454 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 18:01:33.471 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 18:01:33.493 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 18:01:33.506 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 18:01:33.514 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 570.4764ms.
+2018-10-10 18:01:33.526 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2018-10-10 18:01:33.531 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 666.9912ms
+2018-10-10 18:01:33.537 +03:00 [INF] Request finished in 879.1327ms 204 
+2018-10-10 18:02:07.464 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/login application/json 72
+2018-10-10 18:02:07.466 +03:00 [INF] Request finished in 1.7517ms 307 
+2018-10-10 18:02:07.467 +03:00 [INF] Connection id "0HLHEO521D682", Request id "0HLHEO521D682:00000003": the application completed without reading the entire request body.
+2018-10-10 18:02:07.484 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json 72
+2018-10-10 18:02:07.486 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-10 18:02:07.488 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-10 18:02:07.489 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 18:02:07.524 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 18:02:07.537 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 18:02:07.538 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 18:02:07.539 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 18:02:07.540 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 18:02:07.541 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 18:02:07.541 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 53.1961ms.
+2018-10-10 18:02:07.542 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-10-10 18:02:07.545 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 59.2194ms
+2018-10-10 18:02:07.548 +03:00 [INF] Request finished in 63.2303ms 200 text/plain; charset=utf-8
+2018-10-10 18:03:10.977 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 18:03:11.500 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/login application/json 72
+2018-10-10 18:03:11.543 +03:00 [INF] Request finished in 44.703ms 307 
+2018-10-10 18:03:11.553 +03:00 [INF] Connection id "0HLHEO5VGEB3K", Request id "0HLHEO5VGEB3K:00000001": the application completed without reading the entire request body.
+2018-10-10 18:03:11.553 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json 72
+2018-10-10 18:03:11.739 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-10 18:03:11.811 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-10 18:03:12.001 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 18:03:12.191 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 18:03:12.323 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 18:03:12.361 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 18:03:12.377 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 18:03:12.398 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 18:03:12.410 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 18:03:12.418 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 592.4913ms.
+2018-10-10 18:03:12.429 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 18:03:12.444 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 700.8114ms
+2018-10-10 18:03:12.450 +03:00 [INF] Request finished in 896.8722ms 200 application/json; charset=utf-8
+2018-10-10 18:03:15.314 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/logout application/json 25
+2018-10-10 18:03:15.314 +03:00 [INF] Request finished in 0.5562ms 307 
+2018-10-10 18:03:15.315 +03:00 [INF] Connection id "0HLHEO5VGEB3K", Request id "0HLHEO5VGEB3K:00000003": the application completed without reading the entire request body.
+2018-10-10 18:03:15.321 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/logout application/json 25
+2018-10-10 18:03:15.333 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action WEB.Controllers.AccountController.Logout (WEB)
+2018-10-10 18:03:15.336 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Logout (WEB) with arguments (["WEB.Models.LogoutModel"]) - Validation state: "Valid"
+2018-10-10 18:03:15.343 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2018-10-10 18:03:15.344 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-10-10 18:03:15.344 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2018-10-10 18:03:15.344 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Logout (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.1258ms.
+2018-10-10 18:03:15.344 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 18:03:15.345 +03:00 [INF] Executed action WEB.Controllers.AccountController.Logout (WEB) in 11.715300000000001ms
+2018-10-10 18:03:15.345 +03:00 [INF] Request finished in 24.038ms 200 application/json; charset=utf-8
+2018-10-10 18:03:17.559 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/login application/json 72
+2018-10-10 18:03:17.561 +03:00 [INF] Request finished in 1.2193ms 307 
+2018-10-10 18:03:17.561 +03:00 [INF] Connection id "0HLHEO5VGEB3K", Request id "0HLHEO5VGEB3K:00000005": the application completed without reading the entire request body.
+2018-10-10 18:03:17.570 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json 72
+2018-10-10 18:03:17.570 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-10 18:03:17.595 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-10 18:03:17.596 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 18:03:17.615 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 18:03:17.627 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 18:03:17.629 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 18:03:17.632 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 18:03:17.634 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2018-10-10 18:03:17.635 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 18:03:17.635 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 39.7638ms.
+2018-10-10 18:03:17.635 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 18:03:17.635 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 64.9033ms
+2018-10-10 18:03:17.635 +03:00 [INF] Request finished in 65.7557ms 200 application/json; charset=utf-8
