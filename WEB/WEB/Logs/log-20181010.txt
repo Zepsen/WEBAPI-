@@ -193,3 +193,564 @@ OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
 2018-10-10 15:55:10.216 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2018-10-10 15:55:10.218 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 14.6216ms
 2018-10-10 15:55:10.218 +03:00 [INF] Request finished in 15.8891ms 200 application/json; charset=utf-8
+2018-10-10 16:09:36.639 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 16:09:36.923 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/  0
+2018-10-10 16:09:36.959 +03:00 [INF] Request finished in 37.3389ms 307 
+2018-10-10 16:09:36.976 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/  0
+2018-10-10 16:09:37.088 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing action WEB.Controllers.AccountController.Register (WEB)
+2018-10-10 16:09:37.170 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 415
+2018-10-10 16:09:37.178 +03:00 [INF] Executed action WEB.Controllers.AccountController.Register (WEB) in 86.516100000000009ms
+2018-10-10 16:09:37.178 +03:00 [INF] Request finished in 202.5575ms 415 
+2018-10-10 16:10:11.834 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/?Email=email@email.com  0
+2018-10-10 16:10:11.835 +03:00 [INF] Request finished in 0.9ms 307 
+2018-10-10 16:10:11.853 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/?Email=email@email.com  0
+2018-10-10 16:10:11.854 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing action WEB.Controllers.AccountController.Register (WEB)
+2018-10-10 16:10:11.865 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 415
+2018-10-10 16:10:11.866 +03:00 [INF] Executed action WEB.Controllers.AccountController.Register (WEB) in 11.1028ms
+2018-10-10 16:10:11.866 +03:00 [INF] Request finished in 12.3177ms 415 
+2018-10-10 16:10:17.338 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/register?Email=email@email.com  0
+2018-10-10 16:10:17.339 +03:00 [INF] Request finished in 1.0959ms 307 
+2018-10-10 16:10:17.348 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/register?Email=email@email.com  0
+2018-10-10 16:10:17.349 +03:00 [INF] Request finished in 0.9463ms 404 
+2018-10-10 16:10:52.032 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 16:10:52.806 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-10 16:10:52.893 +03:00 [INF] Request finished in 86.1949ms 200 
+2018-10-10 16:10:57.055 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/  0
+2018-10-10 16:10:57.112 +03:00 [INF] Request finished in 56.1472ms 307 
+2018-10-10 16:10:57.125 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/  0
+2018-10-10 16:10:57.298 +03:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing action WEB.Controllers.AccountController.Post (WEB)
+2018-10-10 16:10:57.421 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 415
+2018-10-10 16:10:57.434 +03:00 [INF] Executed action WEB.Controllers.AccountController.Post (WEB) in 130.0036ms
+2018-10-10 16:10:57.437 +03:00 [INF] Request finished in 312.3311ms 415 
+2018-10-10 16:11:28.445 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/  0
+2018-10-10 16:11:28.445 +03:00 [INF] Request finished in 0.4632ms 307 
+2018-10-10 16:11:28.476 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/  0
+2018-10-10 16:11:28.477 +03:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing action WEB.Controllers.AccountController.Post (WEB)
+2018-10-10 16:11:28.482 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 415
+2018-10-10 16:11:28.482 +03:00 [INF] Executed action WEB.Controllers.AccountController.Post (WEB) in 4.6201ms
+2018-10-10 16:11:28.482 +03:00 [INF] Request finished in 6.0575ms 415 
+2018-10-10 16:12:13.435 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/ application/json 0
+2018-10-10 16:12:13.435 +03:00 [INF] Request finished in 0.3711ms 307 
+2018-10-10 16:12:13.471 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/ application/json 0
+2018-10-10 16:12:13.471 +03:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing action WEB.Controllers.AccountController.Post (WEB)
+2018-10-10 16:12:13.582 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Post (WEB) with arguments ([""]) - Validation state: "Invalid"
+2018-10-10 16:12:21.659 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 8067.3605000000007ms.
+2018-10-10 16:12:21.671 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 16:12:21.733 +03:00 [INF] Executed action WEB.Controllers.AccountController.Post (WEB) in 8260.8844ms
+2018-10-10 16:12:21.734 +03:00 [INF] Request finished in 8263.3213ms 400 application/json; charset=utf-8
+2018-10-10 16:13:17.614 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/ application/json 82
+2018-10-10 16:13:17.614 +03:00 [INF] Request finished in 3.3695ms 307 
+2018-10-10 16:13:17.683 +03:00 [INF] Connection id "0HLHEM776D2UL", Request id "0HLHEM776D2UL:00000008": the application completed without reading the entire request body.
+2018-10-10 16:13:17.697 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/ application/json 82
+2018-10-10 16:13:17.698 +03:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing action WEB.Controllers.AccountController.Post (WEB)
+2018-10-10 16:13:17.761 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Post (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Invalid"
+2018-10-10 16:13:20.807 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 3046.0263ms.
+2018-10-10 16:13:20.808 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 16:13:20.808 +03:00 [INF] Executed action WEB.Controllers.AccountController.Post (WEB) in 3110.3301ms
+2018-10-10 16:13:20.809 +03:00 [INF] Request finished in 3111.668ms 400 application/json; charset=utf-8
+2018-10-10 16:14:13.573 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/ application/json 94
+2018-10-10 16:14:13.573 +03:00 [INF] Request finished in 0.4625ms 307 
+2018-10-10 16:14:13.574 +03:00 [INF] Connection id "0HLHEM776D2UL", Request id "0HLHEM776D2UL:0000000A": the application completed without reading the entire request body.
+2018-10-10 16:14:13.619 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/ application/json 94
+2018-10-10 16:14:13.619 +03:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing action WEB.Controllers.AccountController.Post (WEB)
+2018-10-10 16:14:13.654 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Post (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 16:14:14.941 +03:00 [WRN] User 89e365f1-e3e2-4dd6-95f4-d588c5c66dd7 password validation failed: PasswordTooShort;PasswordRequiresNonAlphanumeric;PasswordRequiresUpper.
+2018-10-10 16:14:14.942 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1288.0019ms.
+2018-10-10 16:14:14.942 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 16:14:14.942 +03:00 [INF] Executed action WEB.Controllers.AccountController.Post (WEB) in 1322.844ms
+2018-10-10 16:14:14.942 +03:00 [INF] Request finished in 1333.9686ms 400 application/json; charset=utf-8
+2018-10-10 16:14:26.506 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/ application/json 102
+2018-10-10 16:14:26.507 +03:00 [INF] Request finished in 1.0632ms 307 
+2018-10-10 16:14:26.509 +03:00 [INF] Connection id "0HLHEM776D2UL", Request id "0HLHEM776D2UL:0000000C": the application completed without reading the entire request body.
+2018-10-10 16:14:26.522 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/ application/json 102
+2018-10-10 16:14:26.522 +03:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing action WEB.Controllers.AccountController.Post (WEB)
+2018-10-10 16:14:26.594 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Post (WEB) with arguments (["WEB.Models.RegisterModel"]) - Validation state: "Valid"
+2018-10-10 16:14:26.868 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 16:14:27.182 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2018-10-10 16:14:27.405 +03:00 [INF] Executed DbCommand (81ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2018-10-10 16:14:27.515 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 16:14:27.581 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 16:14:27.599 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-10-10 16:14:27.603 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.OkResult in 1008.3763ms.
+2018-10-10 16:14:27.608 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-10-10 16:14:27.610 +03:00 [INF] Executed action WEB.Controllers.AccountController.Post (WEB) in 1087.2473ms
+2018-10-10 16:14:27.616 +03:00 [INF] Request finished in 1094.1987ms 200 
+2018-10-10 16:14:44.832 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-10 16:14:44.833 +03:00 [INF] Request finished in 0.8427ms 307 
+2018-10-10 16:14:44.865 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-10 16:14:44.887 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-10 16:14:44.919 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-10 16:14:44.967 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 16:14:45.043 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name], [u].[UserIdentityId]
+FROM [Users] AS [u]
+2018-10-10 16:14:45.083 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 163.77290000000002ms.
+2018-10-10 16:14:45.083 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-10 16:14:45.088 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 199.3091ms
+2018-10-10 16:14:45.088 +03:00 [INF] Request finished in 223.3099ms 200 application/json; charset=utf-8
+2018-10-10 16:51:33.127 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 16:51:33.490 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role application/json 18
+2018-10-10 16:51:33.532 +03:00 [INF] Request finished in 43.0449ms 307 
+2018-10-10 16:51:33.544 +03:00 [INF] Connection id "0HLHEMTUJF8Q7", Request id "0HLHEMTUJF8Q7:00000001": the application completed without reading the entire request body.
+2018-10-10 16:51:33.553 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role application/json 18
+2018-10-10 16:51:33.817 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 16:51:34.031 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2018-10-10 16:51:34.155 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 16:51:34.198 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 16:51:34.332 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 16:51:34.387 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Post (WEB) with arguments ([""]) - Validation state: "Invalid"
+2018-10-10 16:51:34.401 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 5.0423ms.
+2018-10-10 16:51:34.408 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 16:51:34.440 +03:00 [INF] Executed action WEB.Controllers.RoleController.Post (WEB) in 104.10010000000001ms
+2018-10-10 16:51:34.443 +03:00 [INF] Request finished in 890.0823ms 400 application/json; charset=utf-8
+2018-10-10 16:51:42.705 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role application/json 18
+2018-10-10 16:51:42.706 +03:00 [INF] Request finished in 1.9295ms 307 
+2018-10-10 16:51:42.708 +03:00 [INF] Connection id "0HLHEMTUJF8Q7", Request id "0HLHEMTUJF8Q7:00000003": the application completed without reading the entire request body.
+2018-10-10 16:51:42.733 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role application/json 18
+2018-10-10 16:51:42.734 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 16:51:42.777 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Post (WEB) with arguments ([""]) - Validation state: "Invalid"
+2018-10-10 16:51:42.777 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 0.0582ms.
+2018-10-10 16:51:42.781 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 16:51:42.784 +03:00 [INF] Executed action WEB.Controllers.RoleController.Post (WEB) in 49.084700000000005ms
+2018-10-10 16:51:42.786 +03:00 [INF] Request finished in 53.4568ms 400 application/json; charset=utf-8
+2018-10-10 17:00:15.122 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:00:15.965 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role application/json 18
+2018-10-10 17:00:15.965 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-10 17:00:15.989 +03:00 [INF] Request finished in 24.6561ms 200 
+2018-10-10 17:00:16.034 +03:00 [INF] Request finished in 71.3295ms 307 
+2018-10-10 17:00:16.048 +03:00 [INF] Connection id "0HLHEN2Q9L1N9", Request id "0HLHEN2Q9L1N9:00000001": the application completed without reading the entire request body.
+2018-10-10 17:00:16.050 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role application/json 18
+2018-10-10 17:00:16.352 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 17:00:16.520 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Post (WEB) with arguments ([""]) - Validation state: "Invalid"
+2018-10-10 17:00:49.779 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 33241.8024ms.
+2018-10-10 17:00:49.786 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:00:49.831 +03:00 [INF] Executed action WEB.Controllers.RoleController.Post (WEB) in 33474.2428ms
+2018-10-10 17:00:49.832 +03:00 [INF] Request finished in 33782.5345ms 400 application/json; charset=utf-8
+2018-10-10 17:00:53.043 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role multipart/form-data; boundary=--------------------------635951577645619261903354 164
+2018-10-10 17:00:53.043 +03:00 [INF] Request finished in 0.715ms 307 
+2018-10-10 17:00:53.045 +03:00 [INF] Connection id "0HLHEN2Q9L1N9", Request id "0HLHEN2Q9L1N9:00000002": the application completed without reading the entire request body.
+2018-10-10 17:01:08.593 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role multipart/form-data; boundary=--------------------------532704604694645808864091 164
+2018-10-10 17:01:08.594 +03:00 [INF] Request finished in 1.1327ms 307 
+2018-10-10 17:01:08.594 +03:00 [INF] Connection id "0HLHEN2Q9L1N8", Request id "0HLHEN2Q9L1N8:00000003": the application completed without reading the entire request body.
+2018-10-10 17:02:24.758 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:02:25.238 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add application/json 18
+2018-10-10 17:02:25.278 +03:00 [INF] Request finished in 41.6723ms 307 
+2018-10-10 17:02:25.288 +03:00 [INF] Connection id "0HLHEN40R0HG0", Request id "0HLHEN40R0HG0:00000001": the application completed without reading the entire request body.
+2018-10-10 17:02:25.296 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role/add application/json 18
+2018-10-10 17:02:25.467 +03:00 [INF] Request finished in 171.1836ms 404 
+2018-10-10 17:02:25.467 +03:00 [INF] Connection id "0HLHEN40R0HG0", Request id "0HLHEN40R0HG0:00000002": the application completed without reading the entire request body.
+2018-10-10 17:02:42.327 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:02:42.760 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add application/json 18
+2018-10-10 17:02:42.801 +03:00 [INF] Request finished in 42.091ms 307 
+2018-10-10 17:02:42.821 +03:00 [INF] Connection id "0HLHEN4622SSP", Request id "0HLHEN4622SSP:00000001": the application completed without reading the entire request body.
+2018-10-10 17:02:42.829 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role/add application/json 18
+2018-10-10 17:02:43.013 +03:00 [INF] Request finished in 183.9855ms 404 
+2018-10-10 17:02:43.014 +03:00 [INF] Connection id "0HLHEN4622SSP", Request id "0HLHEN4622SSP:00000002": the application completed without reading the entire request body.
+2018-10-10 17:02:55.238 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:02:55.877 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-10 17:02:55.877 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add application/json 18
+2018-10-10 17:02:55.901 +03:00 [INF] Request finished in 25.1943ms 200 
+2018-10-10 17:02:55.941 +03:00 [INF] Request finished in 66.8904ms 307 
+2018-10-10 17:02:55.956 +03:00 [INF] Connection id "0HLHEN49UPRNI", Request id "0HLHEN49UPRNI:00000001": the application completed without reading the entire request body.
+2018-10-10 17:02:55.959 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role/add application/json 18
+2018-10-10 17:02:56.209 +03:00 [INF] Request finished in 249.962ms 404 
+2018-10-10 17:02:56.210 +03:00 [INF] Connection id "0HLHEN49UPRNJ", Request id "0HLHEN49UPRNJ:00000002": the application completed without reading the entire request body.
+2018-10-10 17:03:05.761 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add multipart/form-data; boundary=--------------------------851743345259000869563966 164
+2018-10-10 17:03:05.762 +03:00 [INF] Request finished in 0.6968ms 307 
+2018-10-10 17:03:05.764 +03:00 [INF] Connection id "0HLHEN49UPRNI", Request id "0HLHEN49UPRNI:00000002": the application completed without reading the entire request body.
+2018-10-10 17:03:12.887 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add application/json 18
+2018-10-10 17:03:12.889 +03:00 [INF] Request finished in 2.7214ms 307 
+2018-10-10 17:03:12.893 +03:00 [INF] Connection id "0HLHEN49UPRNJ", Request id "0HLHEN49UPRNJ:00000003": the application completed without reading the entire request body.
+2018-10-10 17:03:12.924 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role/add application/json 18
+2018-10-10 17:03:12.926 +03:00 [INF] Request finished in 2.2973ms 404 
+2018-10-10 17:03:12.927 +03:00 [INF] Connection id "0HLHEN49UPRNI", Request id "0HLHEN49UPRNI:00000003": the application completed without reading the entire request body.
+2018-10-10 17:03:44.967 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:03:45.415 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add application/json 18
+2018-10-10 17:03:45.460 +03:00 [INF] Request finished in 46.3932ms 307 
+2018-10-10 17:03:45.471 +03:00 [INF] Connection id "0HLHEN4ONGJ8J", Request id "0HLHEN4ONGJ8J:00000001": the application completed without reading the entire request body.
+2018-10-10 17:03:45.487 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role/add application/json 18
+2018-10-10 17:03:45.702 +03:00 [INF] Route matched with {action = "Add", controller = "Role"}. Executing action WEB.Controllers.RoleController.Add (WEB)
+2018-10-10 17:03:45.758 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Add (WEB) with arguments ([""]) - Validation state: "Invalid"
+2018-10-10 17:03:45.778 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Add (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 4.9439ms.
+2018-10-10 17:03:45.785 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:03:45.811 +03:00 [INF] Executed action WEB.Controllers.RoleController.Add (WEB) in 105.60770000000001ms
+2018-10-10 17:03:45.813 +03:00 [INF] Request finished in 325.7542ms 400 application/json; charset=utf-8
+2018-10-10 17:04:15.970 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add multipart/form-data; boundary=--------------------------408003617557365395188014 164
+2018-10-10 17:04:15.970 +03:00 [INF] Request finished in 0.585ms 307 
+2018-10-10 17:04:15.970 +03:00 [INF] Connection id "0HLHEN4ONGJ8J", Request id "0HLHEN4ONGJ8J:00000003": the application completed without reading the entire request body.
+2018-10-10 17:04:30.043 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add application/json 18
+2018-10-10 17:04:30.044 +03:00 [INF] Request finished in 1.0183ms 307 
+2018-10-10 17:04:30.044 +03:00 [INF] Connection id "0HLHEN4ONGJ8J", Request id "0HLHEN4ONGJ8J:00000004": the application completed without reading the entire request body.
+2018-10-10 17:04:30.054 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role/add application/json 18
+2018-10-10 17:04:30.061 +03:00 [INF] Route matched with {action = "Add", controller = "Role"}. Executing action WEB.Controllers.RoleController.Add (WEB)
+2018-10-10 17:04:30.062 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Add (WEB) with arguments ([""]) - Validation state: "Invalid"
+2018-10-10 17:04:30.063 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Add (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 0.2356ms.
+2018-10-10 17:04:30.063 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:04:30.065 +03:00 [INF] Executed action WEB.Controllers.RoleController.Add (WEB) in 3.9082000000000003ms
+2018-10-10 17:04:30.065 +03:00 [INF] Request finished in 11.0575ms 400 application/json; charset=utf-8
+2018-10-10 17:04:50.043 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:04:50.628 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add application/json 18
+2018-10-10 17:04:50.628 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-10 17:04:50.657 +03:00 [INF] Request finished in 29.3442ms 200 
+2018-10-10 17:04:50.702 +03:00 [INF] Request finished in 76.7408ms 307 
+2018-10-10 17:04:50.722 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role/add application/json 18
+2018-10-10 17:04:50.723 +03:00 [INF] Connection id "0HLHEN5C58D9H", Request id "0HLHEN5C58D9H:00000001": the application completed without reading the entire request body.
+2018-10-10 17:04:51.039 +03:00 [INF] Route matched with {action = "Add", controller = "Role"}. Executing action WEB.Controllers.RoleController.Add (WEB)
+2018-10-10 17:04:51.170 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Add (WEB) with arguments ([""]) - Validation state: "Valid"
+2018-10-10 17:05:10.332 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Add (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 19146.109800000002ms.
+2018-10-10 17:05:10.341 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:05:10.410 +03:00 [INF] Executed action WEB.Controllers.RoleController.Add (WEB) in 19363.5153ms
+2018-10-10 17:05:10.411 +03:00 [INF] Request finished in 19689.6923ms 400 application/json; charset=utf-8
+2018-10-10 17:05:10.412 +03:00 [INF] Connection id "0HLHEN5C58D9G", Request id "0HLHEN5C58D9G:00000002": the application completed without reading the entire request body.
+2018-10-10 17:05:38.853 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:05:39.320 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add application/json 18
+2018-10-10 17:05:39.363 +03:00 [INF] Request finished in 43.9976ms 307 
+2018-10-10 17:05:39.374 +03:00 [INF] Connection id "0HLHEN5QLT3PK", Request id "0HLHEN5QLT3PK:00000001": the application completed without reading the entire request body.
+2018-10-10 17:05:39.380 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role/add application/json 18
+2018-10-10 17:05:39.592 +03:00 [INF] Route matched with {action = "Add", controller = "Role"}. Executing action WEB.Controllers.RoleController.Add (WEB)
+2018-10-10 17:05:39.644 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Add (WEB) with arguments ([""]) - Validation state: "Invalid"
+2018-10-10 17:05:39.665 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Add (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 2.6485000000000003ms.
+2018-10-10 17:05:39.673 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:05:39.699 +03:00 [INF] Executed action WEB.Controllers.RoleController.Add (WEB) in 103.78330000000001ms
+2018-10-10 17:05:39.700 +03:00 [INF] Request finished in 319.7873ms 400 application/json; charset=utf-8
+2018-10-10 17:05:41.930 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add application/json 18
+2018-10-10 17:05:41.930 +03:00 [INF] Request finished in 0.5595ms 307 
+2018-10-10 17:05:41.931 +03:00 [INF] Connection id "0HLHEN5QLT3PK", Request id "0HLHEN5QLT3PK:00000003": the application completed without reading the entire request body.
+2018-10-10 17:05:41.936 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role/add application/json 18
+2018-10-10 17:05:41.948 +03:00 [INF] Route matched with {action = "Add", controller = "Role"}. Executing action WEB.Controllers.RoleController.Add (WEB)
+2018-10-10 17:05:41.949 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Add (WEB) with arguments ([""]) - Validation state: "Invalid"
+2018-10-10 17:05:41.950 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Add (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 0.0833ms.
+2018-10-10 17:05:41.950 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:05:41.951 +03:00 [INF] Executed action WEB.Controllers.RoleController.Add (WEB) in 2.6279000000000003ms
+2018-10-10 17:05:41.951 +03:00 [INF] Request finished in 15.2407ms 400 application/json; charset=utf-8
+2018-10-10 17:08:15.636 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:08:16.407 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role/add application/json 18
+2018-10-10 17:08:16.407 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-10 17:08:16.434 +03:00 [INF] Request finished in 29.1775ms 200 
+2018-10-10 17:08:16.478 +03:00 [INF] Request finished in 75.2084ms 307 
+2018-10-10 17:08:16.502 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role/add application/json 18
+2018-10-10 17:08:16.502 +03:00 [INF] Connection id "0HLHEN79FFBCI", Request id "0HLHEN79FFBCI:00000001": the application completed without reading the entire request body.
+2018-10-10 17:08:16.809 +03:00 [INF] Request finished in 307.7851ms 404 
+2018-10-10 17:08:16.810 +03:00 [INF] Connection id "0HLHEN79FFBCH", Request id "0HLHEN79FFBCH:00000002": the application completed without reading the entire request body.
+2018-10-10 17:10:40.693 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:10:41.225 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role?role=%22Admin%22 application/json 18
+2018-10-10 17:10:41.266 +03:00 [INF] Request finished in 42.6893ms 307 
+2018-10-10 17:10:41.279 +03:00 [INF] Connection id "0HLHEN8KKUF18", Request id "0HLHEN8KKUF18:00000001": the application completed without reading the entire request body.
+2018-10-10 17:10:41.283 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role?role=%22Admin%22 application/json 18
+2018-10-10 17:10:41.480 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 17:10:41.538 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Post (WEB) with arguments ([""]) - Validation state: "Invalid"
+2018-10-10 17:10:41.556 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 2.9395000000000002ms.
+2018-10-10 17:10:41.565 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:10:41.592 +03:00 [INF] Executed action WEB.Controllers.RoleController.Post (WEB) in 108.51440000000001ms
+2018-10-10 17:10:41.594 +03:00 [INF] Request finished in 310.8348ms 400 application/json; charset=utf-8
+2018-10-10 17:11:06.987 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:11:07.659 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role?role=%22Admin%22 application/json 18
+2018-10-10 17:11:07.659 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-10 17:11:07.682 +03:00 [INF] Request finished in 24.386ms 200 
+2018-10-10 17:11:07.723 +03:00 [INF] Request finished in 66.3802ms 307 
+2018-10-10 17:11:07.733 +03:00 [INF] Connection id "0HLHEN8SGGTBO", Request id "0HLHEN8SGGTBO:00000001": the application completed without reading the entire request body.
+2018-10-10 17:11:07.737 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role?role=%22Admin%22 application/json 18
+2018-10-10 17:11:08.039 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 17:11:08.163 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Post (WEB) with arguments (["\"Admin\""]) - Validation state: "Valid"
+2018-10-10 17:12:52.404 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:12:52.958 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-10 17:12:52.958 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role?role=Admin application/json 18
+2018-10-10 17:12:52.986 +03:00 [INF] Request finished in 26.5212ms 200 
+2018-10-10 17:12:53.028 +03:00 [INF] Request finished in 71.5342ms 307 
+2018-10-10 17:12:53.031 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role?role=Admin application/json 18
+2018-10-10 17:12:53.044 +03:00 [INF] Connection id "0HLHEN9RSUR90", Request id "0HLHEN9RSUR90:00000001": the application completed without reading the entire request body.
+2018-10-10 17:12:53.343 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 17:12:53.464 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Post (WEB) with arguments (["Admin"]) - Validation state: "Valid"
+2018-10-10 17:12:57.335 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:12:57.670 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:12:57.852 +03:00 [INF] Executed DbCommand (81ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2018-10-10 17:12:57.875 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.OkResult in 4393.9649ms.
+2018-10-10 17:12:57.887 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-10-10 17:12:57.894 +03:00 [INF] Executed action WEB.Controllers.RoleController.Post (WEB) in 4547.3001ms
+2018-10-10 17:12:57.900 +03:00 [INF] Request finished in 4868.7162ms 200 
+2018-10-10 17:12:57.909 +03:00 [INF] Connection id "0HLHEN9RSUR91", Request id "0HLHEN9RSUR91:00000002": the application completed without reading the entire request body.
+2018-10-10 17:13:29.926 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/role  
+2018-10-10 17:13:29.926 +03:00 [INF] Request finished in 0.5593ms 307 
+2018-10-10 17:13:29.956 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/role  
+2018-10-10 17:13:29.980 +03:00 [INF] Route matched with {action = "Get", controller = "Role"}. Executing action WEB.Controllers.RoleController.Get (WEB)
+2018-10-10 17:13:30.007 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Get (WEB) - Validation state: "Valid"
+2018-10-10 17:13:30.010 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:13:30.071 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Name]
+FROM [AspNetRoles] AS [i]
+2018-10-10 17:13:30.076 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 68.922ms.
+2018-10-10 17:13:30.080 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 17:13:30.128 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 147.71460000000002ms
+2018-10-10 17:13:30.129 +03:00 [INF] Request finished in 173.4807ms 200 application/json; charset=utf-8
+2018-10-10 17:13:42.662 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role?role=User application/json 18
+2018-10-10 17:13:42.662 +03:00 [INF] Request finished in 0.5983ms 307 
+2018-10-10 17:13:42.669 +03:00 [INF] Connection id "0HLHEN9RSUR90", Request id "0HLHEN9RSUR90:00000003": the application completed without reading the entire request body.
+2018-10-10 17:13:42.678 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role?role=User application/json 18
+2018-10-10 17:13:42.679 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 17:13:42.708 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Post (WEB) with arguments (["User"]) - Validation state: "Valid"
+2018-10-10 17:13:47.414 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/role  
+2018-10-10 17:13:47.414 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:13:47.415 +03:00 [INF] Request finished in 0.6656ms 307 
+2018-10-10 17:13:47.428 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/role  
+2018-10-10 17:13:47.431 +03:00 [INF] Route matched with {action = "Get", controller = "Role"}. Executing action WEB.Controllers.RoleController.Get (WEB)
+2018-10-10 17:13:47.504 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Get (WEB) - Validation state: "Valid"
+2018-10-10 17:13:47.506 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:13:47.504 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:13:47.564 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2018-10-10 17:13:47.567 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.OkResult in 4858.6006000000007ms.
+2018-10-10 17:13:47.567 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-10-10 17:13:47.567 +03:00 [INF] Executed action WEB.Controllers.RoleController.Post (WEB) in 4886.081ms
+2018-10-10 17:13:47.568 +03:00 [INF] Request finished in 4889.6219ms 200 
+2018-10-10 17:13:47.574 +03:00 [INF] Connection id "0HLHEN9RSUR91", Request id "0HLHEN9RSUR91:00000004": the application completed without reading the entire request body.
+2018-10-10 17:13:47.593 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Name]
+FROM [AspNetRoles] AS [i]
+2018-10-10 17:13:47.594 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 89.61290000000001ms.
+2018-10-10 17:13:47.594 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 17:13:47.595 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 163.4301ms
+2018-10-10 17:13:47.595 +03:00 [INF] Request finished in 166.6647ms 200 application/json; charset=utf-8
+2018-10-10 17:14:10.045 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/role?role=User2 application/json 18
+2018-10-10 17:14:10.045 +03:00 [INF] Request finished in 0.486ms 307 
+2018-10-10 17:14:10.046 +03:00 [INF] Connection id "0HLHEN9RSUR91", Request id "0HLHEN9RSUR91:00000005": the application completed without reading the entire request body.
+2018-10-10 17:14:10.064 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/role?role=User2 application/json 18
+2018-10-10 17:14:10.065 +03:00 [INF] Route matched with {action = "Post", controller = "Role"}. Executing action WEB.Controllers.RoleController.Post (WEB)
+2018-10-10 17:14:10.105 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Post (WEB) with arguments (["User2"]) - Validation state: "Valid"
+2018-10-10 17:14:10.106 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:14:10.159 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:14:10.206 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2018-10-10 17:14:10.208 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.OkResult in 102.1894ms.
+2018-10-10 17:14:10.208 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-10-10 17:14:10.208 +03:00 [INF] Executed action WEB.Controllers.RoleController.Post (WEB) in 142.6277ms
+2018-10-10 17:14:10.208 +03:00 [INF] Request finished in 144.0873ms 200 
+2018-10-10 17:14:10.209 +03:00 [INF] Connection id "0HLHEN9RSUR90", Request id "0HLHEN9RSUR90:00000006": the application completed without reading the entire request body.
+2018-10-10 17:14:34.826 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:8090/api/role application/json 19
+2018-10-10 17:14:34.826 +03:00 [INF] Request finished in 0.4743ms 307 
+2018-10-10 17:14:34.833 +03:00 [INF] Connection id "0HLHEN9RSUR91", Request id "0HLHEN9RSUR91:00000006": the application completed without reading the entire request body.
+2018-10-10 17:14:34.861 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:44326/api/role application/json 19
+2018-10-10 17:14:34.866 +03:00 [INF] Route matched with {action = "Put", controller = "Role"}. Executing action WEB.Controllers.RoleController.Put (WEB)
+2018-10-10 17:14:34.907 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Put (WEB) with arguments ([""]) - Validation state: "Invalid"
+2018-10-10 17:14:34.910 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Put (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1.9616ms.
+2018-10-10 17:14:34.910 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:14:34.922 +03:00 [INF] Executed action WEB.Controllers.RoleController.Put (WEB) in 56.1997ms
+2018-10-10 17:14:34.923 +03:00 [INF] Request finished in 61.6727ms 400 application/json; charset=utf-8
+2018-10-10 17:16:50.638 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:16:51.091 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/role  
+2018-10-10 17:16:51.134 +03:00 [INF] Request finished in 44.452ms 307 
+2018-10-10 17:16:51.154 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/role  
+2018-10-10 17:16:51.358 +03:00 [INF] Route matched with {action = "Get", controller = "Role"}. Executing action WEB.Controllers.RoleController.Get (WEB)
+2018-10-10 17:16:51.372 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Get (WEB) - Validation state: "Valid"
+2018-10-10 17:16:51.599 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:16:51.864 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Name]
+FROM [AspNetRoles] AS [i]
+2018-10-10 17:16:51.888 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 506.99960000000004ms.
+2018-10-10 17:16:51.902 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 17:16:51.942 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 580.9483ms
+2018-10-10 17:16:51.948 +03:00 [INF] Request finished in 794.3363ms 200 application/json; charset=utf-8
+2018-10-10 17:16:56.988 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/role?role=User2 application/json 0
+2018-10-10 17:16:56.989 +03:00 [INF] Request finished in 1.1447ms 307 
+2018-10-10 17:16:56.995 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/role?role=User2 application/json 0
+2018-10-10 17:16:57.014 +03:00 [INF] Route matched with {action = "Delete", controller = "Role"}. Executing action WEB.Controllers.RoleController.Delete (WEB)
+2018-10-10 17:16:57.044 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Delete (WEB) with arguments (["User2"]) - Validation state: "Valid"
+2018-10-10 17:16:57.056 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:16:57.156 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [AspNetRoles]
+WHERE [Id] = @p0 AND [ConcurrencyStamp] = @p1;
+SELECT @@ROWCOUNT;
+2018-10-10 17:16:57.198 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'DAL.ApplicationContext'.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Database operation expected to affect 1 row(s) but actually affected 0 row(s). Data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithoutPropagationAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Database operation expected to affect 1 row(s) but actually affected 0 row(s). Data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithoutPropagationAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2018-10-10 17:16:57.207 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.OkResult in 155.97820000000002ms.
+2018-10-10 17:16:57.210 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-10-10 17:16:57.210 +03:00 [INF] Executed action WEB.Controllers.RoleController.Delete (WEB) in 196.17020000000002ms
+2018-10-10 17:16:57.210 +03:00 [INF] Request finished in 215.62ms 200 
+2018-10-10 17:17:00.444 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/role  
+2018-10-10 17:17:00.446 +03:00 [INF] Request finished in 1.3579ms 307 
+2018-10-10 17:17:00.453 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/role  
+2018-10-10 17:17:00.456 +03:00 [INF] Route matched with {action = "Get", controller = "Role"}. Executing action WEB.Controllers.RoleController.Get (WEB)
+2018-10-10 17:17:00.456 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Get (WEB) - Validation state: "Valid"
+2018-10-10 17:17:00.456 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:17:00.461 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Name]
+FROM [AspNetRoles] AS [i]
+2018-10-10 17:17:00.462 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.4238ms.
+2018-10-10 17:17:00.462 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 17:17:00.467 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 11.0395ms
+2018-10-10 17:17:00.468 +03:00 [INF] Request finished in 14.8144ms 200 application/json; charset=utf-8
+2018-10-10 17:27:43.727 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-10 17:27:44.223 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:8090/api/role?oldRole=Admin2&newRole=AdminNew application/json 0
+2018-10-10 17:27:44.262 +03:00 [INF] Request finished in 40.4436ms 307 
+2018-10-10 17:27:44.280 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:44326/api/role?oldRole=Admin2&newRole=AdminNew application/json 0
+2018-10-10 17:27:44.538 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:27:44.793 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2018-10-10 17:27:44.907 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2018-10-10 17:27:44.948 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-10 17:27:45.074 +03:00 [INF] Route matched with {action = "Put", controller = "Role"}. Executing action WEB.Controllers.RoleController.Put (WEB)
+2018-10-10 17:27:45.104 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Put (WEB) with arguments (["Admin2","AdminNew"]) - Validation state: "Valid"
+2018-10-10 17:27:45.127 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:27:45.138 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Put (WEB), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 23.860400000000002ms.
+2018-10-10 17:27:45.152 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2018-10-10 17:27:45.203 +03:00 [INF] Executed action WEB.Controllers.RoleController.Put (WEB) in 127.03550000000001ms
+2018-10-10 17:27:45.209 +03:00 [INF] Request finished in 929.228ms 400 application/json; charset=utf-8
+2018-10-10 17:28:02.835 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/role  
+2018-10-10 17:28:02.837 +03:00 [INF] Request finished in 1.112ms 307 
+2018-10-10 17:28:02.840 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/role  
+2018-10-10 17:28:02.849 +03:00 [INF] Route matched with {action = "Get", controller = "Role"}. Executing action WEB.Controllers.RoleController.Get (WEB)
+2018-10-10 17:28:02.853 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Get (WEB) - Validation state: "Valid"
+2018-10-10 17:28:02.856 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:28:02.865 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Name]
+FROM [AspNetRoles] AS [i]
+2018-10-10 17:28:02.868 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.8436ms.
+2018-10-10 17:28:02.869 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 17:28:02.870 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 20.953200000000002ms
+2018-10-10 17:28:02.871 +03:00 [INF] Request finished in 30.2723ms 200 application/json; charset=utf-8
+2018-10-10 17:28:14.619 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:8090/api/role?oldRole=User2&newRole=AdminNew application/json 0
+2018-10-10 17:28:14.620 +03:00 [INF] Request finished in 0.8103ms 307 
+2018-10-10 17:28:14.632 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:44326/api/role?oldRole=User2&newRole=AdminNew application/json 0
+2018-10-10 17:28:14.633 +03:00 [INF] Route matched with {action = "Put", controller = "Role"}. Executing action WEB.Controllers.RoleController.Put (WEB)
+2018-10-10 17:28:14.633 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Put (WEB) with arguments (["User2","AdminNew"]) - Validation state: "Valid"
+2018-10-10 17:28:14.634 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:28:14.636 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:28:14.673 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__oldRole_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [i].[Id], [i].[ConcurrencyStamp], [i].[Name], [i].[NormalizedName]
+FROM [AspNetRoles] AS [i]
+WHERE [i].[Name] = @__oldRole_0
+2018-10-10 17:28:14.684 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:28:14.741 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p3='?' (Size = 450), @p0='?' (Size = 4000), @p4='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p0, [Name] = @p1, [NormalizedName] = @p2
+WHERE [Id] = @p3 AND [ConcurrencyStamp] = @p4;
+SELECT @@ROWCOUNT;
+2018-10-10 17:28:14.756 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Put (WEB), returned result Microsoft.AspNetCore.Mvc.OkResult in 122.6396ms.
+2018-10-10 17:28:14.758 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-10-10 17:28:14.759 +03:00 [INF] Executed action WEB.Controllers.RoleController.Put (WEB) in 125.7129ms
+2018-10-10 17:28:14.759 +03:00 [INF] Request finished in 127.2227ms 200 
+2018-10-10 17:28:18.573 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/role  
+2018-10-10 17:28:18.575 +03:00 [INF] Request finished in 1.8932ms 307 
+2018-10-10 17:28:18.599 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/role  
+2018-10-10 17:28:18.600 +03:00 [INF] Route matched with {action = "Get", controller = "Role"}. Executing action WEB.Controllers.RoleController.Get (WEB)
+2018-10-10 17:28:18.600 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Get (WEB) - Validation state: "Valid"
+2018-10-10 17:28:18.600 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:28:18.602 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Name]
+FROM [AspNetRoles] AS [i]
+2018-10-10 17:28:18.602 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.9442000000000002ms.
+2018-10-10 17:28:18.602 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 17:28:18.603 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 2.657ms
+2018-10-10 17:28:18.603 +03:00 [INF] Request finished in 3.5604ms 200 application/json; charset=utf-8
+2018-10-10 17:28:39.624 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/role?role=AdminNew application/json 0
+2018-10-10 17:28:39.624 +03:00 [INF] Request finished in 0.486ms 307 
+2018-10-10 17:28:39.634 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/role?role=AdminNew application/json 0
+2018-10-10 17:28:39.641 +03:00 [INF] Route matched with {action = "Delete", controller = "Role"}. Executing action WEB.Controllers.RoleController.Delete (WEB)
+2018-10-10 17:28:39.642 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Delete (WEB) with arguments (["AdminNew"]) - Validation state: "Valid"
+2018-10-10 17:28:39.650 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:28:39.655 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2018-10-10 17:28:39.666 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__role_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [i].[Id], [i].[ConcurrencyStamp], [i].[Name], [i].[NormalizedName]
+FROM [AspNetRoles] AS [i]
+WHERE [i].[Name] = @__role_0
+2018-10-10 17:28:39.682 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [AspNetRoles]
+WHERE [Id] = @p0 AND [ConcurrencyStamp] = @p1;
+SELECT @@ROWCOUNT;
+2018-10-10 17:28:39.690 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.OkResult in 47.8295ms.
+2018-10-10 17:28:39.690 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-10-10 17:28:39.690 +03:00 [INF] Executed action WEB.Controllers.RoleController.Delete (WEB) in 48.534800000000004ms
+2018-10-10 17:28:39.690 +03:00 [INF] Request finished in 55.8299ms 200 
+2018-10-10 17:28:43.268 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/role  
+2018-10-10 17:28:43.270 +03:00 [INF] Request finished in 1.3423ms 307 
+2018-10-10 17:28:43.286 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/role  
+2018-10-10 17:28:43.287 +03:00 [INF] Route matched with {action = "Get", controller = "Role"}. Executing action WEB.Controllers.RoleController.Get (WEB)
+2018-10-10 17:28:43.287 +03:00 [INF] Executing action method WEB.Controllers.RoleController.Get (WEB) - Validation state: "Valid"
+2018-10-10 17:28:43.287 +03:00 [INF] Entity Framework Core 2.1.3-rtm-32065 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-10 17:28:43.293 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Name]
+FROM [AspNetRoles] AS [i]
+2018-10-10 17:28:43.295 +03:00 [INF] Executed action method WEB.Controllers.RoleController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.289ms.
+2018-10-10 17:28:43.296 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-10 17:28:43.296 +03:00 [INF] Executed action WEB.Controllers.RoleController.Get (WEB) in 8.7275000000000009ms
+2018-10-10 17:28:43.296 +03:00 [INF] Request finished in 9.9189ms 200 application/json; charset=utf-8

@@ -1,4 +1,5 @@
 ﻿using BLL.Interfaces;
+using DAL.Models;
 
 namespace BLL.DTOs
 {
@@ -6,5 +7,11 @@ namespace BLL.DTOs
     {
         public string Id { get; set; }
         public string Name { get; set; }
+
+
+        public UserDto(string name)
+        {
+            Name = name;
+        }
     }
 }
