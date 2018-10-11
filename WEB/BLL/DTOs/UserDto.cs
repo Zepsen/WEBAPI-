@@ -13,10 +13,13 @@ namespace BLL.DTOs
         public string UserIdentityId { get; set; }
 
 
-        public UserDto(string id, string name)
+        public static UserDto Default(string id, string name)
         {
-            UserIdentityId = id;
-            Name = name;
+            return new UserDto()
+            {
+                UserIdentityId = id,
+                Name = name,
+            };
         }
     }
 }

@@ -47,7 +47,7 @@ namespace WEB.Controllers
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(user, RoleHelper.DefaultRole);
-                await _service.InsertAsync(new UserDto(user.Id, model.UserName));
+                await _service.InsertAsync(UserDto.Default(user.Id, model.UserName));
 
                 var token = CreateToken(user, new List<string> {RoleHelper.DefaultRole});
 
