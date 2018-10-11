@@ -10,7 +10,7 @@ using WEB.Models;
 namespace WEB.Controllers
 {
     [ApiController]
-    public class AccountController : Controller
+    public class AccountController : ControllerBase
     {
         private readonly IUsersService _service;
         private readonly UserManager<ApplicationUser> _userManager;
