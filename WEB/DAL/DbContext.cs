@@ -25,6 +25,9 @@ namespace DAL
         /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>()
+                .HasIndex(i => i.Email).IsUnique();
+
             base.OnModelCreating(modelBuilder);
         }
     }

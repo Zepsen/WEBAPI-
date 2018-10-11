@@ -55,5 +55,11 @@ namespace BLL.Services
         {
             await Repo.UsersRepository.DeleteAsync(id);
         }
+
+        public async Task<UserDto> GetByEmailAsync(string email)
+        {
+            var entity = (await Repo.UsersRepository.GetFromCache()).FirstOrDefault(i => i.Email == email);
+            return _mapper.Map<UserDto>(entity);
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using BLL.DTOs;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WEB.Infrastructure.Attributes;
 
@@ -10,6 +11,7 @@ namespace WEB.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "user")]
     public class UsersController : ControllerBase
     {
         private readonly IUsersService _service;

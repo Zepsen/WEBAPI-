@@ -780,3 +780,85 @@ System.InvalidCastException: Unable to cast object of type 'System.Int32' to typ
 2018-10-11 15:04:34.660 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2018-10-11 15:04:34.660 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 9.4402ms
 2018-10-11 15:04:34.660 +03:00 [INF] Request finished in 12.296ms 200 application/json; charset=utf-8
+2018-10-11 15:46:45.166 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 15:46:45.672 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?take=6 application/json 
+2018-10-11 15:46:45.690 +03:00 [INF] Request finished in 19.5325ms 307 
+2018-10-11 15:46:45.717 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?take=6 application/json 
+2018-10-11 15:46:45.842 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 15:46:46.131 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 15:46:46.298 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 153.5201ms.
+2018-10-11 15:46:46.308 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 15:46:46.351 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 505.5992ms
+2018-10-11 15:46:46.359 +03:00 [INF] Request finished in 642.4158ms 200 application/json; charset=utf-8
+2018-10-11 15:46:52.636 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/auth/token application/json 27
+2018-10-11 15:46:52.636 +03:00 [INF] Request finished in 0.4747ms 307 
+2018-10-11 15:46:52.645 +03:00 [INF] Connection id "0HLHFEUD4SJ6L", Request id "0HLHFEUD4SJ6L:00000003": the application completed without reading the entire request body.
+2018-10-11 15:46:52.676 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/auth/token application/json 27
+2018-10-11 15:46:52.677 +03:00 [INF] Request finished in 1.296ms 404 
+2018-10-11 15:46:52.678 +03:00 [INF] Connection id "0HLHFEUD4SJ6L", Request id "0HLHFEUD4SJ6L:00000004": the application completed without reading the entire request body.
+2018-10-11 15:47:05.972 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/token application/json 27
+2018-10-11 15:47:05.972 +03:00 [INF] Request finished in 0.6837ms 307 
+2018-10-11 15:47:05.974 +03:00 [INF] Connection id "0HLHFEUD4SJ6L", Request id "0HLHFEUD4SJ6L:00000005": the application completed without reading the entire request body.
+2018-10-11 15:47:06.013 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/token application/json 27
+2018-10-11 15:47:06.018 +03:00 [INF] Route matched with {action = "Token", controller = "Auth"}. Executing action WEB.Controllers.AuthController.Token (WEB)
+2018-10-11 15:47:06.048 +03:00 [INF] Executing action method WEB.Controllers.AuthController.Token (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 15:47:06.075 +03:00 [INF] Executed action method WEB.Controllers.AuthController.Token (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 26.2007ms.
+2018-10-11 15:47:06.075 +03:00 [INF] Executed action WEB.Controllers.AuthController.Token (WEB) in 57.075900000000004ms
+2018-10-11 15:47:06.075 +03:00 [INF] Request finished in 62.3302ms 200 application/json
+2018-10-11 15:48:15.463 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 15:48:15.797 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?take=6 application/json 
+2018-10-11 15:48:15.816 +03:00 [INF] Request finished in 20.8115ms 307 
+2018-10-11 15:48:15.824 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?take=6 application/json 
+2018-10-11 15:48:15.961 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 15:48:15.971 +03:00 [INF] Authorization failed.
+2018-10-11 15:48:15.974 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-11 15:48:15.979 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-11 15:48:15.987 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-11 15:48:15.990 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 25.873ms
+2018-10-11 15:48:15.997 +03:00 [INF] Request finished in 173.1292ms 401 
+2018-10-11 15:48:24.934 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?take=6 application/json 
+2018-10-11 15:48:24.935 +03:00 [INF] Request finished in 1.6332ms 307 
+2018-10-11 15:48:24.949 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?take=6 application/json 
+2018-10-11 15:48:24.993 +03:00 [INF] Successfully validated the token.
+2018-10-11 15:48:24.994 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 15:48:24.994 +03:00 [INF] Authorization was successful.
+2018-10-11 15:48:25.282 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 15:48:25.448 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 158.1558ms.
+2018-10-11 15:48:25.457 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 15:48:25.472 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 478.3032ms
+2018-10-11 15:48:25.478 +03:00 [INF] Request finished in 529.6994ms 200 application/json; charset=utf-8
+2018-10-11 15:48:56.373 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 15:48:56.785 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?take=6 application/json 
+2018-10-11 15:48:56.803 +03:00 [INF] Request finished in 19.1366ms 307 
+2018-10-11 15:48:56.812 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?take=6 application/json 
+2018-10-11 15:48:56.864 +03:00 [INF] Successfully validated the token.
+2018-10-11 15:48:56.975 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 15:48:56.985 +03:00 [INF] Authorization was successful.
+2018-10-11 15:48:57.262 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 15:48:57.426 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 150.2358ms.
+2018-10-11 15:48:57.436 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 15:48:57.455 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 476.8172ms
+2018-10-11 15:48:57.463 +03:00 [INF] Request finished in 651.1967ms 200 application/json; charset=utf-8
+2018-10-11 15:48:59.886 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?take=6 application/json 
+2018-10-11 15:48:59.888 +03:00 [INF] Request finished in 1.8835ms 307 
+2018-10-11 15:48:59.906 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?take=6 application/json 
+2018-10-11 15:48:59.907 +03:00 [INF] Successfully validated the token.
+2018-10-11 15:48:59.907 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 15:48:59.907 +03:00 [INF] Authorization was successful.
+2018-10-11 15:48:59.925 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 15:48:59.931 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.3678ms.
+2018-10-11 15:48:59.932 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 15:48:59.932 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 24.784200000000002ms
+2018-10-11 15:48:59.932 +03:00 [INF] Request finished in 26.4729ms 200 application/json; charset=utf-8
+2018-10-11 15:49:08.278 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 15:49:08.599 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?take=6 application/json 
+2018-10-11 15:49:08.620 +03:00 [INF] Request finished in 22.0543ms 307 
+2018-10-11 15:49:08.627 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?take=6 application/json 
+2018-10-11 15:49:08.684 +03:00 [INF] Successfully validated the token.
+2018-10-11 15:49:08.798 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 15:49:08.807 +03:00 [INF] Authorization failed.
+2018-10-11 15:49:08.811 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-11 15:49:08.816 +03:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2018-10-11 15:49:08.821 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2018-10-11 15:49:08.824 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 23.6389ms
+2018-10-11 15:49:08.831 +03:00 [INF] Request finished in 203.8489ms 403 
