@@ -1,0 +1,782 @@
+2018-10-11 14:10:41.416 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:10:41.840 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 14:10:41.860 +03:00 [INF] Request finished in 21.9936ms 307 
+2018-10-11 14:10:41.886 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 14:10:42.003 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:10:42.331 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 14:10:42.503 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 156.991ms.
+2018-10-11 14:10:42.516 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 14:10:42.563 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 556.9375ms
+2018-10-11 14:10:42.572 +03:00 [INF] Request finished in 685.6929ms 200 application/json; charset=utf-8
+2018-10-11 14:11:17.603 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:11:18.018 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 14:11:18.037 +03:00 [INF] Request finished in 19.8954ms 307 
+2018-10-11 14:11:18.046 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 14:11:18.157 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:11:18.455 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:11:18.474 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 313.8784ms
+2018-10-11 14:11:18.485 +03:00 [INF] Request finished in 439.6602ms 400 application/json; charset=utf-8
+2018-10-11 14:11:24.606 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 14:11:24.607 +03:00 [INF] Request finished in 0.8848ms 307 
+2018-10-11 14:11:24.629 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 14:11:24.629 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:11:24.640 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:11:24.641 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 11.235000000000001ms
+2018-10-11 14:11:24.641 +03:00 [INF] Request finished in 12.065ms 400 application/json; charset=utf-8
+2018-10-11 14:11:42.455 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:11:42.895 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 14:11:42.913 +03:00 [INF] Request finished in 19.1873ms 307 
+2018-10-11 14:11:42.921 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 14:11:43.027 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:11:43.324 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:11:43.342 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 311.5502ms
+2018-10-11 14:11:43.354 +03:00 [INF] Request finished in 432.8325ms 400 application/json; charset=utf-8
+2018-10-11 14:11:45.675 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 14:11:45.677 +03:00 [INF] Request finished in 1.934ms 307 
+2018-10-11 14:11:45.711 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 14:11:45.712 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:11:45.760 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:11:45.761 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 48.740300000000005ms
+2018-10-11 14:11:45.761 +03:00 [INF] Request finished in 49.7261ms 400 application/json; charset=utf-8
+2018-10-11 14:12:28.768 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 14:12:28.768 +03:00 [INF] Request finished in 0.2697ms 307 
+2018-10-11 14:12:28.798 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 14:12:28.798 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:12:28.821 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:12:28.821 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 22.8121ms
+2018-10-11 14:12:28.821 +03:00 [INF] Request finished in 23.5713ms 400 application/json; charset=utf-8
+2018-10-11 14:12:45.788 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:12:46.320 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 14:12:46.341 +03:00 [INF] Request finished in 22.2893ms 307 
+2018-10-11 14:12:46.351 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 14:12:46.483 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:12:46.768 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 14:12:46.931 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 148.7037ms.
+2018-10-11 14:12:46.941 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 14:12:46.983 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 496.87890000000004ms
+2018-10-11 14:12:46.991 +03:00 [INF] Request finished in 639.7236ms 200 application/json; charset=utf-8
+2018-10-11 14:15:07.797 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:15:08.253 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 14:15:08.276 +03:00 [INF] Request finished in 24.2383ms 307 
+2018-10-11 14:15:08.296 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 14:15:08.457 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:15:08.843 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:15:08.860 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 400.666ms
+2018-10-11 14:15:08.870 +03:00 [INF] Request finished in 574.2887ms 400 application/json; charset=utf-8
+2018-10-11 14:15:42.581 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies/AE application/json 
+2018-10-11 14:15:42.584 +03:00 [INF] Request finished in 3.4599ms 307 
+2018-10-11 14:15:42.603 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies/AE application/json 
+2018-10-11 14:15:42.612 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:15:42.650 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:15:42.651 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 38.8966ms
+2018-10-11 14:15:42.651 +03:00 [INF] Request finished in 48.2189ms 400 application/json; charset=utf-8
+2018-10-11 14:16:02.122 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:02.122 +03:00 [INF] Request finished in 0.2624ms 307 
+2018-10-11 14:16:02.144 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:02.151 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:16:02.157 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:16:02.158 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 6.7194ms
+2018-10-11 14:16:02.158 +03:00 [INF] Request finished in 14.3178ms 400 application/json; charset=utf-8
+2018-10-11 14:16:15.754 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:16:16.161 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:16.178 +03:00 [INF] Request finished in 19.166ms 307 
+2018-10-11 14:16:16.187 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:16.297 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:16:16.654 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:16:16.671 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 370.745ms
+2018-10-11 14:16:16.680 +03:00 [INF] Request finished in 493.0135ms 400 application/json; charset=utf-8
+2018-10-11 14:16:18.961 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:18.961 +03:00 [INF] Request finished in 0.3042ms 307 
+2018-10-11 14:16:18.966 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:18.968 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:16:19.001 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:16:19.002 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 33.746500000000005ms
+2018-10-11 14:16:19.002 +03:00 [INF] Request finished in 35.9877ms 400 application/json; charset=utf-8
+2018-10-11 14:16:20.029 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:20.030 +03:00 [INF] Request finished in 1.3559ms 307 
+2018-10-11 14:16:20.055 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:20.055 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:16:20.060 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:16:20.060 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.9118ms
+2018-10-11 14:16:20.060 +03:00 [INF] Request finished in 5.7963ms 400 application/json; charset=utf-8
+2018-10-11 14:16:20.892 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:20.892 +03:00 [INF] Request finished in 0.7945ms 307 
+2018-10-11 14:16:20.903 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:20.903 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:16:20.907 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:16:20.908 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 4.3745ms
+2018-10-11 14:16:20.908 +03:00 [INF] Request finished in 5.002ms 400 application/json; charset=utf-8
+2018-10-11 14:16:44.674 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:44.675 +03:00 [INF] Request finished in 1.2004ms 307 
+2018-10-11 14:16:44.698 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6 application/json 
+2018-10-11 14:16:44.698 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:16:44.714 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:16:44.715 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 16.0903ms
+2018-10-11 14:16:44.715 +03:00 [INF] Request finished in 16.8628ms 400 application/json; charset=utf-8
+2018-10-11 14:17:09.479 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:17:09.784 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 14:17:09.802 +03:00 [INF] Request finished in 19.4559ms 307 
+2018-10-11 14:17:09.811 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 14:17:09.919 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:17:10.275 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 14:17:10.434 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 145.4906ms.
+2018-10-11 14:17:10.445 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 14:17:10.493 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 570.8373ms
+2018-10-11 14:17:10.501 +03:00 [INF] Request finished in 690.5872ms 200 application/json; charset=utf-8
+2018-10-11 14:17:16.615 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies/Ve0nN application/json 
+2018-10-11 14:17:16.616 +03:00 [INF] Request finished in 0.3397ms 307 
+2018-10-11 14:17:16.621 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies/Ve0nN application/json 
+2018-10-11 14:17:16.631 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:17:16.676 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:17:16.680 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 47.8016ms
+2018-10-11 14:17:16.680 +03:00 [INF] Request finished in 58.3299ms 400 application/json; charset=utf-8
+2018-10-11 14:17:36.831 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies/dmZ45 application/json 
+2018-10-11 14:17:36.832 +03:00 [INF] Request finished in 0.4037ms 307 
+2018-10-11 14:17:36.840 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies/dmZ45 application/json 
+2018-10-11 14:17:36.841 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:17:36.847 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:17:36.848 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 6.021ms
+2018-10-11 14:17:36.848 +03:00 [INF] Request finished in 7.37ms 400 application/json; charset=utf-8
+2018-10-11 14:18:01.736 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:18:02.351 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-11 14:18:02.351 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies/dmZ45 application/json 
+2018-10-11 14:18:02.373 +03:00 [INF] Request finished in 22.7114ms 200 
+2018-10-11 14:18:02.391 +03:00 [INF] Request finished in 42.007ms 307 
+2018-10-11 14:18:02.415 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies/dmZ45 application/json 
+2018-10-11 14:18:02.600 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:18:03.153 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:18:03.199 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 595.5452ms
+2018-10-11 14:18:03.211 +03:00 [INF] Request finished in 796.7067ms 400 application/json; charset=utf-8
+2018-10-11 14:18:05.673 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies/dmZ45 application/json 
+2018-10-11 14:18:05.674 +03:00 [INF] Request finished in 1.1643ms 307 
+2018-10-11 14:18:05.693 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies/dmZ45 application/json 
+2018-10-11 14:18:05.694 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:18:05.762 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:18:05.763 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 68.9488ms
+2018-10-11 14:18:05.763 +03:00 [INF] Request finished in 69.9427ms 400 application/json; charset=utf-8
+2018-10-11 14:18:42.709 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:18:43.140 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies/dmZ45 application/json 
+2018-10-11 14:18:43.158 +03:00 [INF] Request finished in 19.5377ms 307 
+2018-10-11 14:18:43.176 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies/dmZ45 application/json 
+2018-10-11 14:18:43.284 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:18:43.626 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:18:43.659 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 372.1951ms
+2018-10-11 14:18:43.668 +03:00 [INF] Request finished in 491.8216ms 400 application/json; charset=utf-8
+2018-10-11 14:18:45.629 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies/dmZ45 application/json 
+2018-10-11 14:18:45.630 +03:00 [INF] Request finished in 0.7947ms 307 
+2018-10-11 14:18:45.648 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies/dmZ45 application/json 
+2018-10-11 14:18:45.649 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 14:18:45.670 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:18:45.671 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 21.6887ms
+2018-10-11 14:18:45.671 +03:00 [INF] Request finished in 22.5756ms 400 application/json; charset=utf-8
+2018-10-11 14:18:57.478 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:18:57.478 +03:00 [INF] Request finished in 0.4118ms 307 
+2018-10-11 14:18:57.503 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:18:57.511 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:18:57.556 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Invalid"
+2018-10-11 14:18:57.712 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 146.2433ms.
+2018-10-11 14:18:57.718 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:18:57.724 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 212.4926ms
+2018-10-11 14:18:57.728 +03:00 [INF] Request finished in 224.4735ms 200 application/json; charset=utf-8
+2018-10-11 14:19:08.604 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:19:09.029 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:19:09.047 +03:00 [INF] Request finished in 18.9773ms 307 
+2018-10-11 14:19:09.054 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:19:09.162 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:19:09.508 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Invalid"
+2018-10-11 14:19:09.654 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 132.0919ms.
+2018-10-11 14:19:09.665 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:19:09.703 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 538.7197ms
+2018-10-11 14:19:09.713 +03:00 [INF] Request finished in 656.2004ms 200 application/json; charset=utf-8
+2018-10-11 14:19:20.759 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:19:21.168 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:19:21.187 +03:00 [INF] Request finished in 20.479ms 307 
+2018-10-11 14:19:21.195 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:19:21.302 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:19:21.647 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:19:21.680 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 375.0339ms
+2018-10-11 14:19:21.689 +03:00 [INF] Request finished in 493.9524ms 400 application/json; charset=utf-8
+2018-10-11 14:19:25.068 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:19:25.069 +03:00 [INF] Request finished in 0.7033ms 307 
+2018-10-11 14:19:25.074 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:19:25.076 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:19:25.108 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:19:25.108 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 32.557500000000005ms
+2018-10-11 14:19:25.108 +03:00 [INF] Request finished in 34.1882ms 400 application/json; charset=utf-8
+2018-10-11 14:19:34.744 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 14:19:34.744 +03:00 [INF] Request finished in 0.2787ms 307 
+2018-10-11 14:19:34.773 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 14:19:34.779 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:19:34.796 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:19:34.797 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 17.399800000000003ms
+2018-10-11 14:19:34.797 +03:00 [INF] Request finished in 24.3331ms 400 application/json; charset=utf-8
+2018-10-11 14:44:57.164 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:44:57.493 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 14:44:57.511 +03:00 [INF] Request finished in 20.1716ms 307 
+2018-10-11 14:44:57.531 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 14:44:57.646 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:44:58.039 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:44:58.060 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 410.8066ms
+2018-10-11 14:44:58.075 +03:00 [INF] Request finished in 543.8385ms 400 application/json; charset=utf-8
+2018-10-11 14:45:00.669 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:45:00.669 +03:00 [INF] Request finished in 0.4233ms 307 
+2018-10-11 14:45:00.679 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:45:00.687 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:45:00.713 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:45:00.713 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 25.931800000000003ms
+2018-10-11 14:45:00.713 +03:00 [INF] Request finished in 34.2207ms 400 application/json; charset=utf-8
+2018-10-11 14:45:54.594 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users application/json 20
+2018-10-11 14:45:54.594 +03:00 [INF] Request finished in 0.7221ms 307 
+2018-10-11 14:45:54.610 +03:00 [INF] Connection id "0HLHFDRS1122L", Request id "0HLHFDRS1122L:00000005": the application completed without reading the entire request body.
+2018-10-11 14:45:54.610 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users application/json 20
+2018-10-11 14:45:54.614 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 14:45:54.651 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 14:45:54.748 +03:00 [INF] Inserted
+2018-10-11 14:45:54.751 +03:00 [INF] Cache cleared
+2018-10-11 14:45:54.824 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 163.3794ms.
+2018-10-11 14:45:54.829 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 215.31470000000002ms
+2018-10-11 14:45:54.834 +03:00 [INF] Request finished in 223.6648ms 200 
+2018-10-11 14:46:07.909 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users application/json 20
+2018-10-11 14:46:07.910 +03:00 [INF] Request finished in 1.2816ms 307 
+2018-10-11 14:46:07.911 +03:00 [INF] Connection id "0HLHFDRS1122L", Request id "0HLHFDRS1122L:00000007": the application completed without reading the entire request body.
+2018-10-11 14:46:07.948 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users application/json 20
+2018-10-11 14:46:07.948 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 14:46:07.952 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 14:46:07.954 +03:00 [INF] Inserted
+2018-10-11 14:46:07.954 +03:00 [INF] Cache cleared
+2018-10-11 14:46:07.958 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 5.9537ms.
+2018-10-11 14:46:07.958 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 9.8858ms
+2018-10-11 14:46:07.959 +03:00 [INF] Request finished in 10.7631ms 200 
+2018-10-11 14:46:32.562 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:8090/api/users/dmZ45 application/json 33
+2018-10-11 14:46:32.562 +03:00 [INF] Request finished in 0.7082ms 307 
+2018-10-11 14:46:32.562 +03:00 [INF] Connection id "0HLHFDRS1122L", Request id "0HLHFDRS1122L:00000009": the application completed without reading the entire request body.
+2018-10-11 14:46:32.573 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:44326/api/users/dmZ45 application/json 33
+2018-10-11 14:46:32.577 +03:00 [INF] Route matched with {action = "Put", controller = "Users"}. Executing action WEB.Controllers.UsersController.Put (WEB)
+2018-10-11 14:46:32.583 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:46:32.583 +03:00 [INF] Executed action WEB.Controllers.UsersController.Put (WEB) in 5.5273ms
+2018-10-11 14:46:32.583 +03:00 [INF] Request finished in 10.4786ms 400 application/json; charset=utf-8
+2018-10-11 14:46:42.714 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/users/dmZ45 application/json 24
+2018-10-11 14:46:42.714 +03:00 [INF] Request finished in 0.2903ms 307 
+2018-10-11 14:46:42.714 +03:00 [INF] Connection id "0HLHFDRS1122L", Request id "0HLHFDRS1122L:0000000B": the application completed without reading the entire request body.
+2018-10-11 14:46:42.745 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44326/api/users/dmZ45 application/json 24
+2018-10-11 14:46:42.753 +03:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing action WEB.Controllers.UsersController.Patch (WEB)
+2018-10-11 14:46:42.766 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:46:42.767 +03:00 [INF] Executed action WEB.Controllers.UsersController.Patch (WEB) in 12.8008ms
+2018-10-11 14:46:42.767 +03:00 [INF] Request finished in 22.1247ms 400 application/json; charset=utf-8
+2018-10-11 14:46:42.767 +03:00 [INF] Connection id "0HLHFDRS1122L", Request id "0HLHFDRS1122L:0000000C": the application completed without reading the entire request body.
+2018-10-11 14:47:08.904 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:47:09.320 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:47:09.340 +03:00 [INF] Request finished in 21.8972ms 307 
+2018-10-11 14:47:09.348 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:47:09.471 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:47:09.820 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:47:09.856 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 382.40180000000004ms
+2018-10-11 14:47:09.865 +03:00 [INF] Request finished in 516.5252ms 400 application/json; charset=utf-8
+2018-10-11 14:47:19.943 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:47:20.371 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:47:20.389 +03:00 [INF] Request finished in 20.467ms 307 
+2018-10-11 14:47:20.397 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:47:20.490 +03:00 [INF] Request finished in 92.5648ms 404 
+2018-10-11 14:47:23.439 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:47:23.441 +03:00 [INF] Request finished in 1.6933ms 307 
+2018-10-11 14:47:23.467 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:47:23.467 +03:00 [INF] Request finished in 0.6836ms 404 
+2018-10-11 14:47:33.675 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:47:34.093 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:47:34.111 +03:00 [INF] Request finished in 18.9065ms 307 
+2018-10-11 14:47:34.119 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:47:34.226 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:47:34.557 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:47:34.591 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 361.64590000000004ms
+2018-10-11 14:47:34.600 +03:00 [INF] Request finished in 481.1992ms 400 application/json; charset=utf-8
+2018-10-11 14:50:17.228 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:50:17.613 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:50:17.632 +03:00 [INF] Request finished in 20.3884ms 307 
+2018-10-11 14:50:17.650 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:50:17.770 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:50:18.114 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:50:18.154 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 380.2455ms
+2018-10-11 14:50:18.167 +03:00 [INF] Request finished in 516.8144ms 400 application/json; charset=utf-8
+2018-10-11 14:50:19.995 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:50:19.996 +03:00 [INF] Request finished in 1.8438ms 307 
+2018-10-11 14:50:20.030 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:50:20.030 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:50:20.053 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:50:20.053 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 22.9998ms
+2018-10-11 14:50:20.054 +03:00 [INF] Request finished in 23.8074ms 400 application/json; charset=utf-8
+2018-10-11 14:51:32.595 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:51:33.161 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-11 14:51:33.161 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:51:33.185 +03:00 [INF] Request finished in 23.8402ms 200 
+2018-10-11 14:51:33.208 +03:00 [INF] Request finished in 48.7013ms 307 
+2018-10-11 14:51:33.240 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:51:33.426 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:51:33.993 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:51:34.038 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 609.275ms
+2018-10-11 14:51:34.048 +03:00 [INF] Request finished in 808.2012ms 400 application/json; charset=utf-8
+2018-10-11 14:51:42.519 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:51:42.519 +03:00 [INF] Request finished in 0.2811ms 307 
+2018-10-11 14:51:42.528 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:51:42.530 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:51:42.584 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:51:42.584 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 54.587500000000006ms
+2018-10-11 14:51:42.585 +03:00 [INF] Request finished in 56.9638ms 400 application/json; charset=utf-8
+2018-10-11 14:52:22.109 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:52:22.514 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:52:22.532 +03:00 [INF] Request finished in 20.1304ms 307 
+2018-10-11 14:52:22.551 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:52:22.663 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:52:23.014 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:52:23.044 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 377.4137ms
+2018-10-11 14:52:23.045 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.ExecuteAsync(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-10-11 14:52:23.101 +03:00 [INF] Request finished in 549.7531ms 500 text/html; charset=utf-8
+2018-10-11 14:52:46.217 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:52:46.641 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:52:46.659 +03:00 [INF] Request finished in 19.3428ms 307 
+2018-10-11 14:52:46.667 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:52:46.777 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:52:47.123 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:52:47.275 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 138.2012ms.
+2018-10-11 14:52:47.286 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:52:47.325 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 545.1023ms
+2018-10-11 14:52:47.333 +03:00 [INF] Request finished in 666.0466ms 200 application/json; charset=utf-8
+2018-10-11 14:53:03.397 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:53:03.806 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:53:03.825 +03:00 [INF] Request finished in 20.7735ms 307 
+2018-10-11 14:53:03.834 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:53:03.943 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:53:04.294 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:53:04.441 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 131.9656ms.
+2018-10-11 14:53:04.453 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:53:04.491 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 545.1055ms
+2018-10-11 14:53:04.499 +03:00 [INF] Request finished in 664.8936ms 200 application/json; charset=utf-8
+2018-10-11 14:53:07.127 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:53:07.128 +03:00 [INF] Request finished in 0.54ms 307 
+2018-10-11 14:53:07.139 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:53:07.139 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:53:07.153 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:53:07.158 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.4984ms.
+2018-10-11 14:53:07.159 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:53:07.159 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 19.4415ms
+2018-10-11 14:53:07.159 +03:00 [INF] Request finished in 20.3874ms 200 application/json; charset=utf-8
+2018-10-11 14:53:08.430 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:53:08.433 +03:00 [INF] Request finished in 2.9274ms 307 
+2018-10-11 14:53:08.458 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:53:08.459 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:53:08.464 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:53:08.467 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.2463ms.
+2018-10-11 14:53:08.467 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:53:08.468 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 8.8266000000000009ms
+2018-10-11 14:53:08.468 +03:00 [INF] Request finished in 9.5787ms 200 application/json; charset=utf-8
+2018-10-11 14:53:09.337 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:53:09.338 +03:00 [INF] Request finished in 0.9392ms 307 
+2018-10-11 14:53:09.355 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:53:09.356 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:53:09.361 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:53:09.364 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.0218000000000003ms.
+2018-10-11 14:53:09.364 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:53:09.364 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 8.0582000000000011ms
+2018-10-11 14:53:09.364 +03:00 [INF] Request finished in 8.7472ms 200 application/json; charset=utf-8
+2018-10-11 14:53:10.442 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:53:10.443 +03:00 [INF] Request finished in 1.2317ms 307 
+2018-10-11 14:53:10.449 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:53:10.449 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:53:10.456 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:53:10.459 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.9993000000000003ms.
+2018-10-11 14:53:10.459 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:53:10.460 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 10.1907ms
+2018-10-11 14:53:10.460 +03:00 [INF] Request finished in 10.6662ms 200 application/json; charset=utf-8
+2018-10-11 14:53:19.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 14:53:19.186 +03:00 [INF] Request finished in 1.6919ms 307 
+2018-10-11 14:53:19.197 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 14:53:19.203 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:53:19.216 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-11 14:53:19.219 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 15.7527ms
+2018-10-11 14:53:19.219 +03:00 [INF] Request finished in 21.9688ms 400 application/json; charset=utf-8
+2018-10-11 14:53:31.070 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:53:31.447 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 14:53:31.465 +03:00 [INF] Request finished in 19.2944ms 307 
+2018-10-11 14:53:31.474 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 14:53:31.588 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:53:31.943 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 14:53:32.113 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 154.17610000000002ms.
+2018-10-11 14:53:32.124 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 14:53:32.168 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 577.42730000000006ms
+2018-10-11 14:53:32.176 +03:00 [INF] Request finished in 701.8815ms 200 application/json; charset=utf-8
+2018-10-11 14:54:11.582 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:54:11.951 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 14:54:11.969 +03:00 [INF] Request finished in 20.6744ms 307 
+2018-10-11 14:54:11.984 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 14:54:12.122 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:54:12.484 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 14:54:12.716 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 215.54340000000002ms.
+2018-10-11 14:54:12.733 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:54:12.734 +03:00 [INF] Request finished in 0.4082ms 307 
+2018-10-11 14:54:12.734 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 14:54:12.746 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:54:12.752 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:54:12.799 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:54:12.813 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 14.1264ms.
+2018-10-11 14:54:12.814 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:54:12.818 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 693.5603ms
+2018-10-11 14:54:12.822 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 62.174ms
+2018-10-11 14:54:12.828 +03:00 [INF] Request finished in 844.4251ms 200 application/json; charset=utf-8
+2018-10-11 14:54:12.828 +03:00 [INF] Request finished in 81.8002ms 200 application/json; charset=utf-8
+2018-10-11 14:54:21.137 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users application/json 20
+2018-10-11 14:54:21.137 +03:00 [INF] Request finished in 0.3183ms 307 
+2018-10-11 14:54:21.148 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users application/json 20
+2018-10-11 14:54:21.151 +03:00 [INF] Connection id "0HLHFE118NUO3", Request id "0HLHFE118NUO3:00000003": the application completed without reading the entire request body.
+2018-10-11 14:54:21.153 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 14:54:21.169 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 14:54:21.248 +03:00 [INF] Inserted
+2018-10-11 14:54:21.249 +03:00 [INF] Cache cleared
+2018-10-11 14:54:21.303 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 133.3488ms.
+2018-10-11 14:54:21.303 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 149.2645ms
+2018-10-11 14:54:21.303 +03:00 [INF] Request finished in 155.5549ms 200 
+2018-10-11 14:54:58.481 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users/ application/json 20
+2018-10-11 14:54:58.481 +03:00 [INF] Request finished in 0.3663ms 307 
+2018-10-11 14:54:58.481 +03:00 [INF] Connection id "0HLHFE118NUO3", Request id "0HLHFE118NUO3:00000004": the application completed without reading the entire request body.
+2018-10-11 14:54:58.503 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users/ application/json 20
+2018-10-11 14:54:58.503 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 14:54:58.521 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 14:54:58.523 +03:00 [INF] Inserted
+2018-10-11 14:54:58.523 +03:00 [INF] Cache cleared
+2018-10-11 14:54:58.530 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 9.1314000000000011ms.
+2018-10-11 14:54:58.530 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 26.956ms
+2018-10-11 14:54:58.530 +03:00 [INF] Request finished in 27.8504ms 200 
+2018-10-11 14:55:19.022 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users application/json 20
+2018-10-11 14:55:19.022 +03:00 [INF] Request finished in 0.3232ms 307 
+2018-10-11 14:55:19.023 +03:00 [INF] Connection id "0HLHFE118NUO3", Request id "0HLHFE118NUO3:00000005": the application completed without reading the entire request body.
+2018-10-11 14:55:19.034 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users application/json 20
+2018-10-11 14:55:19.034 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 14:55:19.043 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 14:55:19.043 +03:00 [INF] Inserted
+2018-10-11 14:55:19.043 +03:00 [INF] Cache cleared
+2018-10-11 14:55:19.048 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 5.5332ms.
+2018-10-11 14:55:19.048 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 14.0518ms
+2018-10-11 14:55:19.049 +03:00 [INF] Request finished in 14.7067ms 200 
+2018-10-11 14:55:35.951 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:8090/api/users/dmZ45 application/json 35
+2018-10-11 14:55:35.953 +03:00 [INF] Request finished in 1.7905ms 307 
+2018-10-11 14:55:35.955 +03:00 [INF] Connection id "0HLHFE118NUO3", Request id "0HLHFE118NUO3:00000006": the application completed without reading the entire request body.
+2018-10-11 14:55:35.963 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:44326/api/users/dmZ45 application/json 35
+2018-10-11 14:55:35.968 +03:00 [INF] Route matched with {action = "Put", controller = "Users"}. Executing action WEB.Controllers.UsersController.Put (WEB)
+2018-10-11 14:55:35.990 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Put (WEB) with arguments (["2","BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 14:55:36.078 +03:00 [INF] Updated
+2018-10-11 14:55:36.078 +03:00 [INF] Cache cleared
+2018-10-11 14:55:36.078 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Put (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 88.5139ms.
+2018-10-11 14:55:36.080 +03:00 [INF] Executed action WEB.Controllers.UsersController.Put (WEB) in 111.56670000000001ms
+2018-10-11 14:55:36.080 +03:00 [INF] Request finished in 117.1004ms 200 
+2018-10-11 14:55:39.043 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:55:39.043 +03:00 [INF] Request finished in 0.2404ms 307 
+2018-10-11 14:55:39.048 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:55:39.049 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:55:39.071 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:55:39.079 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.2799ms.
+2018-10-11 14:55:39.080 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:55:39.080 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 30.852600000000002ms
+2018-10-11 14:55:39.080 +03:00 [INF] Request finished in 31.5931ms 200 application/json; charset=utf-8
+2018-10-11 14:55:50.778 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:8090/api/users/dmZ45 application/json 25
+2018-10-11 14:55:50.779 +03:00 [INF] Request finished in 1.039ms 307 
+2018-10-11 14:55:50.779 +03:00 [INF] Connection id "0HLHFE118NUO3", Request id "0HLHFE118NUO3:00000008": the application completed without reading the entire request body.
+2018-10-11 14:55:50.789 +03:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:44326/api/users/dmZ45 application/json 25
+2018-10-11 14:55:50.795 +03:00 [INF] Route matched with {action = "Patch", controller = "Users"}. Executing action WEB.Controllers.UsersController.Patch (WEB)
+2018-10-11 14:55:50.808 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Patch (WEB) with arguments (["2","System.Collections.Generic.Dictionary`2[System.String,System.Object]"]) - Validation state: "Valid"
+2018-10-11 14:55:50.824 +03:00 [INF] Updated
+2018-10-11 14:55:50.824 +03:00 [INF] Cache cleared
+2018-10-11 14:55:50.825 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Patch (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 16.8992ms.
+2018-10-11 14:55:50.825 +03:00 [INF] Executed action WEB.Controllers.UsersController.Patch (WEB) in 29.4662ms
+2018-10-11 14:55:50.825 +03:00 [INF] Request finished in 36.1404ms 200 
+2018-10-11 14:55:55.355 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:55:55.355 +03:00 [INF] Request finished in 0.2386ms 307 
+2018-10-11 14:55:55.361 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:55:55.362 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:55:55.370 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:55:55.375 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.7010000000000005ms.
+2018-10-11 14:55:55.376 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.DTOs.UserDto'.
+2018-10-11 14:55:55.376 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 13.6293ms
+2018-10-11 14:55:55.376 +03:00 [INF] Request finished in 15.1686ms 200 application/json; charset=utf-8
+2018-10-11 14:56:47.510 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/users/dmZ45 application/json 0
+2018-10-11 14:56:47.511 +03:00 [INF] Request finished in 1.3325ms 307 
+2018-10-11 14:56:47.548 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/users/dmZ45 application/json 0
+2018-10-11 14:56:47.555 +03:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing action WEB.Controllers.UsersController.Delete (WEB)
+2018-10-11 14:56:47.581 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Delete (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:56:47.636 +03:00 [INF] Deleted
+2018-10-11 14:56:47.636 +03:00 [INF] Cache cleared
+2018-10-11 14:56:47.636 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 55.1362ms.
+2018-10-11 14:56:47.636 +03:00 [INF] Executed action WEB.Controllers.UsersController.Delete (WEB) in 81.095700000000008ms
+2018-10-11 14:56:47.636 +03:00 [INF] Request finished in 88.4905ms 200 
+2018-10-11 14:57:35.450 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:57:35.879 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/users/dmZ45 application/json 0
+2018-10-11 14:57:35.899 +03:00 [INF] Request finished in 20.9448ms 307 
+2018-10-11 14:57:35.910 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/users/dmZ45 application/json 0
+2018-10-11 14:57:36.025 +03:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing action WEB.Controllers.UsersController.Delete (WEB)
+2018-10-11 14:57:36.400 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Delete (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:57:36.523 +03:00 [INF] Deleted
+2018-10-11 14:57:36.525 +03:00 [INF] Cache cleared
+2018-10-11 14:57:36.530 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 116.5921ms.
+2018-10-11 14:57:36.544 +03:00 [INF] Executed action WEB.Controllers.UsersController.Delete (WEB) in 515.2967ms
+2018-10-11 14:57:36.550 +03:00 [INF] Request finished in 640.9208ms 200 
+2018-10-11 14:57:43.475 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users/dmZ45 application/json 
+2018-10-11 14:57:43.478 +03:00 [INF] Request finished in 3.6394ms 307 
+2018-10-11 14:57:43.489 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users/dmZ45 application/json 
+2018-10-11 14:57:43.495 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:57:43.506 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["2"]) - Validation state: "Valid"
+2018-10-11 14:57:43.622 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 115.5896ms.
+2018-10-11 14:57:43.626 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2018-10-11 14:57:43.626 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 131.0652ms
+2018-10-11 14:57:43.627 +03:00 [INF] Request finished in 138.0492ms 204 
+2018-10-11 14:57:51.528 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 14:57:51.529 +03:00 [INF] Request finished in 1.1803ms 307 
+2018-10-11 14:57:51.542 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 14:57:51.550 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 14:57:51.578 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 14:57:51.628 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 49.5416ms.
+2018-10-11 14:57:51.629 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 14:57:51.669 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 118.3417ms
+2018-10-11 14:57:51.670 +03:00 [INF] Request finished in 128.5292ms 200 application/json; charset=utf-8
+2018-10-11 14:57:59.290 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/users/2mPqe application/json 0
+2018-10-11 14:57:59.291 +03:00 [INF] Request finished in 0.9511ms 307 
+2018-10-11 14:57:59.306 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/users/2mPqe application/json 0
+2018-10-11 14:57:59.307 +03:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing action WEB.Controllers.UsersController.Delete (WEB)
+2018-10-11 14:57:59.311 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Delete (WEB) with arguments (["8"]) - Validation state: "Valid"
+2018-10-11 14:57:59.322 +03:00 [INF] Deleted
+2018-10-11 14:57:59.322 +03:00 [INF] Cache cleared
+2018-10-11 14:57:59.322 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 10.330400000000001ms.
+2018-10-11 14:57:59.322 +03:00 [INF] Executed action WEB.Controllers.UsersController.Delete (WEB) in 14.791300000000001ms
+2018-10-11 14:57:59.322 +03:00 [INF] Request finished in 16.5313ms 200 
+2018-10-11 14:59:38.669 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/users/2mPqe application/json 0
+2018-10-11 14:59:38.670 +03:00 [INF] Request finished in 0.2755ms 307 
+2018-10-11 14:59:38.703 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/users/2mPqe application/json 0
+2018-10-11 14:59:38.704 +03:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing action WEB.Controllers.UsersController.Delete (WEB)
+2018-10-11 14:59:38.727 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Delete (WEB) with arguments (["8"]) - Validation state: "Valid"
+2018-10-11 14:59:38.734 +03:00 [INF] Deleted
+2018-10-11 14:59:38.734 +03:00 [INF] Cache cleared
+2018-10-11 14:59:38.734 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 6.4759ms.
+2018-10-11 14:59:38.734 +03:00 [INF] Executed action WEB.Controllers.UsersController.Delete (WEB) in 30.222800000000003ms
+2018-10-11 14:59:38.734 +03:00 [INF] Request finished in 31.3092ms 200 
+2018-10-11 14:59:40.584 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/users/2mPqe application/json 0
+2018-10-11 14:59:40.584 +03:00 [INF] Request finished in 0.2539ms 307 
+2018-10-11 14:59:40.591 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/users/2mPqe application/json 0
+2018-10-11 14:59:40.592 +03:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing action WEB.Controllers.UsersController.Delete (WEB)
+2018-10-11 14:59:40.596 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Delete (WEB) with arguments (["8"]) - Validation state: "Valid"
+2018-10-11 14:59:40.600 +03:00 [INF] Deleted
+2018-10-11 14:59:40.601 +03:00 [INF] Cache cleared
+2018-10-11 14:59:40.601 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 4.1438000000000006ms.
+2018-10-11 14:59:40.601 +03:00 [INF] Executed action WEB.Controllers.UsersController.Delete (WEB) in 8.6552ms
+2018-10-11 14:59:40.601 +03:00 [INF] Request finished in 9.5593ms 200 
+2018-10-11 14:59:55.108 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 14:59:55.686 +03:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8090/  0
+2018-10-11 14:59:55.711 +03:00 [INF] Request finished in 25.0619ms 200 
+2018-10-11 14:59:57.230 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/users/2mPqe application/json 0
+2018-10-11 14:59:57.259 +03:00 [INF] Request finished in 28.8318ms 307 
+2018-10-11 14:59:57.291 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/users/2mPqe application/json 0
+2018-10-11 14:59:57.488 +03:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing action WEB.Controllers.UsersController.Delete (WEB)
+2018-10-11 15:00:02.627 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Delete (WEB) with arguments (["8"]) - Validation state: "Valid"
+2018-10-11 15:00:02.809 +03:00 [INF] Deleted
+2018-10-11 15:00:02.811 +03:00 [INF] Cache cleared
+2018-10-11 15:00:02.816 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 173.9145ms.
+2018-10-11 15:00:02.831 +03:00 [INF] Executed action WEB.Controllers.UsersController.Delete (WEB) in 5340.5346ms
+2018-10-11 15:00:02.839 +03:00 [INF] Request finished in 5547.9448ms 200 
+2018-10-11 15:00:24.317 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/users/2mPqe application/json 0
+2018-10-11 15:00:24.319 +03:00 [INF] Request finished in 1.7104ms 307 
+2018-10-11 15:00:24.342 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/users/2mPqe application/json 0
+2018-10-11 15:00:24.343 +03:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing action WEB.Controllers.UsersController.Delete (WEB)
+2018-10-11 15:00:24.422 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Delete (WEB) with arguments (["8"]) - Validation state: "Valid"
+2018-10-11 15:00:33.478 +03:00 [INF] Deleted
+2018-10-11 15:00:33.478 +03:00 [INF] Cache cleared
+2018-10-11 15:00:33.478 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 9055.843ms.
+2018-10-11 15:00:33.479 +03:00 [INF] Executed action WEB.Controllers.UsersController.Delete (WEB) in 9135.7793ms
+2018-10-11 15:00:33.479 +03:00 [INF] Request finished in 9136.7056ms 200 
+2018-10-11 15:00:49.718 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/users/7er0N application/json 0
+2018-10-11 15:00:49.718 +03:00 [INF] Request finished in 0.8255ms 307 
+2018-10-11 15:00:49.748 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/users/7er0N application/json 0
+2018-10-11 15:00:49.749 +03:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing action WEB.Controllers.UsersController.Delete (WEB)
+2018-10-11 15:00:49.802 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Delete (WEB) with arguments (["7"]) - Validation state: "Valid"
+2018-10-11 15:00:54.119 +03:00 [INF] Deleted
+2018-10-11 15:00:54.119 +03:00 [INF] Cache cleared
+2018-10-11 15:00:54.119 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 4316.7962ms.
+2018-10-11 15:00:54.119 +03:00 [INF] Executed action WEB.Controllers.UsersController.Delete (WEB) in 4370.6037000000006ms
+2018-10-11 15:00:54.120 +03:00 [INF] Request finished in 4371.477ms 200 
+2018-10-11 15:01:05.673 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 15:01:06.101 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8090/api/users/7er0N application/json 0
+2018-10-11 15:01:06.124 +03:00 [INF] Request finished in 27.1648ms 307 
+2018-10-11 15:01:06.143 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:44326/api/users/7er0N application/json 0
+2018-10-11 15:01:06.269 +03:00 [INF] Route matched with {action = "Delete", controller = "Users"}. Executing action WEB.Controllers.UsersController.Delete (WEB)
+2018-10-11 15:01:06.625 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Delete (WEB) with arguments (["7"]) - Validation state: "Valid"
+2018-10-11 15:01:06.759 +03:00 [INF] Deleted
+2018-10-11 15:01:06.761 +03:00 [INF] Cache cleared
+2018-10-11 15:01:06.767 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Delete (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 127.6208ms.
+2018-10-11 15:01:06.782 +03:00 [INF] Executed action WEB.Controllers.UsersController.Delete (WEB) in 510.3535ms
+2018-10-11 15:01:06.790 +03:00 [INF] Request finished in 646.3657ms 200 
+2018-10-11 15:01:32.908 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 15:01:32.908 +03:00 [INF] Request finished in 0.3511ms 307 
+2018-10-11 15:01:32.924 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 15:01:32.933 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 15:01:32.976 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 15:01:33.104 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 126.83590000000001ms.
+2018-10-11 15:01:33.109 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 15:01:33.155 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 221.7346ms
+2018-10-11 15:01:33.158 +03:00 [INF] Request finished in 233.6937ms 200 application/json; charset=utf-8
+2018-10-11 15:01:36.324 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users application/json 20
+2018-10-11 15:01:36.324 +03:00 [INF] Request finished in 0.41ms 307 
+2018-10-11 15:01:36.339 +03:00 [INF] Connection id "0HLHFE4SM2N94", Request id "0HLHFE4SM2N94:00000005": the application completed without reading the entire request body.
+2018-10-11 15:01:36.348 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users application/json 20
+2018-10-11 15:01:36.356 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 15:01:36.374 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 15:01:36.449 +03:00 [INF] Inserted
+2018-10-11 15:01:36.449 +03:00 [INF] Cache cleared
+2018-10-11 15:01:36.504 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 130.2455ms.
+2018-10-11 15:01:36.505 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 148.14610000000002ms
+2018-10-11 15:01:36.505 +03:00 [INF] Request finished in 156.433ms 200 
+2018-10-11 15:02:13.831 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 15:02:14.249 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users application/json 20
+2018-10-11 15:02:14.268 +03:00 [INF] Request finished in 20.7099ms 307 
+2018-10-11 15:02:14.279 +03:00 [INF] Connection id "0HLHFE5H08P50", Request id "0HLHFE5H08P50:00000001": the application completed without reading the entire request body.
+2018-10-11 15:02:14.280 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users application/json 20
+2018-10-11 15:02:14.390 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 15:02:14.761 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 15:02:14.856 +03:00 [INF] Inserted
+2018-10-11 15:02:14.858 +03:00 [INF] Cache cleared
+2018-10-11 15:02:14.929 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 152.722ms.
+2018-10-11 15:02:14.941 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 547.62830000000008ms
+2018-10-11 15:02:14.948 +03:00 [INF] Request finished in 668.1269ms 200 
+2018-10-11 15:02:21.458 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users application/json 20
+2018-10-11 15:02:21.458 +03:00 [INF] Request finished in 0.7515ms 307 
+2018-10-11 15:02:21.460 +03:00 [INF] Connection id "0HLHFE5H08P50", Request id "0HLHFE5H08P50:00000003": the application completed without reading the entire request body.
+2018-10-11 15:02:21.465 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users application/json 20
+2018-10-11 15:02:21.465 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 15:02:21.481 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 15:02:21.483 +03:00 [INF] Inserted
+2018-10-11 15:02:21.483 +03:00 [INF] Cache cleared
+2018-10-11 15:02:21.536 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 54.3812ms.
+2018-10-11 15:02:21.536 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 70.72120000000001ms
+2018-10-11 15:02:21.536 +03:00 [INF] Request finished in 71.9195ms 200 
+2018-10-11 15:02:25.926 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users?skip=1&take=6 application/json 
+2018-10-11 15:02:25.928 +03:00 [INF] Request finished in 1.7227ms 307 
+2018-10-11 15:02:25.952 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users?skip=1&take=6 application/json 
+2018-10-11 15:02:25.962 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 15:02:25.979 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 15:02:26.110 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 130.7277ms.
+2018-10-11 15:02:26.113 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 15:02:26.134 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 171.5886ms
+2018-10-11 15:02:26.136 +03:00 [INF] Request finished in 183.3349ms 200 application/json; charset=utf-8
+2018-10-11 15:02:36.200 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users application/json 20
+2018-10-11 15:02:36.201 +03:00 [INF] Request finished in 0.2472ms 307 
+2018-10-11 15:02:36.201 +03:00 [INF] Connection id "0HLHFE5H08P50", Request id "0HLHFE5H08P50:00000007": the application completed without reading the entire request body.
+2018-10-11 15:02:36.209 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users application/json 20
+2018-10-11 15:02:36.210 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 15:02:36.214 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 15:02:36.214 +03:00 [INF] Inserted
+2018-10-11 15:02:36.214 +03:00 [INF] Cache cleared
+2018-10-11 15:02:36.216 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 1.8840000000000001ms.
+2018-10-11 15:02:36.216 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 6.0281ms
+2018-10-11 15:02:36.216 +03:00 [INF] Request finished in 7.2373ms 200 
+2018-10-11 15:02:52.117 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 15:02:52.542 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users application/json 20
+2018-10-11 15:02:52.560 +03:00 [INF] Request finished in 19.9595ms 307 
+2018-10-11 15:02:52.571 +03:00 [INF] Connection id "0HLHFE5SDECDO", Request id "0HLHFE5SDECDO:00000001": the application completed without reading the entire request body.
+2018-10-11 15:02:52.572 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users application/json 20
+2018-10-11 15:02:52.688 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 15:02:53.086 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 15:02:53.185 +03:00 [INF] Inserted
+2018-10-11 15:02:53.187 +03:00 [INF] Cache cleared
+2018-10-11 15:02:53.264 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 163.5326ms.
+2018-10-11 15:02:53.277 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 585.8429ms
+2018-10-11 15:02:53.285 +03:00 [INF] Request finished in 712.7619ms 200 
+2018-10-11 15:02:59.950 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/users application/json 20
+2018-10-11 15:02:59.950 +03:00 [INF] Request finished in 0.4453ms 307 
+2018-10-11 15:02:59.951 +03:00 [INF] Connection id "0HLHFE5SDECDO", Request id "0HLHFE5SDECDO:00000003": the application completed without reading the entire request body.
+2018-10-11 15:02:59.962 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/users application/json 20
+2018-10-11 15:02:59.963 +03:00 [INF] Route matched with {action = "Post", controller = "Users"}. Executing action WEB.Controllers.UsersController.Post (WEB)
+2018-10-11 15:02:59.984 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Post (WEB) with arguments (["BLL.DTOs.UserDto"]) - Validation state: "Valid"
+2018-10-11 15:02:59.987 +03:00 [INF] Inserted
+2018-10-11 15:02:59.987 +03:00 [INF] Cache cleared
+2018-10-11 15:03:00.046 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 61.4784ms.
+2018-10-11 15:03:00.046 +03:00 [INF] Executed action WEB.Controllers.UsersController.Post (WEB) in 83.6144ms
+2018-10-11 15:03:00.047 +03:00 [INF] Request finished in 85.1334ms 200 
+2018-10-11 15:04:08.478 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 15:04:08.884 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?skip=1&take=6 application/json 
+2018-10-11 15:04:08.902 +03:00 [INF] Request finished in 19.5527ms 307 
+2018-10-11 15:04:08.911 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?skip=1&take=6 application/json 
+2018-10-11 15:04:09.020 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 15:04:09.374 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 15:04:09.563 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 174.41310000000001ms.
+2018-10-11 15:04:09.570 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 15:04:09.607 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 583.6965ms
+2018-10-11 15:04:09.611 +03:00 [INF] Request finished in 700.6514ms 200 application/json; charset=utf-8
+2018-10-11 15:04:16.678 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?take=6 application/json 
+2018-10-11 15:04:16.679 +03:00 [INF] Request finished in 1.0236ms 307 
+2018-10-11 15:04:16.686 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?take=6 application/json 
+2018-10-11 15:04:16.688 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 15:04:16.703 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 15:04:16.757 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 54.6ms.
+2018-10-11 15:04:16.758 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 15:04:16.763 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 74.6563ms
+2018-10-11 15:04:16.763 +03:00 [INF] Request finished in 76.8076ms 200 application/json; charset=utf-8
+2018-10-11 15:04:30.198 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/companies application/json 20
+2018-10-11 15:04:30.200 +03:00 [INF] Request finished in 2.129ms 307 
+2018-10-11 15:04:30.206 +03:00 [INF] Connection id "0HLHFE6J5G5U0", Request id "0HLHFE6J5G5U0:00000005": the application completed without reading the entire request body.
+2018-10-11 15:04:30.221 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/companies application/json 20
+2018-10-11 15:04:30.227 +03:00 [INF] Route matched with {action = "Post", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Post (WEB)
+2018-10-11 15:04:30.264 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompanyDto"]) - Validation state: "Valid"
+2018-10-11 15:04:30.350 +03:00 [INF] Inserted
+2018-10-11 15:04:30.420 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 156.3247ms.
+2018-10-11 15:04:30.426 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 198.4289ms
+2018-10-11 15:04:30.430 +03:00 [INF] Request finished in 209.0496ms 200 
+2018-10-11 15:04:31.026 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/companies application/json 20
+2018-10-11 15:04:31.027 +03:00 [INF] Request finished in 0.512ms 307 
+2018-10-11 15:04:31.027 +03:00 [INF] Connection id "0HLHFE6J5G5U0", Request id "0HLHFE6J5G5U0:00000007": the application completed without reading the entire request body.
+2018-10-11 15:04:31.034 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/companies application/json 20
+2018-10-11 15:04:31.034 +03:00 [INF] Route matched with {action = "Post", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Post (WEB)
+2018-10-11 15:04:31.038 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompanyDto"]) - Validation state: "Valid"
+2018-10-11 15:04:31.040 +03:00 [INF] Inserted
+2018-10-11 15:04:31.043 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 5.0909ms.
+2018-10-11 15:04:31.043 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 9.3092ms
+2018-10-11 15:04:31.044 +03:00 [INF] Request finished in 9.7995ms 200 
+2018-10-11 15:04:31.590 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/companies application/json 20
+2018-10-11 15:04:31.591 +03:00 [INF] Request finished in 0.4766ms 307 
+2018-10-11 15:04:31.591 +03:00 [INF] Connection id "0HLHFE6J5G5U0", Request id "0HLHFE6J5G5U0:00000009": the application completed without reading the entire request body.
+2018-10-11 15:04:31.597 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/companies application/json 20
+2018-10-11 15:04:31.598 +03:00 [INF] Route matched with {action = "Post", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Post (WEB)
+2018-10-11 15:04:31.603 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompanyDto"]) - Validation state: "Valid"
+2018-10-11 15:04:31.603 +03:00 [INF] Inserted
+2018-10-11 15:04:31.607 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 3.8960000000000004ms.
+2018-10-11 15:04:31.607 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 8.5919ms
+2018-10-11 15:04:31.607 +03:00 [INF] Request finished in 10.1044ms 200 
+2018-10-11 15:04:32.014 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/companies application/json 20
+2018-10-11 15:04:32.014 +03:00 [INF] Request finished in 0.9618ms 307 
+2018-10-11 15:04:32.015 +03:00 [INF] Connection id "0HLHFE6J5G5U0", Request id "0HLHFE6J5G5U0:0000000B": the application completed without reading the entire request body.
+2018-10-11 15:04:32.027 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/companies application/json 20
+2018-10-11 15:04:32.028 +03:00 [INF] Route matched with {action = "Post", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Post (WEB)
+2018-10-11 15:04:32.032 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompanyDto"]) - Validation state: "Valid"
+2018-10-11 15:04:32.032 +03:00 [INF] Inserted
+2018-10-11 15:04:32.035 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 3.4708ms.
+2018-10-11 15:04:32.036 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 7.5715ms
+2018-10-11 15:04:32.036 +03:00 [INF] Request finished in 8.5164ms 200 
+2018-10-11 15:04:34.634 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/companies?take=6 application/json 
+2018-10-11 15:04:34.636 +03:00 [INF] Request finished in 1.8314ms 307 
+2018-10-11 15:04:34.648 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/companies?take=6 application/json 
+2018-10-11 15:04:34.650 +03:00 [INF] Route matched with {action = "Get", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Get (WEB)
+2018-10-11 15:04:34.655 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 15:04:34.660 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.4510000000000005ms.
+2018-10-11 15:04:34.660 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.CompanyDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 15:04:34.660 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Get (WEB) in 9.4402ms
+2018-10-11 15:04:34.660 +03:00 [INF] Request finished in 12.296ms 200 application/json; charset=utf-8
