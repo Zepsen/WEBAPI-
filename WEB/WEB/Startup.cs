@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using BLL.Interfaces;
-using BLL.Services;
 using DAL;
 using DAL.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -12,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using WEB.Infrastructure;
+using WEB.Infrastructure.Extensions;
 using WEB.Infrastructure.Middleware;
 
 namespace WEB
@@ -63,8 +62,7 @@ namespace WEB
             services.AddScoped<IRoleValidator<IdentityRole>, RoleValidator<IdentityRole>>();
             services.AddScoped<RoleManager<IdentityRole>, RoleManager<IdentityRole>>();
 
-            services.AddScoped<IUsersService, UsersService>();
-            services.AddScoped<ICompaniesService, CompaniesesService>();
+            services.AddInternalServices();
 
             services.AddResponseCompression();
             services.AddAutoMapper();
