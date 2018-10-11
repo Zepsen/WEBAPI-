@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 using BLL.DTOs;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WEB.Infrastructure.Attributes;
 
@@ -10,6 +12,8 @@ using WEB.Infrastructure.Attributes;
 namespace WEB.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize(Roles = "User")]
+    [ApiController]
     public class CompaniesController : Controller
     {
         private readonly ICompaniesService _service;
@@ -23,7 +27,7 @@ namespace WEB.Controllers
 
         // GET api/[controller]
         [HttpGet]
-        public async Task<IActionResult> Get(FilterBase filterBase)
+        public async Task<IActionResult> Get([FromQuery]FilterBase filterBase)
         {
             return Ok(await _service.GetAsync(filterBase));
         }
@@ -31,7 +35,7 @@ namespace WEB.Controllers
         // GET api/[controller]/{id}
         [HttpGet("{id}")]
         [DecodeHashId]
-        public async Task<CompanyDto> Get(int id)
+        public async Task<CompanyDto> Get([FromQuery]int id)
         {
             return await _service.GetByIdAsync(id);
         }
@@ -46,7 +50,7 @@ namespace WEB.Controllers
         // PUT api/[controller]/{id}
         [HttpPut("{id}")]
         [DecodeHashId]
-        public async Task Put(int id, [FromBody]CompanyDto dto)
+        public async Task Put([FromQuery]int id, [FromBody]CompanyDto dto)
         {
             await _service.UpdateAsync(id, dto);
         }
@@ -55,7 +59,7 @@ namespace WEB.Controllers
         [HttpPatch("{id}")]
         [DecodeHashId]
         [DecodeJson]
-        public async Task Patch(int id, Dictionary<string, object> json)
+        public async Task Patch([FromQuery]int id, Dictionary<string, object> json)
         {
             await _service.UpdateSpecificAsync(id, json);
         }
@@ -63,7 +67,7 @@ namespace WEB.Controllers
         // DELETE api/[controller]/{id}
         [HttpDelete("{id}")]
         [DecodeHashId]
-        public async Task Delete(int id)
+        public async Task Delete([FromQuery]int id)
         {
             await _service.DeleteAsync(id);
         }

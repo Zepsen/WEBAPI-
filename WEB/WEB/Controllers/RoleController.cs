@@ -9,9 +9,9 @@ using WEB.Models;
 
 namespace WEB.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
-    public class RoleController : Controller
+    public class RoleController : ControllerBase
     {
         private readonly RoleManager<IdentityRole> _roleManager;
 
@@ -27,9 +27,10 @@ namespace WEB.Controllers
             var roles = await _roleManager.Roles.Select(i => i.Name).ToListAsync();
             return Ok(roles);
         }
-        
+
+
         [HttpPost]
-        [Authorize(Roles = RoleHelper.Admin)]
+        //[Authorize(Roles = RoleHelper.Admin)]
         [Route("api/[controller]/add")]
         public async Task<IActionResult> Post([FromBody]RoleModel model)
         {

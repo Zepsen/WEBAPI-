@@ -1,10 +1,17 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
 using BLL.DTOs;
 using BLL.Infrastructure;
 using BLL.Interfaces;
 using DAL.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using WEB.Infrastructure;
 using WEB.Models;
 
 namespace WEB.Controllers
@@ -14,16 +21,13 @@ namespace WEB.Controllers
     {
         private readonly IUsersService _service;
         private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
 
         public AccountController(
             IUsersService service,
-            UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager)
+            UserManager<ApplicationUser> userManager)
         {
             _service = service;
             _userManager = userManager;
-            _signInManager = signInManager;
         }
 
 
@@ -44,8 +48,14 @@ namespace WEB.Controllers
             {
                 await _userManager.AddToRoleAsync(user, RoleHelper.DefaultRole);
                 await _service.InsertAsync(new UserDto(user.Id, model.UserName));
-                await _signInManager.SignInAsync(user, false);
-                return Ok();
+
+                var token = CreateToken(user, new List<string> {RoleHelper.DefaultRole});
+
+                return Ok(new
+                {
+                    access_token = token,
+                    username = user.Email
+                });
             }
             else
             {
@@ -69,20 +79,14 @@ namespace WEB.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager
-                    .PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                var result = await _userManager.CheckPasswordAsync(user, model.Password);
 
-                if (result.Succeeded)
+                if (result)
                 {
-                    return Ok(new { returnUrl = model.ReturnUrl });
-                    //if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
-                    //{
-                    //    return Ok(model.ReturnUrl);
-                    //}
-                    //else
-                    //{
-                    //    return Forbid();
-                    //}
+                    var roles = await _userManager.GetRolesAsync(user);
+                    var token = CreateToken(user, roles);
+                    return Ok(new { token = token, returnUrl = model.ReturnUrl, roles = roles});
                 }
                 else
                 {
@@ -102,8 +106,34 @@ namespace WEB.Controllers
         [Route("api/[controller]/logout")]
         public async Task<IActionResult> Logout([FromBody] LogoutModel model)
         {
-            await _signInManager.SignOutAsync();
+            throw new NotImplementedException();
             return Ok(new { returnUrl = model.ReturnUrl });
+        }
+
+
+        private string CreateToken(ApplicationUser user, IList<string> roles)
+        {
+            var identity = GetIdentity(user.Email, roles);
+            var now = DateTime.UtcNow;
+            var jwt = new JwtSecurityToken(
+                    issuer: AuthOptions.ISSUER,
+                    audience: AuthOptions.AUDIENCE,
+                    notBefore: now,
+                    claims: identity.Claims,
+                    expires: now.Add(TimeSpan.FromMinutes(AuthOptions.LIFETIME)),
+                    signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
+
+
+            return new JwtSecurityTokenHandler().WriteToken(jwt);
+
+        }
+
+        private ClaimsIdentity GetIdentity(string email, IList<string> roles)
+        {
+            var claims = new List<Claim> { new Claim(ClaimsIdentity.DefaultNameClaimType, email) };
+            claims.AddRange(roles.Select(role => new Claim(ClaimsIdentity.DefaultRoleClaimType, role)));
+            return new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType,
+                ClaimsIdentity.DefaultRoleClaimType);
         }
     }
 }
