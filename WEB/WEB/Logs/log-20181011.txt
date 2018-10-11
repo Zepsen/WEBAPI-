@@ -2516,3 +2516,185 @@ FROM [Users] AS [u]
 2018-10-11 18:52:01.665 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2018-10-11 18:52:01.666 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 7.097ms
 2018-10-11 18:52:01.666 +03:00 [INF] Request finished in 8.4906ms 200 application/json; charset=utf-8
+2018-10-11 19:06:39.622 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 19:06:40.021 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/login application/json 71
+2018-10-11 19:06:40.066 +03:00 [INF] Request finished in 49.4019ms 307 
+2018-10-11 19:06:40.077 +03:00 [INF] Connection id "0HLHFIE3NU46S", Request id "0HLHFIE3NU46S:00000001": the application completed without reading the entire request body.
+2018-10-11 19:06:40.087 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json 71
+2018-10-11 19:06:40.210 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-11 19:06:40.351 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-11 19:06:40.562 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-11 19:06:40.773 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-11 19:06:40.895 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-11 19:06:40.920 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 553.42500000000007ms.
+2018-10-11 19:06:40.932 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-11 19:06:40.945 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 732.54500000000007ms
+2018-10-11 19:06:40.955 +03:00 [INF] Request finished in 867.9855ms 200 application/json; charset=utf-8
+2018-10-11 19:06:48.130 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 19:06:48.141 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:06:48.142 +03:00 [INF] Request finished in 11.3085ms 307 
+2018-10-11 19:06:48.145 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 19:06:48.146 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:06:48.157 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 19:06:48.170 +03:00 [INF] Authorization was successful.
+2018-10-11 19:06:48.171 +03:00 [INF] Authorization was successful.
+2018-10-11 19:06:48.179 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 19:06:48.201 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-11 19:06:48.224 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name], [u].[UserIdentityId]
+FROM [Users] AS [u]
+2018-10-11 19:06:48.274 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 95.3989ms.
+2018-10-11 19:06:48.275 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 19:06:48.281 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 124.1641ms
+2018-10-11 19:06:48.283 +03:00 [INF] Request finished in 137.6549ms 200 application/json; charset=utf-8
+2018-10-11 19:06:50.637 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 19:06:50.639 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:06:50.639 +03:00 [INF] Request finished in 2.1306ms 307 
+2018-10-11 19:06:50.660 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 19:06:50.661 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:06:50.661 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 19:06:50.661 +03:00 [INF] Authorization was successful.
+2018-10-11 19:06:50.661 +03:00 [INF] Authorization was successful.
+2018-10-11 19:06:50.662 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 19:06:50.662 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-11 19:06:50.670 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.6063000000000009ms.
+2018-10-11 19:06:50.671 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 19:06:50.671 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 9.9555ms
+2018-10-11 19:06:50.671 +03:00 [INF] Request finished in 11.5356ms 200 application/json; charset=utf-8
+2018-10-11 19:08:53.334 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 19:08:53.761 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 19:08:53.835 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:08:53.844 +03:00 [INF] Request finished in 84.6709ms 307 
+2018-10-11 19:08:53.861 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 19:08:53.861 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:08:53.989 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 19:08:54.000 +03:00 [INF] Authorization was successful.
+2018-10-11 19:08:54.001 +03:00 [INF] Authorization was successful.
+2018-10-11 19:08:54.093 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 19:08:54.321 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-11 19:08:54.488 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name], [u].[UserIdentityId]
+FROM [Users] AS [u]
+2018-10-11 19:08:54.537 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 427.4295ms.
+2018-10-11 19:08:54.548 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 19:08:54.566 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 574.37470000000008ms
+2018-10-11 19:08:54.575 +03:00 [INF] Request finished in 713.9952ms 200 application/json; charset=utf-8
+2018-10-11 19:10:05.017 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 19:10:05.404 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 19:10:05.477 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:10:05.487 +03:00 [INF] Request finished in 84.2741ms 307 
+2018-10-11 19:10:05.494 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 19:10:05.495 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:10:05.619 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 19:10:05.629 +03:00 [INF] Authorization was successful.
+2018-10-11 19:10:05.631 +03:00 [INF] Authorization was successful.
+2018-10-11 19:10:05.729 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 19:10:05.947 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-11 19:10:06.120 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name], [u].[UserIdentityId]
+FROM [Users] AS [u]
+2018-10-11 19:10:06.170 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 424.4476ms.
+2018-10-11 19:10:06.182 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 19:10:06.200 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 577.82170000000008ms
+2018-10-11 19:10:06.208 +03:00 [INF] Request finished in 714.4019ms 200 application/json; charset=utf-8
+2018-10-11 19:10:07.795 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 19:10:07.797 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:10:07.798 +03:00 [INF] Request finished in 2.7952ms 307 
+2018-10-11 19:10:07.805 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 19:10:07.806 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:10:07.806 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 19:10:07.806 +03:00 [INF] Authorization was successful.
+2018-10-11 19:10:07.807 +03:00 [INF] Authorization was successful.
+2018-10-11 19:10:07.808 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 19:10:07.809 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-11 19:10:07.814 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.3285ms.
+2018-10-11 19:10:07.815 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 19:10:07.815 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 8.8094ms
+2018-10-11 19:10:07.815 +03:00 [INF] Request finished in 10.6198ms 200 application/json; charset=utf-8
+2018-10-11 19:10:45.707 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-11 19:10:46.075 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/companies application/json 20
+2018-10-11 19:10:46.150 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:10:46.160 +03:00 [INF] Request finished in 86.6759ms 307 
+2018-10-11 19:10:46.172 +03:00 [INF] Connection id "0HLHFIGD2ECKE", Request id "0HLHFIGD2ECKE:00000001": the application completed without reading the entire request body.
+2018-10-11 19:10:46.172 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/companies application/json 20
+2018-10-11 19:10:46.173 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:10:46.299 +03:00 [INF] Route matched with {action = "Post", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Post (WEB)
+2018-10-11 19:10:46.308 +03:00 [INF] Authorization was successful.
+2018-10-11 19:10:46.423 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompanyDto"]) - Validation state: "Valid"
+2018-10-11 19:10:46.661 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-11 19:10:46.726 +03:00 [INF] Inserted
+2018-10-11 19:10:46.856 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Companies] ([Code], [Name], [Test])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Companies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-10-11 19:10:46.884 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 443.2348ms.
+2018-10-11 19:10:46.899 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 596.4733ms
+2018-10-11 19:10:46.907 +03:00 [INF] Request finished in 734.8602ms 200 
+2018-10-11 19:10:49.771 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/companies application/json 20
+2018-10-11 19:10:49.772 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:10:49.772 +03:00 [INF] Request finished in 1.6626ms 307 
+2018-10-11 19:10:49.772 +03:00 [INF] Connection id "0HLHFIGD2ECKE", Request id "0HLHFIGD2ECKE:00000003": the application completed without reading the entire request body.
+2018-10-11 19:10:49.786 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/companies application/json 20
+2018-10-11 19:10:49.786 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:10:49.787 +03:00 [INF] Route matched with {action = "Post", controller = "Companies"}. Executing action WEB.Controllers.CompaniesController.Post (WEB)
+2018-10-11 19:10:49.787 +03:00 [INF] Authorization was successful.
+2018-10-11 19:10:49.807 +03:00 [INF] Executing action method WEB.Controllers.CompaniesController.Post (WEB) with arguments (["BLL.DTOs.CompanyDto"]) - Validation state: "Valid"
+2018-10-11 19:10:49.809 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-11 19:10:49.810 +03:00 [INF] Inserted
+2018-10-11 19:10:49.816 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Companies] ([Code], [Name], [Test])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Companies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-10-11 19:10:49.821 +03:00 [INF] Executed action method WEB.Controllers.CompaniesController.Post (WEB), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 13.266300000000001ms.
+2018-10-11 19:10:49.821 +03:00 [INF] Executed action WEB.Controllers.CompaniesController.Post (WEB) in 34.292100000000005ms
+2018-10-11 19:10:49.821 +03:00 [INF] Request finished in 35.515ms 200 
+2018-10-11 19:10:53.423 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:8090/api/account/login application/json 71
+2018-10-11 19:10:53.424 +03:00 [INF] Request finished in 0.668ms 307 
+2018-10-11 19:10:53.424 +03:00 [INF] Connection id "0HLHFIGD2ECKE", Request id "0HLHFIGD2ECKE:00000005": the application completed without reading the entire request body.
+2018-10-11 19:10:53.456 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json 71
+2018-10-11 19:10:53.462 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-11 19:10:53.476 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-11 19:10:53.484 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-11 19:10:53.620 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-11 19:10:53.745 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-11 19:10:53.758 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 281.47900000000004ms.
+2018-10-11 19:10:53.761 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-11 19:10:53.770 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 307.78520000000003ms
+2018-10-11 19:10:53.772 +03:00 [INF] Request finished in 315.4419ms 200 application/json; charset=utf-8
+2018-10-11 19:11:05.456 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:8090/api/users application/json 
+2018-10-11 19:11:05.458 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:11:05.458 +03:00 [INF] Request finished in 1.5905ms 307 
+2018-10-11 19:11:05.484 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users application/json 
+2018-10-11 19:11:05.485 +03:00 [INF] Successfully validated the token.
+2018-10-11 19:11:05.504 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-11 19:11:05.505 +03:00 [INF] Authorization was successful.
+2018-10-11 19:11:05.505 +03:00 [INF] Authorization was successful.
+2018-10-11 19:11:05.518 +03:00 [INF] Executing action method WEB.Controllers.UsersController.Get (WEB) with arguments (["BLL.Infrastructure.Filters.FilterBase"]) - Validation state: "Valid"
+2018-10-11 19:11:05.551 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-11 19:11:05.570 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name], [u].[UserIdentityId]
+FROM [Users] AS [u]
+2018-10-11 19:11:05.603 +03:00 [INF] Executed action method WEB.Controllers.UsersController.Get (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 84.2579ms.
+2018-10-11 19:11:05.603 +03:00 [INF] Executing ObjectResult, writing value of type 'BLL.Infrastructure.Result`1[[BLL.DTOs.UserDto, BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-10-11 19:11:05.608 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 103.6212ms
+2018-10-11 19:11:05.608 +03:00 [INF] Request finished in 124.1314ms 200 application/json; charset=utf-8
