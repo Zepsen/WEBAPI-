@@ -15,10 +15,12 @@ namespace DAL
         }
         
         private CompaniesRepository _companiesRepository;
+        private CompanyDescriptionsRepository _companyDescriptionsRepository;
         
         private UsersRepository _usersRepository;
 
         public CompaniesRepository CompaniesRepository => _companiesRepository ?? (_companiesRepository = new CompaniesRepository(_db));
+        public CompanyDescriptionsRepository CompanyDescriptionsRepository => _companyDescriptionsRepository ?? (_companyDescriptionsRepository = new CompanyDescriptionsRepository(_db));
 
         public UsersRepository UsersRepository => _usersRepository ?? (_usersRepository = new UsersRepository(_db));
 

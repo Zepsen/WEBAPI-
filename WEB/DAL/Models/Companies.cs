@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DAL.Models
 {
@@ -7,6 +8,8 @@ namespace DAL.Models
         public string Name { get; set; }
         public string Code { get; set; }
         public string Test { get; set; }
+
+        public ICollection<CompanyDescriptions> Descriptions { get; set; }
         
 
     }

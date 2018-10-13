@@ -7,6 +7,7 @@ namespace DAL
     {
         public DbSet<Users> Users { get; set; }
         public DbSet<Companies> Companies { get; set; }
+        public DbSet<CompanyDescriptions> CompanyDescriptions { get; set; }
 
         public ApplicationContext()
         {
@@ -25,6 +26,12 @@ namespace DAL
         /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder
+                .Entity<Companies>()
+                .HasMany(c => c.Descriptions)
+                .WithOne(d => d.Company)
+                .HasForeignKey(fk => fk.CompanyId);
+
             base.OnModelCreating(modelBuilder);
         }
     }

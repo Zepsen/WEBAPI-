@@ -20,8 +20,10 @@ namespace WEB
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<ICompaniesService, CompaniesService>();
+            services.AddScoped<ICompanyDescriptionsService, CompanyDescriptionsService>();
+
+            services.AddScoped<IUsersService, UsersService>();
 
             services.AddResponseCompression();
             services.AddAutoMapper();

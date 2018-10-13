@@ -8,27 +8,27 @@ using Serilog;
 
 namespace DAL.Repositories
 {
-    public class CompaniesRepository :
-        IWritableRepository<Companies>,
-        IQueryableRepository<Companies>
+    public class CompanyDescriptionsRepository :
+        IWritableRepository<CompanyDescriptions>,
+        IQueryableRepository<CompanyDescriptions>
     {
         private readonly ApplicationContext _db;
 
-        public CompaniesRepository(ApplicationContext dbContext)
+        public CompanyDescriptionsRepository(ApplicationContext dbContext)
         {
             _db = dbContext;
         }
 
         #region IQueryableRepository
 
-        public IQueryable<Companies> GetQueryable()
+        public IQueryable<CompanyDescriptions> GetQueryable()
         {
-            return _db.Companies.AsQueryable();
+            return _db.CompanyDescriptions.AsQueryable();
         }
 
-        public async Task<Companies> FindAsync(int id)
+        public async Task<CompanyDescriptions> FindAsync(int id)
         {
-            return await _db.Companies.FindAsync(id);
+            return await _db.CompanyDescriptions.FindAsync(id);
         }
 
 
@@ -36,22 +36,20 @@ namespace DAL.Repositories
 
         #region IRepository
 
-        public async Task InsertAsync(Companies entityToInsert)
+        public async Task InsertAsync(CompanyDescriptions entityToInsert)
         {
-            await _db.Companies.AddAsync(entityToInsert);
+            await _db.CompanyDescriptions.AddAsync(entityToInsert);
             Log.Information("Inserted");
         }
 
-        public async Task UpdateAsync(int id, Companies entityToUpdate)
+        public async Task UpdateAsync(int id, CompanyDescriptions entityToUpdate)
         {
 
-            await _db.Companies
+            await _db.CompanyDescriptions
                 .Where(i => i.Id == id)
-                .UpdateFromQueryAsync(_ => new Companies
+                .UpdateFromQueryAsync(_ => new CompanyDescriptions
                 {
-                    Name = entityToUpdate.Name,
-                    Test = entityToUpdate.Test,
-                    Code = entityToUpdate.Code
+                    Description = entityToUpdate.Description,
                 });
 
             Log.Information("Updated");
@@ -59,9 +57,9 @@ namespace DAL.Repositories
 
         public async Task UpdateSpecificAsync(int id, Dictionary<string, object> dictionary)
         {
-            await _db.Companies
+            await _db.CompanyDescriptions
                 .Where(i => i.Id == id)
-                .UpdateFromQueryAsync(ReposHelper.UpdateSpecificFields<Companies>(dictionary));
+                .UpdateFromQueryAsync(ReposHelper.UpdateSpecificFields<CompanyDescriptions>(dictionary));
 
             Log.Information("Updated");
         }
@@ -70,7 +68,7 @@ namespace DAL.Repositories
 
         public async Task DeleteAsync(int id)
         {
-            await _db.Companies
+            await _db.CompanyDescriptions
                 .Where(i => i.Id == id)
                 .DeleteFromQueryAsync();
 

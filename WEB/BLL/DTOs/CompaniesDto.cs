@@ -12,5 +12,8 @@ namespace BLL.DTOs
         public string Name { get; set; }
         public string Test { get; set; }
         public string Code { get; set; }
+
+
+        
     }
 }
