@@ -5,16 +5,16 @@ using BLL.Infrastructure.Filters;
 
 namespace BLL.Interfaces
 {
-    public interface ICrudService<T> 
+    public interface ICrudService<T, TId> 
         where T : class
     {
         Task<Result<T>> GetAsync(FilterBase filterBase);
-        Task<T> GetByIdAsync(int id);
+        Task<T> GetByIdAsync(TId id);
 
-        Task UpdateAsync(int id, T entity);
-        Task UpdateSpecificAsync(int id, Dictionary<string, object> dictionary);
+        Task UpdateAsync(TId id, T entity);
+        Task UpdateSpecificAsync(TId id, Dictionary<string, object> dictionary);
 
         Task InsertAsync(T entity);
-        Task DeleteAsync(int id);
+        Task DeleteAsync(TId id);
     }
 }

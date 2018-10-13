@@ -4,9 +4,9 @@ using DAL.Models;
 namespace BLL.DTOs
 {
     /// <summary>
-    /// <see cref="Companies"/>see
+    /// <see cref="Company"/>see
     /// </summary>
-    public class CompaniesDto : IDto
+    public class CompanyDto : IDto
     {
         public string Id { get; set; }
         public string Name { get; set; }

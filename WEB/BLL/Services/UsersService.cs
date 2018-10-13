@@ -18,24 +18,24 @@ namespace BLL.Services
             _mapper = mapper;
         }
         
-        public async Task<Result<UsersDto>> GetAsync(FilterBase filter)
+        public async Task<Result<UserDto>> GetAsync(FilterBase filter)
         {
             var entity = (await Repo.UsersRepository.GetFromCache()).ToList();
-            return new Result<UsersDto>()
+            return new Result<UserDto>()
             {
-                Data = _mapper.Map<List<UsersDto>>(entity)
+                Data = _mapper.Map<List<UserDto>>(entity)
             };
         }
 
-        public async Task<UsersDto> GetByIdAsync(int id)
+        public async Task<UserDto> GetByIdAsync(int id)
         {
             var entity = (await Repo.UsersRepository.GetFromCache()).FirstOrDefault(i => i.Id == id);
-            return _mapper.Map<UsersDto>(entity);
+            return _mapper.Map<UserDto>(entity);
         }
 
-        public async Task UpdateAsync(int id, UsersDto dto)
+        public async Task UpdateAsync(int id, UserDto dto)
         {
-            var entity = _mapper.Map<Users>(dto);
+            var entity = _mapper.Map<User>(dto);
             await Repo.UsersRepository.UpdateAsync(id, entity);
         }
 
@@ -44,9 +44,9 @@ namespace BLL.Services
             await Repo.UsersRepository.UpdateSpecificAsync(id, dictionary);
         }
 
-        public async Task InsertAsync(UsersDto dto)
+        public async Task InsertAsync(UserDto dto)
         {
-            var entity = _mapper.Map<Users>(dto);
+            var entity = _mapper.Map<User>(dto);
             await Repo.UsersRepository.InsertAsync(entity);
             await Repo.SaveChangesAsync();
         }

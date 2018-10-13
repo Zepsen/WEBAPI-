@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using BLL.DTOs;
 using BLL.Infrastructure;
 using BLL.Infrastructure.Extensions;
@@ -9,34 +10,38 @@ using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
 using DAL.Models;
 
+
 namespace BLL.Services
 {
-    public class CompaniesService : AppService, ICompaniesService
+    public class CompaniesesService : AppService, ICompaniesService
     {
         private readonly IMapper _mapper;
-        public CompaniesService(IMapper mapper) : base()
+        public CompaniesesService(IMapper mapper) : base()
         {
             _mapper = mapper;
         }
         
 
-        public async Task<Result<CompaniesDto>> GetAsync(FilterBase filter)
+        public async Task<Result<CompanyDto>> GetAsync(FilterBase filter)
         {
             return await Repo.CompaniesRepository.GetQueryable()
-                .Searching(filter.Query)
+                .MaybeWhere(filter.Where)
+                .Searching(filter.Search) //mb delete, using dynamic linq where logic
+                .MaybeOrderBy(filter.OrderBy)
                 .SkipAndTake(filter)
-                .MapTo<Companies, CompaniesDto>(filter.Fields, _mapper.ConfigurationProvider)
+                .MaybeSelect(filter.Select)
+                .ProjectTo<CompanyDto>(_mapper.ConfigurationProvider)
                 .ToResultAsync(filter);
         }
 
-        public async Task<CompaniesDto> GetByIdAsync(int id)
+        public async Task<CompanyDto> GetByIdAsync(int id)
         {
-            return _mapper.Map<CompaniesDto>(await Repo.CompaniesRepository.FindAsync(id));
+            return _mapper.Map<CompanyDto>(await Repo.CompaniesRepository.FindAsync(id));
         }
 
-        public async Task UpdateAsync(int id, CompaniesDto dto)
+        public async Task UpdateAsync(int id, CompanyDto dto)
         {
-            var entity = _mapper.Map<Companies>(dto);
+            var entity = _mapper.Map<Company>(dto);
             await Repo.CompaniesRepository.UpdateAsync(id, entity);
         }
 
@@ -45,9 +50,9 @@ namespace BLL.Services
             await Repo.CompaniesRepository.UpdateSpecificAsync(id, data);
         }
 
-        public async Task InsertAsync(CompaniesDto dto)
+        public async Task InsertAsync(CompanyDto dto)
         {
-            var entity = _mapper.Map<Companies>(dto);
+            var entity = _mapper.Map<Company>(dto);
             await Repo.CompaniesRepository.InsertAsync(entity);
             await Repo.SaveChangesAsync();
         }

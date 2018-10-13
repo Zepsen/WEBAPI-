@@ -6,10 +6,12 @@ using BLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using WEB.Infrastructure.Attributes;
 
+
 namespace WEB.Controllers
 {
     [Route("api/[controller]")]
-    public class CompaniesController : Controller
+    [ApiController]
+    public class CompaniesController : ControllerBase
     {
         private readonly ICompaniesService _service;
        
@@ -22,7 +24,7 @@ namespace WEB.Controllers
 
         // GET api/[controller]
         [HttpGet]
-        public async Task<IActionResult> Get(FilterBase filterBase)
+        public async Task<IActionResult> Get([FromQuery]FilterBase filterBase)
         {
             return Ok(await _service.GetAsync(filterBase));
         }
@@ -30,14 +32,15 @@ namespace WEB.Controllers
         // GET api/[controller]/{id}
         [HttpGet("{id}")]
         [DecodeHashId]
-        public async Task<CompaniesDto> Get(int id)
+        public async Task<CompanyDto> Get([FromQuery]int id)
         {
             return await _service.GetByIdAsync(id);
         }
 
         // POST api/[controller]
         [HttpPost]
-        public async Task Post([FromBody]CompaniesDto dto)
+        [ProducesResponseType(200)]
+        public async Task Post([FromBody]CompanyDto dto)
         {
             await _service.InsertAsync(dto);
         }
@@ -45,7 +48,7 @@ namespace WEB.Controllers
         // PUT api/[controller]/{id}
         [HttpPut("{id}")]
         [DecodeHashId]
-        public async Task Put(int id, [FromBody]CompaniesDto dto)
+        public async Task Put([FromQuery]int id, [FromBody]CompanyDto dto)
         {
             await _service.UpdateAsync(id, dto);
         }
@@ -54,7 +57,7 @@ namespace WEB.Controllers
         [HttpPatch("{id}")]
         [DecodeHashId]
         [DecodeJson]
-        public async Task Patch(int id, Dictionary<string, object> json)
+        public async Task Patch([FromQuery]int id, Dictionary<string, object> json)
         {
             await _service.UpdateSpecificAsync(id, json);
         }
@@ -62,7 +65,8 @@ namespace WEB.Controllers
         // DELETE api/[controller]/{id}
         [HttpDelete("{id}")]
         [DecodeHashId]
-        public async Task Delete(int id)
+        [ProducesResponseType(200)]
+        public async Task Delete([FromQuery]int id)
         {
             await _service.DeleteAsync(id);
         }

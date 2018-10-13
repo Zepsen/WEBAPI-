@@ -13,10 +13,10 @@ namespace WEB.Infrastructure.Automapper
 
         public UsersMapper()
         {
-            CreateMap<Users, UsersDto>()
+            CreateMap<User, UserDto>()
                 .ForMember(d => d.Id, m => m.MapFrom(e => _hash.Encode(e.Id)));
 
-            CreateMap<UsersDto, Users>()
+            CreateMap<UserDto, User>()
                 .ForMember(e => e.Id, m => m.MapFrom(d => _hash.Decode(d.Id)));
         }
     }
