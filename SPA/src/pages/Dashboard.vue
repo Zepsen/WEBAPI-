@@ -2,7 +2,7 @@
 
 <template>
     <!-- <base-layout> -->
-        <div>
+        <div style="height:1000px">
             BODYYYYYYYY    
         </div>
     <!-- </base-layout> -->

@@ -1972,3 +1972,860 @@ Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime
 2018-10-18 18:18:59.909 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
 2018-10-18 18:18:59.909 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 1.0965ms
 2018-10-18 18:18:59.910 +03:00 [INF] Request finished in 8.282ms 401 
+2018-10-18 18:20:17.437 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:20:17.437 +03:00 [INF] Policy execution successful.
+2018-10-18 18:20:17.438 +03:00 [INF] Request finished in 0.5321ms 204 
+2018-10-18 18:20:17.466 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:20:17.467 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:20:17'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:20:17.469 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:20:17'.
+2018-10-18 18:20:17.469 +03:00 [INF] Policy execution successful.
+2018-10-18 18:20:17.470 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:20:17.470 +03:00 [INF] Authorization failed.
+2018-10-18 18:20:17.470 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:20:17.470 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:20:17.470 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:20:17.470 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.2943ms
+2018-10-18 18:20:17.470 +03:00 [INF] Request finished in 4.559ms 401 
+2018-10-18 18:22:05.797 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:22:05.798 +03:00 [INF] Policy execution successful.
+2018-10-18 18:22:05.798 +03:00 [INF] Request finished in 0.5762ms 204 
+2018-10-18 18:22:05.826 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:22:05.826 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:22:05'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:22:05.827 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:22:05'.
+2018-10-18 18:22:05.827 +03:00 [INF] Policy execution successful.
+2018-10-18 18:22:05.827 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:22:05.827 +03:00 [INF] Authorization failed.
+2018-10-18 18:22:05.828 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:22:05.828 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:22:05.828 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:22:05.828 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4827ms
+2018-10-18 18:22:05.828 +03:00 [INF] Request finished in 2.2345ms 401 
+2018-10-18 18:22:54.025 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:22:54.025 +03:00 [INF] Policy execution successful.
+2018-10-18 18:22:54.025 +03:00 [INF] Request finished in 0.3982ms 204 
+2018-10-18 18:22:54.206 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:22:54.216 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:22:54'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:22:54.217 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:22:54'.
+2018-10-18 18:22:54.217 +03:00 [INF] Policy execution successful.
+2018-10-18 18:22:54.223 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:22:54.223 +03:00 [INF] Authorization failed.
+2018-10-18 18:22:54.223 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:22:54.223 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:22:54.223 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:22:54.223 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.342ms
+2018-10-18 18:22:54.224 +03:00 [INF] Request finished in 18.0525ms 401 
+2018-10-18 18:23:25.048 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:23:25.049 +03:00 [INF] Policy execution successful.
+2018-10-18 18:23:25.049 +03:00 [INF] Request finished in 0.4754ms 204 
+2018-10-18 18:23:25.323 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:23:25.324 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:23:25'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:23:25.324 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:23:25'.
+2018-10-18 18:23:25.325 +03:00 [INF] Policy execution successful.
+2018-10-18 18:23:25.325 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:23:25.325 +03:00 [INF] Authorization failed.
+2018-10-18 18:23:25.325 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:23:25.325 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:23:25.325 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:23:25.325 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3446ms
+2018-10-18 18:23:25.325 +03:00 [INF] Request finished in 2.9054ms 401 
+2018-10-18 18:23:56.898 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:23:56.898 +03:00 [INF] Policy execution successful.
+2018-10-18 18:23:56.898 +03:00 [INF] Request finished in 0.4102ms 204 
+2018-10-18 18:23:57.110 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:23:57.111 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:23:57'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:23:57.112 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:23:57'.
+2018-10-18 18:23:57.112 +03:00 [INF] Policy execution successful.
+2018-10-18 18:23:57.112 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:23:57.112 +03:00 [INF] Authorization failed.
+2018-10-18 18:23:57.112 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:23:57.112 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:23:57.112 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:23:57.112 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3165ms
+2018-10-18 18:23:57.112 +03:00 [INF] Request finished in 2.2543ms 401 
+2018-10-18 18:24:18.066 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:24:18.067 +03:00 [INF] Policy execution successful.
+2018-10-18 18:24:18.068 +03:00 [INF] Request finished in 1.7176ms 204 
+2018-10-18 18:24:18.273 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:24:18.273 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:24:18'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:24:18.274 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:24:18'.
+2018-10-18 18:24:18.274 +03:00 [INF] Policy execution successful.
+2018-10-18 18:24:18.274 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:24:18.274 +03:00 [INF] Authorization failed.
+2018-10-18 18:24:18.275 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:24:18.275 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:24:18.275 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:24:18.275 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3315ms
+2018-10-18 18:24:18.275 +03:00 [INF] Request finished in 2.3477ms 401 
+2018-10-18 18:33:59.025 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:33:59.026 +03:00 [INF] Policy execution successful.
+2018-10-18 18:33:59.026 +03:00 [INF] Request finished in 0.5838ms 204 
+2018-10-18 18:33:59.217 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:33:59.217 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:33:59'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:33:59.218 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:33:59'.
+2018-10-18 18:33:59.218 +03:00 [INF] Policy execution successful.
+2018-10-18 18:33:59.218 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:33:59.219 +03:00 [INF] Authorization failed.
+2018-10-18 18:33:59.219 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:33:59.219 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:33:59.219 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:33:59.219 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4053ms
+2018-10-18 18:33:59.219 +03:00 [INF] Request finished in 2.5521ms 401 
+2018-10-18 18:38:52.006 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:38:52.007 +03:00 [INF] Policy execution successful.
+2018-10-18 18:38:52.007 +03:00 [INF] Request finished in 1.5706ms 204 
+2018-10-18 18:38:52.206 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:38:52.207 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:38:52'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:38:52.208 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:38:52'.
+2018-10-18 18:38:52.209 +03:00 [INF] Policy execution successful.
+2018-10-18 18:38:52.209 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:38:52.209 +03:00 [INF] Authorization failed.
+2018-10-18 18:38:52.209 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:38:52.209 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:38:52.209 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:38:52.209 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.5692ms
+2018-10-18 18:38:52.210 +03:00 [INF] Request finished in 3.7316ms 401 
+2018-10-18 18:38:57.699 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:38:57.700 +03:00 [INF] Policy execution successful.
+2018-10-18 18:38:57.700 +03:00 [INF] Request finished in 0.6496ms 204 
+2018-10-18 18:38:57.998 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:38:57.999 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:38:57'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:38:58.000 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:38:57'.
+2018-10-18 18:38:58.000 +03:00 [INF] Policy execution successful.
+2018-10-18 18:38:58.000 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:38:58.000 +03:00 [INF] Authorization failed.
+2018-10-18 18:38:58.001 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:38:58.001 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:38:58.001 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:38:58.001 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.7427ms
+2018-10-18 18:38:58.001 +03:00 [INF] Request finished in 2.978ms 401 
+2018-10-18 18:39:00.823 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:39:00.824 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:39:00'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:39:00.825 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:39:00'.
+2018-10-18 18:39:00.825 +03:00 [INF] Policy execution successful.
+2018-10-18 18:39:00.825 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:39:00.825 +03:00 [INF] Authorization failed.
+2018-10-18 18:39:00.825 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:39:00.825 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:39:00.825 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:39:00.825 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4778ms
+2018-10-18 18:39:00.825 +03:00 [INF] Request finished in 2.0893ms 401 
+2018-10-18 18:39:08.498 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:39:08.499 +03:00 [INF] Policy execution successful.
+2018-10-18 18:39:08.499 +03:00 [INF] Request finished in 0.5086ms 204 
+2018-10-18 18:39:08.754 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:39:08.755 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:39:08'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:39:08.756 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:39:08'.
+2018-10-18 18:39:08.756 +03:00 [INF] Policy execution successful.
+2018-10-18 18:39:08.756 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:39:08.757 +03:00 [INF] Authorization failed.
+2018-10-18 18:39:08.757 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:39:08.757 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:39:08.757 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:39:08.757 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4325ms
+2018-10-18 18:39:08.757 +03:00 [INF] Request finished in 2.7136ms 401 
+2018-10-18 18:39:51.932 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:39:51.932 +03:00 [INF] Policy execution successful.
+2018-10-18 18:39:51.932 +03:00 [INF] Request finished in 0.4025ms 204 
+2018-10-18 18:39:52.289 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:39:52.290 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:39:52'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:39:52.291 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:39:52'.
+2018-10-18 18:39:52.291 +03:00 [INF] Policy execution successful.
+2018-10-18 18:39:52.291 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:39:52.291 +03:00 [INF] Authorization failed.
+2018-10-18 18:39:52.292 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:39:52.292 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:39:52.292 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:39:52.292 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3306ms
+2018-10-18 18:39:52.292 +03:00 [INF] Request finished in 2.4533ms 401 
+2018-10-18 18:40:18.931 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:40:18.932 +03:00 [INF] Policy execution successful.
+2018-10-18 18:40:18.932 +03:00 [INF] Request finished in 1.0943ms 204 
+2018-10-18 18:40:18.950 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:40:18.951 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:40:18'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:40:18.951 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:40:18'.
+2018-10-18 18:40:18.952 +03:00 [INF] Policy execution successful.
+2018-10-18 18:40:18.952 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:40:18.952 +03:00 [INF] Authorization failed.
+2018-10-18 18:40:18.952 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:40:18.952 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:40:18.952 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:40:18.952 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.2972ms
+2018-10-18 18:40:18.952 +03:00 [INF] Request finished in 1.9235ms 401 
+2018-10-18 18:40:41.636 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:40:41.636 +03:00 [INF] Policy execution successful.
+2018-10-18 18:40:41.636 +03:00 [INF] Request finished in 0.3796ms 204 
+2018-10-18 18:40:41.873 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:40:41.873 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:40:41'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:40:41.874 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:40:41'.
+2018-10-18 18:40:41.874 +03:00 [INF] Policy execution successful.
+2018-10-18 18:40:41.874 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:40:41.874 +03:00 [INF] Authorization failed.
+2018-10-18 18:40:41.874 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:40:41.874 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:40:41.875 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:40:41.875 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3513ms
+2018-10-18 18:40:41.877 +03:00 [INF] Request finished in 4.8968ms 401 
+2018-10-18 18:41:44.341 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:41:44.344 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:44.345 +03:00 [INF] Request finished in 3.5235ms 204 
+2018-10-18 18:41:44.632 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:44.635 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:44'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:44.636 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:44'.
+2018-10-18 18:41:44.636 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:44.636 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:44.636 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:44.636 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:44.636 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:44.636 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:44.636 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3048ms
+2018-10-18 18:41:44.636 +03:00 [INF] Request finished in 4.2332ms 401 
+2018-10-18 18:41:46.070 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:46.071 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:46'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:46.072 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:46'.
+2018-10-18 18:41:46.072 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:46.072 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:46.072 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:46.072 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:46.072 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:46.072 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:46.072 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.32580000000000003ms
+2018-10-18 18:41:46.072 +03:00 [INF] Request finished in 1.9626ms 401 
+2018-10-18 18:41:47.425 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:47.426 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:47'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:47.427 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:47'.
+2018-10-18 18:41:47.427 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:47.427 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:47.427 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:47.427 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:47.427 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:47.428 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:47.428 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3642ms
+2018-10-18 18:41:47.428 +03:00 [INF] Request finished in 2.4302ms 401 
+2018-10-18 18:41:48.780 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:48.781 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:48'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:48.782 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:48'.
+2018-10-18 18:41:48.782 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:48.782 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:48.782 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:48.782 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:48.783 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:48.783 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:48.783 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.613ms
+2018-10-18 18:41:48.783 +03:00 [INF] Request finished in 2.7406ms 401 
+2018-10-18 18:41:50.284 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:41:50.284 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:50.284 +03:00 [INF] Request finished in 0.4654ms 204 
+2018-10-18 18:41:50.537 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:50.539 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:50'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:50.540 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:50'.
+2018-10-18 18:41:50.541 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:50.541 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:50.541 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:50.541 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:50.541 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:50.541 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:50.541 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.45280000000000004ms
+2018-10-18 18:41:50.541 +03:00 [INF] Request finished in 4.939ms 401 
+2018-10-18 18:41:51.658 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:51.660 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:51'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:51.661 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:51'.
+2018-10-18 18:41:51.661 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:51.661 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:51.661 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:51.662 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:51.662 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:51.662 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:51.662 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4539ms
+2018-10-18 18:41:51.663 +03:00 [INF] Request finished in 4.4657ms 401 
+2018-10-18 18:41:53.097 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:53.097 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:53'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:53.098 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:53'.
+2018-10-18 18:41:53.098 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:53.098 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:53.098 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:53.098 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:53.098 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:53.098 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:53.099 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.31220000000000003ms
+2018-10-18 18:41:53.099 +03:00 [INF] Request finished in 2.1918ms 401 
+2018-10-18 18:41:54.418 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:54.418 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:54'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:54.419 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:54'.
+2018-10-18 18:41:54.419 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:54.419 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:54.419 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:54.419 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:54.419 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:54.420 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:54.420 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.30410000000000004ms
+2018-10-18 18:41:54.420 +03:00 [INF] Request finished in 1.8965ms 401 
+2018-10-18 18:41:55.786 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:41:55.786 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:55.786 +03:00 [INF] Request finished in 0.4331ms 204 
+2018-10-18 18:41:56.051 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:56.052 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:56'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:56.052 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:56'.
+2018-10-18 18:41:56.052 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:56.053 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:56.053 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:56.053 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:56.053 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:56.053 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:56.053 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4721ms
+2018-10-18 18:41:56.053 +03:00 [INF] Request finished in 2.642ms 401 
+2018-10-18 18:41:57.249 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:57.250 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:57'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:57.251 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:57'.
+2018-10-18 18:41:57.251 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:57.251 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:57.252 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:57.252 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:57.252 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:57.252 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:57.252 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4501ms
+2018-10-18 18:41:57.252 +03:00 [INF] Request finished in 2.7463ms 401 
+2018-10-18 18:41:58.700 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:41:58.701 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:58'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:41:58.702 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:41:58'.
+2018-10-18 18:41:58.702 +03:00 [INF] Policy execution successful.
+2018-10-18 18:41:58.702 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:41:58.702 +03:00 [INF] Authorization failed.
+2018-10-18 18:41:58.702 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:41:58.702 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:41:58.702 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:41:58.702 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4672ms
+2018-10-18 18:41:58.702 +03:00 [INF] Request finished in 3.0516ms 401 
+2018-10-18 18:42:00.058 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:00.060 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:00'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:00.060 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:00'.
+2018-10-18 18:42:00.061 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:00.061 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:00.061 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:00.061 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:00.061 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:00.061 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:00.061 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3543ms
+2018-10-18 18:42:00.061 +03:00 [INF] Request finished in 3.0315ms 401 
+2018-10-18 18:42:01.499 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:42:01.500 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:01.500 +03:00 [INF] Request finished in 0.4763ms 204 
+2018-10-18 18:42:01.766 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:01.771 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:01'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:01.771 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:01'.
+2018-10-18 18:42:01.771 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:01.772 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:01.772 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:01.772 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:01.772 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:01.773 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:01.773 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.9512ms
+2018-10-18 18:42:01.773 +03:00 [INF] Request finished in 6.3156ms 401 
+2018-10-18 18:42:03.021 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:03.021 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:03'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:03.022 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:03'.
+2018-10-18 18:42:03.022 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:03.022 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:03.022 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:03.022 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:03.023 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:03.023 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:03.023 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.33390000000000003ms
+2018-10-18 18:42:03.023 +03:00 [INF] Request finished in 2.2617ms 401 
+2018-10-18 18:42:04.525 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:04.527 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:04'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:04.528 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:04'.
+2018-10-18 18:42:04.528 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:04.528 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:04.528 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:04.528 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:04.528 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:04.528 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:04.528 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4424ms
+2018-10-18 18:42:04.528 +03:00 [INF] Request finished in 3.5286ms 401 
+2018-10-18 18:42:05.921 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:05.921 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:05'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:05.922 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:05'.
+2018-10-18 18:42:05.922 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:05.922 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:05.922 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:05.923 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:05.923 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:05.923 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:05.923 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.38680000000000003ms
+2018-10-18 18:42:05.923 +03:00 [INF] Request finished in 2.2796ms 401 
+2018-10-18 18:42:07.341 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:42:07.342 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:07.342 +03:00 [INF] Request finished in 1.3526ms 204 
+2018-10-18 18:42:07.620 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:07.625 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:07'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:07.626 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:07'.
+2018-10-18 18:42:07.627 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:07.627 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:07.627 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:07.627 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:07.627 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:07.627 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:07.627 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.45220000000000005ms
+2018-10-18 18:42:07.627 +03:00 [INF] Request finished in 7.6899ms 401 
+2018-10-18 18:42:08.988 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:08.988 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:08'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:08.989 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:08'.
+2018-10-18 18:42:08.989 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:08.989 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:08.989 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:08.989 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:08.989 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:08.989 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:08.989 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.29550000000000004ms
+2018-10-18 18:42:08.989 +03:00 [INF] Request finished in 1.8107ms 401 
+2018-10-18 18:42:10.562 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:10.563 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:10'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:10.564 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:10'.
+2018-10-18 18:42:10.564 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:10.564 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:10.564 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:10.564 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:10.564 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:10.564 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:10.564 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.388ms
+2018-10-18 18:42:10.564 +03:00 [INF] Request finished in 2.3354ms 401 
+2018-10-18 18:42:12.046 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:12.047 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:12'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:12.047 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:12'.
+2018-10-18 18:42:12.048 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:12.048 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:12.048 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:12.048 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:12.048 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:12.048 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:12.048 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.33140000000000003ms
+2018-10-18 18:42:12.048 +03:00 [INF] Request finished in 1.7649ms 401 
+2018-10-18 18:42:13.597 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:42:13.597 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:13.598 +03:00 [INF] Request finished in 0.4422ms 204 
+2018-10-18 18:42:13.865 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:13.866 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:13'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:13.867 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:13'.
+2018-10-18 18:42:13.867 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:13.867 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:13.867 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:13.867 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:13.867 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:13.867 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:13.867 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3296ms
+2018-10-18 18:42:13.868 +03:00 [INF] Request finished in 2.5459ms 401 
+2018-10-18 18:42:15.215 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:15.215 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:15'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:15.216 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:15'.
+2018-10-18 18:42:15.216 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:15.216 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:15.216 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:15.216 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:15.216 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:15.216 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:15.217 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.40230000000000005ms
+2018-10-18 18:42:15.217 +03:00 [INF] Request finished in 2.158ms 401 
+2018-10-18 18:42:17.159 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:17.162 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:17'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:17.163 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:17'.
+2018-10-18 18:42:17.163 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:17.163 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:17.163 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:17.164 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:17.164 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:17.164 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:17.164 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3492ms
+2018-10-18 18:42:17.164 +03:00 [INF] Request finished in 4.6869ms 401 
+2018-10-18 18:42:18.830 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:18.830 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:18'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:18.831 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:18'.
+2018-10-18 18:42:18.831 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:18.831 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:18.831 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:18.831 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:18.831 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:18.831 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:18.832 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.60510000000000008ms
+2018-10-18 18:42:18.832 +03:00 [INF] Request finished in 2.461ms 401 
+2018-10-18 18:42:20.369 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:42:20.369 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:20.369 +03:00 [INF] Request finished in 0.4947ms 204 
+2018-10-18 18:42:20.823 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:20.824 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:20'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:20.828 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:20'.
+2018-10-18 18:42:20.828 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:20.828 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:20.829 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:20.829 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:20.829 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:20.829 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:20.829 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3179ms
+2018-10-18 18:42:20.829 +03:00 [INF] Request finished in 5.8487ms 401 
+2018-10-18 18:42:22.380 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:22.380 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:22'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:22.381 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:22'.
+2018-10-18 18:42:22.381 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:22.381 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:22.381 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:22.381 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:22.382 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:22.382 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:22.382 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.3719ms
+2018-10-18 18:42:22.382 +03:00 [INF] Request finished in 2.1006ms 401 
+2018-10-18 18:42:24.304 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:24.305 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:24'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:24.306 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:24'.
+2018-10-18 18:42:24.306 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:24.306 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:24.306 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:24.306 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:24.306 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:24.306 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:24.306 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.5158ms
+2018-10-18 18:42:24.306 +03:00 [INF] Request finished in 2.0176ms 401 
+2018-10-18 18:42:27.765 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:42:27.766 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:27.766 +03:00 [INF] Request finished in 0.5684ms 204 
+2018-10-18 18:42:28.084 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:28.085 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:28'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:28.086 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:28'.
+2018-10-18 18:42:28.086 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:28.086 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:28.087 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:28.087 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:28.087 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:28.087 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:28.087 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.299ms
+2018-10-18 18:42:28.087 +03:00 [INF] Request finished in 3.436ms 401 
+2018-10-18 18:42:39.374 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:42:39.374 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:39.374 +03:00 [INF] Request finished in 0.4417ms 204 
+2018-10-18 18:42:39.557 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:39.560 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:39'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:39.561 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:39'.
+2018-10-18 18:42:39.561 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:39.562 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:39.564 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:39.564 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:39.564 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:39.564 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:39.564 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 2.3262ms
+2018-10-18 18:42:39.564 +03:00 [INF] Request finished in 6.8173ms 401 
+2018-10-18 18:42:45.147 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:42:45.148 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:45.148 +03:00 [INF] Request finished in 0.6467ms 204 
+2018-10-18 18:42:45.414 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:45.416 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:45'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:45.417 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:45'.
+2018-10-18 18:42:45.417 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:45.417 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:45.417 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:45.417 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:45.417 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:45.417 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:45.417 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4051ms
+2018-10-18 18:42:45.417 +03:00 [INF] Request finished in 3.8957ms 401 
+2018-10-18 18:42:55.896 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:42:55.897 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:55.897 +03:00 [INF] Request finished in 0.6259ms 204 
+2018-10-18 18:42:56.171 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:42:56.172 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:56'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:42:56.172 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:42:56'.
+2018-10-18 18:42:56.172 +03:00 [INF] Policy execution successful.
+2018-10-18 18:42:56.172 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:42:56.172 +03:00 [INF] Authorization failed.
+2018-10-18 18:42:56.173 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:42:56.173 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:42:56.173 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:42:56.173 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.4823ms
+2018-10-18 18:42:56.173 +03:00 [INF] Request finished in 2.405ms 401 
+2018-10-18 18:50:01.015 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 18:50:01.015 +03:00 [INF] Policy execution successful.
+2018-10-18 18:50:01.015 +03:00 [INF] Request finished in 0.5205ms 204 
+2018-10-18 18:50:01.221 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 18:50:01.223 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:50:01'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 18:50:01.225 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 15:50:01'.
+2018-10-18 18:50:01.225 +03:00 [INF] Policy execution successful.
+2018-10-18 18:50:01.225 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 18:50:01.225 +03:00 [INF] Authorization failed.
+2018-10-18 18:50:01.225 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 18:50:01.226 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 18:50:01.226 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 18:50:01.226 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.56090000000000007ms
+2018-10-18 18:50:01.226 +03:00 [INF] Request finished in 4.8327ms 401 

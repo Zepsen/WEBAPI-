@@ -2,8 +2,8 @@
   <v-app id="app">
     <base-nav></base-nav>
     <base-header></base-header>    
-    <v-content>
-        <v-container fluid>
+    <v-content class="app__body">
+        <v-container fluid class="pa-0">
             <router-view></router-view>
         </v-container>
     </v-content>    
@@ -26,4 +26,7 @@ export default {
 </script>
 
 <style>
+.app__body {
+    margin-top: 70px;
+}
 </style>

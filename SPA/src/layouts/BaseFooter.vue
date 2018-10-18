@@ -1,9 +1,7 @@
 
 <template>
     <v-footer class="footer"
-      height="auto"
-      fixed
-      app
+      height="auto"      
     >
       <v-layout
         justify-center
