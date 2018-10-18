@@ -1,25 +1,35 @@
 
 <template>
-    <v-toolbar fixed height="70" app>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title>Title</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn icon>
-            <v-icon>search</v-icon>
-        </v-btn>
-    
-        <v-btn icon>
-            <v-icon>apps</v-icon>
-        </v-btn>
-    
-        <v-btn icon>
-            <v-icon>refresh</v-icon>
-        </v-btn>
-    
-        <v-btn icon>
-            <v-icon>more_vert</v-icon>
-        </v-btn>
+    <v-toolbar fixed height="70">
+        <v-img src="https://picsum.photos/510/300?random" max-width="150" height="50"></v-img>      
+        <v-spacer></v-spacer>
+        <v-toolbar-items class="hidden-sm-and-down">
+            <v-btn icon>
+                <v-icon>search</v-icon>
+            </v-btn>
+        
+            <v-btn icon>
+                <v-icon>date_range</v-icon>
+            </v-btn>
+        
+            <v-btn icon>
+                <v-icon>notifications</v-icon>
+            </v-btn>
+        
+            
+            <v-menu :nudge-width="100">                
+                <v-btn icon  slot="activator">
+                    <v-icon>account_circle</v-icon>
+                </v-btn>
+                <v-list>
+                    <v-list-tile
+                    v-for="item in items"
+                    :key="item"
+                    @click="">
+                        <v-list-tile-title v-text="item"></v-list-tile-title>
+                    </v-list-tile>
+                </v-list>
+            </v-menu>
         </v-toolbar-items>
     </v-toolbar>   
 </template>
@@ -28,7 +38,9 @@
 export default {
   name: "BaseHeader",
   props: {},
-  data: () => ({}),
+  data: () => ({
+      items: ['All', 'Family', 'Friends', 'Coworkers'],
+  }),
 
   computed: {},
 
