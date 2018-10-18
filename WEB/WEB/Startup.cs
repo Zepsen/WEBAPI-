@@ -31,6 +31,18 @@ namespace WEB
 
             services.AddResponseCompression();
             services.AddAutoMapper();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder =>
+                    {
+                        builder
+                            .AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader()
+                            .AllowCredentials();
+                    });
+            });
             services.AddMvc();
             
         }
@@ -52,6 +64,7 @@ namespace WEB
             app.UseAuthentication();
             app.UseResponseCompression();
             app.UseHttpsRedirection();
+            app.UseCors("AllowAll");
             app.UseMvc();
         }
     }
