@@ -1,16 +1,14 @@
 
 
-<template>
-    <!-- <base-layout> -->
-        <div style="height:1000px">
+<template>    
+    <div style="height:1000px">
             BODYYYYYYYY    
-        </div>
-    <!-- </base-layout> -->
+            <v-btn @click="onClick">Admin</v-btn>
+    </div>
 </template>
 
 <script>
-    import Vue from "vue";
-    
+    import Vue from "vue";    
 
     let _data = null;
     let _error = false;
@@ -35,6 +33,10 @@
             initData(data) {
                 this.test = data;                
             },
+
+            onClick() {
+                this.$router.push({name: 'admin'});
+            }
 
         }
        

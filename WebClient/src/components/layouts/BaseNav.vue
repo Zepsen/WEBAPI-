@@ -10,7 +10,6 @@
           <v-list-tile
             v-for="item in items"
             :key="item.title"
-            @click=""
           >
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
@@ -34,27 +33,24 @@
       </v-navigation-drawer>
 </template>
 
-<script>
-export default {
-  name: "BaseNav",
-  props: {},
-  data: () => ({
-      drawer: true,
-      items: [
+
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+
+@Component
+export default class BaseNav extends Vue {
+    private drawer: boolean = true;
+    private mini: boolean = true;
+    private items: object[] = [
         { title: 'Home', icon: 'dashboard' },
-        { title: 'About', icon: 'question_answer' }
-      ],
-      mini: true,
-      right: null
-  }),
-
-  computed: {},
-
-  methods: {}
-};
+        { title: 'About', icon: 'question_answer' },
+    ];
+}
 </script>
 
-<style scoped>
+
+<style scoped lang="less">
     .navbar {        
         z-index: 5;
     }

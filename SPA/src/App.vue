@@ -1,14 +1,7 @@
 <template>
-  <v-app id="app">
-    <base-nav></base-nav>
-    <base-header></base-header>    
-    <v-content class="app__body">
-        <v-container fluid class="pa-0">
-            <router-view></router-view>
-        </v-container>
-    </v-content>    
-    <base-footer></base-footer>
-  </v-app>
+  <main id="app">
+      <router-view></router-view>    
+  </main>
 </template>
 
 <script>
@@ -26,7 +19,5 @@ export default {
 </script>
 
 <style>
-.app__body {
-    margin-top: 70px;
-}
+
 </style>

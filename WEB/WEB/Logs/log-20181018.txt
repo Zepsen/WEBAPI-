@@ -2829,3 +2829,23 @@ Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime
 2018-10-18 18:50:01.226 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
 2018-10-18 18:50:01.226 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.56090000000000007ms
 2018-10-18 18:50:01.226 +03:00 [INF] Request finished in 4.8327ms 401 
+2018-10-18 19:06:27.794 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/users  
+2018-10-18 19:06:27.794 +03:00 [INF] Policy execution successful.
+2018-10-18 19:06:27.795 +03:00 [INF] Request finished in 1.3881ms 204 
+2018-10-18 19:06:28.073 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:44326/api/users  
+2018-10-18 19:06:28.073 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 16:06:28'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-10-18 19:06:28.074 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '10/18/2018 14:05:24', Current time: '10/18/2018 16:06:28'.
+2018-10-18 19:06:28.075 +03:00 [INF] Policy execution successful.
+2018-10-18 19:06:28.075 +03:00 [INF] Route matched with {action = "Get", controller = "Users"}. Executing action WEB.Controllers.UsersController.Get (WEB)
+2018-10-18 19:06:28.075 +03:00 [INF] Authorization failed.
+2018-10-18 19:06:28.075 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-10-18 19:06:28.075 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-10-18 19:06:28.075 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2018-10-18 19:06:28.075 +03:00 [INF] Executed action WEB.Controllers.UsersController.Get (WEB) in 0.6625ms
+2018-10-18 19:06:28.076 +03:00 [INF] Request finished in 3.1224ms 401 

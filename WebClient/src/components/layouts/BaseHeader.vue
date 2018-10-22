@@ -20,8 +20,7 @@
                 <v-list>
                     <v-list-tile
                     v-for="item in items"
-                    :key="item"
-                    @click="">
+                    :key="item">
                         <v-list-tile-action>
                             <v-icon color="pink">star</v-icon>
                         </v-list-tile-action>
@@ -33,16 +32,12 @@
     </v-toolbar>   
 </template>
 
-<script>
-export default {
-  name: "BaseHeader",
-  props: {},
-  data: () => ({
-      items: ['All', 'Family', 'Friends', 'Coworkers'],
-  }),
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
-  computed: {},
-
-  methods: {}
-};
+@Component
+export default class BaseHeader extends Vue {  
+  private items:string[] = ['All', 'Family', 'Friends', 'Coworkers'];
+}
 </script>
+

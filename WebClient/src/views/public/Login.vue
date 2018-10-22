@@ -1,5 +1,4 @@
-
-<template>    
+<template>
     <base-layout 
         height="100vh"
         :show-header="false"
@@ -8,37 +7,28 @@
         
         <section class="login-page">
             <v-layout align-center justify-center fill-height>
-                <vlogin class="login" @onlogin="onLogin"></vlogin>    
+                <vlogin class="login"></vlogin>    
             </v-layout>
         </section>
 
     </base-layout>
 </template>
 
-<script>
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
 import vlogin from "@/components/forms/v-login.vue";
 
-export default {
-  name: "LoginPage",
-  components: {
-    vlogin
-  },
+@Component({
+    components: {
+        vlogin,
+    },
+})
+export default class Login extends Vue {
 
-  data: () => ({
-    
-  }),
-
-  created() {},
-
-  methods: {
-    onLogin() {
-        
-    }
-  }
-};
+}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
     .login-page {
         height: 100vh;
     }
@@ -47,4 +37,5 @@ export default {
         width: 500px;
     }
 </style>
+
 
