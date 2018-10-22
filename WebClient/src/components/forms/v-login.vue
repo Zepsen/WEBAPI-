@@ -37,7 +37,7 @@
                 <span v-for="(err,i) in serverErrors" :key="i">{{err}}</span>
             </v-alert>
         
-            <v-btn @click="onSubmit" 
+            <v-btn @click.enter="onSubmit" 
                    dark
                    color="info"
                    :loading="load"
