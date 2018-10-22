@@ -36,8 +36,8 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
-export default class BaseHeader extends Vue {  
-  private items:string[] = ['All', 'Family', 'Friends', 'Coworkers'];
+export default class BaseHeader extends Vue {
+  private items: string[] = ['All', 'Family', 'Friends', 'Coworkers'];
 }
 </script>
 

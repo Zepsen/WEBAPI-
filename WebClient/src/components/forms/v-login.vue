@@ -53,7 +53,7 @@ import { Validator } from 'vee-validate';
 import axios from 'axios';
 
 @Component({
-    $_veeValidate: { validator: "new" }
+    $_veeValidate: { validator: "new" },
 })
 export default class LoginForm extends Vue {
     @Prop({ default: true }) private showRememberMe!: boolean;
@@ -106,7 +106,7 @@ export default class LoginForm extends Vue {
                                 // }        
                                 
                     })
-                    .then(() => this.load = false);   
+                    .then(() => this.load = false);
                 }
             });
     }

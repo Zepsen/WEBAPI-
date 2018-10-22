@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import vlogin from "@/components/forms/v-login.vue";
+import vlogin from '@/components/forms/v-login.vue';
 
 @Component({
     components: {

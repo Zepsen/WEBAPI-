@@ -10,7 +10,7 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component
 export default class App extends Vue {
     created () {
-        console.log('create');
+        
     }
 }
 </script>

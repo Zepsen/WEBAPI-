@@ -3,9 +3,9 @@ import { includes } from 'lodash';
 export default {
     namespaced: true,
     state: {
-        token: null,
+        token: localStorage.getItem('token'),
         isAuth: false,
-        roles: [],
+        roles: localStorage.getItem('roles'),
         returnUrl: '/',
     },
     getters: {
@@ -27,6 +27,8 @@ export default {
             state.roles = data.roles;
             state.returnUrl = data.returnUrl || '/';
             state.isAuth = true;
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('roles', data.roles);
         },
 
         cleanData(state: any) {
@@ -34,6 +36,8 @@ export default {
             state.roles = [];
             state.returnUrl = null;
             state.isAuth = false;
+            localStorage.removeItem('token');
+            localStorage.removeItem('roles');
         },
     },
     actions: {
