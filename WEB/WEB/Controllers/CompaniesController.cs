@@ -9,7 +9,9 @@ using WEB.Infrastructure.Attributes;
 
 namespace WEB.Controllers
 {
-    [Route("api/[controller]")]
+//    [Route("api/[controller]")]
+    [ApiVersion("2.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     public class CompaniesController : ControllerBase
     {
@@ -21,7 +23,7 @@ namespace WEB.Controllers
         {
             _service = service;
         }
-
+        
         // GET api/[controller]
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery]FilterBase filterBase)
