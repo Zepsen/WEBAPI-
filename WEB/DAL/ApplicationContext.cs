@@ -37,6 +37,11 @@ namespace DAL
                 .WithOne(i => i.User)
                 .HasForeignKey<User>(i => i.UserIdentityId);
 
+            modelBuilder.Entity<CompanyDescriptions>()
+                .HasOne(i => i.Company)
+                .WithMany(i => i.CompanyDescriptions)
+                .HasForeignKey(i => i.CompanyId);
+
             base.OnModelCreating(modelBuilder);
         }
 

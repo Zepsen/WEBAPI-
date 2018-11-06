@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using DAL.Interfaces;
 
 namespace DAL.Models
@@ -10,5 +11,6 @@ namespace DAL.Models
         public string Code { get; set; }
         public string Test { get; set; }
 
+        public List<CompanyDescriptions> CompanyDescriptions { get; set; }
     }
 }
