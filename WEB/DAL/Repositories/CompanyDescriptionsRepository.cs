@@ -9,8 +9,8 @@ using Serilog;
 namespace DAL.Repositories
 {
     public class CompanyDescriptionsRepository :
-        IWritableRepository<CompanyDescriptions>,
-        IQueryableRepository<CompanyDescriptions>
+        IWritableRepository<CompanyDescriptions, int>,
+        IQueryableRepository<CompanyDescriptions, int>
     {
         private readonly ApplicationContext _db;
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using BLL.DTOs;
 using BLL.Infrastructure;
 using BLL.Infrastructure.Extensions;
@@ -23,9 +24,12 @@ namespace BLL.Services
         public async Task<Result<CompanyDescriptionsDto>> GetAsync(FilterBase filter)
         {
             return await Repo.CompanyDescriptionsRepository.GetQueryable()
-                .Searching(filter.Query)
+                .MaybeWhere(filter.Where)
+                .Searching(filter.Search) //mb delete, using dynamic linq where logic
+                .MaybeOrderBy(filter.OrderBy)
                 .SkipAndTake(filter)
-                .MapTo<CompanyDescriptions, CompanyDescriptionsDto>(filter.Fields, _mapper.ConfigurationProvider)
+                .MaybeSelect(filter.Select)
+                .ProjectTo<CompanyDescriptionsDto>(_mapper.ConfigurationProvider)
                 .ToResultAsync(filter);
         }
 
