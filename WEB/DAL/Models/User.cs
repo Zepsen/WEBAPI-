@@ -4,12 +4,10 @@ namespace DAL.Models
 {
     public class User : IEntityBase
     {
-        public new int Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
+        public string UserIdentityId { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
     }
 }

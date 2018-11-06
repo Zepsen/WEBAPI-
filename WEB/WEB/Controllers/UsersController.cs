@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 using BLL.DTOs;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WEB.Infrastructure.Attributes;
 
@@ -15,15 +17,14 @@ namespace WEB.Controllers
         private readonly IUsersService _service;
         
 
-        public UsersController(
-            IUsersService service
-            )
+        public UsersController(IUsersService service)
         {
             _service = service;
         }
 
         // GET api/[controller]
         [HttpGet]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> Get([FromQuery]FilterBase filter)
         {
             return Ok(await _service.GetAsync(filter));
@@ -31,7 +32,6 @@ namespace WEB.Controllers
 
         // GET api/[controller]/{id}
         [DecodeHashId]
-        [HttpGet("{id}")]
         public async Task<UserDto> Get([FromQuery]int id)
         {
             return await _service.GetByIdAsync(id);

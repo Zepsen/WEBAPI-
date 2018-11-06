@@ -1,0 +1,628 @@
+2018-10-22 13:58:06.582 +03:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-10-22 13:58:07.340 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 13:58:07.473 +03:00 [INF] Policy execution successful.
+2018-10-22 13:58:07.482 +03:00 [INF] Request finished in 143.2668ms 204 
+2018-10-22 13:58:07.494 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 13:58:07.495 +03:00 [INF] Policy execution successful.
+2018-10-22 13:58:07.753 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 13:58:07.754 +03:00 [INF] Policy execution successful.
+2018-10-22 13:58:08.085 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 13:58:08.085 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 13:58:08.408 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 13:58:08.409 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 13:58:08.731 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 13:58:08.731 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 13:58:09.162 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 13:58:09.162 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 13:58:09.313 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 13:58:09.313 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 13:58:09.338 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 913.1135ms.
+2018-10-22 13:58:09.338 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 913.0579ms.
+2018-10-22 13:58:09.348 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 13:58:09.348 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 13:58:09.364 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 1275.6008000000002ms
+2018-10-22 13:58:09.364 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 1275.5847ms
+2018-10-22 13:58:09.377 +03:00 [INF] Request finished in 1883.2989ms 200 application/json; charset=utf-8
+2018-10-22 13:58:09.377 +03:00 [INF] Request finished in 1624.1456ms 200 application/json; charset=utf-8
+2018-10-22 14:03:30.859 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:03:30.859 +03:00 [INF] Policy execution successful.
+2018-10-22 14:03:30.860 +03:00 [INF] Request finished in 0.6047ms 204 
+2018-10-22 14:03:30.901 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:03:30.902 +03:00 [INF] Policy execution successful.
+2018-10-22 14:03:30.902 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:03:30.927 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:03:30.928 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:03:30.932 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:03:30.948 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:03:30.948 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.806900000000002ms.
+2018-10-22 14:03:30.949 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:03:30.949 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 46.895900000000005ms
+2018-10-22 14:03:30.949 +03:00 [INF] Request finished in 48.2486ms 200 application/json; charset=utf-8
+2018-10-22 14:04:30.534 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:04:30.536 +03:00 [INF] Policy execution successful.
+2018-10-22 14:04:30.536 +03:00 [INF] Request finished in 1.9588ms 204 
+2018-10-22 14:04:30.548 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:04:30.548 +03:00 [INF] Policy execution successful.
+2018-10-22 14:04:30.548 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:04:30.549 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:04:30.549 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:04:30.553 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:04:30.568 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:04:30.569 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.8121ms.
+2018-10-22 14:04:30.569 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:04:30.569 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 20.835700000000003ms
+2018-10-22 14:04:30.569 +03:00 [INF] Request finished in 21.4983ms 200 application/json; charset=utf-8
+2018-10-22 14:04:49.219 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:04:49.220 +03:00 [INF] Policy execution successful.
+2018-10-22 14:04:49.220 +03:00 [INF] Request finished in 0.6207ms 204 
+2018-10-22 14:04:49.229 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:04:49.229 +03:00 [INF] Policy execution successful.
+2018-10-22 14:04:49.229 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:04:49.229 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:04:49.230 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:04:49.231 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:04:49.243 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:04:49.243 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.9099ms.
+2018-10-22 14:04:49.244 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:04:49.244 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 14.791500000000001ms
+2018-10-22 14:04:49.244 +03:00 [INF] Request finished in 15.3762ms 200 application/json; charset=utf-8
+2018-10-22 14:05:01.929 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:05:01.929 +03:00 [INF] Policy execution successful.
+2018-10-22 14:05:01.929 +03:00 [INF] Request finished in 0.5611ms 204 
+2018-10-22 14:05:01.941 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:05:01.941 +03:00 [INF] Policy execution successful.
+2018-10-22 14:05:01.942 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:05:01.942 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:05:01.943 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:05:01.944 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:05:01.960 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:05:01.961 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 18.4689ms.
+2018-10-22 14:05:01.961 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:05:01.961 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 19.4911ms
+2018-10-22 14:05:01.961 +03:00 [INF] Request finished in 20.2146ms 200 application/json; charset=utf-8
+2018-10-22 14:05:29.440 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:05:29.444 +03:00 [INF] Policy execution successful.
+2018-10-22 14:05:29.444 +03:00 [INF] Request finished in 4.6688ms 204 
+2018-10-22 14:05:29.457 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:05:29.457 +03:00 [INF] Policy execution successful.
+2018-10-22 14:05:29.457 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:05:29.458 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:05:29.459 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:05:29.463 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:05:29.480 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:05:29.480 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22.279400000000003ms.
+2018-10-22 14:05:29.481 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:05:29.481 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 23.366400000000002ms
+2018-10-22 14:05:29.481 +03:00 [INF] Request finished in 24.3299ms 200 application/json; charset=utf-8
+2018-10-22 14:07:23.538 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:07:23.545 +03:00 [INF] Policy execution successful.
+2018-10-22 14:07:23.546 +03:00 [INF] Request finished in 8.0273ms 204 
+2018-10-22 14:07:23.553 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:07:23.555 +03:00 [INF] Policy execution successful.
+2018-10-22 14:07:23.555 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:07:23.555 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:07:23.556 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:07:23.559 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:07:23.576 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:07:23.576 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.8563ms.
+2018-10-22 14:07:23.577 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:07:23.577 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 22.0237ms
+2018-10-22 14:07:23.577 +03:00 [INF] Request finished in 24.0577ms 200 application/json; charset=utf-8
+2018-10-22 14:07:36.238 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:07:36.243 +03:00 [INF] Policy execution successful.
+2018-10-22 14:07:36.243 +03:00 [INF] Request finished in 5.4262ms 204 
+2018-10-22 14:07:36.255 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:07:36.255 +03:00 [INF] Policy execution successful.
+2018-10-22 14:07:36.256 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:07:36.261 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:07:36.261 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:07:36.283 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:07:36.302 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:07:36.306 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 45.0538ms.
+2018-10-22 14:07:36.310 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:07:36.310 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 54.521800000000006ms
+2018-10-22 14:07:36.311 +03:00 [INF] Request finished in 56.0183ms 200 application/json; charset=utf-8
+2018-10-22 14:08:14.624 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:08:14.625 +03:00 [INF] Policy execution successful.
+2018-10-22 14:08:14.625 +03:00 [INF] Request finished in 0.4566ms 204 
+2018-10-22 14:08:14.632 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:08:14.632 +03:00 [INF] Policy execution successful.
+2018-10-22 14:08:14.632 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:08:14.633 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:08:14.633 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:08:14.634 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:08:14.645 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:08:14.646 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.0562ms.
+2018-10-22 14:08:14.646 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:08:14.646 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 13.799900000000001ms
+2018-10-22 14:08:14.646 +03:00 [INF] Request finished in 14.5437ms 200 application/json; charset=utf-8
+2018-10-22 14:16:11.116 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:16:11.116 +03:00 [INF] Policy execution successful.
+2018-10-22 14:16:11.117 +03:00 [INF] Request finished in 1.1834ms 204 
+2018-10-22 14:16:11.126 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:16:11.126 +03:00 [INF] Policy execution successful.
+2018-10-22 14:16:11.126 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:16:11.127 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:16:11.128 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:16:11.206 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:16:11.223 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:16:11.223 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 96.1855ms.
+2018-10-22 14:16:11.224 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:16:11.224 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 97.325200000000009ms
+2018-10-22 14:16:11.224 +03:00 [INF] Request finished in 98.0743ms 200 application/json; charset=utf-8
+2018-10-22 14:17:20.005 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:17:20.006 +03:00 [INF] Policy execution successful.
+2018-10-22 14:17:20.006 +03:00 [INF] Request finished in 0.4667ms 204 
+2018-10-22 14:17:20.036 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:17:20.038 +03:00 [INF] Policy execution successful.
+2018-10-22 14:17:20.039 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:17:20.041 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:17:20.041 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:17:20.046 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:17:20.060 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:17:20.061 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.9851ms.
+2018-10-22 14:17:20.061 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:17:20.061 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 21.2377ms
+2018-10-22 14:17:20.062 +03:00 [INF] Request finished in 27.5001ms 200 application/json; charset=utf-8
+2018-10-22 14:19:17.300 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:19:17.301 +03:00 [INF] Policy execution successful.
+2018-10-22 14:19:17.301 +03:00 [INF] Request finished in 0.4109ms 204 
+2018-10-22 14:19:17.308 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:19:17.308 +03:00 [INF] Policy execution successful.
+2018-10-22 14:19:17.308 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:19:17.310 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:19:17.310 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:19:17.317 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:19:17.338 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:19:17.339 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28.9693ms.
+2018-10-22 14:19:17.339 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:19:17.339 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 30.276100000000003ms
+2018-10-22 14:19:17.340 +03:00 [INF] Request finished in 31.7076ms 200 application/json; charset=utf-8
+2018-10-22 14:20:15.725 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:20:15.726 +03:00 [INF] Policy execution successful.
+2018-10-22 14:20:15.727 +03:00 [INF] Request finished in 1.3193ms 204 
+2018-10-22 14:20:15.745 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:20:15.746 +03:00 [INF] Policy execution successful.
+2018-10-22 14:20:15.746 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:20:15.747 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:20:15.747 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:20:15.754 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:20:15.774 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:20:15.774 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 27.777700000000003ms.
+2018-10-22 14:20:15.775 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:20:15.775 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 28.9025ms
+2018-10-22 14:20:15.775 +03:00 [INF] Request finished in 29.5282ms 200 application/json; charset=utf-8
+2018-10-22 14:21:26.086 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:21:26.088 +03:00 [INF] Policy execution successful.
+2018-10-22 14:21:26.089 +03:00 [INF] Request finished in 3.2271ms 204 
+2018-10-22 14:21:26.095 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:21:26.095 +03:00 [INF] Policy execution successful.
+2018-10-22 14:21:26.096 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:21:26.096 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:21:26.097 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:21:26.102 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:21:26.116 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:21:26.117 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.409200000000002ms.
+2018-10-22 14:21:26.117 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:21:26.117 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 21.323700000000002ms
+2018-10-22 14:21:26.117 +03:00 [INF] Request finished in 22.0292ms 200 application/json; charset=utf-8
+2018-10-22 14:22:38.923 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:22:38.923 +03:00 [INF] Policy execution successful.
+2018-10-22 14:22:38.924 +03:00 [INF] Request finished in 0.8581ms 204 
+2018-10-22 14:22:38.995 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:22:38.997 +03:00 [INF] Policy execution successful.
+2018-10-22 14:22:38.998 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:22:38.999 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:22:38.999 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:22:39.004 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:22:39.021 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:22:39.022 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.020500000000002ms.
+2018-10-22 14:22:39.022 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:22:39.022 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 24.4629ms
+2018-10-22 14:22:39.023 +03:00 [INF] Request finished in 27.1743ms 200 application/json; charset=utf-8
+2018-10-22 14:23:02.350 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:23:02.350 +03:00 [INF] Policy execution successful.
+2018-10-22 14:23:02.351 +03:00 [INF] Request finished in 1.7184ms 204 
+2018-10-22 14:23:02.357 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:23:02.358 +03:00 [INF] Policy execution successful.
+2018-10-22 14:23:02.358 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:23:02.359 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:23:02.359 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:23:02.363 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:23:02.378 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:23:02.378 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.3459ms.
+2018-10-22 14:23:02.378 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:23:02.378 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 20.6524ms
+2018-10-22 14:23:02.379 +03:00 [INF] Request finished in 21.3559ms 200 application/json; charset=utf-8
+2018-10-22 14:27:11.698 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:27:11.698 +03:00 [INF] Policy execution successful.
+2018-10-22 14:27:11.698 +03:00 [INF] Request finished in 0.4573ms 204 
+2018-10-22 14:27:11.704 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:27:11.704 +03:00 [INF] Policy execution successful.
+2018-10-22 14:27:11.704 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:27:11.705 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:27:11.705 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:27:11.780 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:27:11.796 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:27:11.796 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 91.5368ms.
+2018-10-22 14:27:11.797 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:27:11.797 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 92.6709ms
+2018-10-22 14:27:11.797 +03:00 [INF] Request finished in 93.5501ms 200 application/json; charset=utf-8
+2018-10-22 14:28:37.115 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:28:37.115 +03:00 [INF] Policy execution successful.
+2018-10-22 14:28:37.117 +03:00 [INF] Request finished in 1.7601ms 204 
+2018-10-22 14:28:37.124 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:28:37.124 +03:00 [INF] Policy execution successful.
+2018-10-22 14:28:37.124 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:28:37.125 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:28:37.125 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:28:37.130 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:28:37.145 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:28:37.146 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.2282ms.
+2018-10-22 14:28:37.147 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:28:37.147 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 22.4765ms
+2018-10-22 14:28:37.147 +03:00 [INF] Request finished in 23.6148ms 200 application/json; charset=utf-8
+2018-10-22 14:28:57.197 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:28:57.197 +03:00 [INF] Policy execution successful.
+2018-10-22 14:28:57.201 +03:00 [INF] Request finished in 0.8977ms 204 
+2018-10-22 14:28:57.224 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:28:57.224 +03:00 [INF] Policy execution successful.
+2018-10-22 14:28:57.225 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:28:57.225 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:28:57.226 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:28:57.228 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:28:57.244 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:28:57.245 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.1569ms.
+2018-10-22 14:28:57.245 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:28:57.246 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 21.7036ms
+2018-10-22 14:28:57.247 +03:00 [INF] Request finished in 22.7115ms 200 application/json; charset=utf-8
+2018-10-22 14:29:54.079 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:29:54.080 +03:00 [INF] Policy execution successful.
+2018-10-22 14:29:54.080 +03:00 [INF] Request finished in 1.6773ms 204 
+2018-10-22 14:29:54.088 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:29:54.089 +03:00 [INF] Policy execution successful.
+2018-10-22 14:29:54.090 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:29:54.090 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:29:54.091 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:29:54.099 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:29:54.113 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:29:54.114 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.2514ms.
+2018-10-22 14:29:54.114 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:29:54.115 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 24.856ms
+2018-10-22 14:29:54.115 +03:00 [INF] Request finished in 26.9536ms 200 application/json; charset=utf-8
+2018-10-22 14:32:18.569 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:32:18.570 +03:00 [INF] Policy execution successful.
+2018-10-22 14:32:18.571 +03:00 [INF] Request finished in 2.017ms 204 
+2018-10-22 14:32:18.580 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:32:18.580 +03:00 [INF] Policy execution successful.
+2018-10-22 14:32:18.580 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:32:18.582 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:32:18.582 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:32:18.586 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:32:18.601 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:32:18.601 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.4424ms.
+2018-10-22 14:32:18.601 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:32:18.602 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 21.3265ms
+2018-10-22 14:32:18.602 +03:00 [INF] Request finished in 22.2744ms 200 application/json; charset=utf-8
+2018-10-22 14:48:30.650 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:48:30.650 +03:00 [INF] Policy execution successful.
+2018-10-22 14:48:30.650 +03:00 [INF] Request finished in 0.6692ms 204 
+2018-10-22 14:48:30.667 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:48:30.668 +03:00 [INF] Policy execution successful.
+2018-10-22 14:48:30.668 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:48:30.669 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:48:30.669 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:48:30.749 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:48:30.765 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:48:30.765 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 96.8683ms.
+2018-10-22 14:48:30.766 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:48:30.766 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 98.1387ms
+2018-10-22 14:48:30.766 +03:00 [INF] Request finished in 98.8268ms 200 application/json; charset=utf-8
+2018-10-22 14:56:47.178 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:56:47.179 +03:00 [INF] Policy execution successful.
+2018-10-22 14:56:47.179 +03:00 [INF] Request finished in 0.7323ms 204 
+2018-10-22 14:57:22.173 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:57:22.174 +03:00 [INF] Policy execution successful.
+2018-10-22 14:57:22.174 +03:00 [INF] Request finished in 1.8428ms 204 
+2018-10-22 14:57:22.182 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:57:22.183 +03:00 [INF] Policy execution successful.
+2018-10-22 14:57:22.184 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:57:22.185 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:57:22.187 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:57:22.280 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:57:22.296 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:57:22.297 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 112.0326ms.
+2018-10-22 14:57:22.297 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:57:22.297 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 113.44200000000001ms
+2018-10-22 14:57:22.297 +03:00 [INF] Request finished in 115.3137ms 200 application/json; charset=utf-8
+2018-10-22 14:58:50.154 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 14:58:50.154 +03:00 [INF] Policy execution successful.
+2018-10-22 14:58:50.154 +03:00 [INF] Request finished in 0.4239ms 204 
+2018-10-22 14:58:50.178 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 14:58:50.178 +03:00 [INF] Policy execution successful.
+2018-10-22 14:58:50.179 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 14:58:50.179 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 14:58:50.180 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 14:58:50.184 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 14:58:50.199 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 14:58:50.200 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.4819ms.
+2018-10-22 14:58:50.200 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 14:58:50.200 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 21.4312ms
+2018-10-22 14:58:50.200 +03:00 [INF] Request finished in 22.1689ms 200 application/json; charset=utf-8
+2018-10-22 15:09:15.065 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 15:09:15.065 +03:00 [INF] Policy execution successful.
+2018-10-22 15:09:15.066 +03:00 [INF] Request finished in 0.5062ms 204 
+2018-10-22 15:09:15.076 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 15:09:15.076 +03:00 [INF] Policy execution successful.
+2018-10-22 15:09:15.076 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 15:09:15.079 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 15:09:15.080 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 15:09:15.159 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 15:09:15.176 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 15:09:15.176 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 97.238ms.
+2018-10-22 15:09:15.176 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 15:09:15.177 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 100.4457ms
+2018-10-22 15:09:15.177 +03:00 [INF] Request finished in 101.2543ms 200 application/json; charset=utf-8
+2018-10-22 15:09:39.998 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 15:09:40.003 +03:00 [INF] Policy execution successful.
+2018-10-22 15:09:40.003 +03:00 [INF] Request finished in 4.8785ms 204 
+2018-10-22 15:09:40.030 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 65
+2018-10-22 15:09:40.030 +03:00 [INF] Policy execution successful.
+2018-10-22 15:09:40.031 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 15:09:40.039 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-22 15:09:40.041 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 10.3774ms
+2018-10-22 15:09:40.041 +03:00 [INF] Request finished in 11.2777ms 400 application/json; charset=utf-8
+2018-10-22 15:09:51.518 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 15:09:51.518 +03:00 [INF] Policy execution successful.
+2018-10-22 15:09:51.518 +03:00 [INF] Request finished in 0.7385ms 204 
+2018-10-22 15:09:51.526 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 64
+2018-10-22 15:09:51.526 +03:00 [INF] Policy execution successful.
+2018-10-22 15:09:51.526 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 15:09:51.527 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2018-10-22 15:09:51.528 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 1.2819ms
+2018-10-22 15:09:51.528 +03:00 [INF] Request finished in 2.1663ms 400 application/json; charset=utf-8
+2018-10-22 15:10:00.135 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 15:10:00.136 +03:00 [INF] Policy execution successful.
+2018-10-22 15:10:00.136 +03:00 [INF] Request finished in 1.361ms 204 
+2018-10-22 15:10:00.154 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 15:10:00.155 +03:00 [INF] Policy execution successful.
+2018-10-22 15:10:00.155 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 15:10:00.156 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 15:10:00.157 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 15:10:00.164 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 15:10:00.180 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 15:10:00.180 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.4277ms.
+2018-10-22 15:10:00.181 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 15:10:00.182 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 26.6646ms
+2018-10-22 15:10:00.184 +03:00 [INF] Request finished in 29.3451ms 200 application/json; charset=utf-8
+2018-10-22 15:52:57.353 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 15:52:57.353 +03:00 [INF] Policy execution successful.
+2018-10-22 15:52:57.354 +03:00 [INF] Request finished in 0.6477ms 204 
+2018-10-22 15:52:57.365 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 15:52:57.365 +03:00 [INF] Policy execution successful.
+2018-10-22 15:52:57.365 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 15:52:57.366 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 15:52:57.367 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 15:52:57.442 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 15:52:57.458 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 15:52:57.459 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 93.18910000000001ms.
+2018-10-22 15:52:57.460 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 15:52:57.460 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 94.6054ms
+2018-10-22 15:52:57.460 +03:00 [INF] Request finished in 95.6271ms 200 application/json; charset=utf-8
+2018-10-22 16:53:27.809 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:44326/api/account/login  
+2018-10-22 16:53:27.810 +03:00 [INF] Policy execution successful.
+2018-10-22 16:53:27.811 +03:00 [INF] Request finished in 1.2725ms 204 
+2018-10-22 16:53:27.819 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:44326/api/account/login application/json;charset=UTF-8 66
+2018-10-22 16:53:27.819 +03:00 [INF] Policy execution successful.
+2018-10-22 16:53:27.820 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action WEB.Controllers.AccountController.Login (WEB)
+2018-10-22 16:53:27.822 +03:00 [INF] Executing action method WEB.Controllers.AccountController.Login (WEB) with arguments (["WEB.Models.LoginModel"]) - Validation state: "Valid"
+2018-10-22 16:53:27.823 +03:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-10-22 16:53:27.900 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2018-10-22 16:53:27.918 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2018-10-22 16:53:27.918 +03:00 [INF] Executed action method WEB.Controllers.AccountController.Login (WEB), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 96.6897ms.
+2018-10-22 16:53:27.919 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-10-22 16:53:27.919 +03:00 [INF] Executed action WEB.Controllers.AccountController.Login (WEB) in 99.322ms
+2018-10-22 16:53:27.920 +03:00 [INF] Request finished in 100.575ms 200 application/json; charset=utf-8

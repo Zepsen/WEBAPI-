@@ -1,14 +1,20 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 using BLL.DTOs;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WEB.Infrastructure.Attributes;
 
 
 namespace WEB.Controllers
 {
+    [Route("api/[controller]")]
+    [Authorize(Roles = "User")]
+    [ApiController]
+    public class CompaniesController : Controller
 //    [Route("api/[controller]")]
     [ApiVersion("2.0")]
     [Route("api/v{version:apiVersion}/[controller]")]

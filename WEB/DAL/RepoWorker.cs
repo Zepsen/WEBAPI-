@@ -9,9 +9,9 @@ namespace DAL
         private readonly ApplicationContext _db;
         private bool _disposed;
         
-        public RepoWorker()
+        public RepoWorker(ApplicationContext context)
         {
-            _db = new ApplicationContext();
+            _db = context;
         }
         
         private CompaniesRepository _companiesRepository;

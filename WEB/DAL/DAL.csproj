@@ -25,4 +25,13 @@
     <Folder Include="Infrastructure\Extensions\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore">
+      <HintPath>..\..\..\..\Users\ZepsenWork\.nuget\packages\microsoft.aspnetcore.identity.entityframeworkcore\2.1.3\lib\netstandard2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Identity.Stores">
+      <HintPath>..\..\..\..\Users\ZepsenWork\.nuget\packages\microsoft.extensions.identity.stores\2.1.3\lib\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

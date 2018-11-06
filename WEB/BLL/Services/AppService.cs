@@ -6,9 +6,9 @@ namespace BLL.Services
     {
         public readonly RepoWorker Repo;
 
-        public AppService()
+        public AppService(ApplicationContext context)
         {
-            Repo = new RepoWorker();
+            Repo = new RepoWorker(context);
         }
     }
 }
