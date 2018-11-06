@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -8,6 +9,7 @@ using BLL.Infrastructure.Extensions;
 using BLL.Infrastructure.Extensions.EntitiesExts;
 using BLL.Infrastructure.Filters;
 using BLL.Interfaces;
+using DAL;
 using DAL.Models;
 
 namespace BLL.Services
@@ -15,7 +17,7 @@ namespace BLL.Services
     public class CompanyDescriptionsService : AppService, ICompanyDescriptionsService
     {
         private readonly IMapper _mapper;
-        public CompanyDescriptionsService(IMapper mapper) : base()
+        public CompanyDescriptionsService(ApplicationContext context,  IMapper mapper) : base(context)
         {
             _mapper = mapper;
         }
